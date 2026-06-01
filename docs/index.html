@@ -330,16 +330,57 @@
       .latest-grid { grid-template-columns: 1fr; }
       .steps { grid-template-columns: 1fr; }
     }
+
+    html.dark {
+      --surface: #1e293b;
+      --surface-alt: #0f172a;
+      --text: #e2e8f0;
+      --text-muted: #94a3b8;
+      --border: #334155;
+    }
+    html.dark body { background: var(--surface-alt); }
+    html.dark header { background: linear-gradient(135deg, #020617 0%, #0f172a 50%, #020617 100%); }
+    html.dark header .badge { background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.14); color: #cbd5e1; }
+    html.dark header p { color: #cbd5e1; }
+    html.dark .btn-ghost { border-color: rgba(255,255,255,0.35); color: white; }
+    html.dark .btn-ghost:hover { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.55); }
+    html.dark .metric { background: var(--surface); border-color: var(--border); box-shadow: 0 8px 24px rgba(0,0,0,0.25); }
+    html.dark .section { background: var(--surface); border-color: var(--border); }
+    html.dark .latest-link { background: var(--surface); border-color: var(--border); }
+    html.dark .latest-link:hover { border-color: var(--accent); background: #0b1220; }
+    html.dark .latest-link .icon { background: #0b1220; border-color: var(--border); }
+    html.dark code { background: #0f172a; color: #e2e8f0; }
+    html.dark footer a { color: var(--text-muted); }
+    html.dark footer a:hover { color: var(--text); }
   </style>
 </head>
 <body>
-    <header>
-      <div class="container">
-        <h1>🛡️ Daily Threat Intel Feed</h1>
-        <p>Automated cybersecurity threat intelligence from 9 leading news sources. Filtered, scored, MITRE-tagged, and delivered daily.</p>
-        <a href="#subscribe" class="btn">Subscribe Free</a>
+  <script>
+    (function() {
+      const key = 'threat-intel-theme';
+      const html = document.documentElement;
+      const saved = localStorage.getItem(key);
+      if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        html.classList.add('dark');
+      }
+      const btn = document.getElementById('theme-toggle');
+      btn.addEventListener('click', () => {
+        html.classList.toggle('dark');
+        localStorage.setItem(key, html.classList.contains('dark') ? 'dark' : 'light');
+        btn.textContent = html.classList.contains('dark') ? '☀️' : '🌙';
+      });
+    })();
+  </script>
+  <header>
+    <div class="container">
+      <div style="display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;">
+        <h1 style="margin:0;">🛡️ Daily Threat Intel Feed</h1>
+        <button id="theme-toggle" aria-label="Toggle theme" style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.25);color:white;border-radius:8px;padding:6px 10px;cursor:pointer;font-size:16px;line-height:1;">🌙</button>
       </div>
-    </header>
+      <p style="opacity:0.9;font-size:17px;max-width:720px;margin:14px auto 28px;color:#cbd5e1;">Automated cybersecurity threat intelligence from 9 leading news sources. Filtered, scored, MITRE-tagged, and delivered daily.</p>
+      <a href="#subscribe" class="btn">Subscribe Free</a>
+    </div>
+  </header>
 
   <div class="container">
     <div class="metrics">
