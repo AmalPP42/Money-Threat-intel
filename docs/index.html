@@ -6,70 +6,402 @@
   <title>Threat Intel Feed — Daily Cybersecurity Briefings</title>
   <meta name="description" content="Free daily threat intelligence digest. Zero-cost AI-powered cybersecurity news monitoring from 9 leading sources.">
   <style>
+    :root {
+      --primary: #0f172a;
+      --accent: #3b82f6;
+      --accent-dark: #2563eb;
+      --surface: #ffffff;
+      --surface-alt: #f8fafc;
+      --text: #1e293b;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --success: #10b981;
+      --warning: #f59e0b;
+      --danger: #ef4444;
+    }
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; background: #f9f9f9; }
-    .container { max-width: 900px; margin: 0 auto; padding: 24px; }
-    header { background: linear-gradient(135deg, #1a73e8, #0d47a1); color: white; padding: 48px 32px; border-radius: 12px; margin-bottom: 32px; text-align: center; }
-    header h1 { font-size: 32px; margin-bottom: 12px; }
-    header p { opacity: 0.9; font-size: 16px; max-width: 600px; margin: 0 auto; }
-    .badge { display: inline-block; padding: 4px 14px; background: rgba(255,255,255,0.2); border-radius: 20px; font-size: 12px; margin-bottom: 16px; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin: 28px 0; }
-    .card { background: white; padding: 24px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.08); }
-    .card h2 { font-size: 18px; margin-bottom: 10px; color: #1a73e8; }
-    .card p, .card li { font-size: 14px; color: #555; }
-    .card ul { padding-left: 20px; margin-top: 8px; }
-    .price { font-size: 28px; font-weight: bold; color: #1a73e8; margin: 12px 0; }
-    .price span { font-size: 14px; color: #777; font-weight: normal; }
-    .btn { display: inline-block; padding: 12px 28px; background: #1a73e8; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; margin-top: 12px; transition: background 0.2s; }
-    .btn:hover { background: #1557b0; }
-    .btn-outline { background: transparent; border: 2px solid #1a73e8; color: #1a73e8; }
-    .btn-outline:hover { background: #1a73e8; color: white; }
-    .section { background: white; padding: 28px; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
-    .section h2 { font-size: 20px; margin-bottom: 16px; color: #1a73e8; }
-    .section p, .section li { font-size: 14px; color: #555; }
-    .section ul { padding-left: 20px; }
-    footer { text-align: center; padding: 32px 0; font-size: 13px; color: #999; }
-    footer a { color: #1a73e8; }
-    @media (max-width: 600px) { header h1 { font-size: 24px; } .grid { grid-template-columns: 1fr; } }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--surface-alt);
+    }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+    /* Hero */
+    header {
+      background: linear-gradient(135deg, #0b1220 0%, #1e293b 50%, #0f172a 100%);
+      color: white;
+      padding: 80px 0 72px;
+      position: relative;
+      overflow: hidden;
+    }
+    header::before {
+      content: "";
+      position: absolute;
+      top: -60%;
+      left: -20%;
+      width: 140%;
+      height: 220%;
+      background: radial-gradient(circle at 30% 50%, rgba(59,130,246,0.18) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    header .container { position: relative; z-index: 2; text-align: center; }
+    header .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 18px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 999px;
+      font-size: 13px;
+      color: #cbd5e1;
+      margin-bottom: 18px;
+      backdrop-filter: blur(4px);
+    }
+    header h1 {
+      font-size: 44px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      margin-bottom: 14px;
+    }
+    header p {
+      opacity: 0.9;
+      font-size: 17px;
+      max-width: 720px;
+      margin: 0 auto 28px;
+      color: #cbd5e1;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 13px 28px;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 15px;
+      transition: transform 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
+      box-shadow: 0 1px 0 rgba(0,0,0,0.15), 0 8px 20px rgba(59,130,246,0.25);
+    }
+    .btn:hover { background: var(--accent-dark); transform: translateY(-1px); }
+    .btn:active { transform: translateY(0); }
+    .btn-ghost {
+      background: transparent;
+      border: 1.5px solid rgba(255,255,255,0.3);
+      color: white;
+      box-shadow: none;
+      margin-left: 10px;
+    }
+    .btn-ghost:hover { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.5); }
+
+    /* Metrics bar */
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin: -36px 0 36px;
+    }
+    .metric {
+      background: var(--surface);
+      padding: 22px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      text-align: center;
+      box-shadow: 0 6px 18px rgba(15,23,42,0.06);
+    }
+    .metric .number {
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--primary);
+      letter-spacing: -0.02em;
+    }
+    .metric .label {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 600;
+    }
+
+    /* Sections */
+    .section {
+      background: var(--surface);
+      padding: 32px;
+      border-radius: 16px;
+      margin-bottom: 22px;
+      border: 1px solid var(--border);
+      box-shadow: 0 2px 0 rgba(0,0,0,0.02);
+    }
+    .section h2 {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: var(--primary);
+      letter-spacing: -0.01em;
+    }
+    .section p, .section li {
+      font-size: 15px;
+      color: var(--text-muted);
+    }
+    .section ul { padding-left: 22px; margin-top: 8px; }
+    .section li { margin: 6px 0; }
+
+    /* Latest newsletter */
+    .latest-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+      margin-top: 14px;
+    }
+    .latest-link {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 16px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      text-decoration: none;
+      color: var(--text);
+      background: var(--surface-alt);
+      transition: border-color 0.15s ease, background 0.15s ease;
+    }
+    .latest-link:hover { border-color: var(--accent); background: white; }
+    .latest-link .icon {
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-items: center;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      font-size: 18px;
+    }
+    .latest-link .meta strong { display: block; color: var(--primary); font-size: 14px; }
+    .latest-link .meta span { font-size: 12px; color: var(--text-muted); }
+
+    /* Pricing */
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      align-items: stretch;
+    }
+    .plan {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 26px;
+      position: relative;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .plan:hover { transform: translateY(-3px); box-shadow: 0 16px 30px rgba(15,23,42,0.10); }
+    .plan.featured {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 1px var(--accent), 0 12px 28px rgba(59,130,246,0.18);
+    }
+    .plan .tag {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--accent);
+      color: white;
+      padding: 4px 16px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .plan h3 {
+      font-size: 18px;
+      color: var(--primary);
+      margin-bottom: 8px;
+      text-align: center;
+      font-weight: 700;
+    }
+    .plan .price {
+      font-size: 32px;
+      font-weight: 800;
+      color: var(--primary);
+      text-align: center;
+      margin-bottom: 4px;
+      letter-spacing: -0.03em;
+    }
+    .plan .price span {
+      font-size: 14px;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+    .plan ul {
+      list-style: none;
+      padding: 0;
+      margin: 18px 0 22px;
+    }
+    .plan li {
+      padding: 7px 0;
+      font-size: 13px;
+      color: var(--text-muted);
+      border-bottom: 1px dashed var(--border);
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    .plan li:last-child { border-bottom: none; }
+    .plan li::before {
+      content: "✓";
+      color: var(--success);
+      font-weight: 700;
+      margin-top: 1px;
+    }
+    .plan .btn { width: 100%; }
+    .plan .btn-ghost {
+      background: transparent;
+      color: var(--accent);
+      border: 1.5px solid var(--accent);
+      box-shadow: none;
+      font-weight: 600;
+    }
+    .plan .btn-ghost:hover { background: #eff6ff; }
+
+    /* API block */
+    code {
+      background: #f1f5f9;
+      padding: 2px 6px;
+      border-radius: 6px;
+      font-size: 13px;
+      color: #0f172a;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* How it works */
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin-top: 14px;
+    }
+    .step {
+      background: var(--surface-alt);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px;
+    }
+    .step .num {
+      display: inline-grid;
+      place-items: center;
+      width: 28px;
+      height: 28px;
+      background: var(--accent);
+      color: white;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .step strong { display: block; color: var(--primary); font-size: 14px; margin-bottom: 4px; }
+    .step p { font-size: 13px; color: var(--text-muted); margin: 0; }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 40px 0 64px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    footer a { color: var(--text-muted); }
+    footer a:hover { color: var(--text); }
+
+    @media (max-width: 860px) {
+      .metrics { grid-template-columns: repeat(2, 1fr); margin-top: 24px; }
+      .pricing-grid { grid-template-columns: 1fr; }
+      .steps { grid-template-columns: 1fr 1fr; }
+      header h1 { font-size: 30px; }
+    }
+    @media (max-width: 540px) {
+      .latest-grid { grid-template-columns: 1fr; }
+      .steps { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
-  <div class="container">
-    <header>
+  <header>
+    <div class="container">
       <div class="badge">🤖 AI-Powered • Zero Cost</div>
       <h1>🛡️ Daily Threat Intel Feed</h1>
       <p>Automated cybersecurity threat intelligence from 9 leading news sources. Filtered, scored, MITRE-tagged, and delivered daily.</p>
       <a href="#subscribe" class="btn">Subscribe Free</a>
-      <a href="https://github.com/ara-5/Money-Threat-intel" class="btn btn-outline" style="margin-left:8px;">View on GitHub</a>
-    </header>
+      <a href="https://github.com/ara-5/Money-Threat-intel" class="btn btn-ghost">View on GitHub</a>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="metrics">
+      <div class="metric">
+        <div class="number">9</div>
+        <div class="label">RSS Sources</div>
+      </div>
+      <div class="metric">
+        <div class="number">22</div>
+        <div class="label">Threat Keywords</div>
+      </div>
+      <div class="metric">
+        <div class="number">$0</div>
+        <div class="label">Cost / Month</div>
+      </div>
+      <div class="metric">
+        <div class="number">07:00</div>
+        <div class="label">UTC Delivery</div>
+      </div>
+    </div>
 
     <div class="section" id="latest">
       <h2>📰 Latest Newsletter</h2>
-      <p>The daily briefing is generated automatically and published here:</p>
-      <ul>
-        <li><a href="newsletter/latest.md">📄 Today's Markdown (Substack-ready)</a></li>
-        <li><a href="newsletter/latest.html">🌐 Today's HTML</a></li>
-      </ul>
-      <p style="margin-top:12px;">Or browse the archive: <a href="https://github.com/ara-5/Money-Threat-intel/tree/main/docs/newsletter">All past issues →</a></p>
+      <p>Daily briefings are generated automatically and published here:</p>
+      <div class="latest-grid">
+        <a href="newsletter/latest.md" class="latest-link">
+          <div class="icon">📄</div>
+          <div class="meta">
+            <strong>Today’s Markdown</strong>
+            <span>Copy-paste ready for Substack</span>
+          </div>
+        </a>
+        <a href="newsletter/latest.html" class="latest-link">
+          <div class="icon">🌐</div>
+          <div class="meta">
+            <strong>Today’s HTML</strong>
+            <span>Renderable newsletter</span>
+          </div>
+        </a>
+      </div>
+      <p style="margin-top:12px;">Browse the archive: <a href="https://github.com/ara-5/Money-Threat-intel/tree/main/docs/newsletter">All past issues →</a></p>
     </div>
 
     <div class="section" id="subscribe">
       <h2>💳 Subscription Plans</h2>
-      <div class="grid">
-        <div class="card">
-          <h2>Free</h2>
+      <div class="pricing-grid">
+        <div class="plan">
+          <h3>Free</h3>
           <div class="price">$0<span>/month</span></div>
           <ul>
             <li>Weekly digest via email</li>
             <li>Public JSON API access</li>
-            <li>GitHub Issues keyword subscriptions</li>
+            <li>GitHub Issues subscriptions</li>
             <li>Basic threat severity scores</li>
           </ul>
-          <a href="https://github.com/ara-5/Money-Threat-intel/issues/new?template=subscribe.yml" class="btn btn-outline">Sign Up Free</a>
+          <a href="https://github.com/ara-5/Money-Threat-intel/issues/new?template=subscribe.yml" class="btn btn-ghost">Sign Up Free</a>
         </div>
-        <div class="card" style="border:2px solid #1a73e8;">
-          <div style="background:#1a73e8;color:white;padding:4px 12px;border-radius:12px;display:inline-block;font-size:12px;margin-bottom:8px;">RECOMMENDED</div>
-          <h2>Premium</h2>
+        <div class="plan featured">
+          <div class="tag">Recommended</div>
+          <h3>Premium</h3>
           <div class="price">$9<span>/month</span></div>
           <ul>
             <li>Daily digest via email</li>
@@ -80,47 +412,60 @@
           </ul>
           <a href="https://github.com/ara-5/Money-Threat-intel/issues/new?template=subscribe.yml" class="btn">Subscribe — $9/mo</a>
         </div>
-        <div class="card">
-          <h2>Pro API</h2>
+        <div class="plan">
+          <h3>Pro API</h3>
           <div class="price">$15<span>/month</span></div>
           <ul>
             <li>Unlimited API calls</li>
             <li>Historical data search</li>
-            <li>Webhook integrations (PagerDuty, Teams)</li>
-            <li>Extended RSS feeds (20+ sources)</li>
+            <li>Webhook integrations</li>
+            <li>Extended RSS feeds (20+)</li>
             <li>White-label JSON export</li>
           </ul>
-          <a href="https://github.com/ara-5/Money-Threat-intel/issues/new?template=subscribe.yml" class="btn btn-outline">Subscribe — $15/mo</a>
+          <a href="https://github.com/ara-5/Money-Threat-intel/issues/new?template=subscribe.yml" class="btn btn-ghost">Subscribe — $15/mo</a>
         </div>
       </div>
     </div>
 
     <div class="section" id="how-it-works">
       <h2>⚙️ How It Works</h2>
-      <ul>
-        <li><strong>Data Collection</strong> — 9 free RSS feeds (The Hacker News, BleepingComputer, Krebs on Security, CISA, etc.)</li>
-        <li><strong>Deduplication</strong> — SQLite tracks seen articles; no duplicates</li>
-        <li><strong>Filtering</strong> — 22 threat keywords (ransomware, RCE, CVE, APT, etc.)</li>
-        <li><strong>Severity Scoring</strong> — Critical / High / Medium / Low heuristic engine</li>
-        <li><strong>MITRE Tagging</strong> — Auto-maps to ATT&CK tactics (Initial Access, Execution, Impact...)</li>
-        <li><strong>AI Summary</strong> — Llama 3 70B via Groq free API generates analyst-style briefing</li>
-        <li><strong>Distribution</strong> — Discord/Slack webhooks + email + Substack copy-paste</li>
-      </ul>
+      <div class="steps">
+        <div class="step">
+          <div class="num">1</div>
+          <strong>Collect</strong>
+          <p>9 free RSS feeds (THN, BleepingComputer, Krebs, CISA, etc.)</p>
+        </div>
+        <div class="step">
+          <div class="num">2</div>
+          <strong>Filter &amp; Score</strong>
+          <p>22 threat keywords + Critical/High/Medium/Low severity</p>
+        </div>
+        <div class="step">
+          <div class="num">3</div>
+          <strong>Summarize</strong>
+          <p>Llama 3 via Groq free API; fallback heuristic if offline</p>
+        </div>
+        <div class="step">
+          <div class="num">4</div>
+          <strong>Distribute</strong>
+          <p>Discord/Slack/Email + Substack copy-paste newsletter</p>
+        </div>
+      </div>
     </div>
 
     <div class="section">
       <h2>🔌 Free Public API</h2>
       <p>Every report is committed to <code>docs/</code> and served via GitHub Pages:</p>
       <ul>
-        <li><code>https://ara-5.github.io/Money-Threat-intel/latest.json</code> — always current</li>
-        <li><code>https://ara-5.github.io/Money-Threat-intel/report_YYYY-MM-DD.json</code> — archive</li>
+        <li><a href="https://ara-5.github.io/Money-Threat-intel/latest.json">https://ara-5.github.io/Money-Threat-intel/latest.json</a> — always current</li>
+        <li><a href="https://ara-5.github.io/Money-Threat-intel/report_YYYY-MM-DD.json">https://ara-5.github.io/Money-Threat-intel/report_YYYY-MM-DD.json</a> — archive</li>
       </ul>
     </div>
 
     <div class="section">
       <h2>📧 Managing Your Subscription</h2>
       <p>Subscriptions are managed via GitHub Issues:</p>
-      <ol style="padding-left:20px;color:#555;font-size:14px;">
+      <ol style="padding-left:20px;color:var(--text-muted);font-size:14px;margin-top:10px;">
         <li>Go to the <a href="https://github.com/ara-5/Money-Threat-intel/issues/new?template=subscribe.yml">Subscribe issue template</a></li>
         <li>Fill in your email and keywords (e.g. <code>microsoft</code>, <code>cve-2025</code>, <code>ransomware</code>)</li>
         <li>The bot processes it and adds you to the daily newsletter</li>
