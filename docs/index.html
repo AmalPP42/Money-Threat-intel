@@ -123,28 +123,40 @@
       gap: 16px;
       margin: -36px 0 36px;
     }
-    .metric {
-      background: var(--surface);
-      padding: 22px;
-      border-radius: 14px;
-      border: 1px solid var(--border);
-      text-align: center;
-      box-shadow: 0 6px 18px rgba(15,23,42,0.06);
-    }
+     .metric {
+       background: var(--surface);
+       padding: 22px;
+       border-radius: 14px;
+       border: 1px solid var(--border);
+       text-align: center;
+       box-shadow: 0 6px 18px rgba(15,23,42,0.06);
+       transition: transform 0.2s ease, box-shadow 0.2s ease;
+     }
+     .metric:hover {
+       transform: translateY(-2px);
+       box-shadow: 0 8px 24px rgba(15,23,42,0.12);
+     }
     .metric .number {
       font-size: 28px;
       font-weight: 800;
       color: var(--primary);
       letter-spacing: -0.02em;
     }
-    .metric .label {
-      font-size: 12px;
-      color: var(--text-muted);
-      margin-top: 4px;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      font-weight: 600;
-    }
+     .metric .label {
+       font-size: 12px;
+       color: var(--text-muted);
+       margin-top: 4px;
+       text-transform: uppercase;
+       letter-spacing: 0.08em;
+       font-weight: 600;
+     }
+     .metric .metric-icon {
+       font-size: 24px;
+       margin-bottom: 8px;
+       display: block;
+       opacity: 0.9;
+       color: var(--accent);
+     }
 
     /* Sections */
     .section {
@@ -305,12 +317,17 @@
       gap: 14px;
       margin-top: 14px;
     }
-    .step {
-      background: var(--surface-alt);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 18px;
-    }
+     .step {
+       background: var(--surface-alt);
+       border: 1px solid var(--border);
+       border-radius: 12px;
+       padding: 18px;
+       transition: transform 0.2s ease, box-shadow 0.2s ease;
+     }
+     .step:hover {
+       transform: translateY(-2px);
+       box-shadow: 0 8px 24px rgba(15,23,42,0.12);
+     }
     .step .num {
       display: inline-grid;
       place-items: center;
@@ -382,11 +399,15 @@
       from { opacity: 0; }
       to { opacity: 1; }
     }
-    @keyframes pulse {
-      0%,100% { opacity: 1; transform: scale(1); }
-      50% { opacity: .7; transform: scale(0.97); }
-    }
-    .reveal {
+     @keyframes pulse {
+       0%,100% { opacity: 1; transform: scale(1); }
+       50% { opacity: .7; transform: scale(0.97); }
+     }
+     .shield-icon {
+       display: inline-block;
+       animation: pulse 3.5s ease-in-out infinite;
+     }
+     .reveal {
       opacity: 0;
       transform: translateY(24px);
       transition: opacity 0.7s cubic-bezier(0.2,0.8,0.2,1), transform 0.7s cubic-bezier(0.2,0.8,0.2,1);
@@ -454,48 +475,42 @@
       });
     })();
 
-    // Scroll reveal
-    (function() {
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('is-visible');
-          }
-        });
-      }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
-      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-    })();
+
   </script>
   <header>
     <div class="container">
-      <div style="display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;">
-        <h1 style="margin:0;">🛡️ Daily Threat Intel Feed</h1>
-        <button id="theme-toggle" aria-label="Toggle theme" style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.25);color:white;border-radius:8px;padding:6px 10px;cursor:pointer;font-size:16px;line-height:1;">🌙</button>
-      </div>
+       <div style="display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;">
+         <h1 style="margin:0;"><span class="shield-icon">🛡️</span> Daily Threat Intel Feed</h1>
+         <button id="theme-toggle" aria-label="Toggle theme" style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.25);color:white;border-radius:8px;padding:6px 10px;cursor:pointer;font-size:16px;line-height:1;">🌙</button>
+       </div>
       <p style="opacity:0.9;font-size:17px;max-width:720px;margin:14px auto 28px;color:#cbd5e1;">Automated cybersecurity threat intelligence from leading news sources. Filtered, scored, MITRE-tagged, and delivered daily.</p>
       <a href="#subscribe" class="btn">Subscribe Free</a>
     </div>
   </header>
 
     <div class="container">
-    <div class="metrics reveal">
-      <div class="metric">
-        <div class="number">9</div>
-        <div class="label">RSS Sources</div>
-      </div>
-      <div class="metric">
-        <div class="number">22</div>
-        <div class="label">Threat Keywords</div>
-      </div>
-      <div class="metric">
-        <div class="number">10</div>
-        <div class="label">MITRE Tactics</div>
-      </div>
-      <div class="metric">
-        <div class="number">07:00</div>
-        <div class="label">UTC Delivery</div>
-      </div>
-    </div>
+     <div class="metrics reveal">
+       <div class="metric">
+         <div class="metric-icon">📡</div>
+         <div class="number">9</div>
+         <div class="label">RSS Sources</div>
+       </div>
+       <div class="metric">
+         <div class="metric-icon">🔍</div>
+         <div class="number">22</div>
+         <div class="label">Threat Keywords</div>
+       </div>
+       <div class="metric">
+         <div class="metric-icon">⚔️</div>
+         <div class="number">10</div>
+         <div class="label">MITRE Tactics</div>
+       </div>
+       <div class="metric">
+         <div class="metric-icon">⏰</div>
+         <div class="number">07:00</div>
+         <div class="label">UTC Delivery</div>
+       </div>
+     </div>
 
     <div class="section reveal" id="latest">
       <h2>📰 Latest Newsletter</h2>
@@ -606,9 +621,21 @@
       </ol>
     </div>
 
-    <footer>
-      <p>Open source under MIT license. <a href="https://github.com/ara-5/Money-Threat-intel">GitHub</a> • <a href="#">Substack</a> • <a href="mailto:">Contact</a></p>
-    </footer>
-  </div>
-</body>
+     <footer>
+        <p>Open source under MIT license. <a href="https://github.com/ara-5/Money-Threat-intel">GitHub</a> • <a href="#">Substack</a> • <a href="https://github.com/ara-5/Money-Threat-intel/issues">Contact</a></p>
+     </footer>
+   </div>
+   <script>
+     // Scroll reveal
+     (function() {
+       const observer = new IntersectionObserver((entries) => {
+         entries.forEach(entry => {
+           if (entry.isIntersecting) {
+             entry.target.classList.add('is-visible');
+           }
+         });
+       }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+       document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+     })();
+ </body>
 </html>
