@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Threat Intel Feed — Daily Cybersecurity Briefings</title>
-  <meta name="description" content="Free daily threat intelligence digest. Zero-cost AI-powered cybersecurity news monitoring from 9 leading sources.">
+  <meta name="description" content="...">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
   <style>
     :root {
       --primary: #0f172a;
@@ -28,6 +29,17 @@
       background: var(--surface-alt);
     }
     .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+    /* Matrix rain */
+    #matrix-bg {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      pointer-events: none;
+      opacity: 0.12;
+    }
+    #matrix-bg canvas { width: 100%; height: 100%; }
+    html.dark #matrix-bg { opacity: 0.18; }
 
     /* Hero */
     header {
@@ -60,6 +72,7 @@
       color: #cbd5e1;
       margin-bottom: 18px;
       backdrop-filter: blur(4px);
+      animation: fadeInDown 0.8s ease-out;
     }
     header h1 {
       font-size: 44px;
@@ -67,6 +80,7 @@
       letter-spacing: -0.02em;
       line-height: 1.15;
       margin-bottom: 14px;
+      animation: fadeInUp 0.8s ease-out 0.1s both;
     }
     header p {
       opacity: 0.9;
@@ -74,6 +88,7 @@
       max-width: 720px;
       margin: 0 auto 28px;
       color: #cbd5e1;
+      animation: fadeInUp 0.8s ease-out 0.2s both;
     }
     .btn {
       display: inline-flex;
@@ -88,6 +103,7 @@
       font-size: 15px;
       transition: transform 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
       box-shadow: 0 1px 0 rgba(0,0,0,0.15), 0 8px 20px rgba(59,130,246,0.25);
+      animation: fadeInUp 0.8s ease-out 0.3s both;
     }
     .btn:hover { background: var(--accent-dark); transform: translateY(-1px); }
     .btn:active { transform: translateY(0); }
@@ -352,10 +368,77 @@
     html.dark code { background: #0f172a; color: #e2e8f0; }
     html.dark footer a { color: var(--text-muted); }
     html.dark footer a:hover { color: var(--text); }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes pulse {
+      0%,100% { opacity: 1; transform: scale(1); }
+      50% { opacity: .7; transform: scale(0.97); }
+    }
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.7s cubic-bezier(0.2,0.8,0.2,1), transform 0.7s cubic-bezier(0.2,0.8,0.2,1);
+    }
+    .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    html.dark .reveal { transform: translateY(24px); }
+    .metric { animation: fadeIn 0.6s ease-out both; }
+    .metric:nth-child(1) { animation-delay: 0.05s; }
+    .metric:nth-child(2) { animation-delay: 0.1s; }
+    .metric:nth-child(3) { animation-delay: 0.15s; }
+    .metric:nth-child(4) { animation-delay: 0.2s; }
+    .plan.featured { animation: pulse 3s ease-in-out infinite; }
   </style>
 </head>
 <body>
+  <div id="matrix-bg"><canvas id="matrix-canvas"></canvas>  </div>
   <script>
+    // Matrix rain effect
+    (function() {
+      const canvas = document.getElementById('matrix-canvas');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+      let w, h, drops = [];
+      const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%&*<>';
+      const fontSize = 14;
+      function resize() {
+        const rect = canvas.parentElement.getBoundingClientRect();
+        w = canvas.width = rect.width || window.innerWidth;
+        h = canvas.height = rect.height || window.innerHeight;
+        drops = Array(Math.floor(w / fontSize)).fill(0);
+      }
+      window.addEventListener('resize', resize);
+      resize();
+      function draw() {
+        ctx.fillStyle = 'rgba(0,0,0,0.08)';
+        ctx.fillRect(0, 0, w, h);
+        ctx.fillStyle = '#22c55e';
+        ctx.font = fontSize + 'px monospace';
+        for (let i = 0; i < drops.length; i++) {
+          const text = chars[Math.floor(Math.random() * chars.length)];
+          ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+          if (drops[i] * fontSize > h && Math.random() > 0.975) drops[i] = 0;
+          drops[i]++;
+        }
+      }
+      setInterval(draw, 50);
+    })();
+
+    // Theme toggle
     (function() {
       const key = 'threat-intel-theme';
       const html = document.documentElement;
@@ -370,6 +453,18 @@
         btn.textContent = html.classList.contains('dark') ? '☀️' : '🌙';
       });
     })();
+
+    // Scroll reveal
+    (function() {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+          }
+        });
+      }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    })();
   </script>
   <header>
     <div class="container">
@@ -382,8 +477,8 @@
     </div>
   </header>
 
-  <div class="container">
-    <div class="metrics">
+    <div class="container">
+    <div class="metrics reveal">
       <div class="metric">
         <div class="number">9</div>
         <div class="label">RSS Sources</div>
@@ -402,10 +497,10 @@
       </div>
     </div>
 
-    <div class="section" id="latest">
+    <div class="section reveal" id="latest">
       <h2>📰 Latest Newsletter</h2>
       <p>Daily briefings are generated automatically and published here:</p>
-      <div class="latest-grid">
+      <div class="latest-grid reveal">
         <a href="newsletter/latest.md" class="latest-link">
           <div class="icon">📄</div>
           <div class="meta">
@@ -424,10 +519,10 @@
       <p style="margin-top:12px;">Browse the archive: <a href="https://github.com/ara-5/Money-Threat-intel/tree/main/docs/newsletter">All past issues →</a></p>
     </div>
 
-    <div class="section" id="subscribe">
+    <div class="section reveal" id="subscribe">
       <h2>💳 Subscription Plans</h2>
-      <div class="pricing-grid">
-        <div class="plan">
+      <div class="pricing-grid reveal">
+        <div class="plan reveal">
           <h3>Free</h3>
           <div class="price">$0<span>/month</span></div>
           <ul>
@@ -438,7 +533,7 @@
           </ul>
           <a href="https://github.com/ara-5/Money-Threat-intel/issues/new?template=subscribe.yml" class="btn btn-ghost">Sign Up Free</a>
         </div>
-        <div class="plan featured">
+        <div class="plan featured reveal">
           <div class="tag">Recommended</div>
           <h3>Premium</h3>
           <div class="price">$9<span>/month</span></div>
@@ -451,7 +546,7 @@
           </ul>
           <a href="https://github.com/ara-5/Money-Threat-intel/issues/new?template=subscribe.yml" class="btn">Subscribe — $9/mo</a>
         </div>
-        <div class="plan">
+        <div class="plan reveal">
           <h3>Pro API</h3>
           <div class="price">$15<span>/month</span></div>
           <ul>
@@ -466,25 +561,25 @@
       </div>
     </div>
 
-    <div class="section" id="how-it-works">
+    <div class="section reveal" id="how-it-works">
       <h2>⚙️ How It Works</h2>
-      <div class="steps">
-        <div class="step">
+      <div class="steps reveal">
+        <div class="step reveal">
           <div class="num">1</div>
           <strong>Collect</strong>
           <p>9 free RSS feeds (THN, BleepingComputer, Krebs, CISA, etc.)</p>
         </div>
-        <div class="step">
+        <div class="step reveal">
           <div class="num">2</div>
           <strong>Filter &amp; Score</strong>
           <p>22 threat keywords + Critical/High/Medium/Low severity</p>
         </div>
-        <div class="step">
+        <div class="step reveal">
           <div class="num">3</div>
           <strong>Summarize</strong>
           <p>Llama 3 via Groq free API; fallback heuristic if offline</p>
         </div>
-        <div class="step">
+        <div class="step reveal">
           <div class="num">4</div>
           <strong>Distribute</strong>
           <p>Discord/Slack/Email + Substack copy-paste newsletter</p>
@@ -492,7 +587,7 @@
       </div>
     </div>
 
-    <div class="section">
+    <div class="section reveal">
       <h2>🔌 Free Public API</h2>
       <p>Every report is committed to <code>docs/</code> and served via GitHub Pages:</p>
       <ul>
@@ -501,7 +596,7 @@
       </ul>
     </div>
 
-    <div class="section">
+    <div class="section reveal">
       <h2>📧 Managing Your Subscription</h2>
       <p>Subscriptions are managed via GitHub Issues:</p>
       <ol style="padding-left:20px;color:var(--text-muted);font-size:14px;margin-top:10px;">
