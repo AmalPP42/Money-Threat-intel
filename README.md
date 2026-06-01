@@ -86,6 +86,11 @@ Go to your forked repo → **Settings → Secrets and variables → Actions → 
 | `GROQ_API_KEY` | Your Groq key from step 2 |
 | `DISCORD_WEBHOOK` | Your Discord webhook URL from step 3 |
 | `SLACK_WEBHOOK` | *(Optional)* Your Slack incoming webhook |
+| `SMTP_USER` | *(Optional)* SMTP username for email newsletters |
+| `SMTP_PASS` | *(Optional)* SMTP password for email newsletters |
+| `SMTP_SERVER` | *(Optional)* SMTP server (e.g., smtp.gmail.com) |
+| `SMTP_PORT` | *(Optional)* SMTP port (default: 587) |
+| `NEWSLETTER_DIR` | *(Optional)* Newsletter output directory (default: docs/newsletter) |
 
 ### 5. Enable Actions
 
@@ -99,7 +104,7 @@ That's it. The pipeline runs every day at 07:00 UTC automatically.
 git clone https://github.com/ara-5/Money-Threat-intel
 cd Money-Threat-intel
 pip install -r requirements.txt
-cp .env.example .env   # fill in your keys
+cp .env.example .env   # fill in your keys (including SMTP for email newsletters)
 python threat_intel.py
 ```
 
