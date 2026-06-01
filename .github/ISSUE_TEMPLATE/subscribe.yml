@@ -1,0 +1,28 @@
+name: Subscribe to newsletter
+description: Get daily cybersecurity threat intelligence via email.
+title: "[Subscribe] Your email and keywords"
+labels: subscription
+body:
+  - type: input
+    id: email
+    attributes:
+      label: Email address
+      placeholder: you@example.com
+    validations:
+      required: true
+  - type: input
+    id: tier
+    attributes:
+      label: Plan
+      description: Choose Free, Premium ($9/mo), or Pro API ($15/mo)
+      default: Free
+    validations:
+      required: true
+  - type: input
+    id: keywords
+    attributes:
+      label: Keywords
+      description: Comma-separated keywords to watch (e.g. microsoft, ransomware, cve-2025)
+      placeholder: microsoft, ransomware, cve-2025
+    validations:
+      required: false
