@@ -11,6 +11,7 @@ import requests
 import os
 import sqlite3
 import json
+import base64
 import logging
 from datetime import datetime, timedelta, timezone
 from typing import Optional
@@ -532,18 +533,18 @@ def send_email(to_addr: str, subject: str, html_body: str):
 
 
 def send_newsletter_emails(html_body: str, articles: list[dict]):
-    """Send newsletter HTML to all subscribers loaded from subscribers.json."""
-    subs_path = os.path.join("docs", "subscribers.json")
-    if not os.path.exists(subs_path):
-        log.info("No subscribers.json found — skipping email broadcast.")
+    """Send newsletter HTML to all subscribers loaded from env var SUBSCRIBERS_JSON_B64."""
+    subs_b64 = os.getenv("SUBSCRIBERS_JSON_B64")
+    if not subs_b64:
+        log.info("SUBSCRIBERS_JSON_B64 not set — skipping email broadcast.")
         return
 
     try:
-        with open(subs_path, "r", encoding="utf-8") as f:
-            subs_data = json.load(f)
+        subs_json = base64.b64decode(subs_b64).decode("utf-8")
+        subs_data = json.loads(subs_json)
         subscribers = subs_data.get("subscribers", [])
     except Exception as e:
-        log.error("Failed to load subscribers.json: %s", e)
+        log.error("Failed to load subscribers from SUBSCRIBERS_JSON_B64: %s", e)
         return
 
     date_str = datetime.now(timezone.utc).strftime("%B %d, %Y")

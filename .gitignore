@@ -20,3 +20,6 @@ htmlcov/
 # OS
 Thumbs.db
 .DS_Store
+
+# Subscriber list (security risk)
+docs/subscribers.json
