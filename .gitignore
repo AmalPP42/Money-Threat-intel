@@ -1,0 +1,22 @@
+# Environment / secrets
+.env
+.env.*
+*.db
+
+# Generated / runtime artifacts
+seen_articles.db
+*.pyc
+__pycache__/
+
+# Testing
+.pytest_cache/
+htmlcov/
+.coverage
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store

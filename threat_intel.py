@@ -242,6 +242,7 @@ def summarize(articles: list[dict]) -> str:
 # ── Discord Output ────────────────────────────────────────────────────────────
 SEVERITY_COLORS = {"critical": 0xFF0000, "high": 0xFF8C00, "medium": 0xFFD700, "low": 0x00BFFF}
 SEVERITY_EMOJI  = {"critical": "🔴", "high": "🟠", "medium": "🟡", "low": "🔵"}
+NEWSLETTER_DIR = os.getenv("NEWSLETTER_DIR", "docs/newsletter")
 
 def send_to_discord(summary: str, articles: list[dict]):
     if not DISCORD_WEBHOOK:
@@ -360,6 +361,204 @@ def save_json_report(summary: str, articles: list[dict]):
         json.dump(report, f, indent=2)
 
 
+# ── Newsletter Output ──────────────────────────────────────────────────────────
+def generate_newsletter(summary: str, articles: list[dict]) -> tuple[str, str]:
+    """Generate markdown (Substack-ready) and HTML newsletter versions.
+
+    Returns (markdown, html) strings saved to docs/newsletter/.
+    """
+    date_str = datetime.now(timezone.utc).strftime("%B %d, %Y")
+    file_date = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    os.makedirs(NEWSLETTER_DIR, exist_ok=True)
+
+    severity_order = {"critical": 0, "high": 1, "medium": 2, "low": 3}
+    sorted_articles = sorted(articles, key=lambda a: severity_order[score_severity(a)])
+
+    # ── Markdown (Substack copy-paste) ────────────────────────────────────────
+    md_lines = [
+        f"# 🛡️ Daily Threat Intel — {date_str}",
+        "",
+        "> **Automated daily briefing** covering the most critical cybersecurity ",
+        "> threats from 9 leading security news sources.",
+        "",
+        "---",
+        "",
+        "## 📊 Analyst Briefing",
+        "",
+    ]
+    for line in summary.split("\n"):
+        md_lines.append(line)
+    md_lines.append("")
+    md_lines.append("---")
+    md_lines.append("")
+    md_lines.append("## 🔍 Top Threats")
+    md_lines.append("")
+
+    for art in sorted_articles[:10]:
+        sev = score_severity(art)
+        emoji = SEVERITY_EMOJI.get(sev, "⚪")
+        tactics = ", ".join(art.get("mitre_tactics", [])) or "—"
+        keywords = ", ".join(art.get("matched_keywords", [])[:5]) or "—"
+        md_lines.extend([
+            f"### {emoji} {art['title']}",
+            "",
+            f"- **Source**: {art['source']}",
+            f"- **Severity**: {sev.upper()}",
+            f"- **MITRE Tactics**: {tactics}",
+            f"- **Keywords**: {keywords}",
+            f"- **Link**: [{art['link']}]({art['link']})",
+            "",
+            art.get("summary", "")[:300],
+            "",
+            "---",
+            "",
+        ])
+
+    markdown = "\n".join(md_lines)
+
+    # ── HTML (renderable, email-compatible) ───────────────────────────────────
+    severity_bg = {"critical": "#ff4d4d", "high": "#ff8c00", "medium": "#ffd700", "low": "#87ceeb"}
+    severity_fg = {"critical": "#fff", "high": "#fff", "medium": "#333", "low": "#333"}
+
+    article_rows = []
+    for art in sorted_articles[:10]:
+        sev = score_severity(art)
+        emoji = SEVERITY_EMOJI.get(sev, "⚪")
+        bg = severity_bg.get(sev, "#ccc")
+        fg = severity_fg.get(sev, "#000")
+        tactics = ", ".join(art.get("mitre_tactics", [])) or "—"
+        keywords = ", ".join(art.get("matched_keywords", [])[:5]) or "—"
+        article_rows.append(f"""
+        <tr>
+          <td style="padding:16px;border-bottom:1px solid #eee;vertical-align:top;">
+            <div style="font-size:20px;margin-bottom:6px;">{emoji}</div>
+            <div style="font-size:14px;font-weight:bold;margin-bottom:4px;">
+              <a href="{art['link']}" style="color:#1a73e8;text-decoration:none;">{art['title']}</a>
+            </div>
+            <div style="font-size:12px;color:#666;margin-bottom:8px;">{art['source']}</div>
+            <span style="display:inline-block;padding:2px 10px;border-radius:12px;background:{bg};color:{fg};font-size:11px;font-weight:bold;">{sev.upper()}</span>
+            <div style="font-size:12px;color:#555;margin-top:8px;">
+              <strong>MITRE:</strong> {tactics} &nbsp;|&nbsp; <strong>Keywords:</strong> {keywords}
+            </div>
+          </td>
+        </tr>""")
+
+    html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Threat Intel — {date_str}</title>
+  <style>
+    body {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 720px; margin: 0 auto; padding: 24px; background: #f9f9f9; }}
+    .header {{ background: linear-gradient(135deg, #1a73e8, #0d47a1); color: white; padding: 28px 32px; border-radius: 12px; margin-bottom: 28px; }}
+    .header h1 {{ margin: 0; font-size: 22px; }}
+    .header p {{ margin: 8px 0 0; opacity: 0.9; font-size: 13px; }}
+    .summary {{ background: white; padding: 20px 24px; border-radius: 10px; border-left: 4px solid #1a73e8; margin-bottom: 28px; white-space: pre-wrap; font-size: 14px; }}
+    table {{ width: 100%; border-collapse: collapse; background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }}
+    td {{ padding: 16px 20px; border-bottom: 1px solid #f0f0f0; }}
+    tr:last-child td {{ border-bottom: none; }}
+    .footer {{ margin-top: 32px; text-align: center; font-size: 12px; color: #999; }}
+    a {{ word-break: break-all; }}
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>🛡️ Daily Threat Intel — {date_str}</h1>
+    <p>Automated daily briefing from 9 leading security news sources.</p>
+  </div>
+  <div class="summary">{summary.replace(chr(10), "<br>")}</div>
+  <table>
+    <tbody>{"".join(article_rows)}</tbody>
+  </table>
+  <div class="footer">
+    Generated automatically on {date_str} UTC.<br>
+    <a href="https://github.com/ara-5/Money-Threat-intel" style="color:#1a73e8;">Threat Intel Feed</a>
+  </div>
+</body>
+</html>"""
+
+    # ── Save to disk ──────────────────────────────────────────────────────────
+    md_path = os.path.join(NEWSLETTER_DIR, f"{file_date}.md")
+    html_path = os.path.join(NEWSLETTER_DIR, f"{file_date}.html")
+
+    with open(md_path, "w", encoding="utf-8") as f:
+        f.write(markdown)
+    with open(html_path, "w", encoding="utf-8") as f:
+        f.write(html)
+
+    latest_md = os.path.join(NEWSLETTER_DIR, "latest.md")
+    latest_html = os.path.join(NEWSLETTER_DIR, "latest.html")
+    with open(latest_md, "w", encoding="utf-8") as f:
+        f.write(markdown)
+    with open(latest_html, "w", encoding="utf-8") as f:
+        f.write(html)
+
+    log.info("✓ Newsletter saved → %s + %s", md_path, html_path)
+    return markdown, html
+
+
+# ── Email Delivery (Gmail SMTP) ───────────────────────────────────────────────
+SMTP_SERVER = os.getenv("SMTP_SERVER", "smtp.gmail.com")
+SMTP_PORT   = int(os.getenv("SMTP_PORT", "587"))
+SMTP_USER   = os.getenv("SMTP_USER")
+SMTP_PASS   = os.getenv("SMTP_PASS")
+
+
+def send_email(to_addr: str, subject: str, html_body: str):
+    """Send a single email via Gmail SMTP. Requires SMTP_USER and SMTP_PASS env vars."""
+    if not SMTP_USER or not SMTP_PASS:
+        log.info("SMTP credentials not configured — skipping email to %s", to_addr)
+        return
+
+    from email.mime.text import MIMEText
+    from email.mime.multipart import MIMEMultipart
+    import smtplib
+
+    msg = MIMEMultipart("alternative")
+    msg["Subject"] = subject
+    msg["From"] = SMTP_USER
+    msg["To"] = to_addr
+    msg.attach(MIMEText(html_body, "html", "utf-8"))
+
+    try:
+        with smtplib.SMTP(SMTP_SERVER, SMTP_PORT) as server:
+            server.starttls()
+            server.login(SMTP_USER, SMTP_PASS)
+            server.sendmail(SMTP_USER, [to_addr], msg.as_string())
+        log.info("✓ Email sent to %s", to_addr)
+    except Exception as e:
+        log.error("✗ Email error for %s: %s", to_addr, e)
+
+
+def send_newsletter_emails(html_body: str, articles: list[dict]):
+    """Send newsletter HTML to all subscribers loaded from subscribers.json."""
+    subs_path = os.path.join("docs", "subscribers.json")
+    if not os.path.exists(subs_path):
+        log.info("No subscribers.json found — skipping email broadcast.")
+        return
+
+    try:
+        with open(subs_path, "r", encoding="utf-8") as f:
+            subs_data = json.load(f)
+        subscribers = subs_data.get("subscribers", [])
+    except Exception as e:
+        log.error("Failed to load subscribers.json: %s", e)
+        return
+
+    date_str = datetime.now(timezone.utc).strftime("%B %d, %Y")
+    subject = f"🛡️ Daily Threat Intel — {date_str}"
+    count = 0
+    for sub in subscribers:
+        email = sub.get("email")
+        tier = sub.get("tier", "free")
+        if not email:
+            continue
+        send_email(email, subject, html_body)
+        count += 1
+    log.info("✓ Email broadcast complete — %d emails sent", count)
+
+
 # ── Main ──────────────────────────────────────────────────────────────────────
 def main():
     log.info("=" * 60)
@@ -392,6 +591,8 @@ def main():
     send_to_discord(summary, filtered)
     send_to_slack(summary, filtered)
     save_json_report(summary, filtered)
+    newsletter_md, newsletter_html = generate_newsletter(summary, filtered)
+    send_newsletter_emails(newsletter_html, filtered)
 
     # Mark all as seen AFTER successful send
     for a in filtered:

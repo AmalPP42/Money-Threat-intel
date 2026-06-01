@@ -12,7 +12,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 from threat_intel import (
     init_db, is_seen, mark_seen, purge_old,
     filter_articles, detect_mitre, score_severity,
-    summarize_fallback,
+    summarize_fallback, generate_newsletter,
 )
 
 # ── DB tests ─────────────────────────────────────────────────────────────────
@@ -169,3 +169,4 @@ def test_fallback_summary_has_counts():
     articles = filter_articles(SAMPLE_ARTICLES)
     result = summarize_fallback(articles)
     assert "threat" in result.lower() or "detected" in result.lower()
+

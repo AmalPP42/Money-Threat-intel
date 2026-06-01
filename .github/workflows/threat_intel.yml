@@ -49,7 +49,7 @@ jobs:
           DB_PATH:          seen_articles.db
         run: python threat_intel.py
 
-      - name: Commit JSON reports to repository
+      - name: Commit JSON reports and newsletter to repository
         run: |
           git config user.name  "Threat Intel Bot"
           git config user.email "actions@github.com"

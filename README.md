@@ -21,8 +21,9 @@
 | **Severity Scoring** | Heuristic engine classifies every article as 🔴 Critical / 🟠 High / 🟡 Medium / 🔵 Low |
 | **MITRE ATT&CK Tagging** | Auto-maps articles to tactics: Initial Access, Execution, Impact, etc. |
 | **AI Summary** | Llama 3 70B via Groq free API — 120-word analyst-style daily briefing |
-| **Distribution** | Rich Discord embeds + optional Slack webhook |
+| **Distribution** | Rich Discord embeds + optional Slack webhook + email newsletter |
 | **JSON Archive** | Machine-readable report saved to `docs/` on every run — acts as a free REST API via GitHub Pages |
+| **Newsletter** | Markdown + HTML generated daily for Substack copy-paste or email delivery |
 | **Scheduling** | GitHub Actions cron — runs daily at 07:00 UTC, completely free |
 
 ---
