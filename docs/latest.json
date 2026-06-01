@@ -1,0 +1,193 @@
+{
+  "date": "2026-06-01T10:05:50.797186",
+  "summary": "\ud83d\udcca 15 threats detected today.\n\ud83d\udd34 CRITICAL (3): Critical WP Maps Pro Flaw Actively Exploited to Create Admin Accounts | PAN-OS GlobalProtect Authentication Bypass (CVE-2026-0257) Under Active Exploitation | Name That Toon: Mark of (Cybersecurity) Progress\n\ud83d\udfe0 HIGH (9): Dutch Authorities Dismantle Botnet Linked to 17 Million Infected Devices | Attackers Use LLM Agent for Post-Exploitation After Marimo CVE-2026-39987 Exploit | WP Maps Pro bug exploited to create admin accounts on WordPress sites\n\u26a0\ufe0f Review all articles below and patch accordingly.",
+  "articles": [
+    {
+      "title": "Critical WP Maps Pro Flaw Actively Exploited to Create Admin Accounts",
+      "link": "https://thehackernews.com/2026/06/critical-wp-maps-pro-flaw-actively.html",
+      "source": "The Hacker News",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Initial Access"
+      ],
+      "keywords": [
+        "exploit"
+      ]
+    },
+    {
+      "title": "Dutch Authorities Dismantle Botnet Linked to 17 Million Infected Devices",
+      "link": "https://thehackernews.com/2026/05/dutch-authorities-dismantle-botnet.html",
+      "source": "The Hacker News",
+      "severity": "high",
+      "mitre_tactics": [],
+      "keywords": [
+        "botnet"
+      ]
+    },
+    {
+      "title": "PAN-OS GlobalProtect Authentication Bypass (CVE-2026-0257) Under Active Exploitation",
+      "link": "https://thehackernews.com/2026/05/pan-os-globalprotect-authentication.html",
+      "source": "The Hacker News",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Initial Access"
+      ],
+      "keywords": [
+        "exploit",
+        "vulnerability",
+        "cve-"
+      ]
+    },
+    {
+      "title": "ChatGPhish Vulnerability Turns ChatGPT Web Summaries Into a Phishing Surface",
+      "link": "https://thehackernews.com/2026/05/chatgphish-vulnerability-turns-chatgpt.html",
+      "source": "The Hacker News",
+      "severity": "medium",
+      "mitre_tactics": [
+        "Initial Access"
+      ],
+      "keywords": [
+        "vulnerability",
+        "phishing"
+      ]
+    },
+    {
+      "title": "Attackers Use LLM Agent for Post-Exploitation After Marimo CVE-2026-39987 Exploit",
+      "link": "https://thehackernews.com/2026/05/attackers-use-llm-agent-for-post.html",
+      "source": "The Hacker News",
+      "severity": "high",
+      "mitre_tactics": [
+        "Initial Access",
+        "Credential Access"
+      ],
+      "keywords": [
+        "exploit",
+        "vulnerability",
+        "cve-",
+        "credential"
+      ]
+    },
+    {
+      "title": "Malicious Sicoob NuGet Steals Banking Credentials as npm Packages Target Cloud Secrets",
+      "link": "https://thehackernews.com/2026/05/malicious-sicoob-nuget-steals-banking.html",
+      "source": "The Hacker News",
+      "severity": "medium",
+      "mitre_tactics": [
+        "Initial Access",
+        "Credential Access"
+      ],
+      "keywords": [
+        "credential"
+      ]
+    },
+    {
+      "title": "WP Maps Pro bug exploited to create admin accounts on WordPress sites",
+      "link": "https://www.bleepingcomputer.com/news/security/wp-maps-pro-bug-exploited-to-create-admin-accounts-on-wordpress-sites/",
+      "source": "BleepingComputer",
+      "severity": "high",
+      "mitre_tactics": [
+        "Initial Access"
+      ],
+      "keywords": [
+        "exploit"
+      ]
+    },
+    {
+      "title": "Palo Alto GlobalProtect VPN auth bypass flaw now exploited in attacks",
+      "link": "https://www.bleepingcomputer.com/news/security/palo-alto-globalprotect-vpn-auth-bypass-flaw-now-exploited-in-attacks/",
+      "source": "BleepingComputer",
+      "severity": "high",
+      "mitre_tactics": [
+        "Initial Access"
+      ],
+      "keywords": [
+        "breach",
+        "exploit",
+        "cve-"
+      ]
+    },
+    {
+      "title": "New CIFSwitch Linux flaw gives root on multiple distributions",
+      "link": "https://www.bleepingcomputer.com/news/security/new-cifswitch-linux-flaw-gives-root-on-multiple-distributions/",
+      "source": "BleepingComputer",
+      "severity": "high",
+      "mitre_tactics": [
+        "Privilege Escalation"
+      ],
+      "keywords": [
+        "vulnerability",
+        "privilege escalation"
+      ]
+    },
+    {
+      "title": "ChatGPT share links abused to host fake outage pages to deliver malware",
+      "link": "https://www.bleepingcomputer.com/news/security/chatgpt-share-links-abused-to-host-fake-outage-pages-to-deliver-malware/",
+      "source": "BleepingComputer",
+      "severity": "high",
+      "mitre_tactics": [
+        "Execution"
+      ],
+      "keywords": [
+        "malware"
+      ]
+    },
+    {
+      "title": "California AG sues 23andMe over 2023 breach exposing health data",
+      "link": "https://www.bleepingcomputer.com/news/security/california-ag-sues-23andme-over-2023-breach-exposing-health-data/",
+      "source": "BleepingComputer",
+      "severity": "high",
+      "mitre_tactics": [],
+      "keywords": [
+        "breach"
+      ]
+    },
+    {
+      "title": "From $5 Attacks to Botnet-Powered Platforms: Inside the DDoS-as-a- Service Market",
+      "link": "https://www.bleepingcomputer.com/news/security/from-5-attacks-to-botnet-powered-platforms-inside-the-ddos-as-a-service-market/",
+      "source": "BleepingComputer",
+      "severity": "high",
+      "mitre_tactics": [
+        "Impact"
+      ],
+      "keywords": [
+        "botnet"
+      ]
+    },
+    {
+      "title": "Dutch govt disrupts malware botnet with 17 million infected devices",
+      "link": "https://www.bleepingcomputer.com/news/security/dutch-govt-disrupts-malware-botnet-with-17-million-infected-devices/",
+      "source": "BleepingComputer",
+      "severity": "high",
+      "mitre_tactics": [
+        "Execution"
+      ],
+      "keywords": [
+        "malware",
+        "botnet"
+      ]
+    },
+    {
+      "title": "Google Chrome adds session cookie theft protection for all users",
+      "link": "https://www.bleepingcomputer.com/news/security/google-chrome-adds-session-cookie-theft-protection-for-all-users/",
+      "source": "BleepingComputer",
+      "severity": "medium",
+      "mitre_tactics": [
+        "Initial Access",
+        "Credential Access"
+      ],
+      "keywords": [
+        "credential"
+      ]
+    },
+    {
+      "title": "Name That Toon: Mark of (Cybersecurity) Progress",
+      "link": "https://www.darkreading.com/cloud-security/name-that-toon-mark-of-cybersecurity-progress",
+      "source": "Dark Reading",
+      "severity": "critical",
+      "mitre_tactics": [],
+      "keywords": [
+        "apt"
+      ]
+    }
+  ]
+}
