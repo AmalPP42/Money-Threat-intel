@@ -61,11 +61,11 @@ RSS_FEEDS = [
     ("Threatpost",         "https://threatpost.com/feed/"),
 ]
 
-DISCORD_WEBHOOK  = os.getenv("DISCORD_WEBHOOK")
-SLACK_WEBHOOK    = os.getenv("SLACK_WEBHOOK")        # optional
-EMAIL_TO         = os.getenv("EMAIL_TO")             # optional (uses Gmail free tier)
-GROQ_API_KEY     = os.getenv("GROQ_API_KEY")         # free at console.groq.com
-DB_PATH          = os.getenv("DB_PATH", "seen_articles.db")
+DISCORD_WEBHOOK  = os.getenv("DISCORD_WEBHOOK") or None
+SLACK_WEBHOOK    = os.getenv("SLACK_WEBHOOK") or None        # optional
+GROQ_API_KEY     = os.getenv("GROQ_API_KEY") or None         # free at console.groq.com
+DB_PATH          = os.getenv("DB_PATH") or "seen_articles.db"
+NEWSLETTER_DIR   = os.getenv("NEWSLETTER_DIR") or "docs/newsletter"
 
 ARTICLES_PER_FEED  = 8
 MAX_ARTICLES_REPORT = 15  # cap to stay under token limits
@@ -120,7 +120,7 @@ def fetch_articles(conn: sqlite3.Connection) -> list[dict]:
                     "source":  source_name,
                     "title":   entry.get("title", "Untitled"),
                     "link":    link,
-                    "summary": entry.get("summary", entry.get("description", ""))[:500],
+                    "summary": (entry.get("summary") or entry.get("description", ""))[:500],
                     "published": entry.get("published", ""),
                 })
                 count += 1
@@ -243,7 +243,6 @@ def summarize(articles: list[dict]) -> str:
 # ── Discord Output ────────────────────────────────────────────────────────────
 SEVERITY_COLORS = {"critical": 0xFF0000, "high": 0xFF8C00, "medium": 0xFFD700, "low": 0x00BFFF}
 SEVERITY_EMOJI  = {"critical": "🔴", "high": "🟠", "medium": "🟡", "low": "🔵"}
-NEWSLETTER_DIR = os.getenv("NEWSLETTER_DIR", "docs/newsletter")
 
 def send_to_discord(summary: str, articles: list[dict]):
     if not DISCORD_WEBHOOK:
@@ -272,7 +271,7 @@ def send_to_discord(summary: str, articles: list[dict]):
             {"name": "Total Threats", "value": str(len(articles)), "inline": True},
             {"name": "Sources", "value": str(len({a["source"] for a in articles})), "inline": True},
         ],
-        "footer": {"text": "Automated Threat Intel Feed • github.com/ara-5/Automated-threat-intel-feed"},
+        "footer": {"text": "Automated Threat Intel Feed • github.com/ara-5/Money-Threat-intel"},
         "timestamp": datetime.now(timezone.utc).replace(tzinfo=None).isoformat(),
     }]
 
@@ -500,10 +499,10 @@ def generate_newsletter(summary: str, articles: list[dict]) -> tuple[str, str]:
 
 
 # ── Email Delivery (Gmail SMTP) ───────────────────────────────────────────────
-SMTP_SERVER = os.getenv("SMTP_SERVER", "smtp.gmail.com")
-SMTP_PORT   = int(os.getenv("SMTP_PORT", "587"))
-SMTP_USER   = os.getenv("SMTP_USER")
-SMTP_PASS   = os.getenv("SMTP_PASS")
+SMTP_SERVER = os.getenv("SMTP_SERVER") or "smtp.gmail.com"
+SMTP_PORT   = int(os.getenv("SMTP_PORT") or "587")
+SMTP_USER   = os.getenv("SMTP_USER") or None
+SMTP_PASS   = os.getenv("SMTP_PASS") or None
 
 
 def send_email(to_addr: str, subject: str, html_body: str):

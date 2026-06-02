@@ -463,15 +463,19 @@
     (function() {
       const key = 'threat-intel-theme';
       const html = document.documentElement;
-      const saved = localStorage.getItem(key);
-      if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        html.classList.add('dark');
-      }
-      const btn = document.getElementById('theme-toggle');
-      btn.addEventListener('click', () => {
-        html.classList.toggle('dark');
-        localStorage.setItem(key, html.classList.contains('dark') ? 'dark' : 'light');
+      document.addEventListener('DOMContentLoaded', () => {
+        const saved = localStorage.getItem(key);
+        if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          html.classList.add('dark');
+        }
+        const btn = document.getElementById('theme-toggle');
+        if (!btn) return;
         btn.textContent = html.classList.contains('dark') ? '☀️' : '🌙';
+        btn.addEventListener('click', () => {
+          html.classList.toggle('dark');
+          localStorage.setItem(key, html.classList.contains('dark') ? 'dark' : 'light');
+          btn.textContent = html.classList.contains('dark') ? '☀️' : '🌙';
+        });
       });
     })();
 
@@ -622,7 +626,7 @@
     </div>
 
      <footer>
-        <p>Open source under MIT license. <a href="https://github.com/ara-5/Money-Threat-intel">GitHub</a> • <a href="#">Substack</a> • <a href="https://github.com/ara-5/Money-Threat-intel/issues">Contact</a></p>
+        <p>Open source under MIT license. <a href="https://github.com/ara-5/Money-Threat-intel">GitHub</a> • <a href="#subscribe">Substack</a> • <a href="https://github.com/ara-5/Money-Threat-intel/issues">Contact</a></p>
      </footer>
    </div>
    <script>

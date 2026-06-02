@@ -50,10 +50,10 @@ jobs:
           # Email settings
           SMTP_USER:        ${{ secrets.SMTP_USER }}
           SMTP_PASS:        ${{ secrets.SMTP_PASS }}
-          SMTP_SERVER:      ${{ secrets.SMTP_SERVER }}
-          SMTP_PORT:        ${{ secrets.SMTP_PORT }}
+          SMTP_SERVER:      ${{ secrets.SMTP_SERVER || 'smtp.gmail.com' }}
+          SMTP_PORT:        ${{ secrets.SMTP_PORT || '587' }}
           # Newsletter directory (optional, defaults to docs/newsletter)
-          NEWSLETTER_DIR:   ${{ secrets.NEWSLETTER_DIR }}
+          NEWSLETTER_DIR:   ${{ secrets.NEWSLETTER_DIR || 'docs/newsletter' }}
           # Subscriber list (base64-encoded JSON)
           SUBSCRIBERS_JSON_B64: ${{ secrets.SUBSCRIBERS_JSON_B64 }}
         run: python threat_intel.py

@@ -121,6 +121,10 @@ python threat_intel.py
 │   └── workflows/
 │       ├── threat_intel.yml     # Daily cron job
 │       └── tests.yml            # CI — runs on every push
+├── docs/index.html              # GitHub Pages landing page
+├── docs/newsletter/             # Generated newsletter markdown + HTML
+├── docs/latest.json             # Latest report API output
+├── docs/report_YYYY-MM-DD.json  # Archived daily reports
 ├── test_threat_intel.py         # Full test suite (pytest)
 ```
 
