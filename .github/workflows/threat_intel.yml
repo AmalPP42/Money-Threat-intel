@@ -30,33 +30,33 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pip-
 
-       - name: Install dependencies
-         run: pip install -r requirements.txt
- 
-       - name: Restore seen-articles database
-         uses: actions/cache@v4
-         with:
-           path: seen_articles.db
-           key: seen-articles-db
-           restore-keys: |
-             seen-articles-db-
+      - name: Install dependencies
+        run: pip install -r requirements.txt
 
-       - name: Run threat intel pipeline
-         env:
-           GROQ_API_KEY:     ${{ secrets.GROQ_API_KEY }}
-           DISCORD_WEBHOOK:  ${{ secrets.DISCORD_WEBHOOK }}
-           SLACK_WEBHOOK:    ${{ secrets.SLACK_WEBHOOK }}
-           DB_PATH:          seen_articles.db
-           # Email settings
-           SMTP_USER:        ${{ secrets.SMTP_USER }}
-           SMTP_PASS:        ${{ secrets.SMTP_PASS }}
-           SMTP_SERVER:      ${{ secrets.SMTP_SERVER }}
-           SMTP_PORT:        ${{ secrets.SMTP_PORT }}
-           # Newsletter directory (optional, defaults to docs/newsletter)
-           NEWSLETTER_DIR:   ${{ secrets.NEWSLETTER_DIR }}
-           # Subscriber list (base64-encoded JSON)
-           SUBSCRIBERS_JSON_B64: ${{ secrets.SUBSCRIBERS_JSON_B64 }}
-         run: python threat_intel.py
+      - name: Restore seen-articles database
+        uses: actions/cache@v4
+        with:
+          path: seen_articles.db
+          key: seen-articles-db
+          restore-keys: |
+            seen-articles-db-
+
+      - name: Run threat intel pipeline
+        env:
+          GROQ_API_KEY:     ${{ secrets.GROQ_API_KEY }}
+          DISCORD_WEBHOOK:  ${{ secrets.DISCORD_WEBHOOK }}
+          SLACK_WEBHOOK:    ${{ secrets.SLACK_WEBHOOK }}
+          DB_PATH:          seen_articles.db
+          # Email settings
+          SMTP_USER:        ${{ secrets.SMTP_USER }}
+          SMTP_PASS:        ${{ secrets.SMTP_PASS }}
+          SMTP_SERVER:      ${{ secrets.SMTP_SERVER }}
+          SMTP_PORT:        ${{ secrets.SMTP_PORT }}
+          # Newsletter directory (optional, defaults to docs/newsletter)
+          NEWSLETTER_DIR:   ${{ secrets.NEWSLETTER_DIR }}
+          # Subscriber list (base64-encoded JSON)
+          SUBSCRIBERS_JSON_B64: ${{ secrets.SUBSCRIBERS_JSON_B64 }}
+        run: python threat_intel.py
 
       - name: Commit JSON reports and newsletter to repository
         run: |
