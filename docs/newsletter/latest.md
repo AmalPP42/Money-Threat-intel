@@ -1,4 +1,4 @@
-# 🛡️ Daily Threat Intel — October 10, 2026
+# 🛡️ Daily Threat Intel — October 11, 2026
 
 > **Automated daily briefing** covering the most critical cybersecurity 
 > threats from 9 leading security news sources.
@@ -8,8 +8,8 @@
 ## 📊 Analyst Briefing
 
 📊 15 threats detected today.
-🔴 CRITICAL (6): Credential-Stealing GitHub Actions Workflows Planted in Tens of Thousands of Repositories | Researchers Publish Working Exploit for Pre-Auth AnyDesk Linux Flaw That Gives Root Access | Anthropic Launches Free AI Vulnerability Scanner for Open-Source Projects
-🟠 HIGH (8): Anthropic Cuts Live Internet Access for Internal AI Tests After Claude Exploits Injection Flaws | FBI Arrests Another ShinyHunters Suspect Reportedly Involved in Its Jobs Portal Hack | P7 DarkSword iOS Exploit Kit Adds Crypto Wallet Data Theft and Remote Commands
+🔴 CRITICAL (7): Credential-Stealing GitHub Actions Workflows Planted in Tens of Thousands of Repositories | Researchers Publish Working Exploit for Pre-Auth AnyDesk Linux Flaw That Gives Root Access | Anthropic Launches Free AI Vulnerability Scanner for Open-Source Projects
+🟠 HIGH (7): P7 DarkSword iOS Exploit Kit Adds Crypto Wallet Data Theft and Remote Commands | Anthropic Cuts Live Internet Access for Internal AI Tests After Claude Exploits Injection Flaws | FBI Arrests Another ShinyHunters Suspect Reportedly Involved in Its Jobs Portal Hack
 ⚠️ Review all articles below and patch accordingly.
 
 ---
@@ -94,6 +94,32 @@ AI agents can use valid credentials to perform actions beyond their assigned per
 
 ---
 
+### 🔴 FBI Arrests Executive at Ransomware Negotiation Firm
+
+- **Source**: Krebs on Security
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Execution, Impact
+- **Keywords**: ransomware, rce
+- **Link**: [https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/](https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/)
+
+Agents with the Federal Bureau of Investigation (FBI) on Thursday arrested the co-founder of a Canadian cybersecurity firm in connection with an investigation into the ShinyHunters hacking group that recently relieved the FBI of sensitive data on thousands of agents, multiple sources tell KrebsOnSec
+
+---
+
+### 🟠 P7 DarkSword iOS Exploit Kit Adds Crypto Wallet Data Theft and Remote Commands
+
+- **Source**: The Hacker News
+- **Severity**: HIGH
+- **MITRE Tactics**: Initial Access, Collection
+- **Keywords**: exploit
+- **Link**: [https://thehackernews.com/2026/10/p7-darksword-ios-exploit-kit-adds.html](https://thehackernews.com/2026/10/p7-darksword-ios-exploit-kit-adds.html)
+
+Cybersecurity researchers have disclosed details of a previously unseen variant of the DarkSword iOS exploit kit called P7 DarkSword.
+
+"Compared with the variants we usually observe, P7 reduces its on-device footprint, adds on-device keychain and crypto-wallet theft, and adds two way C2 communicatio
+
+---
+
 ### 🟠 Anthropic Cuts Live Internet Access for Internal AI Tests After Claude Exploits Injection Flaws
 
 - **Source**: The Hacker News
@@ -119,31 +145,5 @@ The AI company said it identified four broad categories
 The FBI has arrested another suspected co-conspirator of ShinyHunters, FBI Director Kash Patel said on October 9 in a&nbsp;post on X.
 
 ShinyHunters is the extortion group that said in September it had&nbsp;breached the FBI's jobs portal&nbsp;and stolen sensitive data on almost all FBI agents and job
-
----
-
-### 🟠 P7 DarkSword iOS Exploit Kit Adds Crypto Wallet Data Theft and Remote Commands
-
-- **Source**: The Hacker News
-- **Severity**: HIGH
-- **MITRE Tactics**: Initial Access, Collection
-- **Keywords**: exploit
-- **Link**: [https://thehackernews.com/2026/10/p7-darksword-ios-exploit-kit-adds.html](https://thehackernews.com/2026/10/p7-darksword-ios-exploit-kit-adds.html)
-
-Cybersecurity researchers have disclosed details of a previously unseen variant of the DarkSword iOS exploit kit called P7 DarkSword.
-
-"Compared with the variants we usually observe, P7 reduces its on-device footprint, adds on-device keychain and crypto-wallet theft, and adds two way C2 communicatio
-
----
-
-### 🟠 FBI arrests another suspected ShinyHunters hacker after agency breach
-
-- **Source**: BleepingComputer
-- **Severity**: HIGH
-- **MITRE Tactics**: —
-- **Keywords**: breach
-- **Link**: [https://www.bleepingcomputer.com/news/security/fbi-arrests-another-suspected-shinyhunters-hacker-after-agency-breach/](https://www.bleepingcomputer.com/news/security/fbi-arrests-another-suspected-shinyhunters-hacker-after-agency-breach/)
-
-The FBI has arrested another suspected member of the ShinyHunters extortion group believed to be involved in the recent breach of FBI systems, Director Kash Patel announced Friday. [...]
 
 ---

@@ -1,7 +1,20 @@
 {
-  "date": "2026-10-10T13:24:16.496034",
-  "summary": "\ud83d\udcca 15 threats detected today.\n\ud83d\udd34 CRITICAL (6): Credential-Stealing GitHub Actions Workflows Planted in Tens of Thousands of Repositories | Researchers Publish Working Exploit for Pre-Auth AnyDesk Linux Flaw That Gives Root Access | Anthropic Launches Free AI Vulnerability Scanner for Open-Source Projects\n\ud83d\udfe0 HIGH (8): Anthropic Cuts Live Internet Access for Internal AI Tests After Claude Exploits Injection Flaws | FBI Arrests Another ShinyHunters Suspect Reportedly Involved in Its Jobs Portal Hack | P7 DarkSword iOS Exploit Kit Adds Crypto Wallet Data Theft and Remote Commands\n\u26a0\ufe0f Review all articles below and patch accordingly.",
+  "date": "2026-10-11T13:51:49.774508",
+  "summary": "\ud83d\udcca 15 threats detected today.\n\ud83d\udd34 CRITICAL (7): Credential-Stealing GitHub Actions Workflows Planted in Tens of Thousands of Repositories | Researchers Publish Working Exploit for Pre-Auth AnyDesk Linux Flaw That Gives Root Access | Anthropic Launches Free AI Vulnerability Scanner for Open-Source Projects\n\ud83d\udfe0 HIGH (7): P7 DarkSword iOS Exploit Kit Adds Crypto Wallet Data Theft and Remote Commands | Anthropic Cuts Live Internet Access for Internal AI Tests After Claude Exploits Injection Flaws | FBI Arrests Another ShinyHunters Suspect Reportedly Involved in Its Jobs Portal Hack\n\u26a0\ufe0f Review all articles below and patch accordingly.",
   "articles": [
+    {
+      "title": "P7 DarkSword iOS Exploit Kit Adds Crypto Wallet Data Theft and Remote Commands",
+      "link": "https://thehackernews.com/2026/10/p7-darksword-ios-exploit-kit-adds.html",
+      "source": "The Hacker News",
+      "severity": "high",
+      "mitre_tactics": [
+        "Initial Access",
+        "Collection"
+      ],
+      "keywords": [
+        "exploit"
+      ]
+    },
     {
       "title": "Anthropic Cuts Live Internet Access for Internal AI Tests After Claude Exploits Injection Flaws",
       "link": "https://thehackernews.com/2026/10/anthropic-cuts-live-internet-access-for.html",
@@ -37,19 +50,6 @@
       "mitre_tactics": [],
       "keywords": [
         "breach"
-      ]
-    },
-    {
-      "title": "P7 DarkSword iOS Exploit Kit Adds Crypto Wallet Data Theft and Remote Commands",
-      "link": "https://thehackernews.com/2026/10/p7-darksword-ios-exploit-kit-adds.html",
-      "source": "The Hacker News",
-      "severity": "high",
-      "mitre_tactics": [
-        "Initial Access",
-        "Collection"
-      ],
-      "keywords": [
-        "exploit"
       ]
     },
     {
@@ -130,20 +130,6 @@
       ]
     },
     {
-      "title": "Max severity SonicWall SMA1000 flaw now exploited in attacks",
-      "link": "https://www.bleepingcomputer.com/news/security/max-severity-sonicwall-sma1000-flaw-now-exploited-in-attacks/",
-      "source": "BleepingComputer",
-      "severity": "high",
-      "mitre_tactics": [
-        "Initial Access"
-      ],
-      "keywords": [
-        "exploit",
-        "vulnerability",
-        "cve-"
-      ]
-    },
-    {
       "title": "ASOS Breach Reveals the Risks in Customer-Facing SaaS",
       "link": "https://www.darkreading.com/cyberattacks-data-breaches/asos-breach-risks-customer-facing-saas",
       "source": "Dark Reading",
@@ -185,6 +171,20 @@
       ],
       "keywords": [
         "malware"
+      ]
+    },
+    {
+      "title": "FBI Arrests Executive at Ransomware Negotiation Firm",
+      "link": "https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/",
+      "source": "Krebs on Security",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Execution",
+        "Impact"
+      ],
+      "keywords": [
+        "ransomware",
+        "rce"
       ]
     }
   ]
