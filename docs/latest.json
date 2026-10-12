@@ -1,7 +1,50 @@
 {
-  "date": "2026-10-11T13:51:49.774508",
-  "summary": "\ud83d\udcca 15 threats detected today.\n\ud83d\udd34 CRITICAL (7): Credential-Stealing GitHub Actions Workflows Planted in Tens of Thousands of Repositories | Researchers Publish Working Exploit for Pre-Auth AnyDesk Linux Flaw That Gives Root Access | Anthropic Launches Free AI Vulnerability Scanner for Open-Source Projects\n\ud83d\udfe0 HIGH (7): P7 DarkSword iOS Exploit Kit Adds Crypto Wallet Data Theft and Remote Commands | Anthropic Cuts Live Internet Access for Internal AI Tests After Claude Exploits Injection Flaws | FBI Arrests Another ShinyHunters Suspect Reportedly Involved in Its Jobs Portal Hack\n\u26a0\ufe0f Review all articles below and patch accordingly.",
+  "date": "2026-10-12T16:35:24.318586",
+  "summary": "\ud83d\udcca 15 threats detected today.\n\ud83d\udd34 CRITICAL (7): Critical SonicWall SMA 1000 Flaw Targeted in 135 Exploitation Attempts After Patch | Attackers Exploit CVSS 10.0 Bricksforge WordPress Flaw Enabling Unauthenticated RCE | CyberXero Uses Claude Code in Campaign That Stole Over 628,000 Ukrainian Records\n\ud83d\udfe0 HIGH (6): P7 DarkSword iOS Exploit Kit Adds Crypto Wallet Data Theft and Remote Commands | Anthropic Cuts Live Internet Access for Internal AI Tests After Claude Exploits Injection Flaws | Inside AvisLoader: A Windows Malware Loader Built to Resist Disruption\n\u26a0\ufe0f Review all articles below and patch accordingly.",
   "articles": [
+    {
+      "title": "Critical SonicWall SMA 1000 Flaw Targeted in 135 Exploitation Attempts After Patch",
+      "link": "https://thehackernews.com/2026/10/critical-sonicwall-sma-1000-flaw.html",
+      "source": "The Hacker News",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Initial Access"
+      ],
+      "keywords": [
+        "exploit",
+        "vulnerability",
+        "cve-"
+      ]
+    },
+    {
+      "title": "Attackers Exploit CVSS 10.0 Bricksforge WordPress Flaw Enabling Unauthenticated RCE",
+      "link": "https://thehackernews.com/2026/10/attackers-exploit-cvss-100-bricksforge.html",
+      "source": "The Hacker News",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Initial Access",
+        "Execution"
+      ],
+      "keywords": [
+        "exploit",
+        "vulnerability",
+        "cve-",
+        "remote code execution",
+        "rce"
+      ]
+    },
+    {
+      "title": "CyberXero Uses Claude Code in Campaign That Stole Over 628,000 Ukrainian Records",
+      "link": "https://thehackernews.com/2026/10/cyberxero-uses-claude-code-in-campaign.html",
+      "source": "The Hacker News",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Execution"
+      ],
+      "keywords": [
+        "rce"
+      ]
+    },
     {
       "title": "P7 DarkSword iOS Exploit Kit Adds Crypto Wallet Data Theft and Remote Commands",
       "link": "https://thehackernews.com/2026/10/p7-darksword-ios-exploit-kit-adds.html",
@@ -28,105 +71,37 @@
       ]
     },
     {
-      "title": "Credential-Stealing GitHub Actions Workflows Planted in Tens of Thousands of Repositories",
-      "link": "https://thehackernews.com/2026/10/credential-stealing-github-actions.html",
-      "source": "The Hacker News",
-      "severity": "critical",
+      "title": "Inside AvisLoader: A Windows Malware Loader Built to Resist Disruption",
+      "link": "https://www.bleepingcomputer.com/news/security/inside-avisloader-a-windows-malware-loader-built-to-resist-disruption/",
+      "source": "BleepingComputer",
+      "severity": "high",
       "mitre_tactics": [
-        "Initial Access",
-        "Execution",
-        "Credential Access"
+        "Execution"
       ],
       "keywords": [
-        "rce",
-        "credential"
+        "malware"
       ]
     },
     {
-      "title": "FBI Arrests Another ShinyHunters Suspect Reportedly Involved in Its Jobs Portal Hack",
-      "link": "https://thehackernews.com/2026/10/fbi-arrests-another-shinyhunters.html",
-      "source": "The Hacker News",
-      "severity": "high",
+      "title": "GitLab warns of max severity code execution vulnerability",
+      "link": "https://www.bleepingcomputer.com/news/security/gitlab-warns-of-max-severity-rce-flaw-in-regex-compiler-engine/",
+      "source": "BleepingComputer",
+      "severity": "medium",
       "mitre_tactics": [],
       "keywords": [
-        "breach"
-      ]
-    },
-    {
-      "title": "Researchers Publish Working Exploit for Pre-Auth AnyDesk Linux Flaw That Gives Root Access",
-      "link": "https://thehackernews.com/2026/10/researchers-publish-working-exploit-for.html",
-      "source": "The Hacker News",
-      "severity": "critical",
-      "mitre_tactics": [
-        "Initial Access",
-        "Execution"
-      ],
-      "keywords": [
-        "exploit",
-        "remote code execution"
-      ]
-    },
-    {
-      "title": "Anthropic Launches Free AI Vulnerability Scanner for Open-Source Projects",
-      "link": "https://thehackernews.com/2026/10/anthropic-launches-free-ai.html",
-      "source": "The Hacker News",
-      "severity": "critical",
-      "mitre_tactics": [
-        "Execution"
-      ],
-      "keywords": [
-        "vulnerability",
-        "rce"
-      ]
-    },
-    {
-      "title": "Unpatched AhsayCBS flaws exploited to deploy webshells, mine crypto",
-      "link": "https://www.bleepingcomputer.com/news/security/unpatched-ahsaycbs-flaws-exploited-to-deploy-webshells-mine-crypto/",
-      "source": "BleepingComputer",
-      "severity": "critical",
-      "mitre_tactics": [
-        "Initial Access"
-      ],
-      "keywords": [
-        "exploit",
         "vulnerability"
       ]
     },
     {
-      "title": "FBI arrests another suspected ShinyHunters hacker after agency breach",
-      "link": "https://www.bleepingcomputer.com/news/security/fbi-arrests-another-suspected-shinyhunters-hacker-after-agency-breach/",
+      "title": "Nippon Columbia malware incident exposes 8.6 million karaoke fan records",
+      "link": "https://www.bleepingcomputer.com/news/security/nippon-columbia-malware-incident-exposes-86-million-karaoke-fan-records/",
       "source": "BleepingComputer",
       "severity": "high",
-      "mitre_tactics": [],
-      "keywords": [
-        "breach"
-      ]
-    },
-    {
-      "title": "Germany arrests alleged core Qilin ransomware member after extradition",
-      "link": "https://www.bleepingcomputer.com/news/security/germany-arrests-alleged-core-qilin-ransomware-member-after-extradition/",
-      "source": "BleepingComputer",
-      "severity": "critical",
       "mitre_tactics": [
-        "Impact"
+        "Execution"
       ],
       "keywords": [
-        "ransomware"
-      ]
-    },
-    {
-      "title": "How to keep AI agents within their permissions",
-      "link": "https://www.bleepingcomputer.com/news/security/how-to-keep-ai-agents-within-their-permissions/",
-      "source": "BleepingComputer",
-      "severity": "critical",
-      "mitre_tactics": [
-        "Initial Access",
-        "Execution",
-        "Credential Access"
-      ],
-      "keywords": [
-        "rce",
-        "credential"
+        "malware"
       ]
     },
     {
@@ -162,18 +137,6 @@
       ]
     },
     {
-      "title": "Russian Spies Give 'MatchBoil' Malware a Stealthy Facelift",
-      "link": "https://www.darkreading.com/cyberattacks-data-breaches/russian-spies-matchboil-malware-facelift",
-      "source": "Dark Reading",
-      "severity": "high",
-      "mitre_tactics": [
-        "Execution"
-      ],
-      "keywords": [
-        "malware"
-      ]
-    },
-    {
       "title": "FBI Arrests Executive at Ransomware Negotiation Firm",
       "link": "https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/",
       "source": "Krebs on Security",
@@ -185,6 +148,45 @@
       "keywords": [
         "ransomware",
         "rce"
+      ]
+    },
+    {
+      "title": "Dutch Police Arrest \u2018Reformed\u2019 Hacker in Shiny Hunters Investigation",
+      "link": "https://krebsonsecurity.com/2026/09/dutch-police-arrest-reformed-hacker-in-shiny-hunters-investigation/",
+      "source": "Krebs on Security",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Collection",
+        "Impact"
+      ],
+      "keywords": [
+        "ransomware"
+      ]
+    },
+    {
+      "title": "Data Broker Radaris Loses Domains in Privacy Fight",
+      "link": "https://krebsonsecurity.com/2026/09/data-broker-radaris-loses-domains-in-privacy-fight/",
+      "source": "Krebs on Security",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Execution"
+      ],
+      "keywords": [
+        "rce"
+      ]
+    },
+    {
+      "title": "Two Alleged \u2018TeamPCP\u2019 Hackers Arrested in Australia",
+      "link": "https://krebsonsecurity.com/2026/08/two-alleged-teampcp-hackers-arrested-in-australia/",
+      "source": "Krebs on Security",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Initial Access",
+        "Execution"
+      ],
+      "keywords": [
+        "rce",
+        "supply chain"
       ]
     }
   ]

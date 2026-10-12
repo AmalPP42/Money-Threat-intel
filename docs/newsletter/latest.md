@@ -1,4 +1,4 @@
-# 🛡️ Daily Threat Intel — October 11, 2026
+# 🛡️ Daily Threat Intel — October 12, 2026
 
 > **Automated daily briefing** covering the most critical cybersecurity 
 > threats from 9 leading security news sources.
@@ -8,89 +8,53 @@
 ## 📊 Analyst Briefing
 
 📊 15 threats detected today.
-🔴 CRITICAL (7): Credential-Stealing GitHub Actions Workflows Planted in Tens of Thousands of Repositories | Researchers Publish Working Exploit for Pre-Auth AnyDesk Linux Flaw That Gives Root Access | Anthropic Launches Free AI Vulnerability Scanner for Open-Source Projects
-🟠 HIGH (7): P7 DarkSword iOS Exploit Kit Adds Crypto Wallet Data Theft and Remote Commands | Anthropic Cuts Live Internet Access for Internal AI Tests After Claude Exploits Injection Flaws | FBI Arrests Another ShinyHunters Suspect Reportedly Involved in Its Jobs Portal Hack
+🔴 CRITICAL (7): Critical SonicWall SMA 1000 Flaw Targeted in 135 Exploitation Attempts After Patch | Attackers Exploit CVSS 10.0 Bricksforge WordPress Flaw Enabling Unauthenticated RCE | CyberXero Uses Claude Code in Campaign That Stole Over 628,000 Ukrainian Records
+🟠 HIGH (6): P7 DarkSword iOS Exploit Kit Adds Crypto Wallet Data Theft and Remote Commands | Anthropic Cuts Live Internet Access for Internal AI Tests After Claude Exploits Injection Flaws | Inside AvisLoader: A Windows Malware Loader Built to Resist Disruption
 ⚠️ Review all articles below and patch accordingly.
 
 ---
 
 ## 🔍 Top Threats
 
-### 🔴 Credential-Stealing GitHub Actions Workflows Planted in Tens of Thousands of Repositories
+### 🔴 Critical SonicWall SMA 1000 Flaw Targeted in 135 Exploitation Attempts After Patch
 
 - **Source**: The Hacker News
 - **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access, Execution, Credential Access
-- **Keywords**: rce, credential
-- **Link**: [https://thehackernews.com/2026/10/credential-stealing-github-actions.html](https://thehackernews.com/2026/10/credential-stealing-github-actions.html)
+- **MITRE Tactics**: Initial Access
+- **Keywords**: exploit, vulnerability, cve-
+- **Link**: [https://thehackernews.com/2026/10/critical-sonicwall-sma-1000-flaw.html](https://thehackernews.com/2026/10/critical-sonicwall-sma-1000-flaw.html)
 
-Cybersecurity researchers have disclosed details of an ongoing credential-theft campaign that has compromised two high-profile open-source maintainer accounts to push a malicious workflow into over 340 repositories.
+Threat actors have been observed exploiting a recently disclosed critical security flaw in SonicWall Secure Mobile Access (SMA) 1000 appliances within days of public disclosure.
 
-"Using the account of Takashi Kitao, author of the 18,400-star game engine pyxel, t
+The vulnerability, tracked as CVE-2026-102255 (CVSS score: 10.0), is a case of pre-authenticated server-side request forg
 
 ---
 
-### 🔴 Researchers Publish Working Exploit for Pre-Auth AnyDesk Linux Flaw That Gives Root Access
+### 🔴 Attackers Exploit CVSS 10.0 Bricksforge WordPress Flaw Enabling Unauthenticated RCE
 
 - **Source**: The Hacker News
 - **Severity**: CRITICAL
 - **MITRE Tactics**: Initial Access, Execution
-- **Keywords**: exploit, remote code execution
-- **Link**: [https://thehackernews.com/2026/10/researchers-publish-working-exploit-for.html](https://thehackernews.com/2026/10/researchers-publish-working-exploit-for.html)
+- **Keywords**: exploit, vulnerability, cve-, remote code execution, rce
+- **Link**: [https://thehackernews.com/2026/10/attackers-exploit-cvss-100-bricksforge.html](https://thehackernews.com/2026/10/attackers-exploit-cvss-100-bricksforge.html)
 
-Security researchers have&nbsp;published a full working exploit&nbsp;for a pre-authentication remote code execution flaw in AnyDesk Linux that gives attackers root access before anyone approves the connection.
+A maximum-severity security flaw impacting the Bricksforge plugin for WordPress has come under active exploitation in the wild, according to Patchstack.
 
-AnyDesk patched the flaw in version 8.0.3 in June, but its&nbsp;changelog&nbsp;described 
+The critical vulnerability in question is CVE-2026-85097 (CVSS score: 10.0), which allows unauthenticated attackers to upload and execute arbitrar
 
 ---
 
-### 🔴 Anthropic Launches Free AI Vulnerability Scanner for Open-Source Projects
+### 🔴 CyberXero Uses Claude Code in Campaign That Stole Over 628,000 Ukrainian Records
 
 - **Source**: The Hacker News
 - **Severity**: CRITICAL
 - **MITRE Tactics**: Execution
-- **Keywords**: vulnerability, rce
-- **Link**: [https://thehackernews.com/2026/10/anthropic-launches-free-ai.html](https://thehackernews.com/2026/10/anthropic-launches-free-ai.html)
+- **Keywords**: rce
+- **Link**: [https://thehackernews.com/2026/10/cyberxero-uses-claude-code-in-campaign.html](https://thehackernews.com/2026/10/cyberxero-uses-claude-code-in-campaign.html)
 
-Anthropic on Thursday unveiled OSS Scanner as an opt-in vulnerability scanner to help secure the open-source ecosystem using artificial intelligence (AI).
+Cybersecurity researchers have disclosed details of a two-pronged artificial intelligence (AI)-augmented initial access campaign targeting WordPress sites, e-commerce platforms, and critical infrastructure entities in Ukraine.
 
-"It's an opt-in service informed by our experience using Claude to find vulnerabilities during Project Glasswing," Anthropic said. "Projects tha
-
----
-
-### 🔴 Unpatched AhsayCBS flaws exploited to deploy webshells, mine crypto
-
-- **Source**: BleepingComputer
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access
-- **Keywords**: exploit, vulnerability
-- **Link**: [https://www.bleepingcomputer.com/news/security/unpatched-ahsaycbs-flaws-exploited-to-deploy-webshells-mine-crypto/](https://www.bleepingcomputer.com/news/security/unpatched-ahsaycbs-flaws-exploited-to-deploy-webshells-mine-crypto/)
-
-Threat actors are exploiting one critical and one medium-severity vulnerability still unpatched in the AhsayCBS backup management platform to deploy webshells and cryptocurrency miners. [...]
-
----
-
-### 🔴 Germany arrests alleged core Qilin ransomware member after extradition
-
-- **Source**: BleepingComputer
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Impact
-- **Keywords**: ransomware
-- **Link**: [https://www.bleepingcomputer.com/news/security/germany-arrests-alleged-core-qilin-ransomware-member-after-extradition/](https://www.bleepingcomputer.com/news/security/germany-arrests-alleged-core-qilin-ransomware-member-after-extradition/)
-
-Germany has arrested a Russian national suspected of being a leading member of the Qilin ransomware group following extradition from Japan earlier this month. [...]
-
----
-
-### 🔴 How to keep AI agents within their permissions
-
-- **Source**: BleepingComputer
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access, Execution, Credential Access
-- **Keywords**: rce, credential
-- **Link**: [https://www.bleepingcomputer.com/news/security/how-to-keep-ai-agents-within-their-permissions/](https://www.bleepingcomputer.com/news/security/how-to-keep-ai-agents-within-their-permissions/)
-
-AI agents can use valid credentials to perform actions beyond their assigned permissions, creating risks that traditional access controls may not prevent. Token Security explains how organizations can enforce agent-specific policies without sacrificing autonomy. [...]
+The activity, which brings together commodity offensive tools like Cobal
 
 ---
 
@@ -103,6 +67,44 @@ AI agents can use valid credentials to perform actions beyond their assigned per
 - **Link**: [https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/](https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/)
 
 Agents with the Federal Bureau of Investigation (FBI) on Thursday arrested the co-founder of a Canadian cybersecurity firm in connection with an investigation into the ShinyHunters hacking group that recently relieved the FBI of sensitive data on thousands of agents, multiple sources tell KrebsOnSec
+
+---
+
+### 🔴 Dutch Police Arrest ‘Reformed’ Hacker in Shiny Hunters Investigation
+
+- **Source**: Krebs on Security
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Collection, Impact
+- **Keywords**: ransomware
+- **Link**: [https://krebsonsecurity.com/2026/09/dutch-police-arrest-reformed-hacker-in-shiny-hunters-investigation/](https://krebsonsecurity.com/2026/09/dutch-police-arrest-reformed-hacker-in-shiny-hunters-investigation/)
+
+Authorities in the Netherlands have arrested a 23-year-old convicted cybercriminal on suspicion of aiding in data thefts and extortions by the prolific hacker group ShinyHunters. In the days immediately following the suspect's arrest, remaining ShinyHunters members dramatically escalated their attac
+
+---
+
+### 🔴 Data Broker Radaris Loses Domains in Privacy Fight
+
+- **Source**: Krebs on Security
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Execution
+- **Keywords**: rce
+- **Link**: [https://krebsonsecurity.com/2026/09/data-broker-radaris-loses-domains-in-privacy-fight/](https://krebsonsecurity.com/2026/09/data-broker-radaris-loses-domains-in-privacy-fight/)
+
+The consumer data broker Radaris.com has long had a reputation for ignoring requests to remove personal information from its vast empire of people-search services online. That reputation caught up with the company recently in a lawsuit alleging Radaris violated a New Jersey privacy law that provides
+
+---
+
+### 🔴 Two Alleged ‘TeamPCP’ Hackers Arrested in Australia
+
+- **Source**: Krebs on Security
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access, Execution
+- **Keywords**: rce, supply chain
+- **Link**: [https://krebsonsecurity.com/2026/08/two-alleged-teampcp-hackers-arrested-in-australia/](https://krebsonsecurity.com/2026/08/two-alleged-teampcp-hackers-arrested-in-australia/)
+
+Authorities in Australia have arrested two men believed to be members of TeamPCP, a prolific cybercrime and data extortion group blamed for perpetrating the longest running spree of software supply chain attacks ever.
+
+In a statement released today, the Australian Federal Police (AFP) said two unnam
 
 ---
 
@@ -128,22 +130,20 @@ Cybersecurity researchers have disclosed details of a previously unseen variant 
 - **Keywords**: exploit
 - **Link**: [https://thehackernews.com/2026/10/anthropic-cuts-live-internet-access-for.html](https://thehackernews.com/2026/10/anthropic-cuts-live-internet-access-for.html)
 
-Anthropic on Friday said it's cutting off live internet access for all its internal evaluations following the discovery of new incidents in which its artificial intelligence (AI) models exhibited misaligned behavior and targeted real websites.
+Anthropic on Friday said it's cutting off live internet access for all its internal evaluations until further notice following the discovery of new incidents in which its artificial intelligence (AI) models exhibited misaligned behavior and targeted real websites.
 
-The AI company said it identified four broad categories
+The AI company said it identified 
 
 ---
 
-### 🟠 FBI Arrests Another ShinyHunters Suspect Reportedly Involved in Its Jobs Portal Hack
+### 🟠 Inside AvisLoader: A Windows Malware Loader Built to Resist Disruption
 
-- **Source**: The Hacker News
+- **Source**: BleepingComputer
 - **Severity**: HIGH
-- **MITRE Tactics**: —
-- **Keywords**: breach
-- **Link**: [https://thehackernews.com/2026/10/fbi-arrests-another-shinyhunters.html](https://thehackernews.com/2026/10/fbi-arrests-another-shinyhunters.html)
+- **MITRE Tactics**: Execution
+- **Keywords**: malware
+- **Link**: [https://www.bleepingcomputer.com/news/security/inside-avisloader-a-windows-malware-loader-built-to-resist-disruption/](https://www.bleepingcomputer.com/news/security/inside-avisloader-a-windows-malware-loader-built-to-resist-disruption/)
 
-The FBI has arrested another suspected co-conspirator of ShinyHunters, FBI Director Kash Patel said on October 9 in a&nbsp;post on X.
-
-ShinyHunters is the extortion group that said in September it had&nbsp;breached the FBI's jobs portal&nbsp;and stolen sensitive data on almost all FBI agents and job
+A new Windows malware loader called AvisLoader uses encrypted peer-to-peer communications to make command-and-control infrastructure harder to disrupt. Varonis researchers explain how the malware uses ClickFix delivery, shortcut-based persistence, and remote command execution capabilities. [...]
 
 ---
