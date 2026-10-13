@@ -1,73 +1,76 @@
 {
-  "date": "2026-10-12T16:35:24.318586",
-  "summary": "\ud83d\udcca 15 threats detected today.\n\ud83d\udd34 CRITICAL (7): Critical SonicWall SMA 1000 Flaw Targeted in 135 Exploitation Attempts After Patch | Attackers Exploit CVSS 10.0 Bricksforge WordPress Flaw Enabling Unauthenticated RCE | CyberXero Uses Claude Code in Campaign That Stole Over 628,000 Ukrainian Records\n\ud83d\udfe0 HIGH (6): P7 DarkSword iOS Exploit Kit Adds Crypto Wallet Data Theft and Remote Commands | Anthropic Cuts Live Internet Access for Internal AI Tests After Claude Exploits Injection Flaws | Inside AvisLoader: A Windows Malware Loader Built to Resist Disruption\n\u26a0\ufe0f Review all articles below and patch accordingly.",
+  "date": "2026-10-13T14:52:39.025454",
+  "summary": "\ud83d\udcca 15 threats detected today.\n\ud83d\udd34 CRITICAL (6): Maximum-Severity SSRF Flaw in SonicWall SMA Devices Under Attack | Prominent Ransomware Negotiator Faces Extortion Charges | FBI Arrests Executive at Ransomware Negotiation Firm\n\ud83d\udfe0 HIGH (8): Xandr Fined a Record \u20ac8.6 Million for Relaying Grindr Data Revealing Sexual Orientation | [Webinar] How to Stop AI-Driven Privilege Escalation With Runtime Identity Controls | Low-Cost Android Phones Ship With Preinstalled Malware That Turns Them Into Residential Proxies\n\u26a0\ufe0f Review all articles below and patch accordingly.",
   "articles": [
     {
-      "title": "Critical SonicWall SMA 1000 Flaw Targeted in 135 Exploitation Attempts After Patch",
-      "link": "https://thehackernews.com/2026/10/critical-sonicwall-sma-1000-flaw.html",
+      "title": "Xandr Fined a Record \u20ac8.6 Million for Relaying Grindr Data Revealing Sexual Orientation",
+      "link": "https://thehackernews.com/2026/10/xandr-fined-record-86-million-for.html",
       "source": "The Hacker News",
-      "severity": "critical",
-      "mitre_tactics": [
-        "Initial Access"
-      ],
+      "severity": "high",
+      "mitre_tactics": [],
       "keywords": [
-        "exploit",
-        "vulnerability",
-        "cve-"
+        "breach"
       ]
     },
     {
-      "title": "Attackers Exploit CVSS 10.0 Bricksforge WordPress Flaw Enabling Unauthenticated RCE",
-      "link": "https://thehackernews.com/2026/10/attackers-exploit-cvss-100-bricksforge.html",
-      "source": "The Hacker News",
-      "severity": "critical",
-      "mitre_tactics": [
-        "Initial Access",
-        "Execution"
-      ],
-      "keywords": [
-        "exploit",
-        "vulnerability",
-        "cve-",
-        "remote code execution",
-        "rce"
-      ]
-    },
-    {
-      "title": "CyberXero Uses Claude Code in Campaign That Stole Over 628,000 Ukrainian Records",
-      "link": "https://thehackernews.com/2026/10/cyberxero-uses-claude-code-in-campaign.html",
-      "source": "The Hacker News",
-      "severity": "critical",
-      "mitre_tactics": [
-        "Execution"
-      ],
-      "keywords": [
-        "rce"
-      ]
-    },
-    {
-      "title": "P7 DarkSword iOS Exploit Kit Adds Crypto Wallet Data Theft and Remote Commands",
-      "link": "https://thehackernews.com/2026/10/p7-darksword-ios-exploit-kit-adds.html",
+      "title": "[Webinar] How to Stop AI-Driven Privilege Escalation With Runtime Identity Controls",
+      "link": "https://thehackernews.com/2026/10/webinar-how-to-stop-ai-driven-privilege.html",
       "source": "The Hacker News",
       "severity": "high",
       "mitre_tactics": [
         "Initial Access",
-        "Collection"
+        "Privilege Escalation",
+        "Discovery"
       ],
       "keywords": [
-        "exploit"
+        "exploit",
+        "privilege escalation"
       ]
     },
     {
-      "title": "Anthropic Cuts Live Internet Access for Internal AI Tests After Claude Exploits Injection Flaws",
-      "link": "https://thehackernews.com/2026/10/anthropic-cuts-live-internet-access-for.html",
+      "title": "Low-Cost Android Phones Ship With Preinstalled Malware That Turns Them Into Residential Proxies",
+      "link": "https://thehackernews.com/2026/10/low-cost-android-phones-ship-with.html",
       "source": "The Hacker News",
       "severity": "high",
       "mitre_tactics": [
-        "Initial Access"
+        "Execution"
       ],
       "keywords": [
-        "exploit"
+        "malware"
+      ]
+    },
+    {
+      "title": "The MFA Gaps Attackers are Still Exploiting",
+      "link": "https://www.bleepingcomputer.com/news/security/the-mfa-gaps-attackers-are-still-exploiting/",
+      "source": "BleepingComputer",
+      "severity": "high",
+      "mitre_tactics": [
+        "Initial Access",
+        "Credential Access"
+      ],
+      "keywords": [
+        "exploit",
+        "credential"
+      ]
+    },
+    {
+      "title": "SAP warns of maximum severity OAuth2 SSRF security flaw",
+      "link": "https://www.bleepingcomputer.com/news/security/sap-warns-of-maximum-severity-oauth2-ssrf-security-flaw/",
+      "source": "BleepingComputer",
+      "severity": "medium",
+      "mitre_tactics": [],
+      "keywords": [
+        "vulnerability"
+      ]
+    },
+    {
+      "title": "Anthropic takes risky AI tests offline after models breach govt sites",
+      "link": "https://www.bleepingcomputer.com/news/security/anthropic-takes-risky-ai-tests-offline-after-models-breach-govt-sites/",
+      "source": "BleepingComputer",
+      "severity": "high",
+      "mitre_tactics": [],
+      "keywords": [
+        "breach"
       ]
     },
     {
@@ -83,25 +86,25 @@
       ]
     },
     {
-      "title": "GitLab warns of max severity code execution vulnerability",
-      "link": "https://www.bleepingcomputer.com/news/security/gitlab-warns-of-max-severity-rce-flaw-in-regex-compiler-engine/",
-      "source": "BleepingComputer",
-      "severity": "medium",
+      "title": "Maximum-Severity SSRF Flaw in SonicWall SMA Devices Under Attack",
+      "link": "https://www.darkreading.com/vulnerabilities-threats/max-severity-ssrf-flaw-sonicwall-sma-devices-under-attack",
+      "source": "Dark Reading",
+      "severity": "critical",
       "mitre_tactics": [],
       "keywords": [
         "vulnerability"
       ]
     },
     {
-      "title": "Nippon Columbia malware incident exposes 8.6 million karaoke fan records",
-      "link": "https://www.bleepingcomputer.com/news/security/nippon-columbia-malware-incident-exposes-86-million-karaoke-fan-records/",
-      "source": "BleepingComputer",
-      "severity": "high",
+      "title": "Prominent Ransomware Negotiator Faces Extortion Charges",
+      "link": "https://www.darkreading.com/insider-threats/prominent-ransomware-negotiator-extortion-charges",
+      "source": "Dark Reading",
+      "severity": "critical",
       "mitre_tactics": [
-        "Execution"
+        "Impact"
       ],
       "keywords": [
-        "malware"
+        "ransomware"
       ]
     },
     {
@@ -112,28 +115,6 @@
       "mitre_tactics": [],
       "keywords": [
         "breach"
-      ]
-    },
-    {
-      "title": "'AgentCorruption' Puts AWS Environments at Risk With Single Prompt",
-      "link": "https://www.darkreading.com/cloud-security/agentcorruption-aws-environments-at-risk-single-prompt",
-      "source": "Dark Reading",
-      "severity": "medium",
-      "mitre_tactics": [],
-      "keywords": [
-        "vulnerability"
-      ]
-    },
-    {
-      "title": "Venezuelan Cartel's Malware Honcho Nabbed for ATM Jackpotting",
-      "link": "https://www.darkreading.com/cyberattacks-data-breaches/venezuelan-cartel-malware-honcho-nabbed-atm-jackpotting",
-      "source": "Dark Reading",
-      "severity": "high",
-      "mitre_tactics": [
-        "Execution"
-      ],
-      "keywords": [
-        "malware"
       ]
     },
     {
@@ -187,6 +168,16 @@
       "keywords": [
         "rce",
         "supply chain"
+      ]
+    },
+    {
+      "title": "FBI Arrests Suspect in FBI-Hacking Case",
+      "link": "https://www.schneier.com/blog/archives/2026/10/fbi-arrests-suspect-in-fbi-hacking-case.html",
+      "source": "Schneier on Security",
+      "severity": "high",
+      "mitre_tactics": [],
+      "keywords": [
+        "breach"
       ]
     }
   ]

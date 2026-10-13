@@ -1,4 +1,4 @@
-# 🛡️ Daily Threat Intel — October 12, 2026
+# 🛡️ Daily Threat Intel — October 13, 2026
 
 > **Automated daily briefing** covering the most critical cybersecurity 
 > threats from 9 leading security news sources.
@@ -8,53 +8,35 @@
 ## 📊 Analyst Briefing
 
 📊 15 threats detected today.
-🔴 CRITICAL (7): Critical SonicWall SMA 1000 Flaw Targeted in 135 Exploitation Attempts After Patch | Attackers Exploit CVSS 10.0 Bricksforge WordPress Flaw Enabling Unauthenticated RCE | CyberXero Uses Claude Code in Campaign That Stole Over 628,000 Ukrainian Records
-🟠 HIGH (6): P7 DarkSword iOS Exploit Kit Adds Crypto Wallet Data Theft and Remote Commands | Anthropic Cuts Live Internet Access for Internal AI Tests After Claude Exploits Injection Flaws | Inside AvisLoader: A Windows Malware Loader Built to Resist Disruption
+🔴 CRITICAL (6): Maximum-Severity SSRF Flaw in SonicWall SMA Devices Under Attack | Prominent Ransomware Negotiator Faces Extortion Charges | FBI Arrests Executive at Ransomware Negotiation Firm
+🟠 HIGH (8): Xandr Fined a Record €8.6 Million for Relaying Grindr Data Revealing Sexual Orientation | [Webinar] How to Stop AI-Driven Privilege Escalation With Runtime Identity Controls | Low-Cost Android Phones Ship With Preinstalled Malware That Turns Them Into Residential Proxies
 ⚠️ Review all articles below and patch accordingly.
 
 ---
 
 ## 🔍 Top Threats
 
-### 🔴 Critical SonicWall SMA 1000 Flaw Targeted in 135 Exploitation Attempts After Patch
+### 🔴 Maximum-Severity SSRF Flaw in SonicWall SMA Devices Under Attack
 
-- **Source**: The Hacker News
+- **Source**: Dark Reading
 - **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access
-- **Keywords**: exploit, vulnerability, cve-
-- **Link**: [https://thehackernews.com/2026/10/critical-sonicwall-sma-1000-flaw.html](https://thehackernews.com/2026/10/critical-sonicwall-sma-1000-flaw.html)
+- **MITRE Tactics**: —
+- **Keywords**: vulnerability
+- **Link**: [https://www.darkreading.com/vulnerabilities-threats/max-severity-ssrf-flaw-sonicwall-sma-devices-under-attack](https://www.darkreading.com/vulnerabilities-threats/max-severity-ssrf-flaw-sonicwall-sma-devices-under-attack)
 
-Threat actors have been observed exploiting a recently disclosed critical security flaw in SonicWall Secure Mobile Access (SMA) 1000 appliances within days of public disclosure.
-
-The vulnerability, tracked as CVE-2026-102255 (CVSS score: 10.0), is a case of pre-authenticated server-side request forg
+Attackers are currently targeting a critical vulnerability in SMA 1000 appliances, putting SonicWall customers in a familiar yet unenviable position.
 
 ---
 
-### 🔴 Attackers Exploit CVSS 10.0 Bricksforge WordPress Flaw Enabling Unauthenticated RCE
+### 🔴 Prominent Ransomware Negotiator Faces Extortion Charges
 
-- **Source**: The Hacker News
+- **Source**: Dark Reading
 - **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access, Execution
-- **Keywords**: exploit, vulnerability, cve-, remote code execution, rce
-- **Link**: [https://thehackernews.com/2026/10/attackers-exploit-cvss-100-bricksforge.html](https://thehackernews.com/2026/10/attackers-exploit-cvss-100-bricksforge.html)
+- **MITRE Tactics**: Impact
+- **Keywords**: ransomware
+- **Link**: [https://www.darkreading.com/insider-threats/prominent-ransomware-negotiator-extortion-charges](https://www.darkreading.com/insider-threats/prominent-ransomware-negotiator-extortion-charges)
 
-A maximum-severity security flaw impacting the Bricksforge plugin for WordPress has come under active exploitation in the wild, according to Patchstack.
-
-The critical vulnerability in question is CVE-2026-85097 (CVSS score: 10.0), which allows unauthenticated attackers to upload and execute arbitrar
-
----
-
-### 🔴 CyberXero Uses Claude Code in Campaign That Stole Over 628,000 Ukrainian Records
-
-- **Source**: The Hacker News
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Execution
-- **Keywords**: rce
-- **Link**: [https://thehackernews.com/2026/10/cyberxero-uses-claude-code-in-campaign.html](https://thehackernews.com/2026/10/cyberxero-uses-claude-code-in-campaign.html)
-
-Cybersecurity researchers have disclosed details of a two-pronged artificial intelligence (AI)-augmented initial access campaign targeting WordPress sites, e-commerce platforms, and critical infrastructure entities in Ukraine.
-
-The activity, which brings together commodity offensive tools like Cobal
+Edward Dubrovsky, a longtime cybersecurity executive, was arrested and charged in Pennsylvania last week under conspiracy to extort money.
 
 ---
 
@@ -108,42 +90,56 @@ In a statement released today, the Australian Federal Police (AFP) said two unna
 
 ---
 
-### 🟠 P7 DarkSword iOS Exploit Kit Adds Crypto Wallet Data Theft and Remote Commands
+### 🟠 Xandr Fined a Record €8.6 Million for Relaying Grindr Data Revealing Sexual Orientation
 
 - **Source**: The Hacker News
 - **Severity**: HIGH
-- **MITRE Tactics**: Initial Access, Collection
-- **Keywords**: exploit
-- **Link**: [https://thehackernews.com/2026/10/p7-darksword-ios-exploit-kit-adds.html](https://thehackernews.com/2026/10/p7-darksword-ios-exploit-kit-adds.html)
+- **MITRE Tactics**: —
+- **Keywords**: breach
+- **Link**: [https://thehackernews.com/2026/10/xandr-fined-record-86-million-for.html](https://thehackernews.com/2026/10/xandr-fined-record-86-million-for.html)
 
-Cybersecurity researchers have disclosed details of a previously unseen variant of the DarkSword iOS exploit kit called P7 DarkSword.
+The Norwegian Data Protection Authority (DPA) has fined Xandr, an advertising unit owned by Microsoft, €8.6 million ($9.62 million) for illegally relaying ​Grindr users' sensitive data to advertisers.
 
-"Compared with the variants we usually observe, P7 reduces its on-device footprint, adds on-device keychain and crypto-wallet theft, and adds two way C2 communicatio
+The administrative penalty is the largest issued by the data protection watchdog, arguing the case
 
 ---
 
-### 🟠 Anthropic Cuts Live Internet Access for Internal AI Tests After Claude Exploits Injection Flaws
+### 🟠 [Webinar] How to Stop AI-Driven Privilege Escalation With Runtime Identity Controls
 
 - **Source**: The Hacker News
 - **Severity**: HIGH
-- **MITRE Tactics**: Initial Access
-- **Keywords**: exploit
-- **Link**: [https://thehackernews.com/2026/10/anthropic-cuts-live-internet-access-for.html](https://thehackernews.com/2026/10/anthropic-cuts-live-internet-access-for.html)
+- **MITRE Tactics**: Initial Access, Privilege Escalation, Discovery
+- **Keywords**: exploit, privilege escalation
+- **Link**: [https://thehackernews.com/2026/10/webinar-how-to-stop-ai-driven-privilege.html](https://thehackernews.com/2026/10/webinar-how-to-stop-ai-driven-privilege.html)
 
-Anthropic on Friday said it's cutting off live internet access for all its internal evaluations until further notice following the discovery of new incidents in which its artificial intelligence (AI) models exhibited misaligned behavior and targeted real websites.
+The dangerous part of a stolen identity isn't always the initial login. It's what an attacker can do with that access next.
 
-The AI company said it identified 
+With AI accelerating reconnaissance, exploitation of vulnerabilities, and privilege escalation, attackers can move through systems faster than security teams can investigate. 
 
 ---
 
-### 🟠 Inside AvisLoader: A Windows Malware Loader Built to Resist Disruption
+### 🟠 Low-Cost Android Phones Ship With Preinstalled Malware That Turns Them Into Residential Proxies
 
-- **Source**: BleepingComputer
+- **Source**: The Hacker News
 - **Severity**: HIGH
 - **MITRE Tactics**: Execution
 - **Keywords**: malware
-- **Link**: [https://www.bleepingcomputer.com/news/security/inside-avisloader-a-windows-malware-loader-built-to-resist-disruption/](https://www.bleepingcomputer.com/news/security/inside-avisloader-a-windows-malware-loader-built-to-resist-disruption/)
+- **Link**: [https://thehackernews.com/2026/10/low-cost-android-phones-ship-with.html](https://thehackernews.com/2026/10/low-cost-android-phones-ship-with.html)
 
-A new Windows malware loader called AvisLoader uses encrypted peer-to-peer communications to make command-and-control infrastructure harder to disrupt. Varonis researchers explain how the malware uses ClickFix delivery, shortcut-based persistence, and remote command execution capabilities. [...]
+Low-cost Android smartphones have been shipped with malicious software baked into the device firmware, allowing bad actors to covertly install apps, conduct ad fraud, and turn devices into residential proxies.
+
+The activity, which targets Android devices built on MediaTek platforms across several br
+
+---
+
+### 🟠 The MFA Gaps Attackers are Still Exploiting
+
+- **Source**: BleepingComputer
+- **Severity**: HIGH
+- **MITRE Tactics**: Initial Access, Credential Access
+- **Keywords**: exploit, credential
+- **Link**: [https://www.bleepingcomputer.com/news/security/the-mfa-gaps-attackers-are-still-exploiting/](https://www.bleepingcomputer.com/news/security/the-mfa-gaps-attackers-are-still-exploiting/)
+
+Attackers continue exploiting gaps in MFA coverage, using stolen credentials to access VPNs, RDP, and Windows systems that still rely on passwords alone. Specops explains why protecting cloud applications isn't enough and how organizations can close these authentication gaps. [...]
 
 ---
