@@ -1,4 +1,4 @@
-# 🛡️ Daily Threat Intel — October 15, 2026
+# 🛡️ Daily Threat Intel — October 16, 2026
 
 > **Automated daily briefing** covering the most critical cybersecurity 
 > threats from 9 leading security news sources.
@@ -8,103 +8,101 @@
 ## 📊 Analyst Briefing
 
 📊 15 threats detected today.
-🔴 CRITICAL (9): Drupal Patches Critical Core RCE Flaw with No-Login Path via Contributed Modules | Palo Alto Networks Patches PAN-OS Authenticated RCE Flaw Amid Active Exploitation | Langflow's Critical Authenticated RCE Flaw Targeted in 1,423 Honeypot Exploit Attempts
-🟠 HIGH (3): Fake AI Attacks Spread Across US Companies: How MSSPs Can Stop Incidents Early | AhsayCBS Flaws Exploited to Deploy Web Shells Get New Fixes After Incomplete Patches | UK Legal Aid Agency: Hackers stole records dating back to 1978
+🔴 CRITICAL (8): AI Decision Models and Their Impact on AI SOC Platforms | China-Linked Hackers Exploited BeyondTrust Zero-Day to Take Over Remote Support Servers | Critical PwnEscape Linux Kernel Vulnerability Lets Guest VMs Read Host Memory
+🟠 HIGH (5): PEERSTITCH Malware Deployed via FortiOS Flaw Bypasses Checks on Tagged VPN Sessions | Silent Lynx Exploits WinRAR Flaw to Deploy Reverse Shell in CIS Government Attacks | Burger King Japan data breach exposes 11 million customer records
 ⚠️ Review all articles below and patch accordingly.
 
 ---
 
 ## 🔍 Top Threats
 
-### 🔴 Drupal Patches Critical Core RCE Flaw with No-Login Path via Contributed Modules
+### 🔴 AI Decision Models and Their Impact on AI SOC Platforms
 
 - **Source**: The Hacker News
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access, Execution
-- **Keywords**: exploit, rce
-- **Link**: [https://thehackernews.com/2026/10/drupal-patches-critical-core-rce-flaw.html](https://thehackernews.com/2026/10/drupal-patches-critical-core-rce-flaw.html)
-
-Drupal core has a critical flaw in its Field UI module that could let an attacker run code on the site's server, and fixes were shipped on October 14 in Drupal 11.4.10, 11.3.19, and 10.6.19.
-
-An attacker cannot reach the flaw through core alone, the Drupal Security Team said in&nbsp;its advisory. Se
-
----
-
-### 🔴 Palo Alto Networks Patches PAN-OS Authenticated RCE Flaw Amid Active Exploitation
-
-- **Source**: The Hacker News
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access, Execution
-- **Keywords**: exploit, vulnerability, cve-, remote code execution, rce
-- **Link**: [https://thehackernews.com/2026/10/palo-alto-networks-patches-pan-os.html](https://thehackernews.com/2026/10/palo-alto-networks-patches-pan-os.html)
-
-Palo Alto Networks on Wednesday issued security updates for a high-severity flaw in PAN-OS software that has come under active exploitation.
-
-The vulnerability, tracked as CVE-2026-0322 (CVSS score: 8.6), is a case of remote code execution in the management interface.
-
-"A remote code execution (RCE)
-
----
-
-### 🔴 Langflow's Critical Authenticated RCE Flaw Targeted in 1,423 Honeypot Exploit Attempts
-
-- **Source**: The Hacker News
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access, Execution
-- **Keywords**: exploit, vulnerability, cve-, rce
-- **Link**: [https://thehackernews.com/2026/10/langflows-critical-authenticated-rce.html](https://thehackernews.com/2026/10/langflows-critical-authenticated-rce.html)
-
-Threat actors are exploiting a critical security flaw in Langflow, according to an alert from Previdian.
-
-Langflow is an open-source platform that allows developers to build artificial intelligence (AI) applications and agentic workflows. In February 2025, DataStax, the parent company of Langflow, w
-
----
-
-### 🔴 Police arrests 95 suspects in international CSAM crackdown action
-
-- **Source**: BleepingComputer
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Execution
-- **Keywords**: rce
-- **Link**: [https://www.bleepingcomputer.com/news/security/police-arrests-95-suspects-in-child-sexual-abuse-material-crackdown/](https://www.bleepingcomputer.com/news/security/police-arrests-95-suspects-in-child-sexual-abuse-material-crackdown/)
-
-Law enforcement authorities from 17 countries in Latin America and Europe have arrested 95 suspects in an INTERPOL-coordinated operation targeting the distribution of child sexual abuse material (CSAM) through online messaging groups. [...]
-
----
-
-### 🔴 Palo Alto Networks warns of PAN-OS RCE flaw exploited in attacks
-
-- **Source**: BleepingComputer
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access, Execution
-- **Keywords**: zero-day, exploit, cve-, rce
-- **Link**: [https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-pan-os-rce-flaw-exploited-in-attacks/](https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-pan-os-rce-flaw-exploited-in-attacks/)
-
-Palo Alto Networks has released security updates for a high-severity PAN-OS RCE zero-day, tracked as CVE-2026-0322, that has been exploited in attacks targeting firewalls. [...]
-
----
-
-### 🔴 FBI raids DPRK IT worker laptop farms in Texas, US nationals arrested
-
-- **Source**: BleepingComputer
 - **Severity**: CRITICAL
 - **MITRE Tactics**: —
 - **Keywords**: apt
-- **Link**: [https://www.bleepingcomputer.com/news/security/fbi-raids-dprk-it-worker-laptop-farms-in-texas-us-nationals-arrested/](https://www.bleepingcomputer.com/news/security/fbi-raids-dprk-it-worker-laptop-farms-in-texas-us-nationals-arrested/)
+- **Link**: [https://thehackernews.com/2026/10/ai-decision-models-and-their-impact-on.html](https://thehackernews.com/2026/10/ai-decision-models-and-their-impact-on.html)
 
-The U.S. Department of Justice (DoJ) has disrupted the Famous Chollima threat group's operations by arresting two suspects, charging 14 individuals, and seizing nearly 187 laptops used in North Korean remote IT worker schemes. [...]
+In the space of a month, a new category of AI model went from nonexistent to everywhere. TypeSafe AI released Jev on September 15 and called it a System One model, a nod to Kahneman's fast, intuitive thinking. OpenAI announced its own Decisions API at DevDay and opened a public beta on October 6. Cr
 
 ---
 
-### 🔴 Cisco patches new Secure Email Gateway zero-day exploited in attacks
+### 🔴 China-Linked Hackers Exploited BeyondTrust Zero-Day to Take Over Remote Support Servers
+
+- **Source**: The Hacker News
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access
+- **Keywords**: zero-day, exploit, vulnerability, cve-
+- **Link**: [https://thehackernews.com/2026/10/china-linked-hackers-exploited.html](https://thehackernews.com/2026/10/china-linked-hackers-exploited.html)
+
+The China-nexus cyber espionage group tracked as Armory Castle (previously UNC5221 or Warp Panda) exploited a newly disclosed security flaw in BeyondTrust Remote Support (formerly Bomgar) as a zero-day in late August 2026.
+
+The vulnerability, tracked as CVE-2026-102764 (CVSS score: 9.3), is a case o
+
+---
+
+### 🔴 Critical PwnEscape Linux Kernel Vulnerability Lets Guest VMs Read Host Memory
+
+- **Source**: The Hacker News
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Execution
+- **Keywords**: vulnerability, cve-, rce
+- **Link**: [https://thehackernews.com/2026/10/critical-pwnescape-linux-kernel.html](https://thehackernews.com/2026/10/critical-pwnescape-linux-kernel.html)
+
+A newly disclosed critical flaw in the Linux kernel allows code inside a virtual machine to read memory on the host computer it runs on. A researcher demonstrated the leak against Vercel's live cloud sandboxes, and Vercel confirmed it.
+
+The flaw, now tracked as CVE-2026-99999 and nicknamed PwnEscape
+
+---
+
+### 🔴 ThreatsDay: Adobe RCE, DNS Wallet Theft, NVIDIA Container Escape, Self-Healing Backdoor + 23 More
+
+- **Source**: The Hacker News
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Execution, Persistence
+- **Keywords**: backdoor, rce
+- **Link**: [https://thehackernews.com/2026/10/threatsday-adobe-rce-dns-wallet-theft.html](https://thehackernews.com/2026/10/threatsday-adobe-rce-dns-wallet-theft.html)
+
+Someone built a tool to steal data, then decided it should scare the victim for fun. Yes, that’s an actual feature. And somehow, it fits right in with this week's security stories.
+
+The rest gets interesting in different ways. A small permission can lead to a big theft. A trusted login can hide the 
+
+---
+
+### 🔴 BeyondTrust patches zero-day exploited in attacks since August
 
 - **Source**: BleepingComputer
 - **Severity**: CRITICAL
 - **MITRE Tactics**: Initial Access
 - **Keywords**: zero-day, exploit
-- **Link**: [https://www.bleepingcomputer.com/news/security/cisco-patches-actively-exploited-secure-email-gateway-zero-day/](https://www.bleepingcomputer.com/news/security/cisco-patches-actively-exploited-secure-email-gateway-zero-day/)
+- **Link**: [https://www.bleepingcomputer.com/news/security/beyondtrust-patches-zero-day-exploited-in-attacks-since-august/](https://www.bleepingcomputer.com/news/security/beyondtrust-patches-zero-day-exploited-in-attacks-since-august/)
 
-Cisco has patched another actively exploited zero-day flaw in its Secure Email Gateway (SEG) that lets remote unauthenticated attackers execute commands with root privileges. [...]
+BeyondTrust warned customers on Thursday to patch a critical flaw in its Remote Support (RS) that has been exploited in zero-day attacks since late August. [...]
+
+---
+
+### 🔴 Hackers exploit Collabora RCE flaw to backdoor Nextcloud servers
+
+- **Source**: BleepingComputer
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access, Execution, Persistence
+- **Keywords**: exploit, backdoor, cve-, rce
+- **Link**: [https://www.bleepingcomputer.com/news/security/hackers-exploit-collabora-rce-flaw-to-backdoor-nextcloud-servers/](https://www.bleepingcomputer.com/news/security/hackers-exploit-collabora-rce-flaw-to-backdoor-nextcloud-servers/)
+
+Threat actors are exploiting a critical command execution flaw, now tracked as CVE-2026-110447, in the Collabora Online - Built-in CODE Server app (richdocumentscode) for Nextcloud. [...]
+
+---
+
+### 🔴 F-Secure Launches Victim-First Scam Encyclopedia Covering 50+ Types of Consumer Fraud
+
+- **Source**: Dark Reading
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Execution
+- **Keywords**: rce
+- **Link**: [https://www.darkreading.com/threat-intelligence/f-secure-launches-victim-first-scam-encyclopedia-covering-50-types-of-consumer-fraud](https://www.darkreading.com/threat-intelligence/f-secure-launches-victim-first-scam-encyclopedia-covering-50-types-of-consumer-fraud)
+
+Built from decades of threat intelligence research, the new resource explains scams from the victims' perspective and tracks emerging forms of cyber crime.
 
 ---
 
@@ -120,28 +118,30 @@ CVE-2026-104935, a high-severity authentication bypass + RCE vulnerability, was 
 
 ---
 
-### 🔴 Ransomware Gangs Embrace Physical Threats, Family Stalking?
-
-- **Source**: Dark Reading
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Impact
-- **Keywords**: ransomware
-- **Link**: [https://www.darkreading.com/cybersecurity-analytics/ransomware-gangs-physical-threats-family-stalking](https://www.darkreading.com/cybersecurity-analytics/ransomware-gangs-physical-threats-family-stalking)
-
-Organizations are reporting that employees face threats of stalking, physical violence, and abduction. But these alarming claims are hard to verify.
-
----
-
-### 🟠 Fake AI Attacks Spread Across US Companies: How MSSPs Can Stop Incidents Early
+### 🟠 PEERSTITCH Malware Deployed via FortiOS Flaw Bypasses Checks on Tagged VPN Sessions
 
 - **Source**: The Hacker News
 - **Severity**: HIGH
-- **MITRE Tactics**: Execution
-- **Keywords**: malware
-- **Link**: [https://thehackernews.com/2026/10/fake-ai-attacks-spread-across-us.html](https://thehackernews.com/2026/10/fake-ai-attacks-spread-across-us.html)
+- **MITRE Tactics**: Initial Access, Execution
+- **Keywords**: exploit, malware, cve-
+- **Link**: [https://thehackernews.com/2026/10/attackers-exploit-fortios-flaw-to.html](https://thehackernews.com/2026/10/attackers-exploit-fortios-flaw-to.html)
 
-Attackers are impersonating popular AI products to distribute malware, steal browser sessions, and compromise business accounts. ANY.RUN linked 1,258 public sandbox analyses to fake AI campaigns between April and October of 2026.&nbsp;
+A suspected advanced threat actor has been observed exploiting a security flaw in Fortinet FortiOS to deliver a previously unreported memory-resident ARM64 malware known as PEERSTITCH.
 
-The campaigns also increase operational pressure on MSSPs servi
+The attack involves the exploitation of CVE-2025-61624 (CVSS score: 5.4), a path traversal flaw in the command lin
+
+---
+
+### 🟠 Silent Lynx Exploits WinRAR Flaw to Deploy Reverse Shell in CIS Government Attacks
+
+- **Source**: The Hacker News
+- **Severity**: HIGH
+- **MITRE Tactics**: Initial Access
+- **Keywords**: exploit
+- **Link**: [https://thehackernews.com/2026/10/silent-lynx-exploits-winrar-flaw-to.html](https://thehackernews.com/2026/10/silent-lynx-exploits-winrar-flaw-to.html)
+
+The threat actor known as Silent Lynx has been attributed to a fresh set of attacks targeting government organizations across the Commonwealth of Independent States (CIS).
+
+The activity, observed from June 2025 through August 2026, involves four different infection chains that make use of macro-enab
 
 ---
