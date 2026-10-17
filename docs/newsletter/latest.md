@@ -1,4 +1,4 @@
-# 🛡️ Daily Threat Intel — October 16, 2026
+# 🛡️ Daily Threat Intel — October 17, 2026
 
 > **Automated daily briefing** covering the most critical cybersecurity 
 > threats from 9 leading security news sources.
@@ -8,13 +8,39 @@
 ## 📊 Analyst Briefing
 
 📊 15 threats detected today.
-🔴 CRITICAL (8): AI Decision Models and Their Impact on AI SOC Platforms | China-Linked Hackers Exploited BeyondTrust Zero-Day to Take Over Remote Support Servers | Critical PwnEscape Linux Kernel Vulnerability Lets Guest VMs Read Host Memory
-🟠 HIGH (5): PEERSTITCH Malware Deployed via FortiOS Flaw Bypasses Checks on Tagged VPN Sessions | Silent Lynx Exploits WinRAR Flaw to Deploy Reverse Shell in CIS Government Attacks | Burger King Japan data breach exposes 11 million customer records
+🔴 CRITICAL (10): MALFEX npm Package 'imgdecode' Hides Shellcode Loader in Windows Native Addon | UAT-11985 Uses Fake Event Invites to Target Taiwan Research Affiliates With Google AitM Phishing | AI Decision Models and Their Impact on AI SOC Platforms
+🟠 HIGH (4): Researchers Demonstrate OpenBSD Root Exploit Chaining 37-Year-Old Shared-Memory Bug | Attackers Tampered with AOMEI Backupper's Update Servers for Minutes to Deliver a Backdoor | Burger King Japan data breach exposes 11 million customer records
 ⚠️ Review all articles below and patch accordingly.
 
 ---
 
 ## 🔍 Top Threats
+
+### 🔴 MALFEX npm Package 'imgdecode' Hides Shellcode Loader in Windows Native Addon
+
+- **Source**: The Hacker News
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access, Persistence
+- **Keywords**: supply chain
+- **Link**: [https://thehackernews.com/2026/10/malfex-npm-package-imgdecode-hides.html](https://thehackernews.com/2026/10/malfex-npm-package-imgdecode-hides.html)
+
+Cybersecurity researchers have discovered a malicious npm package that's part of a recently disclosed software supply chain attack campaign dubbed MALFEX.
+
+The package, named "imgdecode," was uploaded to the package registry on September 30, 2026, by a user named "malfexteste8." It has been download
+
+---
+
+### 🔴 UAT-11985 Uses Fake Event Invites to Target Taiwan Research Affiliates With Google AitM Phishing
+
+- **Source**: The Hacker News
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access, Credential Access
+- **Keywords**: phishing, apt, credential
+- **Link**: [https://thehackernews.com/2026/10/uat-11985-uses-fake-event-invites-to.html](https://thehackernews.com/2026/10/uat-11985-uses-fake-event-invites-to.html)
+
+Cybersecurity researchers have disclosed details of an advanced persistent threat (APT) spear-phishing campaign that has targeted individuals affiliated with Taiwan research organizations to direct victims to an adversary-in-the-middle (AitM) phishing framework designed to harvest their Google accou
+
+---
 
 ### 🔴 AI Decision Models and Their Impact on AI SOC Platforms
 
@@ -42,31 +68,15 @@ The vulnerability, tracked as CVE-2026-102764 (CVSS score: 9.3), is a case o
 
 ---
 
-### 🔴 Critical PwnEscape Linux Kernel Vulnerability Lets Guest VMs Read Host Memory
+### 🔴 Critical BlockStrap flaw lets hackers run code on Magento servers
 
-- **Source**: The Hacker News
+- **Source**: BleepingComputer
 - **Severity**: CRITICAL
-- **MITRE Tactics**: Execution
-- **Keywords**: vulnerability, cve-, rce
-- **Link**: [https://thehackernews.com/2026/10/critical-pwnescape-linux-kernel.html](https://thehackernews.com/2026/10/critical-pwnescape-linux-kernel.html)
+- **MITRE Tactics**: Initial Access, Execution
+- **Keywords**: exploit, vulnerability, cve-, rce
+- **Link**: [https://www.bleepingcomputer.com/news/security/critical-blockstrap-flaw-lets-hackers-run-code-on-magento-servers/](https://www.bleepingcomputer.com/news/security/critical-blockstrap-flaw-lets-hackers-run-code-on-magento-servers/)
 
-A newly disclosed critical flaw in the Linux kernel allows code inside a virtual machine to read memory on the host computer it runs on. A researcher demonstrated the leak against Vercel's live cloud sandboxes, and Vercel confirmed it.
-
-The flaw, now tracked as CVE-2026-99999 and nicknamed PwnEscape
-
----
-
-### 🔴 ThreatsDay: Adobe RCE, DNS Wallet Theft, NVIDIA Container Escape, Self-Healing Backdoor + 23 More
-
-- **Source**: The Hacker News
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Execution, Persistence
-- **Keywords**: backdoor, rce
-- **Link**: [https://thehackernews.com/2026/10/threatsday-adobe-rce-dns-wallet-theft.html](https://thehackernews.com/2026/10/threatsday-adobe-rce-dns-wallet-theft.html)
-
-Someone built a tool to steal data, then decided it should scare the victim for fun. Yes, that’s an actual feature. And somehow, it fits right in with this week's security stories.
-
-The rest gets interesting in different ways. A small permission can lead to a big theft. A trusted login can hide the 
+Researchers warn that hackers could soon exploit a maximum-severity vulnerability (CVE-2026-103849) affecting Magento and Adobe Commerce, potentially allowing them to execute arbitrary PHP code on store servers. [...]
 
 ---
 
@@ -94,54 +104,38 @@ Threat actors are exploiting a critical command execution flaw, now tracked as C
 
 ---
 
-### 🔴 F-Secure Launches Victim-First Scam Encyclopedia Covering 50+ Types of Consumer Fraud
+### 🔴 BeyondTrust Remote Support Zero-Day Continues Trend of Exploited Edge Bugs
 
 - **Source**: Dark Reading
 - **Severity**: CRITICAL
-- **MITRE Tactics**: Execution
-- **Keywords**: rce
-- **Link**: [https://www.darkreading.com/threat-intelligence/f-secure-launches-victim-first-scam-encyclopedia-covering-50-types-of-consumer-fraud](https://www.darkreading.com/threat-intelligence/f-secure-launches-victim-first-scam-encyclopedia-covering-50-types-of-consumer-fraud)
-
-Built from decades of threat intelligence research, the new resource explains scams from the victims' perspective and tracks emerging forms of cyber crime.
-
----
-
-### 🔴 Ivanti ICS Zero-Day Attacks Highlight Vendor Patching Hurdles
-
-- **Source**: Dark Reading
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Execution
-- **Keywords**: zero-day, vulnerability, cve-, rce
-- **Link**: [https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching](https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching)
-
-CVE-2026-104935, a high-severity authentication bypass + RCE vulnerability, was only partially discovered and patched in July, leaving an opening for threat actors to capitalize on.
-
----
-
-### 🟠 PEERSTITCH Malware Deployed via FortiOS Flaw Bypasses Checks on Tagged VPN Sessions
-
-- **Source**: The Hacker News
-- **Severity**: HIGH
-- **MITRE Tactics**: Initial Access, Execution
-- **Keywords**: exploit, malware, cve-
-- **Link**: [https://thehackernews.com/2026/10/attackers-exploit-fortios-flaw-to.html](https://thehackernews.com/2026/10/attackers-exploit-fortios-flaw-to.html)
-
-A suspected advanced threat actor has been observed exploiting a security flaw in Fortinet FortiOS to deliver a previously unreported memory-resident ARM64 malware known as PEERSTITCH.
-
-The attack involves the exploitation of CVE-2025-61624 (CVSS score: 5.4), a path traversal flaw in the command lin
-
----
-
-### 🟠 Silent Lynx Exploits WinRAR Flaw to Deploy Reverse Shell in CIS Government Attacks
-
-- **Source**: The Hacker News
-- **Severity**: HIGH
 - **MITRE Tactics**: Initial Access
-- **Keywords**: exploit
-- **Link**: [https://thehackernews.com/2026/10/silent-lynx-exploits-winrar-flaw-to.html](https://thehackernews.com/2026/10/silent-lynx-exploits-winrar-flaw-to.html)
+- **Keywords**: zero-day, exploit
+- **Link**: [https://www.darkreading.com/endpoint-security/beyondtrust-remote-support-exploited-edge-bugs](https://www.darkreading.com/endpoint-security/beyondtrust-remote-support-exploited-edge-bugs)
 
-The threat actor known as Silent Lynx has been attributed to a fresh set of attacks targeting government organizations across the Commonwealth of Independent States (CIS).
+Ivanti, Cisco, and Palo Alto Networks all had vulnerabilities in edge devices come under fire this week. Now BeyondTrust joins the group.
 
-The activity, observed from June 2025 through August 2026, involves four different infection chains that make use of macro-enab
+---
+
+### 🔴 When Your Ransomware Negotiator Works for the Other Side
+
+- **Source**: Dark Reading
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Impact
+- **Keywords**: ransomware
+- **Link**: [https://www.darkreading.com/cyber-risk/when-your-ransomware-negotiator-works-other-side](https://www.darkreading.com/cyber-risk/when-your-ransomware-negotiator-works-other-side)
+
+The shocking arrest of a well-known ransomware negotiator reveals the critical need for vendor program oversight.
+
+---
+
+### 🔴 U.K. Sanctions Cryptomus for RU Money Laundering
+
+- **Source**: Krebs on Security
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Impact
+- **Keywords**: ransomware
+- **Link**: [https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/](https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/)
+
+The United Kingdom has issued economic sanctions against Cryptomus, a chameleonic cryptocurrency platform that experts say serves as a major conduit for payments related to ransomware, narcotics, darknet markets, fraud and cybercrime services that are helping Russia circumvent existing financial res
 
 ---
