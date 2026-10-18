@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-17T11:28:47.061300",
-  "summary": "\ud83d\udcca 15 threats detected today.\n\ud83d\udd34 CRITICAL (10): MALFEX npm Package 'imgdecode' Hides Shellcode Loader in Windows Native Addon | UAT-11985 Uses Fake Event Invites to Target Taiwan Research Affiliates With Google AitM Phishing | AI Decision Models and Their Impact on AI SOC Platforms\n\ud83d\udfe0 HIGH (4): Researchers Demonstrate OpenBSD Root Exploit Chaining 37-Year-Old Shared-Memory Bug | Attackers Tampered with AOMEI Backupper's Update Servers for Minutes to Deliver a Backdoor | Burger King Japan data breach exposes 11 million customer records\n\u26a0\ufe0f Review all articles below and patch accordingly.",
+  "date": "2026-10-18T11:58:38.918785",
+  "summary": "\ud83d\udcca 15 threats detected today.\n\ud83d\udd34 CRITICAL (9): MALFEX npm Package 'imgdecode' Hides Shellcode Loader in Windows Native Addon | UAT-11985 Uses Fake Event Invites to Target Taiwan Research Affiliates With Google AitM Phishing | AI Decision Models and Their Impact on AI SOC Platforms\n\ud83d\udfe0 HIGH (5): Researchers Demonstrate OpenBSD Root Exploit Chaining 37-Year-Old Shared-Memory Bug | Attackers Tampered with AOMEI Backupper's Update Servers for Minutes to Deliver a Backdoor | Hackers breach Microsoft 365 tenants via ConnectWise supply-chain attack\n\u26a0\ufe0f Review all articles below and patch accordingly.",
   "articles": [
     {
       "title": "MALFEX npm Package 'imgdecode' Hides Shellcode Loader in Windows Native Addon",
@@ -80,18 +80,27 @@
       ]
     },
     {
-      "title": "China-Linked Hackers Exploited BeyondTrust Zero-Day to Take Over Remote Support Servers",
-      "link": "https://thehackernews.com/2026/10/china-linked-hackers-exploited.html",
-      "source": "The Hacker News",
+      "title": "Hackers breach Microsoft 365 tenants via ConnectWise supply-chain attack",
+      "link": "https://www.bleepingcomputer.com/news/security/hackers-breach-microsoft-365-tenants-via-connectwise-supply-chain-attack/",
+      "source": "BleepingComputer",
+      "severity": "high",
+      "mitre_tactics": [],
+      "keywords": [
+        "breach"
+      ]
+    },
+    {
+      "title": "Drupal patches critical RCE flaws, warns exploits may emerge soon",
+      "link": "https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaws-warns-exploits-may-emerge-soon/",
+      "source": "BleepingComputer",
       "severity": "critical",
       "mitre_tactics": [
-        "Initial Access"
+        "Initial Access",
+        "Execution"
       ],
       "keywords": [
-        "zero-day",
         "exploit",
-        "vulnerability",
-        "cve-"
+        "rce"
       ]
     },
     {
@@ -118,36 +127,6 @@
       "mitre_tactics": [],
       "keywords": [
         "breach"
-      ]
-    },
-    {
-      "title": "BeyondTrust patches zero-day exploited in attacks since August",
-      "link": "https://www.bleepingcomputer.com/news/security/beyondtrust-patches-zero-day-exploited-in-attacks-since-august/",
-      "source": "BleepingComputer",
-      "severity": "critical",
-      "mitre_tactics": [
-        "Initial Access"
-      ],
-      "keywords": [
-        "zero-day",
-        "exploit"
-      ]
-    },
-    {
-      "title": "Hackers exploit Collabora RCE flaw to backdoor Nextcloud servers",
-      "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-collabora-rce-flaw-to-backdoor-nextcloud-servers/",
-      "source": "BleepingComputer",
-      "severity": "critical",
-      "mitre_tactics": [
-        "Initial Access",
-        "Execution",
-        "Persistence"
-      ],
-      "keywords": [
-        "exploit",
-        "backdoor",
-        "cve-",
-        "rce"
       ]
     },
     {
@@ -195,6 +174,20 @@
       ],
       "keywords": [
         "ransomware"
+      ]
+    },
+    {
+      "title": "FBI Arrests Executive at Ransomware Negotiation Firm",
+      "link": "https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/",
+      "source": "Krebs on Security",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Execution",
+        "Impact"
+      ],
+      "keywords": [
+        "ransomware",
+        "rce"
       ]
     }
   ]

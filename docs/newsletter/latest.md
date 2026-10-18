@@ -1,4 +1,4 @@
-# 🛡️ Daily Threat Intel — October 17, 2026
+# 🛡️ Daily Threat Intel — October 18, 2026
 
 > **Automated daily briefing** covering the most critical cybersecurity 
 > threats from 9 leading security news sources.
@@ -8,8 +8,8 @@
 ## 📊 Analyst Briefing
 
 📊 15 threats detected today.
-🔴 CRITICAL (10): MALFEX npm Package 'imgdecode' Hides Shellcode Loader in Windows Native Addon | UAT-11985 Uses Fake Event Invites to Target Taiwan Research Affiliates With Google AitM Phishing | AI Decision Models and Their Impact on AI SOC Platforms
-🟠 HIGH (4): Researchers Demonstrate OpenBSD Root Exploit Chaining 37-Year-Old Shared-Memory Bug | Attackers Tampered with AOMEI Backupper's Update Servers for Minutes to Deliver a Backdoor | Burger King Japan data breach exposes 11 million customer records
+🔴 CRITICAL (9): MALFEX npm Package 'imgdecode' Hides Shellcode Loader in Windows Native Addon | UAT-11985 Uses Fake Event Invites to Target Taiwan Research Affiliates With Google AitM Phishing | AI Decision Models and Their Impact on AI SOC Platforms
+🟠 HIGH (5): Researchers Demonstrate OpenBSD Root Exploit Chaining 37-Year-Old Shared-Memory Bug | Attackers Tampered with AOMEI Backupper's Update Servers for Minutes to Deliver a Backdoor | Hackers breach Microsoft 365 tenants via ConnectWise supply-chain attack
 ⚠️ Review all articles below and patch accordingly.
 
 ---
@@ -54,17 +54,15 @@ In the space of a month, a new category of AI model went from nonexistent to eve
 
 ---
 
-### 🔴 China-Linked Hackers Exploited BeyondTrust Zero-Day to Take Over Remote Support Servers
+### 🔴 Drupal patches critical RCE flaws, warns exploits may emerge soon
 
-- **Source**: The Hacker News
+- **Source**: BleepingComputer
 - **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access
-- **Keywords**: zero-day, exploit, vulnerability, cve-
-- **Link**: [https://thehackernews.com/2026/10/china-linked-hackers-exploited.html](https://thehackernews.com/2026/10/china-linked-hackers-exploited.html)
+- **MITRE Tactics**: Initial Access, Execution
+- **Keywords**: exploit, rce
+- **Link**: [https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaws-warns-exploits-may-emerge-soon/](https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaws-warns-exploits-may-emerge-soon/)
 
-The China-nexus cyber espionage group tracked as Armory Castle (previously UNC5221 or Warp Panda) exploited a newly disclosed security flaw in BeyondTrust Remote Support (formerly Bomgar) as a zero-day in late August 2026.
-
-The vulnerability, tracked as CVE-2026-102764 (CVSS score: 9.3), is a case o
+Drupal has patched two critical vulnerabilities that could allow attackers to execute code remotely on websites running any supported version of the content management system. [...]
 
 ---
 
@@ -77,30 +75,6 @@ The vulnerability, tracked as CVE-2026-102764 (CVSS score: 9.3), is a case o
 - **Link**: [https://www.bleepingcomputer.com/news/security/critical-blockstrap-flaw-lets-hackers-run-code-on-magento-servers/](https://www.bleepingcomputer.com/news/security/critical-blockstrap-flaw-lets-hackers-run-code-on-magento-servers/)
 
 Researchers warn that hackers could soon exploit a maximum-severity vulnerability (CVE-2026-103849) affecting Magento and Adobe Commerce, potentially allowing them to execute arbitrary PHP code on store servers. [...]
-
----
-
-### 🔴 BeyondTrust patches zero-day exploited in attacks since August
-
-- **Source**: BleepingComputer
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access
-- **Keywords**: zero-day, exploit
-- **Link**: [https://www.bleepingcomputer.com/news/security/beyondtrust-patches-zero-day-exploited-in-attacks-since-august/](https://www.bleepingcomputer.com/news/security/beyondtrust-patches-zero-day-exploited-in-attacks-since-august/)
-
-BeyondTrust warned customers on Thursday to patch a critical flaw in its Remote Support (RS) that has been exploited in zero-day attacks since late August. [...]
-
----
-
-### 🔴 Hackers exploit Collabora RCE flaw to backdoor Nextcloud servers
-
-- **Source**: BleepingComputer
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access, Execution, Persistence
-- **Keywords**: exploit, backdoor, cve-, rce
-- **Link**: [https://www.bleepingcomputer.com/news/security/hackers-exploit-collabora-rce-flaw-to-backdoor-nextcloud-servers/](https://www.bleepingcomputer.com/news/security/hackers-exploit-collabora-rce-flaw-to-backdoor-nextcloud-servers/)
-
-Threat actors are exploiting a critical command execution flaw, now tracked as CVE-2026-110447, in the Collabora Online - Built-in CODE Server app (richdocumentscode) for Nextcloud. [...]
 
 ---
 
@@ -137,5 +111,29 @@ The shocking arrest of a well-known ransomware negotiator reveals the critical n
 - **Link**: [https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/](https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/)
 
 The United Kingdom has issued economic sanctions against Cryptomus, a chameleonic cryptocurrency platform that experts say serves as a major conduit for payments related to ransomware, narcotics, darknet markets, fraud and cybercrime services that are helping Russia circumvent existing financial res
+
+---
+
+### 🔴 FBI Arrests Executive at Ransomware Negotiation Firm
+
+- **Source**: Krebs on Security
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Execution, Impact
+- **Keywords**: ransomware, rce
+- **Link**: [https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/](https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/)
+
+Agents with the Federal Bureau of Investigation (FBI) on Thursday arrested the co-founder of a Canadian cybersecurity firm in connection with an investigation into the ShinyHunters hacking group that recently relieved the FBI of sensitive data on thousands of agents, multiple sources tell KrebsOnSec
+
+---
+
+### 🟠 Researchers Demonstrate OpenBSD Root Exploit Chaining 37-Year-Old Shared-Memory Bug
+
+- **Source**: The Hacker News
+- **Severity**: HIGH
+- **MITRE Tactics**: Initial Access, Privilege Escalation
+- **Keywords**: exploit, privilege escalation
+- **Link**: [https://thehackernews.com/2026/10/researchers-demonstrate-openbsd-root.html](https://thehackernews.com/2026/10/researchers-demonstrate-openbsd-root.html)
+
+A local privilege escalation exploit published today gains root on OpenBSD 7.9 by chaining a roughly 37-year-old integer overflow with a separate kernel flaw, bypassing OpenBSD's KARL kernel-address randomization and its SMAP and SMEP hardware protections.Security firm Calif, which found and reporte
 
 ---
