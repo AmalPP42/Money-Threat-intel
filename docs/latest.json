@@ -1,7 +1,60 @@
 {
-  "date": "2026-10-18T11:58:38.918785",
-  "summary": "\ud83d\udcca 15 threats detected today.\n\ud83d\udd34 CRITICAL (9): MALFEX npm Package 'imgdecode' Hides Shellcode Loader in Windows Native Addon | UAT-11985 Uses Fake Event Invites to Target Taiwan Research Affiliates With Google AitM Phishing | AI Decision Models and Their Impact on AI SOC Platforms\n\ud83d\udfe0 HIGH (5): Researchers Demonstrate OpenBSD Root Exploit Chaining 37-Year-Old Shared-Memory Bug | Attackers Tampered with AOMEI Backupper's Update Servers for Minutes to Deliver a Backdoor | Hackers breach Microsoft 365 tenants via ConnectWise supply-chain attack\n\u26a0\ufe0f Review all articles below and patch accordingly.",
+  "date": "2026-10-19T14:27:17.986305",
+  "summary": "\ud83d\udcca 15 threats detected today.\n\ud83d\udd34 CRITICAL (8): GhostAction Attackers Plant Credential Stealer Disguised as Font in 94 GitHub Repositories | From Email-to-Case to the Boardroom: How Inherited Agents Break Governance Built for Software | MALFEX npm Package 'imgdecode' Hides Shellcode Loader in Windows Native Addon\n\ud83d\udfe0 HIGH (5): Fake Web3 Accelerator Uses npm Packages to Spread Malware and Hijack AI Agent Traffic | OpenCode Console Breach May Have Exposed OpenAI, Anthropic, and Google API Keys | Hackers exploit SiteGuard WAF flaw to run commands as admins\n\u26a0\ufe0f Review all articles below and patch accordingly.",
   "articles": [
+    {
+      "title": "GhostAction Attackers Plant Credential Stealer Disguised as Font in 94 GitHub Repositories",
+      "link": "https://thehackernews.com/2026/10/ghostaction-attackers-plant-credential.html",
+      "source": "The Hacker News",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Initial Access",
+        "Execution",
+        "Credential Access"
+      ],
+      "keywords": [
+        "malware",
+        "rce",
+        "supply chain",
+        "credential"
+      ]
+    },
+    {
+      "title": "From Email-to-Case to the Boardroom: How Inherited Agents Break Governance Built for Software",
+      "link": "https://thehackernews.com/2026/10/from-email-to-case-to-boardroom-how.html",
+      "source": "The Hacker News",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Execution"
+      ],
+      "keywords": [
+        "rce"
+      ]
+    },
+    {
+      "title": "Fake Web3 Accelerator Uses npm Packages to Spread Malware and Hijack AI Agent Traffic",
+      "link": "https://thehackernews.com/2026/10/fake-web3-accelerator-uses-npm-packages.html",
+      "source": "The Hacker News",
+      "severity": "high",
+      "mitre_tactics": [
+        "Execution",
+        "Persistence"
+      ],
+      "keywords": [
+        "malware",
+        "backdoor"
+      ]
+    },
+    {
+      "title": "OpenCode Console Breach May Have Exposed OpenAI, Anthropic, and Google API Keys",
+      "link": "https://thehackernews.com/2026/10/opencode-console-breach-may-have.html",
+      "source": "The Hacker News",
+      "severity": "high",
+      "mitre_tactics": [],
+      "keywords": [
+        "breach"
+      ]
+    },
     {
       "title": "MALFEX npm Package 'imgdecode' Hides Shellcode Loader in Windows Native Addon",
       "link": "https://thehackernews.com/2026/10/malfex-npm-package-imgdecode-hides.html",
@@ -29,54 +82,16 @@
       ]
     },
     {
-      "title": "Researchers Demonstrate OpenBSD Root Exploit Chaining 37-Year-Old Shared-Memory Bug",
-      "link": "https://thehackernews.com/2026/10/researchers-demonstrate-openbsd-root.html",
-      "source": "The Hacker News",
+      "title": "Hackers exploit SiteGuard WAF flaw to run commands as admins",
+      "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-siteguard-waf-flaw-to-run-commands-as-system-root/",
+      "source": "BleepingComputer",
       "severity": "high",
       "mitre_tactics": [
-        "Initial Access",
-        "Privilege Escalation"
+        "Initial Access"
       ],
       "keywords": [
         "exploit",
-        "privilege escalation"
-      ]
-    },
-    {
-      "title": "Attackers Tampered with AOMEI Backupper's Update Servers for Minutes to Deliver a Backdoor",
-      "link": "https://thehackernews.com/2026/10/attackers-tampered-with-aomei.html",
-      "source": "The Hacker News",
-      "severity": "high",
-      "mitre_tactics": [
-        "Persistence"
-      ],
-      "keywords": [
-        "backdoor"
-      ]
-    },
-    {
-      "title": "UAT-11985 Uses Fake Event Invites to Target Taiwan Research Affiliates With Google AitM Phishing",
-      "link": "https://thehackernews.com/2026/10/uat-11985-uses-fake-event-invites-to.html",
-      "source": "The Hacker News",
-      "severity": "critical",
-      "mitre_tactics": [
-        "Initial Access",
-        "Credential Access"
-      ],
-      "keywords": [
-        "phishing",
-        "apt",
-        "credential"
-      ]
-    },
-    {
-      "title": "AI Decision Models and Their Impact on AI SOC Platforms",
-      "link": "https://thehackernews.com/2026/10/ai-decision-models-and-their-impact-on.html",
-      "source": "The Hacker News",
-      "severity": "critical",
-      "mitre_tactics": [],
-      "keywords": [
-        "apt"
+        "vulnerability"
       ]
     },
     {
@@ -120,13 +135,13 @@
       ]
     },
     {
-      "title": "Burger King Japan data breach exposes 11 million customer records",
-      "link": "https://www.bleepingcomputer.com/news/security/burger-king-japan-data-breach-exposes-11-million-customer-records/",
-      "source": "BleepingComputer",
-      "severity": "high",
+      "title": "The Evolving Cybersecurity Lexicon: Vulnerability Discovery to Resilience",
+      "link": "https://www.darkreading.com/vulnerabilities-threats/cybersecurity-lexicon-vulnerability-discovery-resilience",
+      "source": "Dark Reading",
+      "severity": "medium",
       "mitre_tactics": [],
       "keywords": [
-        "breach"
+        "vulnerability"
       ]
     },
     {
@@ -165,20 +180,8 @@
       ]
     },
     {
-      "title": "U.K. Sanctions Cryptomus for RU Money Laundering",
-      "link": "https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/",
-      "source": "Krebs on Security",
-      "severity": "critical",
-      "mitre_tactics": [
-        "Impact"
-      ],
-      "keywords": [
-        "ransomware"
-      ]
-    },
-    {
-      "title": "FBI Arrests Executive at Ransomware Negotiation Firm",
-      "link": "https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/",
+      "title": "Feds Suspect Ransom Negotiator Ran ShinyHunters Extortion Site",
+      "link": "https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/",
       "source": "Krebs on Security",
       "severity": "critical",
       "mitre_tactics": [

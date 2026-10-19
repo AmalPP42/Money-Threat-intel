@@ -1,4 +1,4 @@
-# 🛡️ Daily Threat Intel — October 18, 2026
+# 🛡️ Daily Threat Intel — October 19, 2026
 
 > **Automated daily briefing** covering the most critical cybersecurity 
 > threats from 9 leading security news sources.
@@ -8,13 +8,39 @@
 ## 📊 Analyst Briefing
 
 📊 15 threats detected today.
-🔴 CRITICAL (9): MALFEX npm Package 'imgdecode' Hides Shellcode Loader in Windows Native Addon | UAT-11985 Uses Fake Event Invites to Target Taiwan Research Affiliates With Google AitM Phishing | AI Decision Models and Their Impact on AI SOC Platforms
-🟠 HIGH (5): Researchers Demonstrate OpenBSD Root Exploit Chaining 37-Year-Old Shared-Memory Bug | Attackers Tampered with AOMEI Backupper's Update Servers for Minutes to Deliver a Backdoor | Hackers breach Microsoft 365 tenants via ConnectWise supply-chain attack
+🔴 CRITICAL (8): GhostAction Attackers Plant Credential Stealer Disguised as Font in 94 GitHub Repositories | From Email-to-Case to the Boardroom: How Inherited Agents Break Governance Built for Software | MALFEX npm Package 'imgdecode' Hides Shellcode Loader in Windows Native Addon
+🟠 HIGH (5): Fake Web3 Accelerator Uses npm Packages to Spread Malware and Hijack AI Agent Traffic | OpenCode Console Breach May Have Exposed OpenAI, Anthropic, and Google API Keys | Hackers exploit SiteGuard WAF flaw to run commands as admins
 ⚠️ Review all articles below and patch accordingly.
 
 ---
 
 ## 🔍 Top Threats
+
+### 🔴 GhostAction Attackers Plant Credential Stealer Disguised as Font in 94 GitHub Repositories
+
+- **Source**: The Hacker News
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access, Execution, Credential Access
+- **Keywords**: malware, rce, supply chain, credential
+- **Link**: [https://thehackernews.com/2026/10/ghostaction-attackers-plant-credential.html](https://thehackernews.com/2026/10/ghostaction-attackers-plant-credential.html)
+
+The threat actor behind the GhostAction supply chain attack has expanded beyond injecting malicious GitHub Actions workflows into compromised projects to phish open-source developers and deliver a stealer malware disguised within a fake font file.
+
+The latest evolution, detailed by OpenSourceMalware
+
+---
+
+### 🔴 From Email-to-Case to the Boardroom: How Inherited Agents Break Governance Built for Software
+
+- **Source**: The Hacker News
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Execution
+- **Keywords**: rce
+- **Link**: [https://thehackernews.com/2026/10/from-email-to-case-to-boardroom-how.html](https://thehackernews.com/2026/10/from-email-to-case-to-boardroom-how.html)
+
+In Salesforce Agentforce, the recommended way to make an agent respond to events is a Flow: a record is created or a case is updated, and the Flow passes data into the agent's prompt. Separately, Email-to-Case and Web-to-Case turn inbound customer messages into case records; it is how airlines and h
+
+---
 
 ### 🔴 MALFEX npm Package 'imgdecode' Hides Shellcode Loader in Windows Native Addon
 
@@ -27,30 +53,6 @@
 Cybersecurity researchers have discovered a malicious npm package that's part of a recently disclosed software supply chain attack campaign dubbed MALFEX.
 
 The package, named "imgdecode," was uploaded to the package registry on September 30, 2026, by a user named "malfexteste8." It has been download
-
----
-
-### 🔴 UAT-11985 Uses Fake Event Invites to Target Taiwan Research Affiliates With Google AitM Phishing
-
-- **Source**: The Hacker News
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access, Credential Access
-- **Keywords**: phishing, apt, credential
-- **Link**: [https://thehackernews.com/2026/10/uat-11985-uses-fake-event-invites-to.html](https://thehackernews.com/2026/10/uat-11985-uses-fake-event-invites-to.html)
-
-Cybersecurity researchers have disclosed details of an advanced persistent threat (APT) spear-phishing campaign that has targeted individuals affiliated with Taiwan research organizations to direct victims to an adversary-in-the-middle (AitM) phishing framework designed to harvest their Google accou
-
----
-
-### 🔴 AI Decision Models and Their Impact on AI SOC Platforms
-
-- **Source**: The Hacker News
-- **Severity**: CRITICAL
-- **MITRE Tactics**: —
-- **Keywords**: apt
-- **Link**: [https://thehackernews.com/2026/10/ai-decision-models-and-their-impact-on.html](https://thehackernews.com/2026/10/ai-decision-models-and-their-impact-on.html)
-
-In the space of a month, a new category of AI model went from nonexistent to everywhere. TypeSafe AI released Jev on September 15 and called it a System One model, a nod to Kahneman's fast, intuitive thinking. OpenAI announced its own Decisions API at DevDay and opened a public beta on October 6. Cr
 
 ---
 
@@ -102,38 +104,42 @@ The shocking arrest of a well-known ransomware negotiator reveals the critical n
 
 ---
 
-### 🔴 U.K. Sanctions Cryptomus for RU Money Laundering
-
-- **Source**: Krebs on Security
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Impact
-- **Keywords**: ransomware
-- **Link**: [https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/](https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/)
-
-The United Kingdom has issued economic sanctions against Cryptomus, a chameleonic cryptocurrency platform that experts say serves as a major conduit for payments related to ransomware, narcotics, darknet markets, fraud and cybercrime services that are helping Russia circumvent existing financial res
-
----
-
-### 🔴 FBI Arrests Executive at Ransomware Negotiation Firm
+### 🔴 Feds Suspect Ransom Negotiator Ran ShinyHunters Extortion Site
 
 - **Source**: Krebs on Security
 - **Severity**: CRITICAL
 - **MITRE Tactics**: Execution, Impact
 - **Keywords**: ransomware, rce
-- **Link**: [https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/](https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/)
+- **Link**: [https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/](https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/)
 
-Agents with the Federal Bureau of Investigation (FBI) on Thursday arrested the co-founder of a Canadian cybersecurity firm in connection with an investigation into the ShinyHunters hacking group that recently relieved the FBI of sensitive data on thousands of agents, multiple sources tell KrebsOnSec
+U.S. federal investigators pursuing the ShinyHunters hacking group that recently stole highly sensitive data from the FBI have identified executives at two different ransomware negotiation firms who maintained unusually close relations with the extortion group, KrebsOnSecurity has learned. Sources c
 
 ---
 
-### 🟠 Researchers Demonstrate OpenBSD Root Exploit Chaining 37-Year-Old Shared-Memory Bug
+### 🟠 Fake Web3 Accelerator Uses npm Packages to Spread Malware and Hijack AI Agent Traffic
 
 - **Source**: The Hacker News
 - **Severity**: HIGH
-- **MITRE Tactics**: Initial Access, Privilege Escalation
-- **Keywords**: exploit, privilege escalation
-- **Link**: [https://thehackernews.com/2026/10/researchers-demonstrate-openbsd-root.html](https://thehackernews.com/2026/10/researchers-demonstrate-openbsd-root.html)
+- **MITRE Tactics**: Execution, Persistence
+- **Keywords**: malware, backdoor
+- **Link**: [https://thehackernews.com/2026/10/fake-web3-accelerator-uses-npm-packages.html](https://thehackernews.com/2026/10/fake-web3-accelerator-uses-npm-packages.html)
 
-A local privilege escalation exploit published today gains root on OpenBSD 7.9 by chaining a roughly 37-year-old integer overflow with a separate kernel flaw, bypassing OpenBSD's KARL kernel-address randomization and its SMAP and SMEP hardware protections.Security firm Calif, which found and reporte
+A fake Web3 accelerator has been observed pushing information stealers and backdoors to Windows and macOS systems using malicious npm packages under the pretext of offering free artificial intelligence (AI) credits for Anthropic Claude and Google Gemini, coding tools, and security audits.
+
+"The tool
+
+---
+
+### 🟠 OpenCode Console Breach May Have Exposed OpenAI, Anthropic, and Google API Keys
+
+- **Source**: The Hacker News
+- **Severity**: HIGH
+- **MITRE Tactics**: —
+- **Keywords**: breach
+- **Link**: [https://thehackernews.com/2026/10/opencode-console-breach-may-have.html](https://thehackernews.com/2026/10/opencode-console-breach-may-have.html)
+
+An intruder reached a legacy system at OpenCode on the night of October 16 and may have exposed the third-party AI provider keys that users had saved in OpenCode Console, the company said.
+
+Console is OpenCode's optional hosted service: a workspace saves its own OpenAI, Anthropic, or Google key ther
 
 ---
