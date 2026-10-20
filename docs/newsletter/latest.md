@@ -1,4 +1,4 @@
-# 🛡️ Daily Threat Intel — October 19, 2026
+# 🛡️ Daily Threat Intel — October 20, 2026
 
 > **Automated daily briefing** covering the most critical cybersecurity 
 > threats from 9 leading security news sources.
@@ -8,75 +8,37 @@
 ## 📊 Analyst Briefing
 
 📊 15 threats detected today.
-🔴 CRITICAL (8): GhostAction Attackers Plant Credential Stealer Disguised as Font in 94 GitHub Repositories | From Email-to-Case to the Boardroom: How Inherited Agents Break Governance Built for Software | MALFEX npm Package 'imgdecode' Hides Shellcode Loader in Windows Native Addon
-🟠 HIGH (5): Fake Web3 Accelerator Uses npm Packages to Spread Malware and Hijack AI Agent Traffic | OpenCode Console Breach May Have Exposed OpenAI, Anthropic, and Google API Keys | Hackers exploit SiteGuard WAF flaw to run commands as admins
+🔴 CRITICAL (5): Russian APT28 Breaches NATO Naval Shipbuilder in NATO Country, Deploys New Reflective Loader | OVHcloud CLI releases backdoored on GitHub to steal developer secrets | BeyondTrust Remote Support Zero-Day Continues Trend of Exploited Edge Bugs
+🟠 HIGH (7): Hackers Hijack Five OVHcloud CLI Releases to Distribute Secret-Stealing Malware | ClickFix Attackers Exploit Siemens Software Center Flaw to Deploy Remote Access Trojan | Nikkei discloses third data breach in a month, 1.8M records exposed
 ⚠️ Review all articles below and patch accordingly.
 
 ---
 
 ## 🔍 Top Threats
 
-### 🔴 GhostAction Attackers Plant Credential Stealer Disguised as Font in 94 GitHub Repositories
+### 🔴 Russian APT28 Breaches NATO Naval Shipbuilder in NATO Country, Deploys New Reflective Loader
 
 - **Source**: The Hacker News
 - **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access, Execution, Credential Access
-- **Keywords**: malware, rce, supply chain, credential
-- **Link**: [https://thehackernews.com/2026/10/ghostaction-attackers-plant-credential.html](https://thehackernews.com/2026/10/ghostaction-attackers-plant-credential.html)
+- **MITRE Tactics**: Persistence
+- **Keywords**: breach, backdoor, apt
+- **Link**: [https://thehackernews.com/2026/10/russian-apt28-breaches-nato-naval.html](https://thehackernews.com/2026/10/russian-apt28-breaches-nato-naval.html)
 
-The threat actor behind the GhostAction supply chain attack has expanded beyond injecting malicious GitHub Actions workflows into compromised projects to phish open-source developers and deliver a stealer malware disguised within a fake font file.
+The Russia-linked state-sponsored threat actor tracked as APT28 (aka BlueDelta, Fancy Bear, and Forest Blizzard) has been attributed to attacks targeting two member states of the North Atlantic Treaty Organization (NATO).
 
-The latest evolution, detailed by OpenSourceMalware
-
----
-
-### 🔴 From Email-to-Case to the Boardroom: How Inherited Agents Break Governance Built for Software
-
-- **Source**: The Hacker News
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Execution
-- **Keywords**: rce
-- **Link**: [https://thehackernews.com/2026/10/from-email-to-case-to-boardroom-how.html](https://thehackernews.com/2026/10/from-email-to-case-to-boardroom-how.html)
-
-In Salesforce Agentforce, the recommended way to make an agent respond to events is a Flow: a record is created or a case is updated, and the Flow passes data into the agent's prompt. Separately, Email-to-Case and Web-to-Case turn inbound customer messages into case records; it is how airlines and h
+The Symantec Threat Hunter Team, which is tracking the activity cluster under
 
 ---
 
-### 🔴 MALFEX npm Package 'imgdecode' Hides Shellcode Loader in Windows Native Addon
-
-- **Source**: The Hacker News
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access, Persistence
-- **Keywords**: supply chain
-- **Link**: [https://thehackernews.com/2026/10/malfex-npm-package-imgdecode-hides.html](https://thehackernews.com/2026/10/malfex-npm-package-imgdecode-hides.html)
-
-Cybersecurity researchers have discovered a malicious npm package that's part of a recently disclosed software supply chain attack campaign dubbed MALFEX.
-
-The package, named "imgdecode," was uploaded to the package registry on September 30, 2026, by a user named "malfexteste8." It has been download
-
----
-
-### 🔴 Drupal patches critical RCE flaws, warns exploits may emerge soon
+### 🔴 OVHcloud CLI releases backdoored on GitHub to steal developer secrets
 
 - **Source**: BleepingComputer
 - **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access, Execution
-- **Keywords**: exploit, rce
-- **Link**: [https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaws-warns-exploits-may-emerge-soon/](https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaws-warns-exploits-may-emerge-soon/)
+- **MITRE Tactics**: Execution, Persistence
+- **Keywords**: malware, backdoor, rce
+- **Link**: [https://www.bleepingcomputer.com/news/security/ovhcloud-cli-releases-backdoored-on-github-to-steal-developer-secrets/](https://www.bleepingcomputer.com/news/security/ovhcloud-cli-releases-backdoored-on-github-to-steal-developer-secrets/)
 
-Drupal has patched two critical vulnerabilities that could allow attackers to execute code remotely on websites running any supported version of the content management system. [...]
-
----
-
-### 🔴 Critical BlockStrap flaw lets hackers run code on Magento servers
-
-- **Source**: BleepingComputer
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access, Execution
-- **Keywords**: exploit, vulnerability, cve-, rce
-- **Link**: [https://www.bleepingcomputer.com/news/security/critical-blockstrap-flaw-lets-hackers-run-code-on-magento-servers/](https://www.bleepingcomputer.com/news/security/critical-blockstrap-flaw-lets-hackers-run-code-on-magento-servers/)
-
-Researchers warn that hackers could soon exploit a maximum-severity vulnerability (CVE-2026-103849) affecting Magento and Adobe Commerce, potentially allowing them to execute arbitrary PHP code on store servers. [...]
+French cloud and hosting provider OVHcloud is warning users that attackers compromised its open-source command-line interface (CLI) tool to distribute information-stealing malware. [...]
 
 ---
 
@@ -92,18 +54,6 @@ Ivanti, Cisco, and Palo Alto Networks all had vulnerabilities in edge devices co
 
 ---
 
-### 🔴 When Your Ransomware Negotiator Works for the Other Side
-
-- **Source**: Dark Reading
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Impact
-- **Keywords**: ransomware
-- **Link**: [https://www.darkreading.com/cyber-risk/when-your-ransomware-negotiator-works-other-side](https://www.darkreading.com/cyber-risk/when-your-ransomware-negotiator-works-other-side)
-
-The shocking arrest of a well-known ransomware negotiator reveals the critical need for vendor program oversight.
-
----
-
 ### 🔴 Feds Suspect Ransom Negotiator Ran ShinyHunters Extortion Site
 
 - **Source**: Krebs on Security
@@ -116,30 +66,76 @@ U.S. federal investigators pursuing the ShinyHunters hacking group that recently
 
 ---
 
-### 🟠 Fake Web3 Accelerator Uses npm Packages to Spread Malware and Hijack AI Agent Traffic
+### 🔴 U.K. Sanctions Cryptomus for RU Money Laundering
 
-- **Source**: The Hacker News
-- **Severity**: HIGH
-- **MITRE Tactics**: Execution, Persistence
-- **Keywords**: malware, backdoor
-- **Link**: [https://thehackernews.com/2026/10/fake-web3-accelerator-uses-npm-packages.html](https://thehackernews.com/2026/10/fake-web3-accelerator-uses-npm-packages.html)
+- **Source**: Krebs on Security
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Impact
+- **Keywords**: ransomware
+- **Link**: [https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/](https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/)
 
-A fake Web3 accelerator has been observed pushing information stealers and backdoors to Windows and macOS systems using malicious npm packages under the pretext of offering free artificial intelligence (AI) credits for Anthropic Claude and Google Gemini, coding tools, and security audits.
-
-"The tool
+The United Kingdom has issued economic sanctions against Cryptomus, a chameleonic cryptocurrency platform that experts say serves as a major conduit for payments related to ransomware, narcotics, darknet markets, fraud and cybercrime services that are helping Russia circumvent existing financial res
 
 ---
 
-### 🟠 OpenCode Console Breach May Have Exposed OpenAI, Anthropic, and Google API Keys
+### 🟠 Hackers Hijack Five OVHcloud CLI Releases to Distribute Secret-Stealing Malware
 
 - **Source**: The Hacker News
 - **Severity**: HIGH
+- **MITRE Tactics**: Execution
+- **Keywords**: malware
+- **Link**: [https://thehackernews.com/2026/10/hackers-hijack-five-ovhcloud-cli.html](https://thehackernews.com/2026/10/hackers-hijack-five-ovhcloud-cli.html)
+
+An attacker used a contributor's GitHub account to replace the download archives on five existing releases of OVHcloud's command-line tool on Monday, October 19. The account had been hijacked, and the new files were a build designed to steal secrets stored on the disk of any machine that runs it, th
+
+---
+
+### 🟠 ClickFix Attackers Exploit Siemens Software Center Flaw to Deploy Remote Access Trojan
+
+- **Source**: The Hacker News
+- **Severity**: HIGH
+- **MITRE Tactics**: Initial Access, Execution
+- **Keywords**: exploit, vulnerability, cve-, trojan
+- **Link**: [https://thehackernews.com/2026/10/clickfix-attackers-exploit-siemens.html](https://thehackernews.com/2026/10/clickfix-attackers-exploit-siemens.html)
+
+Siemens has addressed a DLL sideloading vulnerability impacting Siemens Software Center that it said has been exploited in ClickFix attacks.
+
+The high-severity vulnerability, tracked as CVE-2026-110936 (CVSS v4 score: 8.4), could allow an attacker to place a specially-crafted DLL in a directory the 
+
+---
+
+### 🟠 Nikkei discloses third data breach in a month, 1.8M records exposed
+
+- **Source**: BleepingComputer
+- **Severity**: HIGH
 - **MITRE Tactics**: —
 - **Keywords**: breach
-- **Link**: [https://thehackernews.com/2026/10/opencode-console-breach-may-have.html](https://thehackernews.com/2026/10/opencode-console-breach-may-have.html)
+- **Link**: [https://www.bleepingcomputer.com/news/security/nikkei-discloses-third-data-breach-in-a-month-18m-records-exposed/](https://www.bleepingcomputer.com/news/security/nikkei-discloses-third-data-breach-in-a-month-18m-records-exposed/)
 
-An intruder reached a legacy system at OpenCode on the night of October 16 and may have exposed the third-party AI provider keys that users had saved in OpenCode Console, the company said.
+Nikkei Inc. disclosed a new data breach, the third in about a month, that exposed 1.83 million personal information records. [...]
 
-Console is OpenCode's optional hosted service: a workspace saves its own OpenAI, Anthropic, or Google key ther
+---
+
+### 🟠 WordPress SEO plugin Rank Math compromised to backdoor websites
+
+- **Source**: BleepingComputer
+- **Severity**: HIGH
+- **MITRE Tactics**: Execution, Persistence
+- **Keywords**: malware, backdoor
+- **Link**: [https://www.bleepingcomputer.com/news/security/wordpress-seo-plugin-rank-math-compromised-to-backdoor-websites/](https://www.bleepingcomputer.com/news/security/wordpress-seo-plugin-rank-math-compromised-to-backdoor-websites/)
+
+Some downloads of the Rank Math PRO WordPress plugin from the vendor's official website carried malware that planted hidden backdoors in a supply-chain attack last week. [...]
+
+---
+
+### 🟠 Hackers hijack AOMEI update servers to secretly spread malware
+
+- **Source**: BleepingComputer
+- **Severity**: HIGH
+- **MITRE Tactics**: Execution
+- **Keywords**: malware
+- **Link**: [https://www.bleepingcomputer.com/news/security/hackers-hijack-aomei-update-servers-to-secretly-spread-malware/](https://www.bleepingcomputer.com/news/security/hackers-hijack-aomei-update-servers-to-secretly-spread-malware/)
+
+Hackers reportedly compromised AOMEI's servers to distribute malware through a built-in promotional feature in its backup software, briefly tampering with configuration files before restoring them to their original state to hide the attacks.a [...]
 
 ---

@@ -1,76 +1,24 @@
 {
-  "date": "2026-10-19T14:27:17.986305",
-  "summary": "\ud83d\udcca 15 threats detected today.\n\ud83d\udd34 CRITICAL (8): GhostAction Attackers Plant Credential Stealer Disguised as Font in 94 GitHub Repositories | From Email-to-Case to the Boardroom: How Inherited Agents Break Governance Built for Software | MALFEX npm Package 'imgdecode' Hides Shellcode Loader in Windows Native Addon\n\ud83d\udfe0 HIGH (5): Fake Web3 Accelerator Uses npm Packages to Spread Malware and Hijack AI Agent Traffic | OpenCode Console Breach May Have Exposed OpenAI, Anthropic, and Google API Keys | Hackers exploit SiteGuard WAF flaw to run commands as admins\n\u26a0\ufe0f Review all articles below and patch accordingly.",
+  "date": "2026-10-20T12:36:08.130788",
+  "summary": "\ud83d\udcca 15 threats detected today.\n\ud83d\udd34 CRITICAL (5): Russian APT28 Breaches NATO Naval Shipbuilder in NATO Country, Deploys New Reflective Loader | OVHcloud CLI releases backdoored on GitHub to steal developer secrets | BeyondTrust Remote Support Zero-Day Continues Trend of Exploited Edge Bugs\n\ud83d\udfe0 HIGH (7): Hackers Hijack Five OVHcloud CLI Releases to Distribute Secret-Stealing Malware | ClickFix Attackers Exploit Siemens Software Center Flaw to Deploy Remote Access Trojan | Nikkei discloses third data breach in a month, 1.8M records exposed\n\u26a0\ufe0f Review all articles below and patch accordingly.",
   "articles": [
     {
-      "title": "GhostAction Attackers Plant Credential Stealer Disguised as Font in 94 GitHub Repositories",
-      "link": "https://thehackernews.com/2026/10/ghostaction-attackers-plant-credential.html",
+      "title": "Russian APT28 Breaches NATO Naval Shipbuilder in NATO Country, Deploys New Reflective Loader",
+      "link": "https://thehackernews.com/2026/10/russian-apt28-breaches-nato-naval.html",
       "source": "The Hacker News",
       "severity": "critical",
       "mitre_tactics": [
-        "Initial Access",
-        "Execution",
-        "Credential Access"
-      ],
-      "keywords": [
-        "malware",
-        "rce",
-        "supply chain",
-        "credential"
-      ]
-    },
-    {
-      "title": "From Email-to-Case to the Boardroom: How Inherited Agents Break Governance Built for Software",
-      "link": "https://thehackernews.com/2026/10/from-email-to-case-to-boardroom-how.html",
-      "source": "The Hacker News",
-      "severity": "critical",
-      "mitre_tactics": [
-        "Execution"
-      ],
-      "keywords": [
-        "rce"
-      ]
-    },
-    {
-      "title": "Fake Web3 Accelerator Uses npm Packages to Spread Malware and Hijack AI Agent Traffic",
-      "link": "https://thehackernews.com/2026/10/fake-web3-accelerator-uses-npm-packages.html",
-      "source": "The Hacker News",
-      "severity": "high",
-      "mitre_tactics": [
-        "Execution",
         "Persistence"
       ],
       "keywords": [
-        "malware",
-        "backdoor"
+        "breach",
+        "backdoor",
+        "apt"
       ]
     },
     {
-      "title": "OpenCode Console Breach May Have Exposed OpenAI, Anthropic, and Google API Keys",
-      "link": "https://thehackernews.com/2026/10/opencode-console-breach-may-have.html",
-      "source": "The Hacker News",
-      "severity": "high",
-      "mitre_tactics": [],
-      "keywords": [
-        "breach"
-      ]
-    },
-    {
-      "title": "MALFEX npm Package 'imgdecode' Hides Shellcode Loader in Windows Native Addon",
-      "link": "https://thehackernews.com/2026/10/malfex-npm-package-imgdecode-hides.html",
-      "source": "The Hacker News",
-      "severity": "critical",
-      "mitre_tactics": [
-        "Initial Access",
-        "Persistence"
-      ],
-      "keywords": [
-        "supply chain"
-      ]
-    },
-    {
-      "title": "Hackers Use Compromised ConnectWise Credential to Sign In to 173 Microsoft 365 Tenants",
-      "link": "https://thehackernews.com/2026/10/hackers-use-compromised-connectwise.html",
+      "title": "ConnectWise Resets Credentials as Cloud Backup Remains Offline After Security Incident",
+      "link": "https://thehackernews.com/2026/10/connectwise-resets-credentials-as-cloud.html",
       "source": "The Hacker News",
       "severity": "medium",
       "mitre_tactics": [
@@ -82,47 +30,22 @@
       ]
     },
     {
-      "title": "Hackers exploit SiteGuard WAF flaw to run commands as admins",
-      "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-siteguard-waf-flaw-to-run-commands-as-system-root/",
-      "source": "BleepingComputer",
+      "title": "Hackers Hijack Five OVHcloud CLI Releases to Distribute Secret-Stealing Malware",
+      "link": "https://thehackernews.com/2026/10/hackers-hijack-five-ovhcloud-cli.html",
+      "source": "The Hacker News",
       "severity": "high",
       "mitre_tactics": [
-        "Initial Access"
-      ],
-      "keywords": [
-        "exploit",
-        "vulnerability"
-      ]
-    },
-    {
-      "title": "Hackers breach Microsoft 365 tenants via ConnectWise supply-chain attack",
-      "link": "https://www.bleepingcomputer.com/news/security/hackers-breach-microsoft-365-tenants-via-connectwise-supply-chain-attack/",
-      "source": "BleepingComputer",
-      "severity": "high",
-      "mitre_tactics": [],
-      "keywords": [
-        "breach"
-      ]
-    },
-    {
-      "title": "Drupal patches critical RCE flaws, warns exploits may emerge soon",
-      "link": "https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaws-warns-exploits-may-emerge-soon/",
-      "source": "BleepingComputer",
-      "severity": "critical",
-      "mitre_tactics": [
-        "Initial Access",
         "Execution"
       ],
       "keywords": [
-        "exploit",
-        "rce"
+        "malware"
       ]
     },
     {
-      "title": "Critical BlockStrap flaw lets hackers run code on Magento servers",
-      "link": "https://www.bleepingcomputer.com/news/security/critical-blockstrap-flaw-lets-hackers-run-code-on-magento-servers/",
-      "source": "BleepingComputer",
-      "severity": "critical",
+      "title": "ClickFix Attackers Exploit Siemens Software Center Flaw to Deploy Remote Access Trojan",
+      "link": "https://thehackernews.com/2026/10/clickfix-attackers-exploit-siemens.html",
+      "source": "The Hacker News",
+      "severity": "high",
       "mitre_tactics": [
         "Initial Access",
         "Execution"
@@ -131,7 +54,95 @@
         "exploit",
         "vulnerability",
         "cve-",
+        "trojan"
+      ]
+    },
+    {
+      "title": "OVHcloud CLI releases backdoored on GitHub to steal developer secrets",
+      "link": "https://www.bleepingcomputer.com/news/security/ovhcloud-cli-releases-backdoored-on-github-to-steal-developer-secrets/",
+      "source": "BleepingComputer",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Execution",
+        "Persistence"
+      ],
+      "keywords": [
+        "malware",
+        "backdoor",
         "rce"
+      ]
+    },
+    {
+      "title": "Nikkei discloses third data breach in a month, 1.8M records exposed",
+      "link": "https://www.bleepingcomputer.com/news/security/nikkei-discloses-third-data-breach-in-a-month-18m-records-exposed/",
+      "source": "BleepingComputer",
+      "severity": "high",
+      "mitre_tactics": [],
+      "keywords": [
+        "breach"
+      ]
+    },
+    {
+      "title": "WordPress SEO plugin Rank Math compromised to backdoor websites",
+      "link": "https://www.bleepingcomputer.com/news/security/wordpress-seo-plugin-rank-math-compromised-to-backdoor-websites/",
+      "source": "BleepingComputer",
+      "severity": "high",
+      "mitre_tactics": [
+        "Execution",
+        "Persistence"
+      ],
+      "keywords": [
+        "malware",
+        "backdoor"
+      ]
+    },
+    {
+      "title": "Hackers hijack AOMEI update servers to secretly spread malware",
+      "link": "https://www.bleepingcomputer.com/news/security/hackers-hijack-aomei-update-servers-to-secretly-spread-malware/",
+      "source": "BleepingComputer",
+      "severity": "high",
+      "mitre_tactics": [
+        "Execution"
+      ],
+      "keywords": [
+        "malware"
+      ]
+    },
+    {
+      "title": "'AdFection' Turns Ad Impressions Into Zero-Click Spyware Delivery",
+      "link": "https://www.darkreading.com/data-privacy/adfection-online-ads-spyware-delivery",
+      "source": "Dark Reading",
+      "severity": "high",
+      "mitre_tactics": [
+        "Initial Access"
+      ],
+      "keywords": [
+        "exploit"
+      ]
+    },
+    {
+      "title": "ConnectWise Disables Cloud Backups Amid Concerns for Downstream MSPs",
+      "link": "https://www.darkreading.com/identity-access-management-security/connectwise-disables-cloud-backups-downstream-msps",
+      "source": "Dark Reading",
+      "severity": "medium",
+      "mitre_tactics": [
+        "Initial Access",
+        "Credential Access"
+      ],
+      "keywords": [
+        "credential"
+      ]
+    },
+    {
+      "title": "OnlyFans Copyright Takedowns Expose Compromised Websites",
+      "link": "https://www.darkreading.com/vulnerabilities-threats/onlyfans-copyright-takedowns-expose-compromised-websites",
+      "source": "Dark Reading",
+      "severity": "high",
+      "mitre_tactics": [
+        "Initial Access"
+      ],
+      "keywords": [
+        "exploit"
       ]
     },
     {
@@ -158,28 +169,6 @@
       ]
     },
     {
-      "title": "When Your Ransomware Negotiator Works for the Other Side",
-      "link": "https://www.darkreading.com/cyber-risk/when-your-ransomware-negotiator-works-other-side",
-      "source": "Dark Reading",
-      "severity": "critical",
-      "mitre_tactics": [
-        "Impact"
-      ],
-      "keywords": [
-        "ransomware"
-      ]
-    },
-    {
-      "title": "When AI Agents Commit Breaches, Humans May Not Be Held Liable",
-      "link": "https://www.darkreading.com/insider-threats/ai-agents-breaches-humans-liable",
-      "source": "Dark Reading",
-      "severity": "high",
-      "mitre_tactics": [],
-      "keywords": [
-        "breach"
-      ]
-    },
-    {
       "title": "Feds Suspect Ransom Negotiator Ran ShinyHunters Extortion Site",
       "link": "https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/",
       "source": "Krebs on Security",
@@ -191,6 +180,18 @@
       "keywords": [
         "ransomware",
         "rce"
+      ]
+    },
+    {
+      "title": "U.K. Sanctions Cryptomus for RU Money Laundering",
+      "link": "https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/",
+      "source": "Krebs on Security",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Impact"
+      ],
+      "keywords": [
+        "ransomware"
       ]
     }
   ]
