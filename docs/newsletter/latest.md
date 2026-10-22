@@ -1,4 +1,4 @@
-# 🛡️ Daily Threat Intel — October 21, 2026
+# 🛡️ Daily Threat Intel — October 22, 2026
 
 > **Automated daily briefing** covering the most critical cybersecurity 
 > threats from 9 leading security news sources.
@@ -8,140 +8,140 @@
 ## 📊 Analyst Briefing
 
 📊 15 threats detected today.
-🔴 CRITICAL (8): PHP2Shell: What Actually Protects You Before the 14:00 UTC PHP RCE Patch, and What Doesn't | Attackers Hijacked Over 300 Tor Exit Relays to Intercept SSH Connections | PHP2Shell: Two Unpatched Critical PHP RCE Flaws (CVSS 9.2) Trigger Emergency Security Alert
-🟠 HIGH (6): China-Aligned Bronze Sandcastle Abuses Sandboxie DLL Sideloading to Deploy Backdoors | Attackers Abuse UpdraftCentral Keys to Plant Backdoors on WordPress Sites | Stolen UpdraftCentral keys used to backdoor WordPress sites
+🔴 CRITICAL (8): Node.js Brotli Decoder Bug Could Allow Remote Code Execution in All Supported Versions | New QPACK Flaws Can Crash HTTP/3 Servers, Trigger Up to 4,000-Fold Memory Amplification | Someone Tried to Exploit PHP2Shell 4 Days Before the Vulnerabilities Were Publicly Disclosed
+🟠 HIGH (5): LiteLLM Suspects GitHub Token Leak in AI Gateway Logs Behind Malicious Package Release | Japan's Onamae Desktop Cloud hacked, up to 27,000 servers affected | Lazarus hackers use post-quantum cryptography for malware delivery
 ⚠️ Review all articles below and patch accordingly.
 
 ---
 
 ## 🔍 Top Threats
 
-### 🔴 PHP2Shell: What Actually Protects You Before the 14:00 UTC PHP RCE Patch, and What Doesn't
+### 🔴 Node.js Brotli Decoder Bug Could Allow Remote Code Execution in All Supported Versions
+
+- **Source**: The Hacker News
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Execution
+- **Keywords**: remote code execution
+- **Link**: [https://thehackernews.com/2026/10/nodejs-brotli-decoder-bug-could-allow.html](https://thehackernews.com/2026/10/nodejs-brotli-decoder-bug-could-allow.html)
+
+Node.js released&nbsp;security updates&nbsp;on October 21 for its three supported release lines, 22.x, 24.x and 26.x, fixing 10 flaws. The most serious is a bug in the Brotli decompression code that Node.js bundles, which the project says can allow remote code execution, meaning an attacker could ru
+
+---
+
+### 🔴 New QPACK Flaws Can Crash HTTP/3 Servers, Trigger Up to 4,000-Fold Memory Amplification
 
 - **Source**: The Hacker News
 - **Severity**: CRITICAL
 - **MITRE Tactics**: Execution
 - **Keywords**: rce
-- **Link**: [https://thehackernews.com/2026/10/php2shell-what-actually-protects-you.html](https://thehackernews.com/2026/10/php2shell-what-actually-protects-you.html)
+- **Link**: [https://thehackernews.com/2026/10/new-qpack-flaws-can-crash-http3-servers.html](https://thehackernews.com/2026/10/new-qpack-flaws-can-crash-http3-servers.html)
 
-You cannot fully block the two critical PHP flaws called PHP2Shell before today's fix, and the one setting being passed around as a workaround is not enough on its own, the security firm that suggested it now says.
+A remote attacker who has not logged in can crash many HTTP/3 web servers with a single connection, security firm FoxIO&nbsp;disclosed, releasing working proof-of-concept code.
 
-PHP will release the fix at&nbsp;14:00 UTC on October 21&nbsp;for two flaws it rates
+By sending a small batch of compressed HTTP headers that expands in memory to a much larger set, the attacker can force th
 
 ---
 
-### 🔴 Attackers Hijacked Over 300 Tor Exit Relays to Intercept SSH Connections
+### 🔴 Someone Tried to Exploit PHP2Shell 4 Days Before the Vulnerabilities Were Publicly Disclosed
 
 - **Source**: The Hacker News
 - **Severity**: CRITICAL
-- **MITRE Tactics**: Execution, Credential Access
-- **Keywords**: rce
-- **Link**: [https://thehackernews.com/2026/10/attackers-hijacked-over-300-tor-exit.html](https://thehackernews.com/2026/10/attackers-hijacked-over-300-tor-exit.html)
+- **MITRE Tactics**: Initial Access
+- **Keywords**: exploit
+- **Link**: [https://thehackernews.com/2026/10/someone-tried-to-exploit-php2shell-4.html](https://thehackernews.com/2026/10/someone-tried-to-exploit-php2shell-4.html)
 
-Attackers took control of more than 300 Tor exit relays in early October and used them to redirect SSH connections to servers that stole login passwords, a researcher found.
+Amazon's Threat Intelligence team on Wednesday said it detected an attempt to exploit the newly disclosed PHP2Shell vulnerabilities on October 17, 2026, against its MadPot honeypot service, as the flaws come under broad exploitation in the wild following the release of the patches.
 
-Exit relays are the last hop in a Tor circuit, where traffic leaves the network for its destination. Only a password login to
+"The exploit att
 
 ---
 
-### 🔴 PHP2Shell: Two Unpatched Critical PHP RCE Flaws (CVSS 9.2) Trigger Emergency Security Alert
+### 🔴 China-Linked Hackers Use ARTEX AI Agents in ConnectWise Supply Chain Attack
+
+- **Source**: The Hacker News
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access, Execution
+- **Keywords**: rce, supply chain
+- **Link**: [https://thehackernews.com/2026/10/china-linked-hackers-use-artex-ai.html](https://thehackernews.com/2026/10/china-linked-hackers-use-artex-ai.html)
+
+Microsoft on Wednesday disclosed that a China state-aligned actor dubbed Storm-0940 was behind the recent supply chain compromise of the ConnectWise Cloud Backup application.
+
+During the incident, Storm-0940 used ARTEX, a Go-based agentic AI penetration testing framework that was made closed-source 
+
+---
+
+### 🔴 Critical GitLab Flaw (CVSS 10.0) Could Allow Unauthenticated RCE Across 12 Years of Releases
 
 - **Source**: The Hacker News
 - **Severity**: CRITICAL
 - **MITRE Tactics**: Execution
 - **Keywords**: rce
-- **Link**: [https://thehackernews.com/2026/10/php2shell-two-unpatched-critical-php.html](https://thehackernews.com/2026/10/php2shell-two-unpatched-critical-php.html)
+- **Link**: [https://thehackernews.com/2026/10/critical-gitlab-flaw-cvss-100-could.html](https://thehackernews.com/2026/10/critical-gitlab-flaw-cvss-100-could.html)
 
-This story is developing and was written before PHP's scheduled 14:00 UTC release on October 21. Once the release is out, the affected and fixed versions below are confirmed by the official advisory.
+GitLab released fixes on October 21 for a flaw that lets an attacker run code on a self-managed server without logging in, and it affects every version of the software going back to 7.0, released in 2014.
 
-PHP will ship an out-of-cycle security release at 14:00 UTC today, October 21, for two critical vul
+The fix matters even for administrators who patched nine days earlier: the October 12 update c
 
 ---
 
-### 🔴 CISA: SafePay ransomware hit over 600 critical infrastructure orgs
+### 🔴 Authorities disrupt nearly 11,000 cybercrime networks in Africa
 
 - **Source**: BleepingComputer
 - **Severity**: CRITICAL
-- **MITRE Tactics**: Impact
-- **Keywords**: ransomware, breach
-- **Link**: [https://www.bleepingcomputer.com/news/security/cisa-and-fbi-safepay-ransomware-has-hit-over-600-critical-infrastructure-organizations/](https://www.bleepingcomputer.com/news/security/cisa-and-fbi-safepay-ransomware-has-hit-over-600-critical-infrastructure-organizations/)
-
-The Cybersecurity and Infrastructure Security Agency (CISA) says the SafePay ransomware gang has breached over 600 critical infrastructure organizations worldwide since 2024. [...]
-
----
-
-### 🔴 Feds Suspect Ransom Negotiator Ran ShinyHunters Extortion Site
-
-- **Source**: Krebs on Security
-- **Severity**: CRITICAL
 - **MITRE Tactics**: Execution, Impact
 - **Keywords**: ransomware, rce
-- **Link**: [https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/](https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/)
+- **Link**: [https://www.bleepingcomputer.com/news/security/authorities-disrupt-nearly-11-000-cybercrime-networks-in-africa/](https://www.bleepingcomputer.com/news/security/authorities-disrupt-nearly-11-000-cybercrime-networks-in-africa/)
 
-U.S. federal investigators pursuing the ShinyHunters hacking group that recently stole highly sensitive data from the FBI have identified executives at two different ransomware negotiation firms who maintained unusually close relations with the extortion group, KrebsOnSecurity has learned. Sources c
+Law enforcement agencies have disrupted nearly 11,000 cybercriminal networks and arrested more than 1,400 people in Operation Serengeti III, which targeted business email compromise, ransomware, and online scams. [...]
 
 ---
 
-### 🔴 U.K. Sanctions Cryptomus for RU Money Laundering
+### 🔴 PHP ships emergency patches for critical PHP2Shell flaws
 
-- **Source**: Krebs on Security
+- **Source**: BleepingComputer
 - **Severity**: CRITICAL
-- **MITRE Tactics**: Impact
-- **Keywords**: ransomware
-- **Link**: [https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/](https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/)
+- **MITRE Tactics**: Execution
+- **Keywords**: cve-, remote code execution, rce
+- **Link**: [https://www.bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws/](https://www.bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws/)
 
-The United Kingdom has issued economic sanctions against Cryptomus, a chameleonic cryptocurrency platform that experts say serves as a major conduit for payments related to ransomware, narcotics, darknet markets, fraud and cybercrime services that are helping Russia circumvent existing financial res
+The PHP security team released emergency security patches for two critical remote code execution (RCE) vulnerabilities (CVE-2026-109618 and CVE-2026-109619) tracked collectively as PHP2Shell. [...]
 
 ---
 
-### 🔴 FBI Arrests Executive at Ransomware Negotiation Firm
+### 🔴 'PHP2Shell' Bugs Signal Red Alert for Security Industry
 
-- **Source**: Krebs on Security
+- **Source**: Dark Reading
 - **Severity**: CRITICAL
-- **MITRE Tactics**: Execution, Impact
-- **Keywords**: ransomware, rce
-- **Link**: [https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/](https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/)
+- **MITRE Tactics**: Initial Access
+- **Keywords**: exploit
+- **Link**: [https://www.darkreading.com/application-security/php2shell-bugs-red-alert-security-industry](https://www.darkreading.com/application-security/php2shell-bugs-red-alert-security-industry)
 
-Agents with the Federal Bureau of Investigation (FBI) on Thursday arrested the co-founder of a Canadian cybersecurity firm in connection with an investigation into the ShinyHunters hacking group that recently relieved the FBI of sensitive data on thousands of agents, multiple sources tell KrebsOnSec
-
----
-
-### 🔴 Dutch Police Arrest ‘Reformed’ Hacker in Shiny Hunters Investigation
-
-- **Source**: Krebs on Security
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Collection, Impact
-- **Keywords**: ransomware
-- **Link**: [https://krebsonsecurity.com/2026/09/dutch-police-arrest-reformed-hacker-in-shiny-hunters-investigation/](https://krebsonsecurity.com/2026/09/dutch-police-arrest-reformed-hacker-in-shiny-hunters-investigation/)
-
-Authorities in the Netherlands have arrested a 23-year-old convicted cybercriminal on suspicion of aiding in data thefts and extortions by the prolific hacker group ShinyHunters. In the days immediately following the suspect's arrest, remaining ShinyHunters members dramatically escalated their attac
+Security teams are scrambling to remediate two critical PHP vulnerabilities following leaked details and reports of exploitation attempts.
 
 ---
 
-### 🟠 China-Aligned Bronze Sandcastle Abuses Sandboxie DLL Sideloading to Deploy Backdoors
+### 🟠 LiteLLM Suspects GitHub Token Leak in AI Gateway Logs Behind Malicious Package Release
 
 - **Source**: The Hacker News
 - **Severity**: HIGH
-- **MITRE Tactics**: Persistence
-- **Keywords**: backdoor
-- **Link**: [https://thehackernews.com/2026/10/china-aligned-bronze-sandcastle-abuses.html](https://thehackernews.com/2026/10/china-aligned-bronze-sandcastle-abuses.html)
+- **MITRE Tactics**: Initial Access, Persistence, Credential Access
+- **Keywords**: backdoor, credential
+- **Link**: [https://thehackernews.com/2026/10/litellm-suspects-github-token-leak-in.html](https://thehackernews.com/2026/10/litellm-suspects-github-token-leak-in.html)
 
-Cybersecurity researchers have disclosed details of a previously undocumented China-aligned threat cluster known as Bronze Sandcastle that has been observed targeting organizations in Asia and Africa since mid-2025.
+LiteLLM on Wednesday disclosed that threat actors compromised "multiple independent security controls" to push a malicious version of the Python package containing a credential stealer and a backdoor.
 
-"The most distinctive technical marker for Bronze Sandcastle is its consistent use 
+On October 21, 2026, LiteLLM's release pipeline was compromised to push 1.107.0 to the Docker Hub 
 
 ---
 
-### 🟠 Attackers Abuse UpdraftCentral Keys to Plant Backdoors on WordPress Sites
+### 🟠 Japan's Onamae Desktop Cloud hacked, up to 27,000 servers affected
 
-- **Source**: The Hacker News
+- **Source**: BleepingComputer
 - **Severity**: HIGH
-- **MITRE Tactics**: Persistence
-- **Keywords**: breach, backdoor
-- **Link**: [https://thehackernews.com/2026/10/attackers-abuse-updraftcentral-keys-to.html](https://thehackernews.com/2026/10/attackers-abuse-updraftcentral-keys-to.html)
+- **MITRE Tactics**: Execution
+- **Keywords**: malware
+- **Link**: [https://www.bleepingcomputer.com/news/security/japans-onamae-desktop-cloud-hacked-up-to-27-000-servers-affected/](https://www.bleepingcomputer.com/news/security/japans-onamae-desktop-cloud-hacked-up-to-27-000-servers-affected/)
 
-Unknown threat actors breached TeamUpdraft's website and potentially gained unauthorized access to customers' connection keys for UpdraftCentral, UpdraftVault, and UpdraftClone, using them to backdoor WordPress sites.
-
-TeamUpdraft is the developer behind UpdraftPlus, a popular WordPress backup plugi
+Hackers compromised the infrastructure of Onamae Desktop Cloud, a popular provider of VPS services in Japan, and installed malware on up to 26,739 customers' servers. [...]
 
 ---
