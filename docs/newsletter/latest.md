@@ -1,4 +1,4 @@
-# 🛡️ Daily Threat Intel — October 22, 2026
+# 🛡️ Daily Threat Intel — October 23, 2026
 
 > **Automated daily briefing** covering the most critical cybersecurity 
 > threats from 9 leading security news sources.
@@ -8,140 +8,146 @@
 ## 📊 Analyst Briefing
 
 📊 15 threats detected today.
-🔴 CRITICAL (8): Node.js Brotli Decoder Bug Could Allow Remote Code Execution in All Supported Versions | New QPACK Flaws Can Crash HTTP/3 Servers, Trigger Up to 4,000-Fold Memory Amplification | Someone Tried to Exploit PHP2Shell 4 Days Before the Vulnerabilities Were Publicly Disclosed
-🟠 HIGH (5): LiteLLM Suspects GitHub Token Leak in AI Gateway Logs Behind Malicious Package Release | Japan's Onamae Desktop Cloud hacked, up to 27,000 servers affected | Lazarus hackers use post-quantum cryptography for malware delivery
+🔴 CRITICAL (9): URGENT - PHP Warns of Another Unpatched RCE Two Days After Emergency PHP2Shell Patches | Russian-Linked Hackers Used New Mesh Network Backdoor in Destructive Ukraine Attack | Critical Flaw in Python’s Popular Pillow Image Library Allows Code Execution via a Crafted Image
+🟠 HIGH (5): PHP2Shell Exploit Attempts Hit Millions as Attackers Try to Deploy Mirai Malware | Railway warns devs to rotate secrets after potential breach | Capcom confirms data breach affecting 11.7 million accounts
 ⚠️ Review all articles below and patch accordingly.
 
 ---
 
 ## 🔍 Top Threats
 
-### 🔴 Node.js Brotli Decoder Bug Could Allow Remote Code Execution in All Supported Versions
+### 🔴 URGENT - PHP Warns of Another Unpatched RCE Two Days After Emergency PHP2Shell Patches
 
 - **Source**: The Hacker News
 - **Severity**: CRITICAL
 - **MITRE Tactics**: Execution
-- **Keywords**: remote code execution
-- **Link**: [https://thehackernews.com/2026/10/nodejs-brotli-decoder-bug-could-allow.html](https://thehackernews.com/2026/10/nodejs-brotli-decoder-bug-could-allow.html)
+- **Keywords**: cve-, rce
+- **Link**: [https://thehackernews.com/2026/10/urgent-php-warns-of-another-unpatched.html](https://thehackernews.com/2026/10/urgent-php-warns-of-another-unpatched.html)
 
-Node.js released&nbsp;security updates&nbsp;on October 21 for its three supported release lines, 22.x, 24.x and 26.x, fixing 10 flaws. The most serious is a bug in the Brotli decompression code that Node.js bundles, which the project says can allow remote code execution, meaning an attacker could ru
+PHP has warned of another way an attacker could run code on a web server, two days after it shipped emergency fixes for the critical PHP2Shell flaws.
+
+The new issue, assigned CVE-2026-115560, affects only web applications configured in an unusual way, and PHP considers it an unlikely risk. The proje
 
 ---
 
-### 🔴 New QPACK Flaws Can Crash HTTP/3 Servers, Trigger Up to 4,000-Fold Memory Amplification
+### 🔴 Russian-Linked Hackers Used New Mesh Network Backdoor in Destructive Ukraine Attack
 
 - **Source**: The Hacker News
 - **Severity**: CRITICAL
-- **MITRE Tactics**: Execution
-- **Keywords**: rce
-- **Link**: [https://thehackernews.com/2026/10/new-qpack-flaws-can-crash-http3-servers.html](https://thehackernews.com/2026/10/new-qpack-flaws-can-crash-http3-servers.html)
+- **MITRE Tactics**: Initial Access, Execution, Persistence
+- **Keywords**: malware, phishing, backdoor
+- **Link**: [https://thehackernews.com/2026/10/russian-linked-hackers-used-new-mesh.html](https://thehackernews.com/2026/10/russian-linked-hackers-used-new-mesh.html)
 
-A remote attacker who has not logged in can crash many HTTP/3 web servers with a single connection, security firm FoxIO&nbsp;disclosed, releasing working proof-of-concept code.
+The Russian state-sponsored hacking group Sandworm teamed up with another threat actor to carry out a destructive wiping attack targeting a Ukrainian logistics company last year.
 
-By sending a small batch of compressed HTTP headers that expands in memory to a much larger set, the attacker can force th
+According to ESET, the attack involved UAC-0099 (aka Earth Sirrush) obtaining initial access to the target on July 16, 2
 
 ---
 
-### 🔴 Someone Tried to Exploit PHP2Shell 4 Days Before the Vulnerabilities Were Publicly Disclosed
+### 🔴 Critical Flaw in Python’s Popular Pillow Image Library Allows Code Execution via a Crafted Image
 
 - **Source**: The Hacker News
 - **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access
-- **Keywords**: exploit
-- **Link**: [https://thehackernews.com/2026/10/someone-tried-to-exploit-php2shell-4.html](https://thehackernews.com/2026/10/someone-tried-to-exploit-php2shell-4.html)
+- **MITRE Tactics**: —
+- **Keywords**: cve-
+- **Link**: [https://thehackernews.com/2026/10/critical-flaw-in-pythons-popular-pillow.html](https://thehackernews.com/2026/10/critical-flaw-in-pythons-popular-pillow.html)
 
-Amazon's Threat Intelligence team on Wednesday said it detected an attempt to exploit the newly disclosed PHP2Shell vulnerabilities on October 17, 2026, against its MadPot honeypot service, as the flaws come under broad exploitation in the wild following the release of the patches.
+Pillow, the most widely used image library for Python, can be made to run operating system commands on a server by specifying the name of a file it is told to open.
 
-"The exploit att
+The flaw,&nbsp;CVE-2026-112900, is in the way Pillow handles EPS images, which it opens by passing the file's name to Ghostscript, a s
 
 ---
 
-### 🔴 China-Linked Hackers Use ARTEX AI Agents in ConnectWise Supply Chain Attack
+### 🔴 Researchers Demonstrate Node2Shell RCE Exploit on Node.js Build Using Crafted Brotli Data
 
 - **Source**: The Hacker News
 - **Severity**: CRITICAL
 - **MITRE Tactics**: Initial Access, Execution
-- **Keywords**: rce, supply chain
-- **Link**: [https://thehackernews.com/2026/10/china-linked-hackers-use-artex-ai.html](https://thehackernews.com/2026/10/china-linked-hackers-use-artex-ai.html)
+- **Keywords**: exploit, cve-, rce
+- **Link**: [https://thehackernews.com/2026/10/researchers-demonstrate-node2shell-rce.html](https://thehackernews.com/2026/10/researchers-demonstrate-node2shell-rce.html)
 
-Microsoft on Wednesday disclosed that a China state-aligned actor dubbed Storm-0940 was behind the recent supply chain compromise of the ConnectWise Cloud Backup application.
+Malicious Brotli data can make an application on an official build of Node.js run attacker-supplied code, security researchers at Imperva have&nbsp;demonstrated.
 
-During the incident, Storm-0940 used ARTEX, a Go-based agentic AI penetration testing framework that was made closed-source 
+Their "Node2Shell" proof of concept ran code on the official Node.js 24.22.0 image for Linux arm64, with no debugger or custom build, by 
 
 ---
 
-### 🔴 Critical GitLab Flaw (CVSS 10.0) Could Allow Unauthenticated RCE Across 12 Years of Releases
+### 🔴 The AI Agent Nobody Owns: Watch Expert Webinar On Your Newest Insider Threat
 
 - **Source**: The Hacker News
 - **Severity**: CRITICAL
-- **MITRE Tactics**: Execution
-- **Keywords**: rce
-- **Link**: [https://thehackernews.com/2026/10/critical-gitlab-flaw-cvss-100-could.html](https://thehackernews.com/2026/10/critical-gitlab-flaw-cvss-100-could.html)
+- **MITRE Tactics**: Credential Access
+- **Keywords**: apt
+- **Link**: [https://thehackernews.com/2026/10/the-ai-agent-nobody-owns-watch-expert.html](https://thehackernews.com/2026/10/the-ai-agent-nobody-owns-watch-expert.html)
 
-GitLab released fixes on October 21 for a flaw that lets an attacker run code on a self-managed server without logging in, and it affects every version of the software going back to 7.0, released in 2014.
+Right now, there is probably an AI agent running on a laptop somewhere in your network. It stores API keys and database passwords, can access your internal systems, and works without anyone watching.
 
-The fix matters even for administrators who patched nine days earlier: the October 12 update c
+Nobody reviewed its access. Nobody owns it.
+
+If an employee had that much reach with that little ov
 
 ---
 
-### 🔴 Authorities disrupt nearly 11,000 cybercrime networks in Africa
+### 🔴 Arista Warns of Critical VeloCloud SQL Injection Zero-Day Exploited in Attacks
+
+- **Source**: The Hacker News
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access
+- **Keywords**: zero-day, exploit
+- **Link**: [https://thehackernews.com/2026/10/arista-warns-of-critical-velocloud-sql.html](https://thehackernews.com/2026/10/arista-warns-of-critical-velocloud-sql.html)
+
+Attackers are exploiting a zero-day SQL injection flaw in Arista's VeloCloud Orchestrator (VCO), the&nbsp;central management system&nbsp;for VeloCloud SD-WAN networks, the company said in an&nbsp;advisory&nbsp;on October 22.
+
+The flaw lets anyone who can log in to the orchestrator, even with a read-
+
+---
+
+### 🔴 Arista patches new VeloCloud Orchestrator zero-day exploited in attacks
 
 - **Source**: BleepingComputer
 - **Severity**: CRITICAL
-- **MITRE Tactics**: Execution, Impact
-- **Keywords**: ransomware, rce
-- **Link**: [https://www.bleepingcomputer.com/news/security/authorities-disrupt-nearly-11-000-cybercrime-networks-in-africa/](https://www.bleepingcomputer.com/news/security/authorities-disrupt-nearly-11-000-cybercrime-networks-in-africa/)
+- **MITRE Tactics**: Initial Access
+- **Keywords**: zero-day, exploit, vulnerability
+- **Link**: [https://www.bleepingcomputer.com/news/security/arista-patches-new-velocloud-orchestrator-zero-day-exploited-in-attacks/](https://www.bleepingcomputer.com/news/security/arista-patches-new-velocloud-orchestrator-zero-day-exploited-in-attacks/)
 
-Law enforcement agencies have disrupted nearly 11,000 cybercriminal networks and arrested more than 1,400 people in Operation Serengeti III, which targeted business email compromise, ransomware, and online scams. [...]
+Arista Networks released security updates to patch an actively exploited zero-day vulnerability affecting VeloCloud Orchestrator (VCO) On-Prem deployments. [...]
 
 ---
 
-### 🔴 PHP ships emergency patches for critical PHP2Shell flaws
+### 🔴 Machine speed attacks require machine speed detection and response
 
 - **Source**: BleepingComputer
 - **Severity**: CRITICAL
-- **MITRE Tactics**: Execution
-- **Keywords**: cve-, remote code execution, rce
-- **Link**: [https://www.bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws/](https://www.bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws/)
+- **MITRE Tactics**: Initial Access, Execution, Credential Access
+- **Keywords**: phishing, rce, credential
+- **Link**: [https://www.bleepingcomputer.com/news/security/machine-speed-attacks-require-machine-speed-detection-and-response/](https://www.bleepingcomputer.com/news/security/machine-speed-attacks-require-machine-speed-detection-and-response/)
 
-The PHP security team released emergency security patches for two critical remote code execution (RCE) vulnerabilities (CVE-2026-109618 and CVE-2026-109619) tracked collectively as PHP2Shell. [...]
+Attackers can steal credentials and begin exfiltrating data within minutes, often before security teams can respond. Exaforce examines real-world attacks involving stolen GitHub tokens, malicious AI installers, and MFA phishing, explaining why faster detection and automated containment are critical.
 
 ---
 
-### 🔴 'PHP2Shell' Bugs Signal Red Alert for Security Industry
+### 🔴 AI Agents as Insider Threats: Inside Microsoft's Bet on a Unified Security Stack
 
 - **Source**: Dark Reading
 - **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access
-- **Keywords**: exploit
-- **Link**: [https://www.darkreading.com/application-security/php2shell-bugs-red-alert-security-industry](https://www.darkreading.com/application-security/php2shell-bugs-red-alert-security-industry)
+- **MITRE Tactics**: Execution
+- **Keywords**: rce
+- **Link**: [https://www.darkreading.com/cybersecurity-operations/ai-agents-insider-threats-inside-microsoft-unified-security-stack](https://www.darkreading.com/cybersecurity-operations/ai-agents-insider-threats-inside-microsoft-unified-security-stack)
 
-Security teams are scrambling to remediate two critical PHP vulnerabilities following leaked details and reports of exploitation attempts.
+Microsoft's Project Perception adds Guardian Agents to monitor and contain anomalous AI agents, but experts warn that policing unpredictable agents with other agents may multiply — not contain — the risk.
 
 ---
 
-### 🟠 LiteLLM Suspects GitHub Token Leak in AI Gateway Logs Behind Malicious Package Release
+### 🟠 PHP2Shell Exploit Attempts Hit Millions as Attackers Try to Deploy Mirai Malware
 
 - **Source**: The Hacker News
 - **Severity**: HIGH
-- **MITRE Tactics**: Initial Access, Persistence, Credential Access
-- **Keywords**: backdoor, credential
-- **Link**: [https://thehackernews.com/2026/10/litellm-suspects-github-token-leak-in.html](https://thehackernews.com/2026/10/litellm-suspects-github-token-leak-in.html)
+- **MITRE Tactics**: Initial Access, Execution
+- **Keywords**: exploit, malware, cve-, botnet
+- **Link**: [https://thehackernews.com/2026/10/php2shell-exploit-attempts-hit-millions.html](https://thehackernews.com/2026/10/php2shell-exploit-attempts-hit-millions.html)
 
-LiteLLM on Wednesday disclosed that threat actors compromised "multiple independent security controls" to push a malicious version of the Python package containing a credential stealer and a backdoor.
+Threat actors have been observed unsuccessfully attempting to exploit the newly disclosed PHP2Shell vulnerabilities to rope infected systems into a Mirai botnet variant called Potassium, as it emerges that weaponizing the flaws may be harder than previously thought.
 
-On October 21, 2026, LiteLLM's release pipeline was compromised to push 1.107.0 to the Docker Hub 
-
----
-
-### 🟠 Japan's Onamae Desktop Cloud hacked, up to 27,000 servers affected
-
-- **Source**: BleepingComputer
-- **Severity**: HIGH
-- **MITRE Tactics**: Execution
-- **Keywords**: malware
-- **Link**: [https://www.bleepingcomputer.com/news/security/japans-onamae-desktop-cloud-hacked-up-to-27-000-servers-affected/](https://www.bleepingcomputer.com/news/security/japans-onamae-desktop-cloud-hacked-up-to-27-000-servers-affected/)
-
-Hackers compromised the infrastructure of Onamae Desktop Cloud, a popular provider of VPS services in Japan, and installed malware on up to 26,739 customers' servers. [...]
+The attacks aim to exploit CVE-2
 
 ---
