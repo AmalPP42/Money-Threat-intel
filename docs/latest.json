@@ -1,7 +1,19 @@
 {
-  "date": "2026-10-24T11:53:40.855994",
-  "summary": "\ud83d\udcca 15 threats detected today.\n\ud83d\udd34 CRITICAL (9): Brotli Decoder Flaw Behind Node.js RCE Also Affects Bun, Python and Other Widely Used Software | CISA Flags Two Actively Exploited Critical Flaws in Collabora Online and Arista VeloCloud | BlackX UEFI Bootkit Bypasses Secure Boot on Patched Windows Systems Missing Revocations\n\ud83d\udfe0 HIGH (5): Researchers Push Over 2 Million Updates to Remotely Disable Popcorn Time Updater That Could Fuel a Botnet | Quest Diagnostics confirms data breach exposed patient records | Railway warns devs to rotate secrets after potential breach\n\u26a0\ufe0f Review all articles below and patch accordingly.",
+  "date": "2026-10-25T12:24:37.894209",
+  "summary": "\ud83d\udcca 15 threats detected today.\n\ud83d\udd34 CRITICAL (9): OpenAI AI Agents Demonstrate VM Escapes and Secret Cross-Sandbox Communication | Brotli Decoder Flaw Behind Node.js RCE Also Affects Bun, Python and Other Widely Used Software | CISA Flags Two Actively Exploited Critical Flaws in Collabora Online and Arista VeloCloud\n\ud83d\udfe0 HIGH (5): Researchers Push Over 2 Million Updates to Remotely Disable Popcorn Time Updater That Could Fuel a Botnet | BlackX UEFI bootkit exploits Baton Drop flaw to bypass Secure Boot | Quest Diagnostics confirms data breach exposed patient records\n\u26a0\ufe0f Review all articles below and patch accordingly.",
   "articles": [
+    {
+      "title": "OpenAI AI Agents Demonstrate VM Escapes and Secret Cross-Sandbox Communication",
+      "link": "https://thehackernews.com/2026/10/openai-ai-agents-demonstrate-vm-escapes.html",
+      "source": "The Hacker News",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Execution"
+      ],
+      "keywords": [
+        "rce"
+      ]
+    },
     {
       "title": "Brotli Decoder Flaw Behind Node.js RCE Also Affects Bun, Python and Other Widely Used Software",
       "link": "https://thehackernews.com/2026/10/brotli-decoder-flaw-behind-nodejs-rce.html",
@@ -61,15 +73,16 @@
       ]
     },
     {
-      "title": "Exposed Infrastructure Reveals How Ransomware Affiliates Used AI Agents to Execute Intrusions",
-      "link": "https://thehackernews.com/2026/10/exposed-infrastructure-reveals-how.html",
-      "source": "The Hacker News",
-      "severity": "critical",
+      "title": "BlackX UEFI bootkit exploits Baton Drop flaw to bypass Secure Boot",
+      "link": "https://www.bleepingcomputer.com/news/security/blackx-uefi-bootkit-exploits-baton-drop-flaw-to-bypass-secure-boot/",
+      "source": "BleepingComputer",
+      "severity": "high",
       "mitre_tactics": [
-        "Impact"
+        "Initial Access"
       ],
       "keywords": [
-        "ransomware"
+        "exploit",
+        "vulnerability"
       ]
     },
     {
@@ -142,16 +155,6 @@
       ],
       "keywords": [
         "rce"
-      ]
-    },
-    {
-      "title": "Railway warns devs to rotate secrets after potential breach",
-      "link": "https://www.bleepingcomputer.com/news/security/railway-warns-devs-to-rotate-secrets-after-potential-breach/",
-      "source": "BleepingComputer",
-      "severity": "high",
-      "mitre_tactics": [],
-      "keywords": [
-        "breach"
       ]
     },
     {

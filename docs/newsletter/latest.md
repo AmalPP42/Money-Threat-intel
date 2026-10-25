@@ -1,4 +1,4 @@
-# 🛡️ Daily Threat Intel — October 24, 2026
+# 🛡️ Daily Threat Intel — October 25, 2026
 
 > **Automated daily briefing** covering the most critical cybersecurity 
 > threats from 9 leading security news sources.
@@ -8,13 +8,27 @@
 ## 📊 Analyst Briefing
 
 📊 15 threats detected today.
-🔴 CRITICAL (9): Brotli Decoder Flaw Behind Node.js RCE Also Affects Bun, Python and Other Widely Used Software | CISA Flags Two Actively Exploited Critical Flaws in Collabora Online and Arista VeloCloud | BlackX UEFI Bootkit Bypasses Secure Boot on Patched Windows Systems Missing Revocations
-🟠 HIGH (5): Researchers Push Over 2 Million Updates to Remotely Disable Popcorn Time Updater That Could Fuel a Botnet | Quest Diagnostics confirms data breach exposed patient records | Railway warns devs to rotate secrets after potential breach
+🔴 CRITICAL (9): OpenAI AI Agents Demonstrate VM Escapes and Secret Cross-Sandbox Communication | Brotli Decoder Flaw Behind Node.js RCE Also Affects Bun, Python and Other Widely Used Software | CISA Flags Two Actively Exploited Critical Flaws in Collabora Online and Arista VeloCloud
+🟠 HIGH (5): Researchers Push Over 2 Million Updates to Remotely Disable Popcorn Time Updater That Could Fuel a Botnet | BlackX UEFI bootkit exploits Baton Drop flaw to bypass Secure Boot | Quest Diagnostics confirms data breach exposed patient records
 ⚠️ Review all articles below and patch accordingly.
 
 ---
 
 ## 🔍 Top Threats
+
+### 🔴 OpenAI AI Agents Demonstrate VM Escapes and Secret Cross-Sandbox Communication
+
+- **Source**: The Hacker News
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Execution
+- **Keywords**: rce
+- **Link**: [https://thehackernews.com/2026/10/openai-ai-agents-demonstrate-vm-escapes.html](https://thehackernews.com/2026/10/openai-ai-agents-demonstrate-vm-escapes.html)
+
+OpenAI has announced plans to conduct frontier model training with no live internet access, as it resumes reinforcement learning (RL) training and internal inference of its most advanced AI models.
+
+"Based on the current state of alignment research, monitoring systems, and the security of internet i
+
+---
 
 ### 🔴 Brotli Decoder Flaw Behind Node.js RCE Also Affects Bun, Python and Other Widely Used Software
 
@@ -69,20 +83,6 @@ The activity, which singled out diplomatic entities in Tajikistan, Uzbekistan, a
 Ruby has released versions 4.0.9, 3.4.12, and 3.3.13 to fix three bugs in Onigmo, the regular expression engine built into the language. The bugs lie behind four critical security flaws that GitLab patched over the past month.
 
 GitLab found that a specially crafted pattern could corrupt memory while
-
----
-
-### 🔴 Exposed Infrastructure Reveals How Ransomware Affiliates Used AI Agents to Execute Intrusions
-
-- **Source**: The Hacker News
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Impact
-- **Keywords**: ransomware
-- **Link**: [https://thehackernews.com/2026/10/exposed-infrastructure-reveals-how.html](https://thehackernews.com/2026/10/exposed-infrastructure-reveals-how.html)
-
-Cybersecurity researchers have discovered an artificial intelligence (AI)-driven intrusion ecosystem run by affiliates of the INC and The Gentlemen ransomware groups.
-
-Central to the operation is an "Autonomous Red Team Kill Chain Framework" referred to as Phantom. The threat actor is assessed to be
 
 ---
 
