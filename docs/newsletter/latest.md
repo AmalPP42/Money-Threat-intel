@@ -1,4 +1,4 @@
-# 🛡️ Daily Threat Intel — October 25, 2026
+# 🛡️ Daily Threat Intel — October 26, 2026
 
 > **Automated daily briefing** covering the most critical cybersecurity 
 > threats from 9 leading security news sources.
@@ -8,81 +8,37 @@
 ## 📊 Analyst Briefing
 
 📊 15 threats detected today.
-🔴 CRITICAL (9): OpenAI AI Agents Demonstrate VM Escapes and Secret Cross-Sandbox Communication | Brotli Decoder Flaw Behind Node.js RCE Also Affects Bun, Python and Other Widely Used Software | CISA Flags Two Actively Exploited Critical Flaws in Collabora Online and Arista VeloCloud
-🟠 HIGH (5): Researchers Push Over 2 Million Updates to Remotely Disable Popcorn Time Updater That Could Fuel a Botnet | BlackX UEFI bootkit exploits Baton Drop flaw to bypass Secure Boot | Quest Diagnostics confirms data breach exposed patient records
+🔴 CRITICAL (7): Microsoft 365 Token-Replay Attacks Compromise 97 Accounts at 79 Organizations | PHP2Shell security flaws now sucessfully exploited in the wild | Abandoned Popcorn Time app exposed millions of devices to RCE attacks
+🟠 HIGH (7): uCreator Android Spyware Can Steal Telegram 2FA Passwords and Clone WeChat Accounts | Malicious File in Downloads Folder Tries to Trick AI Coding Agent Into Installing Malware | PHP2Shell Exploitation Attempts Continue Amid Suspected N. Korea Global Scanning Activity
 ⚠️ Review all articles below and patch accordingly.
 
 ---
 
 ## 🔍 Top Threats
 
-### 🔴 OpenAI AI Agents Demonstrate VM Escapes and Secret Cross-Sandbox Communication
-
-- **Source**: The Hacker News
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Execution
-- **Keywords**: rce
-- **Link**: [https://thehackernews.com/2026/10/openai-ai-agents-demonstrate-vm-escapes.html](https://thehackernews.com/2026/10/openai-ai-agents-demonstrate-vm-escapes.html)
-
-OpenAI has announced plans to conduct frontier model training with no live internet access, as it resumes reinforcement learning (RL) training and internal inference of its most advanced AI models.
-
-"Based on the current state of alignment research, monitoring systems, and the security of internet i
-
----
-
-### 🔴 Brotli Decoder Flaw Behind Node.js RCE Also Affects Bun, Python and Other Widely Used Software
-
-- **Source**: The Hacker News
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Execution
-- **Keywords**: cve-, rce
-- **Link**: [https://thehackernews.com/2026/10/brotli-decoder-flaw-behind-nodejs-rce.html](https://thehackernews.com/2026/10/brotli-decoder-flaw-behind-nodejs-rce.html)
-
-A memory-corruption flaw in Google's Brotli decoder sits in many programs that unpack Brotli-compressed data, among them Bun, the Python&nbsp;Brotli&nbsp;and&nbsp;brotlicffi&nbsp;packages, and Envoy proxies set up to decompress Brotli.
-
-Tracked as&nbsp;CVE-2026-111497, the flaw allows crafted compre
-
----
-
-### 🔴 CISA Flags Two Actively Exploited Critical Flaws in Collabora Online and Arista VeloCloud
-
-- **Source**: The Hacker News
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access
-- **Keywords**: exploit, cve-
-- **Link**: [https://thehackernews.com/2026/10/cisa-flags-two-actively-exploited.html](https://thehackernews.com/2026/10/cisa-flags-two-actively-exploited.html)
-
-The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added two vulnerabilities impacting Collabora Online Built-in CODE Server and Arista VeloCloud Orchestrator (VCO) to its Known Exploited Vulnerabilities (KEV), citing reports of active exploitation in the wild.
-
-The critical-
-
----
-
-### 🔴 BlackX UEFI Bootkit Bypasses Secure Boot on Patched Windows Systems Missing Revocations
+### 🔴 Microsoft 365 Token-Replay Attacks Compromise 97 Accounts at 79 Organizations
 
 - **Source**: The Hacker News
 - **Severity**: CRITICAL
 - **MITRE Tactics**: —
 - **Keywords**: apt
-- **Link**: [https://thehackernews.com/2026/10/blackx-uefi-bootkit-bypasses-secure.html](https://thehackernews.com/2026/10/blackx-uefi-bootkit-bypasses-secure.html)
+- **Link**: [https://thehackernews.com/2026/10/microsoft-365-token-replay-attacks.html](https://thehackernews.com/2026/10/microsoft-365-token-replay-attacks.html)
 
-Diplomatic organizations in Central Asia have been targeted by a sophisticated new Unified Extensible Firmware Interface (UEFI) bootkit called BlackX.
+Cybersecurity researchers have disclosed a Microsoft 365 campaign that has been observed leveraging an adversary-in-the-middle (AitM) relay to capture sign-in sessions and then replay the stolen tokens to break into email accounts at 79 organizations.
 
-The activity, which singled out diplomatic entities in Tajikistan, Uzbekistan, and Turkmenistan in early 2026, is suspected to be orchestrated by a 
+Huntress, which observed the activity between J
 
 ---
 
-### 🔴 Ruby Fixes Three Regex Engine Bugs Responsible for Four Critical GitLab RCE Flaws
+### 🔴 PHP2Shell security flaws now sucessfully exploited in the wild
 
-- **Source**: The Hacker News
+- **Source**: BleepingComputer
 - **Severity**: CRITICAL
-- **MITRE Tactics**: Execution
-- **Keywords**: rce
-- **Link**: [https://thehackernews.com/2026/10/ruby-fixes-three-regex-engine-bugs.html](https://thehackernews.com/2026/10/ruby-fixes-three-regex-engine-bugs.html)
+- **MITRE Tactics**: Initial Access, Execution
+- **Keywords**: exploit, cve-, rce
+- **Link**: [https://www.bleepingcomputer.com/news/security/php2shell-security-flaws-now-sucessfully-exploited-in-the-wild/](https://www.bleepingcomputer.com/news/security/php2shell-security-flaws-now-sucessfully-exploited-in-the-wild/)
 
-Ruby has released versions 4.0.9, 3.4.12, and 3.3.13 to fix three bugs in Onigmo, the regular expression engine built into the language. The bugs lie behind four critical security flaws that GitLab patched over the past month.
-
-GitLab found that a specially crafted pattern could corrupt memory while
+Two critical RCE vulnerabilities (CVE-2026-109618 and CVE-2026-109619), collectively tracked as PHP2Shell, have been successfully exploited in the wild. [...]
 
 ---
 
@@ -98,52 +54,90 @@ Researchers remotely disabled a vulnerable updater in the abandoned Time4Popcorn
 
 ---
 
-### 🔴 PHP shares mitigation for new RCE vulnerability with no patch
+### 🔴 AI Agents as Insider Threats: Inside Microsoft's Bet on a Unified Security Stack
 
-- **Source**: BleepingComputer
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Execution
-- **Keywords**: vulnerability, remote code execution, rce
-- **Link**: [https://www.bleepingcomputer.com/news/security/php-shares-mitigation-for-new-and-unpatched-rce-vulnerability/](https://www.bleepingcomputer.com/news/security/php-shares-mitigation-for-new-and-unpatched-rce-vulnerability/)
-
-The PHP security team has shared mitigation measures for a new remote code execution vulnerability that affects systems with non-default configurations and has no patch. [...]
-
----
-
-### 🔴 You gave your AI agent access, but who is giving it orders?
-
-- **Source**: BleepingComputer
+- **Source**: Dark Reading
 - **Severity**: CRITICAL
 - **MITRE Tactics**: Execution
 - **Keywords**: rce
-- **Link**: [https://www.bleepingcomputer.com/news/security/you-gave-your-ai-agent-access-but-who-is-giving-it-orders/](https://www.bleepingcomputer.com/news/security/you-gave-your-ai-agent-access-but-who-is-giving-it-orders/)
+- **Link**: [https://www.darkreading.com/cybersecurity-operations/ai-agents-insider-threats-inside-microsoft-unified-security-stack](https://www.darkreading.com/cybersecurity-operations/ai-agents-insider-threats-inside-microsoft-unified-security-stack)
 
-AI agents can be manipulated through malicious emails, websites, and plugins into executing commands, stealing data, or deleting files using their legitimate permissions. Gen Digital explains how its Agent Trust Hub helps protect agents through skill verification, secure connectivity, and runtime co
+Microsoft's Project Perception adds Guardian Agents to monitor and contain anomalous AI agents, but experts warn that policing unpredictable agents with other agents may compound — not contain — the risk.
 
 ---
 
-### 🔴 HPE patches eight max severity RCE and auth bypass AOS flaws
+### 🔴 Widespread PHP Flaw May Cause Many Site Outages Today
 
-- **Source**: BleepingComputer
+- **Source**: Krebs on Security
 - **Severity**: CRITICAL
-- **MITRE Tactics**: Execution
-- **Keywords**: rce
-- **Link**: [https://www.bleepingcomputer.com/news/security/hpe-patches-eight-max-severity-rce-and-auth-bypass-aos-flaws/](https://www.bleepingcomputer.com/news/security/hpe-patches-eight-max-severity-rce-and-auth-bypass-aos-flaws/)
+- **MITRE Tactics**: Initial Access, Execution
+- **Keywords**: exploit, rce
+- **Link**: [https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/](https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/)
 
-Hewlett Packard Enterprise (HPE) released security updates to patch 72 vulnerabilities in the Aruba Operating System (ArubaOS), including eight maximum-severity authentication bypass and code execution issues. [...]
+Expect to see quite a few websites serving "404" or "Page Not Found" errors today: Nearly 70 percent of websites need to update their core software to fix a pair of vulnerabilities that allow an attacker to seize full control over affected servers. Experts say there are working exploits for the flaw
 
 ---
 
-### 🟠 Researchers Push Over 2 Million Updates to Remotely Disable Popcorn Time Updater That Could Fuel a Botnet
+### 🔴 Feds Suspect Ransom Negotiator Ran ShinyHunters Extortion Site
+
+- **Source**: Krebs on Security
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Execution, Impact
+- **Keywords**: ransomware, rce
+- **Link**: [https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/](https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/)
+
+U.S. federal investigators pursuing the ShinyHunters hacking group that recently stole highly sensitive data from the FBI have identified executives at two different ransomware negotiation firms who maintained unusually close relations with the extortion group, KrebsOnSecurity has learned. Sources c
+
+---
+
+### 🔴 U.K. Sanctions Cryptomus for RU Money Laundering
+
+- **Source**: Krebs on Security
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Impact
+- **Keywords**: ransomware
+- **Link**: [https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/](https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/)
+
+The United Kingdom has issued economic sanctions against Cryptomus, a chameleonic cryptocurrency platform that experts say serves as a major conduit for payments related to ransomware, narcotics, darknet markets, fraud and cybercrime services that are helping Russia circumvent existing financial res
+
+---
+
+### 🟠 uCreator Android Spyware Can Steal Telegram 2FA Passwords and Clone WeChat Accounts
 
 - **Source**: The Hacker News
 - **Severity**: HIGH
-- **MITRE Tactics**: —
-- **Keywords**: botnet
-- **Link**: [https://thehackernews.com/2026/10/researchers-push-over-2-million-updates.html](https://thehackernews.com/2026/10/researchers-push-over-2-million-updates.html)
+- **MITRE Tactics**: Persistence, Credential Access
+- **Keywords**: backdoor
+- **Link**: [https://thehackernews.com/2026/10/ucreator-android-spyware-can-steal.html](https://thehackernews.com/2026/10/ucreator-android-spyware-can-steal.html)
 
-Between November 2025 and March 2026, the Dutch security firm Eye Security pushed more than 2 million updates to computers it did not own to switch off a background updater that it said could have allowed an outsider to take over the machine.
+A rentable Android spyware kit called uCreator takes over Telegram and WeChat accounts by hiding its code inside working copies of the two apps, researcher Ovi found. It only reaches people who install one of these tampered copies, spread outside the official app stores, or who run WeChat inside the
 
-The updater belongs to Time4Popcorn, an abandoned copy o
+---
+
+### 🟠 Malicious File in Downloads Folder Tries to Trick AI Coding Agent Into Installing Malware
+
+- **Source**: The Hacker News
+- **Severity**: HIGH
+- **MITRE Tactics**: Execution
+- **Keywords**: malware
+- **Link**: [https://thehackernews.com/2026/10/malicious-file-in-downloads-folder.html](https://thehackernews.com/2026/10/malicious-file-in-downloads-folder.html)
+
+A malicious instruction file sitting in a developer's Downloads folder tried to make their AI coding agent install a known-malicious npm package, security firm&nbsp;Forever Security said&nbsp;in a report published last week.
+
+The company caught the attempt on a real customer's machine and stopped th
+
+---
+
+### 🟠 PHP2Shell Exploitation Attempts Continue Amid Suspected N. Korea Global Scanning Activity
+
+- **Source**: The Hacker News
+- **Severity**: HIGH
+- **MITRE Tactics**: Initial Access, Discovery
+- **Keywords**: exploit
+- **Link**: [https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html](https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html)
+
+In an update, Palo Alto Networks Unit 42 said it's retracting its earlier assessment that the post-compromise activity targeting the European government agency involved the exploitation of the PHP2Shell flaws.
+
+"What researchers saw was an attack against a European government agency executed in the 
 
 ---
