@@ -1,4 +1,4 @@
-# 🛡️ Daily Threat Intel — October 26, 2026
+# 🛡️ Daily Threat Intel — October 27, 2026
 
 > **Automated daily briefing** covering the most critical cybersecurity 
 > threats from 9 leading security news sources.
@@ -8,136 +8,136 @@
 ## 📊 Analyst Briefing
 
 📊 15 threats detected today.
-🔴 CRITICAL (7): Microsoft 365 Token-Replay Attacks Compromise 97 Accounts at 79 Organizations | PHP2Shell security flaws now sucessfully exploited in the wild | Abandoned Popcorn Time app exposed millions of devices to RCE attacks
-🟠 HIGH (7): uCreator Android Spyware Can Steal Telegram 2FA Passwords and Clone WeChat Accounts | Malicious File in Downloads Folder Tries to Trick AI Coding Agent Into Installing Malware | PHP2Shell Exploitation Attempts Continue Amid Suspected N. Korea Global Scanning Activity
+🔴 CRITICAL (7): AI-Generated Fake Login Pages Are Making Account Takeovers Easier | CISA Confirms Active Exploitation of Two PHP2Shell Flaws Enabling Remote Code Execution | Apple backports CoreGraphics zero-day patches to older iPhones
+🟠 HIGH (7): Lazarus Abuses South Korean Security Software to Deploy Malware Using Post-Quantum Encryption | Australia Gets Into Amadey Malware Backend, Cuts Off Access to 180,000 Infected Computers | Energy giant ENGIE discloses data breach affecting customers
 ⚠️ Review all articles below and patch accordingly.
 
 ---
 
 ## 🔍 Top Threats
 
-### 🔴 Microsoft 365 Token-Replay Attacks Compromise 97 Accounts at 79 Organizations
+### 🔴 AI-Generated Fake Login Pages Are Making Account Takeovers Easier
 
 - **Source**: The Hacker News
 - **Severity**: CRITICAL
-- **MITRE Tactics**: —
-- **Keywords**: apt
-- **Link**: [https://thehackernews.com/2026/10/microsoft-365-token-replay-attacks.html](https://thehackernews.com/2026/10/microsoft-365-token-replay-attacks.html)
+- **MITRE Tactics**: Initial Access, Credential Access
+- **Keywords**: phishing, apt
+- **Link**: [https://thehackernews.com/2026/10/ai-generated-fake-login-pages-are.html](https://thehackernews.com/2026/10/ai-generated-fake-login-pages-are.html)
 
-Cybersecurity researchers have disclosed a Microsoft 365 campaign that has been observed leveraging an adversary-in-the-middle (AitM) relay to capture sign-in sessions and then replay the stolen tokens to break into email accounts at 79 organizations.
+Fake login pages are nothing new, but generative AI is making them easier to build and more convincing. Attackers can recreate familiar login screens, impersonate trusted brands and tailor phishing attempts to specific employees or organizations.&nbsp;
 
-Huntress, which observed the activity between J
+Some fake login pages go beyond stealing passw
 
 ---
 
-### 🔴 PHP2Shell security flaws now sucessfully exploited in the wild
+### 🔴 CISA Confirms Active Exploitation of Two PHP2Shell Flaws Enabling Remote Code Execution
 
-- **Source**: BleepingComputer
+- **Source**: The Hacker News
 - **Severity**: CRITICAL
 - **MITRE Tactics**: Initial Access, Execution
-- **Keywords**: exploit, cve-, rce
-- **Link**: [https://www.bleepingcomputer.com/news/security/php2shell-security-flaws-now-sucessfully-exploited-in-the-wild/](https://www.bleepingcomputer.com/news/security/php2shell-security-flaws-now-sucessfully-exploited-in-the-wild/)
+- **Keywords**: exploit, cve-, remote code execution
+- **Link**: [https://thehackernews.com/2026/10/cisa-confirms-active-exploitation-of.html](https://thehackernews.com/2026/10/cisa-confirms-active-exploitation-of.html)
 
-Two critical RCE vulnerabilities (CVE-2026-109618 and CVE-2026-109619), collectively tracked as PHP2Shell, have been successfully exploited in the wild. [...]
+The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday confirmed active exploitation of the recently patched PHP2Shell flaws by adding them to its Known Exploited Vulnerabilities (KEV) catalog.
+
+The PHP vulnerabilities, both rated 9.2 on the CVSS scoring system, facilitate unauth
 
 ---
 
-### 🔴 Abandoned Popcorn Time app exposed millions of devices to RCE attacks
+### 🔴 Apple backports CoreGraphics zero-day patches to older iPhones
 
 - **Source**: BleepingComputer
 - **Severity**: CRITICAL
-- **MITRE Tactics**: Execution
-- **Keywords**: rce
-- **Link**: [https://www.bleepingcomputer.com/news/security/abandoned-popcorn-time-app-exposed-millions-of-device-to-rce-attacks/](https://www.bleepingcomputer.com/news/security/abandoned-popcorn-time-app-exposed-millions-of-device-to-rce-attacks/)
+- **MITRE Tactics**: Initial Access
+- **Keywords**: zero-day, exploit
+- **Link**: [https://www.bleepingcomputer.com/news/apple/apple-backports-coregraphics-zero-day-patches-to-older-iphones/](https://www.bleepingcomputer.com/news/apple/apple-backports-coregraphics-zero-day-patches-to-older-iphones/)
 
-Researchers remotely disabled a vulnerable updater in the abandoned Time4Popcorn app, a fork of the Popcorn Time BitTorrent client, closing a security flaw that could have allowed attackers to execute malicious code with elevated privileges on millions of computers. [...]
+​Apple has backported security patches released last month to older iPhones and iPads, addressing a zero-day bug exploited in "extremely sophisticated" targeted attacks on iOS devices. [...]
 
 ---
 
-### 🔴 AI Agents as Insider Threats: Inside Microsoft's Bet on a Unified Security Stack
+### 🔴 CISA confirms PHP2Shell vulnerabilities now exploited in attacks
+
+- **Source**: BleepingComputer
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access
+- **Keywords**: exploit
+- **Link**: [https://www.bleepingcomputer.com/news/security/cisa-confirms-php2shell-vulnerabilities-now-exploited-in-attacks/](https://www.bleepingcomputer.com/news/security/cisa-confirms-php2shell-vulnerabilities-now-exploited-in-attacks/)
+
+The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added the PHP2Shell  vulnerabilities to its catalog of actively exploited security flaws and ordered federal agencies to patch their systems by Thursday. [...]
+
+---
+
+### 🔴 DreamHost forces password resets in ongoing "incident"
+
+- **Source**: BleepingComputer
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Execution, Credential Access
+- **Keywords**: rce
+- **Link**: [https://www.bleepingcomputer.com/news/security/dreamhost-forces-email-ftp-sftp-password-resets-in-ongoing-incident/](https://www.bleepingcomputer.com/news/security/dreamhost-forces-email-ftp-sftp-password-resets-in-ongoing-incident/)
+
+DreamHost has forced password resets for email and FTP/SFTP users following an incident that disrupted connections to the File Manager interface. [...]
+
+---
+
+### 🔴 Critical 'HTTP2Shell' Brotli vulnerability triggers emergency patches
+
+- **Source**: BleepingComputer
+- **Severity**: CRITICAL
+- **MITRE Tactics**: —
+- **Keywords**: vulnerability
+- **Link**: [https://www.bleepingcomputer.com/news/security/critical-http2shell-brotli-vulnerability-triggers-emergency-patches/](https://www.bleepingcomputer.com/news/security/critical-http2shell-brotli-vulnerability-triggers-emergency-patches/)
+
+A critical flaw dubbed 'HTTP2Shell' in Brotli, the C decoder library built into Node.js, could allow attackers to corrupt memory and access sensitive data. [...]
+
+---
+
+### 🔴 'Gheist' Weaponizes GitHub Tokens to Steal Cloud Secrets
 
 - **Source**: Dark Reading
 - **Severity**: CRITICAL
-- **MITRE Tactics**: Execution
-- **Keywords**: rce
-- **Link**: [https://www.darkreading.com/cybersecurity-operations/ai-agents-insider-threats-inside-microsoft-unified-security-stack](https://www.darkreading.com/cybersecurity-operations/ai-agents-insider-threats-inside-microsoft-unified-security-stack)
+- **MITRE Tactics**: Initial Access, Credential Access
+- **Keywords**: supply chain, credential
+- **Link**: [https://www.darkreading.com/cyberattacks-data-breaches/gheist-stolen-github-tokens-cloud-secrets](https://www.darkreading.com/cyberattacks-data-breaches/gheist-stolen-github-tokens-cloud-secrets)
 
-Microsoft's Project Perception adds Guardian Agents to monitor and contain anomalous AI agents, but experts warn that policing unpredictable agents with other agents may compound — not contain — the risk.
-
----
-
-### 🔴 Widespread PHP Flaw May Cause Many Site Outages Today
-
-- **Source**: Krebs on Security
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access, Execution
-- **Keywords**: exploit, rce
-- **Link**: [https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/](https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/)
-
-Expect to see quite a few websites serving "404" or "Page Not Found" errors today: Nearly 70 percent of websites need to update their core software to fix a pair of vulnerabilities that allow an attacker to seize full control over affected servers. Experts say there are working exploits for the flaw
+An ongoing supply chain attack is harvesting credentials and sensitive data from thousands of developer repositories.
 
 ---
 
-### 🔴 Feds Suspect Ransom Negotiator Ran ShinyHunters Extortion Site
-
-- **Source**: Krebs on Security
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Execution, Impact
-- **Keywords**: ransomware, rce
-- **Link**: [https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/](https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/)
-
-U.S. federal investigators pursuing the ShinyHunters hacking group that recently stole highly sensitive data from the FBI have identified executives at two different ransomware negotiation firms who maintained unusually close relations with the extortion group, KrebsOnSecurity has learned. Sources c
-
----
-
-### 🔴 U.K. Sanctions Cryptomus for RU Money Laundering
-
-- **Source**: Krebs on Security
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Impact
-- **Keywords**: ransomware
-- **Link**: [https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/](https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/)
-
-The United Kingdom has issued economic sanctions against Cryptomus, a chameleonic cryptocurrency platform that experts say serves as a major conduit for payments related to ransomware, narcotics, darknet markets, fraud and cybercrime services that are helping Russia circumvent existing financial res
-
----
-
-### 🟠 uCreator Android Spyware Can Steal Telegram 2FA Passwords and Clone WeChat Accounts
-
-- **Source**: The Hacker News
-- **Severity**: HIGH
-- **MITRE Tactics**: Persistence, Credential Access
-- **Keywords**: backdoor
-- **Link**: [https://thehackernews.com/2026/10/ucreator-android-spyware-can-steal.html](https://thehackernews.com/2026/10/ucreator-android-spyware-can-steal.html)
-
-A rentable Android spyware kit called uCreator takes over Telegram and WeChat accounts by hiding its code inside working copies of the two apps, researcher Ovi found. It only reaches people who install one of these tampered copies, spread outside the official app stores, or who run WeChat inside the
-
----
-
-### 🟠 Malicious File in Downloads Folder Tries to Trick AI Coding Agent Into Installing Malware
+### 🟠 Lazarus Abuses South Korean Security Software to Deploy Malware Using Post-Quantum Encryption
 
 - **Source**: The Hacker News
 - **Severity**: HIGH
 - **MITRE Tactics**: Execution
 - **Keywords**: malware
-- **Link**: [https://thehackernews.com/2026/10/malicious-file-in-downloads-folder.html](https://thehackernews.com/2026/10/malicious-file-in-downloads-folder.html)
+- **Link**: [https://thehackernews.com/2026/10/lazarus-abuses-south-korean-security.html](https://thehackernews.com/2026/10/lazarus-abuses-south-korean-security.html)
 
-A malicious instruction file sitting in a developer's Downloads folder tried to make their AI coding agent install a known-malicious npm package, security firm&nbsp;Forever Security said&nbsp;in a report published last week.
+The North Korea-linked Lazarus Group has been attributed to a cyber espionage campaign dubbed Operation FlashHole targeting at least three organizations in South Korea spanning the construction, software, and wire-communication equipment manufacturing sectors.
 
-The company caught the attempt on a real customer's machine and stopped th
+According to Russian cybersecurity com
 
 ---
 
-### 🟠 PHP2Shell Exploitation Attempts Continue Amid Suspected N. Korea Global Scanning Activity
+### 🟠 Australia Gets Into Amadey Malware Backend, Cuts Off Access to 180,000 Infected Computers
 
 - **Source**: The Hacker News
 - **Severity**: HIGH
-- **MITRE Tactics**: Initial Access, Discovery
-- **Keywords**: exploit
-- **Link**: [https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html](https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html)
+- **MITRE Tactics**: Execution
+- **Keywords**: malware
+- **Link**: [https://thehackernews.com/2026/10/australia-gets-into-amadey-malware.html](https://thehackernews.com/2026/10/australia-gets-into-amadey-malware.html)
 
-In an update, Palo Alto Networks Unit 42 said it's retracting its earlier assessment that the post-compromise activity targeting the European government agency involved the exploitation of the PHP2Shell flaws.
+A criminal using the Amadey malware can no longer access or steal data from 180,000 infected computers around the world, including some in Australia, the Australian Signals Directorate (ASD) says. The agency's operators gained access to the criminal's operation's backend and cut it off from those co
 
-"What researchers saw was an attack against a European government agency executed in the 
+---
+
+### 🟠 Energy giant ENGIE discloses data breach affecting customers
+
+- **Source**: BleepingComputer
+- **Severity**: HIGH
+- **MITRE Tactics**: —
+- **Keywords**: breach
+- **Link**: [https://www.bleepingcomputer.com/news/security/energy-giant-engie-discloses-data-breach-affecting-customers/](https://www.bleepingcomputer.com/news/security/energy-giant-engie-discloses-data-breach-affecting-customers/)
+
+French energy giant ENGIE, one of the world's largest power and natural gas providers, confirmed that attackers stole customer data after breaching a marketing platform used by business partners. [...]
 
 ---
