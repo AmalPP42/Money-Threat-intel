@@ -1,4 +1,4 @@
-# 🛡️ Daily Threat Intel — October 27, 2026
+# 🛡️ Daily Threat Intel — October 28, 2026
 
 > **Automated daily briefing** covering the most critical cybersecurity 
 > threats from 9 leading security news sources.
@@ -8,136 +8,139 @@
 ## 📊 Analyst Briefing
 
 📊 15 threats detected today.
-🔴 CRITICAL (7): AI-Generated Fake Login Pages Are Making Account Takeovers Easier | CISA Confirms Active Exploitation of Two PHP2Shell Flaws Enabling Remote Code Execution | Apple backports CoreGraphics zero-day patches to older iPhones
-🟠 HIGH (7): Lazarus Abuses South Korean Security Software to Deploy Malware Using Post-Quantum Encryption | Australia Gets Into Amadey Malware Backend, Cuts Off Access to 180,000 Infected Computers | Energy giant ENGIE discloses data breach affecting customers
+🔴 CRITICAL (11): Adobe Fixes 8 Critical Campaign Classic Flaws Allowing Code Execution and Security Bypass | ShinyHunters-Exploited Oracle PeopleSoft Zero-Day Turns Out to Be Three Chained Flaws | Adobe Commerce PolyShell Attacks Breach Hundreds of Stores as Brotli Exploit Traffic Emerges
+🟠 HIGH (3): Anthropic's Unreleased AI Model Chains Flaws Into Working Chrome, Safari, Windows and Linux Exploits | Japan's GMO Offers $1 Million Bounty to Catch Hackers Behind FX Trading Cloud Breach | 'Aokigahara' Stealer Targets 'Developer Keyrings' &amp; AI Assistants
 ⚠️ Review all articles below and patch accordingly.
 
 ---
 
 ## 🔍 Top Threats
 
-### 🔴 AI-Generated Fake Login Pages Are Making Account Takeovers Easier
+### 🔴 Adobe Fixes 8 Critical Campaign Classic Flaws Allowing Code Execution and Security Bypass
 
 - **Source**: The Hacker News
 - **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access, Credential Access
-- **Keywords**: phishing, apt
-- **Link**: [https://thehackernews.com/2026/10/ai-generated-fake-login-pages-are.html](https://thehackernews.com/2026/10/ai-generated-fake-login-pages-are.html)
+- **MITRE Tactics**: Initial Access, Privilege Escalation
+- **Keywords**: exploit, vulnerability, cve-, privilege escalation
+- **Link**: [https://thehackernews.com/2026/10/adobe-fixes-8-critical-campaign-classic.html](https://thehackernews.com/2026/10/adobe-fixes-8-critical-campaign-classic.html)
 
-Fake login pages are nothing new, but generative AI is making them easier to build and more convincing. Attackers can recreate familiar login screens, impersonate trusted brands and tailor phishing attempts to specific employees or organizations.&nbsp;
+Adobe has released patches to address multiple critical security flaws in Campaign Classic that, if successfully exploited, could result in arbitrary code execution, security feature bypass, and privilege escalation.
 
-Some fake login pages go beyond stealing passw
+The list of eight vulnerabilities is as follows -
+
+
+  CVE-2026-104351 (CVSS score:
 
 ---
 
-### 🔴 CISA Confirms Active Exploitation of Two PHP2Shell Flaws Enabling Remote Code Execution
+### 🔴 ShinyHunters-Exploited Oracle PeopleSoft Zero-Day Turns Out to Be Three Chained Flaws
+
+- **Source**: The Hacker News
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access
+- **Keywords**: zero-day, exploit, cve-
+- **Link**: [https://thehackernews.com/2026/10/shinyhunters-exploited-oracle.html](https://thehackernews.com/2026/10/shinyhunters-exploited-oracle.html)
+
+The critical Oracle PeopleSoft bug that ShinyHunters has exploited since May is not one flaw but three chained together, the researchers who reported it said this week.
+
+Oracle patched all three under a single identifier,&nbsp;CVE-2026-35273, in June. Its root is a server-side request forgery (SSRF)
+
+---
+
+### 🔴 Adobe Commerce PolyShell Attacks Breach Hundreds of Stores as Brotli Exploit Traffic Emerges
 
 - **Source**: The Hacker News
 - **Severity**: CRITICAL
 - **MITRE Tactics**: Initial Access, Execution
-- **Keywords**: exploit, cve-, remote code execution
-- **Link**: [https://thehackernews.com/2026/10/cisa-confirms-active-exploitation-of.html](https://thehackernews.com/2026/10/cisa-confirms-active-exploitation-of.html)
+- **Keywords**: breach, exploit, vulnerability, cve-, rce
+- **Link**: [https://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html](https://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html)
 
-The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday confirmed active exploitation of the recently patched PHP2Shell flaws by adding them to its Known Exploited Vulnerabilities (KEV) catalog.
+The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added two vulnerabilities impacting Adobe Commerce and Magento, and Google's Brotli decoder library to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.
 
-The PHP vulnerabilities, both rated 9.2 on the CVSS scoring system, facilitate unauth
-
----
-
-### 🔴 Apple backports CoreGraphics zero-day patches to older iPhones
-
-- **Source**: BleepingComputer
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access
-- **Keywords**: zero-day, exploit
-- **Link**: [https://www.bleepingcomputer.com/news/apple/apple-backports-coregraphics-zero-day-patches-to-older-iphones/](https://www.bleepingcomputer.com/news/apple/apple-backports-coregraphics-zero-day-patches-to-older-iphones/)
-
-​Apple has backported security patches released last month to older iPhones and iPads, addressing a zero-day bug exploited in "extremely sophisticated" targeted attacks on iOS devices. [...]
+The vulnerabilities are liste
 
 ---
 
-### 🔴 CISA confirms PHP2Shell vulnerabilities now exploited in attacks
+### 🔴 Hackers now scanning systems for recently-patched Oracle flaw
 
 - **Source**: BleepingComputer
 - **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access
-- **Keywords**: exploit
-- **Link**: [https://www.bleepingcomputer.com/news/security/cisa-confirms-php2shell-vulnerabilities-now-exploited-in-attacks/](https://www.bleepingcomputer.com/news/security/cisa-confirms-php2shell-vulnerabilities-now-exploited-in-attacks/)
-
-The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added the PHP2Shell  vulnerabilities to its catalog of actively exploited security flaws and ordered federal agencies to patch their systems by Thursday. [...]
-
----
-
-### 🔴 DreamHost forces password resets in ongoing "incident"
-
-- **Source**: BleepingComputer
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Execution, Credential Access
-- **Keywords**: rce
-- **Link**: [https://www.bleepingcomputer.com/news/security/dreamhost-forces-email-ftp-sftp-password-resets-in-ongoing-incident/](https://www.bleepingcomputer.com/news/security/dreamhost-forces-email-ftp-sftp-password-resets-in-ongoing-incident/)
-
-DreamHost has forced password resets for email and FTP/SFTP users following an incident that disrupted connections to the File Manager interface. [...]
-
----
-
-### 🔴 Critical 'HTTP2Shell' Brotli vulnerability triggers emergency patches
-
-- **Source**: BleepingComputer
-- **Severity**: CRITICAL
-- **MITRE Tactics**: —
+- **MITRE Tactics**: Discovery
 - **Keywords**: vulnerability
-- **Link**: [https://www.bleepingcomputer.com/news/security/critical-http2shell-brotli-vulnerability-triggers-emergency-patches/](https://www.bleepingcomputer.com/news/security/critical-http2shell-brotli-vulnerability-triggers-emergency-patches/)
+- **Link**: [https://www.bleepingcomputer.com/news/security/hackers-now-scanning-systems-for-recently-patched-oracle-flaw/](https://www.bleepingcomputer.com/news/security/hackers-now-scanning-systems-for-recently-patched-oracle-flaw/)
 
-A critical flaw dubbed 'HTTP2Shell' in Brotli, the C decoder library built into Node.js, could allow attackers to corrupt memory and access sensitive data. [...]
+Attackers have begun probing the Internet for systems unpatched against a recently disclosed critical Oracle E-Business Suite (EBS) vulnerability. [...]
 
 ---
 
-### 🔴 'Gheist' Weaponizes GitHub Tokens to Steal Cloud Secrets
+### 🔴 CISA warns of hackers now exploiting critical Node2Shell flaw
+
+- **Source**: BleepingComputer
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access
+- **Keywords**: exploit, vulnerability
+- **Link**: [https://www.bleepingcomputer.com/news/security/cisa-warns-of-hackers-now-exploiting-critical-node2shell-flaw/](https://www.bleepingcomputer.com/news/security/cisa-warns-of-hackers-now-exploiting-critical-node2shell-flaw/)
+
+On Tuesday, the US Cybersecurity and Infrastructure Security Agency (CISA) confirmed that hackers have begun exploiting a critical Brotli vulnerability known as Node2Shell, Broccoli2Shell, and HTTP2Shell. [...]
+
+---
+
+### 🔴 Nefilim and Hive ransomware affiliate gets 70 months in prison
+
+- **Source**: BleepingComputer
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Impact
+- **Keywords**: ransomware
+- **Link**: [https://www.bleepingcomputer.com/news/security/nefilim-and-hive-ransomware-affiliate-gets-70-months-in-prison/](https://www.bleepingcomputer.com/news/security/nefilim-and-hive-ransomware-affiliate-gets-70-months-in-prison/)
+
+A Ukrainian national was sentenced to 70 months in prison for his role in ransomware attacks targeting hospitals, government entities, and high-revenue businesses worldwide between 2018 and 2021. [...]
+
+---
+
+### 🔴 Japan's GMO urges customers to shut down PCs amid ransomware threat
+
+- **Source**: BleepingComputer
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Impact
+- **Keywords**: ransomware, breach
+- **Link**: [https://www.bleepingcomputer.com/news/security/japans-gmo-urges-customers-to-shut-down-pcs-amid-ransomware-threat/](https://www.bleepingcomputer.com/news/security/japans-gmo-urges-customers-to-shut-down-pcs-amid-ransomware-threat/)
+
+The GMO Group has urged customers to disconnect their systems from the internet and shut down computers after a threat actor who breached the company's Onamae Desktop Cloud threatened to launch a ransomware attack today. [...]
+
+---
+
+### 🔴 UNM Health ransomware attack disrupts patient care, surgeries
+
+- **Source**: BleepingComputer
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Impact
+- **Keywords**: ransomware
+- **Link**: [https://www.bleepingcomputer.com/news/security/unm-health-ransomware-attack-disrupts-patient-care-surgeries/](https://www.bleepingcomputer.com/news/security/unm-health-ransomware-attack-disrupts-patient-care-surgeries/)
+
+The University of New Mexico Health Sciences Center disclosed a cyberattack that caused system outages and disrupted patient care and academic activities. [...]
+
+---
+
+### 🔴 Hackers hijack Convertr analytics script to steal payment card data
+
+- **Source**: BleepingComputer
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Execution
+- **Keywords**: rce
+- **Link**: [https://www.bleepingcomputer.com/news/security/hackers-hijack-convertr-analytics-script-to-steal-payment-card-data/](https://www.bleepingcomputer.com/news/security/hackers-hijack-convertr-analytics-script-to-steal-payment-card-data/)
+
+A credit card skimming group reportedly compromised a shared analytics script used by e-commerce platform Convertr to steal shoppers' payment data during checkout. [...]
+
+---
+
+### 🔴 External Teams Chats Anchor 15-Minute Malware Delivery
 
 - **Source**: Dark Reading
 - **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access, Credential Access
-- **Keywords**: supply chain, credential
-- **Link**: [https://www.darkreading.com/cyberattacks-data-breaches/gheist-stolen-github-tokens-cloud-secrets](https://www.darkreading.com/cyberattacks-data-breaches/gheist-stolen-github-tokens-cloud-secrets)
+- **MITRE Tactics**: Execution, Impact
+- **Keywords**: ransomware, malware
+- **Link**: [https://www.darkreading.com/cloud-security/email-bombing-external-teams-chats-repeatable-access-path](https://www.darkreading.com/cloud-security/email-bombing-external-teams-chats-repeatable-access-path)
 
-An ongoing supply chain attack is harvesting credentials and sensitive data from thousands of developer repositories.
-
----
-
-### 🟠 Lazarus Abuses South Korean Security Software to Deploy Malware Using Post-Quantum Encryption
-
-- **Source**: The Hacker News
-- **Severity**: HIGH
-- **MITRE Tactics**: Execution
-- **Keywords**: malware
-- **Link**: [https://thehackernews.com/2026/10/lazarus-abuses-south-korean-security.html](https://thehackernews.com/2026/10/lazarus-abuses-south-korean-security.html)
-
-The North Korea-linked Lazarus Group has been attributed to a cyber espionage campaign dubbed Operation FlashHole targeting at least three organizations in South Korea spanning the construction, software, and wire-communication equipment manufacturing sectors.
-
-According to Russian cybersecurity com
-
----
-
-### 🟠 Australia Gets Into Amadey Malware Backend, Cuts Off Access to 180,000 Infected Computers
-
-- **Source**: The Hacker News
-- **Severity**: HIGH
-- **MITRE Tactics**: Execution
-- **Keywords**: malware
-- **Link**: [https://thehackernews.com/2026/10/australia-gets-into-amadey-malware.html](https://thehackernews.com/2026/10/australia-gets-into-amadey-malware.html)
-
-A criminal using the Amadey malware can no longer access or steal data from 180,000 infected computers around the world, including some in Australia, the Australian Signals Directorate (ASD) says. The agency's operators gained access to the criminal's operation's backend and cut it off from those co
-
----
-
-### 🟠 Energy giant ENGIE discloses data breach affecting customers
-
-- **Source**: BleepingComputer
-- **Severity**: HIGH
-- **MITRE Tactics**: —
-- **Keywords**: breach
-- **Link**: [https://www.bleepingcomputer.com/news/security/energy-giant-engie-discloses-data-breach-affecting-customers/](https://www.bleepingcomputer.com/news/security/energy-giant-engie-discloses-data-breach-affecting-customers/)
-
-French energy giant ENGIE, one of the world's largest power and natural gas providers, confirmed that attackers stole customer data after breaching a marketing platform used by business partners. [...]
+Mail bombing is getting a new look with a wide-scale, ongoing social engineering campaign that might be tied to the Black Basta ransomware gang.
 
 ---

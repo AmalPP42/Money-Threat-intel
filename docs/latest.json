@@ -1,184 +1,199 @@
 {
-  "date": "2026-10-27T13:03:00.143476",
-  "summary": "\ud83d\udcca 15 threats detected today.\n\ud83d\udd34 CRITICAL (7): AI-Generated Fake Login Pages Are Making Account Takeovers Easier | CISA Confirms Active Exploitation of Two PHP2Shell Flaws Enabling Remote Code Execution | Apple backports CoreGraphics zero-day patches to older iPhones\n\ud83d\udfe0 HIGH (7): Lazarus Abuses South Korean Security Software to Deploy Malware Using Post-Quantum Encryption | Australia Gets Into Amadey Malware Backend, Cuts Off Access to 180,000 Infected Computers | Energy giant ENGIE discloses data breach affecting customers\n\u26a0\ufe0f Review all articles below and patch accordingly.",
+  "date": "2026-10-28T13:53:56.169753",
+  "summary": "\ud83d\udcca 15 threats detected today.\n\ud83d\udd34 CRITICAL (11): Adobe Fixes 8 Critical Campaign Classic Flaws Allowing Code Execution and Security Bypass | ShinyHunters-Exploited Oracle PeopleSoft Zero-Day Turns Out to Be Three Chained Flaws | Adobe Commerce PolyShell Attacks Breach Hundreds of Stores as Brotli Exploit Traffic Emerges\n\ud83d\udfe0 HIGH (3): Anthropic's Unreleased AI Model Chains Flaws Into Working Chrome, Safari, Windows and Linux Exploits | Japan's GMO Offers $1 Million Bounty to Catch Hackers Behind FX Trading Cloud Breach | 'Aokigahara' Stealer Targets 'Developer Keyrings' &amp; AI Assistants\n\u26a0\ufe0f Review all articles below and patch accordingly.",
   "articles": [
     {
-      "title": "Microsoft Authenticator Flaw Let Permissionless Android Apps Steal Work Account Tokens",
-      "link": "https://thehackernews.com/2026/10/microsoft-authenticator-flaw-let.html",
+      "title": "Adobe Fixes 8 Critical Campaign Classic Flaws Allowing Code Execution and Security Bypass",
+      "link": "https://thehackernews.com/2026/10/adobe-fixes-8-critical-campaign-classic.html",
       "source": "The Hacker News",
-      "severity": "medium",
-      "mitre_tactics": [],
+      "severity": "critical",
+      "mitre_tactics": [
+        "Initial Access",
+        "Privilege Escalation"
+      ],
       "keywords": [
-        "cve-"
+        "exploit",
+        "vulnerability",
+        "cve-",
+        "privilege escalation"
       ]
     },
     {
-      "title": "AI-Generated Fake Login Pages Are Making Account Takeovers Easier",
-      "link": "https://thehackernews.com/2026/10/ai-generated-fake-login-pages-are.html",
+      "title": "American Organizations Under Attack: Skyw4lker Device Code Phishing Campaign Exposed",
+      "link": "https://thehackernews.com/2026/10/american-organizations-under-attack.html",
       "source": "The Hacker News",
-      "severity": "critical",
+      "severity": "medium",
       "mitre_tactics": [
         "Initial Access",
         "Credential Access"
       ],
       "keywords": [
         "phishing",
-        "apt"
+        "credential"
       ]
     },
     {
-      "title": "Lazarus Abuses South Korean Security Software to Deploy Malware Using Post-Quantum Encryption",
-      "link": "https://thehackernews.com/2026/10/lazarus-abuses-south-korean-security.html",
+      "title": "Anthropic's Unreleased AI Model Chains Flaws Into Working Chrome, Safari, Windows and Linux Exploits",
+      "link": "https://thehackernews.com/2026/10/anthropics-unreleased-ai-model-chains.html",
       "source": "The Hacker News",
       "severity": "high",
       "mitre_tactics": [
-        "Execution"
+        "Initial Access"
       ],
       "keywords": [
-        "malware"
+        "exploit"
       ]
     },
     {
-      "title": "Australia Gets Into Amadey Malware Backend, Cuts Off Access to 180,000 Infected Computers",
-      "link": "https://thehackernews.com/2026/10/australia-gets-into-amadey-malware.html",
+      "title": "Japan's GMO Offers $1 Million Bounty to Catch Hackers Behind FX Trading Cloud Breach",
+      "link": "https://thehackernews.com/2026/10/japans-gmo-offers-1-million-bounty-to.html",
       "source": "The Hacker News",
       "severity": "high",
-      "mitre_tactics": [
-        "Execution"
-      ],
+      "mitre_tactics": [],
       "keywords": [
-        "malware"
+        "breach"
       ]
     },
     {
-      "title": "CISA Confirms Active Exploitation of Two PHP2Shell Flaws Enabling Remote Code Execution",
-      "link": "https://thehackernews.com/2026/10/cisa-confirms-active-exploitation-of.html",
+      "title": "ShinyHunters-Exploited Oracle PeopleSoft Zero-Day Turns Out to Be Three Chained Flaws",
+      "link": "https://thehackernews.com/2026/10/shinyhunters-exploited-oracle.html",
       "source": "The Hacker News",
-      "severity": "critical",
-      "mitre_tactics": [
-        "Initial Access",
-        "Execution"
-      ],
-      "keywords": [
-        "exploit",
-        "cve-",
-        "remote code execution"
-      ]
-    },
-    {
-      "title": "Apple backports CoreGraphics zero-day patches to older iPhones",
-      "link": "https://www.bleepingcomputer.com/news/apple/apple-backports-coregraphics-zero-day-patches-to-older-iphones/",
-      "source": "BleepingComputer",
       "severity": "critical",
       "mitre_tactics": [
         "Initial Access"
       ],
       "keywords": [
         "zero-day",
-        "exploit"
+        "exploit",
+        "cve-"
       ]
     },
     {
-      "title": "Energy giant ENGIE discloses data breach affecting customers",
-      "link": "https://www.bleepingcomputer.com/news/security/energy-giant-engie-discloses-data-breach-affecting-customers/",
-      "source": "BleepingComputer",
-      "severity": "high",
-      "mitre_tactics": [],
+      "title": "Adobe Commerce PolyShell Attacks Breach Hundreds of Stores as Brotli Exploit Traffic Emerges",
+      "link": "https://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html",
+      "source": "The Hacker News",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Initial Access",
+        "Execution"
+      ],
       "keywords": [
-        "breach"
+        "breach",
+        "exploit",
+        "vulnerability",
+        "cve-",
+        "rce"
       ]
     },
     {
-      "title": "CISA confirms PHP2Shell vulnerabilities now exploited in attacks",
-      "link": "https://www.bleepingcomputer.com/news/security/cisa-confirms-php2shell-vulnerabilities-now-exploited-in-attacks/",
+      "title": "Hackers now scanning systems for recently-patched Oracle flaw",
+      "link": "https://www.bleepingcomputer.com/news/security/hackers-now-scanning-systems-for-recently-patched-oracle-flaw/",
+      "source": "BleepingComputer",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Discovery"
+      ],
+      "keywords": [
+        "vulnerability"
+      ]
+    },
+    {
+      "title": "CISA warns of hackers now exploiting critical Node2Shell flaw",
+      "link": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-hackers-now-exploiting-critical-node2shell-flaw/",
       "source": "BleepingComputer",
       "severity": "critical",
       "mitre_tactics": [
         "Initial Access"
       ],
       "keywords": [
-        "exploit"
+        "exploit",
+        "vulnerability"
       ]
     },
     {
-      "title": "University of Copenhagen data breach exposes data of 525,000 people",
-      "link": "https://www.bleepingcomputer.com/news/security/university-of-copenhagen-data-breach-exposes-data-of-525-000-people/",
-      "source": "BleepingComputer",
-      "severity": "high",
-      "mitre_tactics": [],
-      "keywords": [
-        "breach"
-      ]
-    },
-    {
-      "title": "Former pentester used ARTEX AI to steal 8.2 million data records",
-      "link": "https://www.bleepingcomputer.com/news/security/former-pentester-used-artex-ai-to-steal-82-million-data-records/",
-      "source": "BleepingComputer",
-      "severity": "high",
-      "mitre_tactics": [],
-      "keywords": [
-        "breach"
-      ]
-    },
-    {
-      "title": "DreamHost forces password resets in ongoing \"incident\"",
-      "link": "https://www.bleepingcomputer.com/news/security/dreamhost-forces-email-ftp-sftp-password-resets-in-ongoing-incident/",
+      "title": "Nefilim and Hive ransomware affiliate gets 70 months in prison",
+      "link": "https://www.bleepingcomputer.com/news/security/nefilim-and-hive-ransomware-affiliate-gets-70-months-in-prison/",
       "source": "BleepingComputer",
       "severity": "critical",
       "mitre_tactics": [
-        "Execution",
-        "Credential Access"
+        "Impact"
+      ],
+      "keywords": [
+        "ransomware"
+      ]
+    },
+    {
+      "title": "Japan's GMO urges customers to shut down PCs amid ransomware threat",
+      "link": "https://www.bleepingcomputer.com/news/security/japans-gmo-urges-customers-to-shut-down-pcs-amid-ransomware-threat/",
+      "source": "BleepingComputer",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Impact"
+      ],
+      "keywords": [
+        "ransomware",
+        "breach"
+      ]
+    },
+    {
+      "title": "UNM Health ransomware attack disrupts patient care, surgeries",
+      "link": "https://www.bleepingcomputer.com/news/security/unm-health-ransomware-attack-disrupts-patient-care-surgeries/",
+      "source": "BleepingComputer",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Impact"
+      ],
+      "keywords": [
+        "ransomware"
+      ]
+    },
+    {
+      "title": "Hackers hijack Convertr analytics script to steal payment card data",
+      "link": "https://www.bleepingcomputer.com/news/security/hackers-hijack-convertr-analytics-script-to-steal-payment-card-data/",
+      "source": "BleepingComputer",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Execution"
       ],
       "keywords": [
         "rce"
       ]
     },
     {
-      "title": "Critical 'HTTP2Shell' Brotli vulnerability triggers emergency patches",
-      "link": "https://www.bleepingcomputer.com/news/security/critical-http2shell-brotli-vulnerability-triggers-emergency-patches/",
-      "source": "BleepingComputer",
+      "title": "External Teams Chats Anchor 15-Minute Malware Delivery",
+      "link": "https://www.darkreading.com/cloud-security/email-bombing-external-teams-chats-repeatable-access-path",
+      "source": "Dark Reading",
       "severity": "critical",
-      "mitre_tactics": [],
+      "mitre_tactics": [
+        "Execution",
+        "Impact"
+      ],
       "keywords": [
-        "vulnerability"
+        "ransomware",
+        "malware"
       ]
     },
     {
-      "title": "In-the-Wild Attack Abuses AI Agents' Trust in Markdown",
-      "link": "https://www.darkreading.com/application-security/in-the-wild-attack-ai-agents-trust-markdown",
+      "title": "SBOMs Alone Can't Reveal the Scope of a Supply Chain Attack",
+      "link": "https://www.darkreading.com/cyber-risk/sboms-alone-scope-supply-chain-attack",
       "source": "Dark Reading",
-      "severity": "high",
+      "severity": "critical",
       "mitre_tactics": [
         "Initial Access"
       ],
       "keywords": [
-        "exploit"
+        "supply chain"
       ]
     },
     {
-      "title": "'Gheist' Weaponizes GitHub Tokens to Steal Cloud Secrets",
-      "link": "https://www.darkreading.com/cyberattacks-data-breaches/gheist-stolen-github-tokens-cloud-secrets",
-      "source": "Dark Reading",
-      "severity": "critical",
-      "mitre_tactics": [
-        "Initial Access",
-        "Credential Access"
-      ],
-      "keywords": [
-        "supply chain",
-        "credential"
-      ]
-    },
-    {
-      "title": "Trust Is Not What It Seems \u2014 and Fraudsters Are Counting on It",
-      "link": "https://www.darkreading.com/cyber-risk/trust-is-not-what-it-seems-and-fraudsters-are-counting-on-it",
+      "title": "'Aokigahara' Stealer Targets 'Developer Keyrings' &amp; AI Assistants",
+      "link": "https://www.darkreading.com/endpoint-security/aokigahara-stealer-developer-keyrings-ai-assistants",
       "source": "Dark Reading",
       "severity": "high",
       "mitre_tactics": [
         "Execution"
       ],
       "keywords": [
-        "breach",
         "malware"
       ]
     }
