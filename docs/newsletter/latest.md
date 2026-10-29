@@ -1,4 +1,4 @@
-# 🛡️ Daily Threat Intel — October 28, 2026
+# 🛡️ Daily Threat Intel — October 29, 2026
 
 > **Automated daily briefing** covering the most critical cybersecurity 
 > threats from 9 leading security news sources.
@@ -8,128 +8,113 @@
 ## 📊 Analyst Briefing
 
 📊 15 threats detected today.
-🔴 CRITICAL (11): Adobe Fixes 8 Critical Campaign Classic Flaws Allowing Code Execution and Security Bypass | ShinyHunters-Exploited Oracle PeopleSoft Zero-Day Turns Out to Be Three Chained Flaws | Adobe Commerce PolyShell Attacks Breach Hundreds of Stores as Brotli Exploit Traffic Emerges
-🟠 HIGH (3): Anthropic's Unreleased AI Model Chains Flaws Into Working Chrome, Safari, Windows and Linux Exploits | Japan's GMO Offers $1 Million Bounty to Catch Hackers Behind FX Trading Cloud Breach | 'Aokigahara' Stealer Targets 'Developer Keyrings' &amp; AI Assistants
+🔴 CRITICAL (10): Cisco Patches Actively Exploited ASA and FTD VPN Flaw That Can Crash Firewalls | Attacker Tried to Exploit Alpine Linux’s GitLab via CVSS 10.0 Flaw Its Ruby Left Open | Hackers Exploited Cisco SD-WAN Flaw to Plant Malware Built to Steal Encryption Keys
+🟠 HIGH (2): Webinar: How to Build AI Threat Readiness Into Your Security Operations | Sony ISP subsidiary data breach exposes 2.5 million customer records
 ⚠️ Review all articles below and patch accordingly.
 
 ---
 
 ## 🔍 Top Threats
 
-### 🔴 Adobe Fixes 8 Critical Campaign Classic Flaws Allowing Code Execution and Security Bypass
-
-- **Source**: The Hacker News
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access, Privilege Escalation
-- **Keywords**: exploit, vulnerability, cve-, privilege escalation
-- **Link**: [https://thehackernews.com/2026/10/adobe-fixes-8-critical-campaign-classic.html](https://thehackernews.com/2026/10/adobe-fixes-8-critical-campaign-classic.html)
-
-Adobe has released patches to address multiple critical security flaws in Campaign Classic that, if successfully exploited, could result in arbitrary code execution, security feature bypass, and privilege escalation.
-
-The list of eight vulnerabilities is as follows -
-
-
-  CVE-2026-104351 (CVSS score:
-
----
-
-### 🔴 ShinyHunters-Exploited Oracle PeopleSoft Zero-Day Turns Out to Be Three Chained Flaws
+### 🔴 Cisco Patches Actively Exploited ASA and FTD VPN Flaw That Can Crash Firewalls
 
 - **Source**: The Hacker News
 - **Severity**: CRITICAL
 - **MITRE Tactics**: Initial Access
-- **Keywords**: zero-day, exploit, cve-
-- **Link**: [https://thehackernews.com/2026/10/shinyhunters-exploited-oracle.html](https://thehackernews.com/2026/10/shinyhunters-exploited-oracle.html)
+- **Keywords**: exploit, vulnerability, cve-, apt
+- **Link**: [https://thehackernews.com/2026/10/cisco-patches-actively-exploited-asa.html](https://thehackernews.com/2026/10/cisco-patches-actively-exploited-asa.html)
 
-The critical Oracle PeopleSoft bug that ShinyHunters has exploited since May is not one flaw but three chained together, the researchers who reported it said this week.
+Cisco has released patches to address a high-severity security flaw in Secure Firewall Adaptive Security Appliance (ASA) Software and Secure Firewall Threat Defense (FTD) Software that it said has been exploited in the wild.
 
-Oracle patched all three under a single identifier,&nbsp;CVE-2026-35273, in June. Its root is a server-side request forgery (SSRF)
+The vulnerability, tracked as CVE-2026-76418, is rated 8.6 on the CVSS sco
 
 ---
 
-### 🔴 Adobe Commerce PolyShell Attacks Breach Hundreds of Stores as Brotli Exploit Traffic Emerges
+### 🔴 Attacker Tried to Exploit Alpine Linux’s GitLab via CVSS 10.0 Flaw Its Ruby Left Open
+
+- **Source**: The Hacker News
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access
+- **Keywords**: exploit, vulnerability, cve-
+- **Link**: [https://thehackernews.com/2026/10/attacker-tried-to-exploit-alpine-linuxs.html](https://thehackernews.com/2026/10/attacker-tried-to-exploit-alpine-linuxs.html)
+
+An attacker tried to exploit a critical GitLab vulnerability on the Alpine Linux project's own GitLab server a week after GitLab&nbsp;released a fix, Alpine Linux&nbsp;said&nbsp;on 28 October.
+
+The flaw, CVE-2026-97229 (CVSS score: 10.0), can let an attacker run code on a GitLab server through a cra
+
+---
+
+### 🔴 Hackers Exploited Cisco SD-WAN Flaw to Plant Malware Built to Steal Encryption Keys
 
 - **Source**: The Hacker News
 - **Severity**: CRITICAL
 - **MITRE Tactics**: Initial Access, Execution
-- **Keywords**: breach, exploit, vulnerability, cve-, rce
-- **Link**: [https://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html](https://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html)
+- **Keywords**: exploit, malware
+- **Link**: [https://thehackernews.com/2026/10/hackers-exploited-cisco-sd-wan-flaw-to.html](https://thehackernews.com/2026/10/hackers-exploited-cisco-sd-wan-flaw-to.html)
 
-The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added two vulnerabilities impacting Adobe Commerce and Magento, and Google's Brotli decoder library to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.
+Hackers exploited a critical Cisco Catalyst SD-WAN flaw, fixed in February, to plant custom malware inside the systems that control an organization's SD-WAN network.
 
-The vulnerabilities are liste
-
----
-
-### 🔴 Hackers now scanning systems for recently-patched Oracle flaw
-
-- **Source**: BleepingComputer
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Discovery
-- **Keywords**: vulnerability
-- **Link**: [https://www.bleepingcomputer.com/news/security/hackers-now-scanning-systems-for-recently-patched-oracle-flaw/](https://www.bleepingcomputer.com/news/security/hackers-now-scanning-systems-for-recently-patched-oracle-flaw/)
-
-Attackers have begun probing the Internet for systems unpatched against a recently disclosed critical Oracle E-Business Suite (EBS) vulnerability. [...]
+The malware, called KeyDrift, is designed to copy the keys that encrypt traffic between sites and store them for later use,&nbsp;Cisc
 
 ---
 
-### 🔴 CISA warns of hackers now exploiting critical Node2Shell flaw
+### 🔴 New Cisco firewall zero-day exploited to crash SSL VPN devices
 
 - **Source**: BleepingComputer
 - **Severity**: CRITICAL
 - **MITRE Tactics**: Initial Access
-- **Keywords**: exploit, vulnerability
-- **Link**: [https://www.bleepingcomputer.com/news/security/cisa-warns-of-hackers-now-exploiting-critical-node2shell-flaw/](https://www.bleepingcomputer.com/news/security/cisa-warns-of-hackers-now-exploiting-critical-node2shell-flaw/)
+- **Keywords**: zero-day, exploit, apt
+- **Link**: [https://www.bleepingcomputer.com/news/security/cisco-warns-of-firewall-zero-day-exploited-to-crash-ssl-vpn-devices/](https://www.bleepingcomputer.com/news/security/cisco-warns-of-firewall-zero-day-exploited-to-crash-ssl-vpn-devices/)
 
-On Tuesday, the US Cybersecurity and Infrastructure Security Agency (CISA) confirmed that hackers have begun exploiting a critical Brotli vulnerability known as Node2Shell, Broccoli2Shell, and HTTP2Shell. [...]
-
----
-
-### 🔴 Nefilim and Hive ransomware affiliate gets 70 months in prison
-
-- **Source**: BleepingComputer
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Impact
-- **Keywords**: ransomware
-- **Link**: [https://www.bleepingcomputer.com/news/security/nefilim-and-hive-ransomware-affiliate-gets-70-months-in-prison/](https://www.bleepingcomputer.com/news/security/nefilim-and-hive-ransomware-affiliate-gets-70-months-in-prison/)
-
-A Ukrainian national was sentenced to 70 months in prison for his role in ransomware attacks targeting hospitals, government entities, and high-revenue businesses worldwide between 2018 and 2021. [...]
+Cisco released security updates to patch a denial-of-service zero-day in Adaptive Security Appliance (ASA) and Threat Defense (FTD) software that attackers are exploiting to remotely crash vulnerable firewall devices. [...]
 
 ---
 
-### 🔴 Japan's GMO urges customers to shut down PCs amid ransomware threat
-
-- **Source**: BleepingComputer
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Impact
-- **Keywords**: ransomware, breach
-- **Link**: [https://www.bleepingcomputer.com/news/security/japans-gmo-urges-customers-to-shut-down-pcs-amid-ransomware-threat/](https://www.bleepingcomputer.com/news/security/japans-gmo-urges-customers-to-shut-down-pcs-amid-ransomware-threat/)
-
-The GMO Group has urged customers to disconnect their systems from the internet and shut down computers after a threat actor who breached the company's Onamae Desktop Cloud threatened to launch a ransomware attack today. [...]
-
----
-
-### 🔴 UNM Health ransomware attack disrupts patient care, surgeries
-
-- **Source**: BleepingComputer
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Impact
-- **Keywords**: ransomware
-- **Link**: [https://www.bleepingcomputer.com/news/security/unm-health-ransomware-attack-disrupts-patient-care-surgeries/](https://www.bleepingcomputer.com/news/security/unm-health-ransomware-attack-disrupts-patient-care-surgeries/)
-
-The University of New Mexico Health Sciences Center disclosed a cyberattack that caused system outages and disrupted patient care and academic activities. [...]
-
----
-
-### 🔴 Hackers hijack Convertr analytics script to steal payment card data
+### 🔴 Police seize Virtualine bulletproof service tied to ransowmare, cybercrime
 
 - **Source**: BleepingComputer
 - **Severity**: CRITICAL
 - **MITRE Tactics**: Execution
 - **Keywords**: rce
-- **Link**: [https://www.bleepingcomputer.com/news/security/hackers-hijack-convertr-analytics-script-to-steal-payment-card-data/](https://www.bleepingcomputer.com/news/security/hackers-hijack-convertr-analytics-script-to-steal-payment-card-data/)
+- **Link**: [https://www.bleepingcomputer.com/news/security/police-seize-virtualine-bulletproof-service-tied-to-ransowmare-cybercrime/](https://www.bleepingcomputer.com/news/security/police-seize-virtualine-bulletproof-service-tied-to-ransowmare-cybercrime/)
 
-A credit card skimming group reportedly compromised a shared analytics script used by e-commerce platform Convertr to steal shoppers' payment data during checkout. [...]
+U.S. law enforcement has seized the primary domain of Virtualine, a bulletproof hosting service advertised on cybercrime forums for facilitating illegal activities. [...]
+
+---
+
+### 🔴 Volt Typhoon hides zero-day attacks using 'Silent Train' framework
+
+- **Source**: BleepingComputer
+- **Severity**: CRITICAL
+- **MITRE Tactics**: —
+- **Keywords**: zero-day
+- **Link**: [https://www.bleepingcomputer.com/news/security/volt-typhoon-hides-zero-day-attacks-using-silent-train-framework/](https://www.bleepingcomputer.com/news/security/volt-typhoon-hides-zero-day-attacks-using-silent-train-framework/)
+
+Chinese state-sponsored hacking group Volt Typhoon has been using a framework that relies on rotating chains of connected devices compromised on demand, including for zero-day attacks targeting high-value systems. [...]
+
+---
+
+### 🔴 InfraTrust report warns of exploited flaws in critical network infrastructure
+
+- **Source**: BleepingComputer
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access
+- **Keywords**: exploit
+- **Link**: [https://www.bleepingcomputer.com/news/security/infratrust-report-warns-of-exploited-flaws-in-critical-network-infrastructure/](https://www.bleepingcomputer.com/news/security/infratrust-report-warns-of-exploited-flaws-in-critical-network-infrastructure/)
+
+Attackers are actively exploiting vulnerabilities across critical network infrastructure, and PHP flaws known as "PHP2Shell" put the web management interfaces of firewalls, VPNs, application delivery controllers, and other appliances at risk. [...]
+
+---
+
+### 🔴 GhostAction Hacking Wave Fizzles, But Attackers Lurk on in GitHub
+
+- **Source**: Dark Reading
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access
+- **Keywords**: supply chain
+- **Link**: [https://www.darkreading.com/application-security/ghostaction-hacking-wave-fizzles-attackers-github](https://www.darkreading.com/application-security/ghostaction-hacking-wave-fizzles-attackers-github)
+
+The supply chain attack campaign's shift toward developer endpoints and cloud access signals what could be next for the cybercrime outfit.
 
 ---
 
@@ -142,5 +127,17 @@ A credit card skimming group reportedly compromised a shared analytics script us
 - **Link**: [https://www.darkreading.com/cloud-security/email-bombing-external-teams-chats-repeatable-access-path](https://www.darkreading.com/cloud-security/email-bombing-external-teams-chats-repeatable-access-path)
 
 Mail bombing is getting a new look with a wide-scale, ongoing social engineering campaign that might be tied to the Black Basta ransomware gang.
+
+---
+
+### 🔴 SBOMs Alone Can't Reveal the Scope of a Supply Chain Attack
+
+- **Source**: Dark Reading
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access
+- **Keywords**: supply chain
+- **Link**: [https://www.darkreading.com/cyber-risk/sboms-alone-scope-supply-chain-attack](https://www.darkreading.com/cyber-risk/sboms-alone-scope-supply-chain-attack)
+
+A recent Shai-Hulud attack shows defenders need real-time visibility into production code and affected services to respond to supply chain compromises.
 
 ---
