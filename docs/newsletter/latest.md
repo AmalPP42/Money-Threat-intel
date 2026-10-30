@@ -1,4 +1,4 @@
-# 🛡️ Daily Threat Intel — October 29, 2026
+# 🛡️ Daily Threat Intel — October 30, 2026
 
 > **Automated daily briefing** covering the most critical cybersecurity 
 > threats from 9 leading security news sources.
@@ -8,136 +8,143 @@
 ## 📊 Analyst Briefing
 
 📊 15 threats detected today.
-🔴 CRITICAL (10): Cisco Patches Actively Exploited ASA and FTD VPN Flaw That Can Crash Firewalls | Attacker Tried to Exploit Alpine Linux’s GitLab via CVSS 10.0 Flaw Its Ruby Left Open | Hackers Exploited Cisco SD-WAN Flaw to Plant Malware Built to Steal Encryption Keys
-🟠 HIGH (2): Webinar: How to Build AI Threat Readiness Into Your Security Operations | Sony ISP subsidiary data breach exposes 2.5 million customer records
+🔴 CRITICAL (9): Hackers Actively Exploit Highly Critical Drupal Commerce Core Authorization Bypass Flaw | CISA Adds Actively Exploited GitLab RCE and Cisco Firewall DoS Flaws to KEV | ThreatsDay: Critical Firewall Flaws, Banking Trojans Rented, Weaponized PDF, Token Theft + 26 More Stories
+🟠 HIGH (5): Official Claude Code Extension on Cursor Marketplace Trojanized with Persistent SSH Backdoor | Binance Suffers Security Breach Affecting $6.3 Billion in Assets, Nearly $3 Billion Frozen | Binance probes potential $5.8 billion crypto-theft hack
 ⚠️ Review all articles below and patch accordingly.
 
 ---
 
 ## 🔍 Top Threats
 
-### 🔴 Cisco Patches Actively Exploited ASA and FTD VPN Flaw That Can Crash Firewalls
-
-- **Source**: The Hacker News
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access
-- **Keywords**: exploit, vulnerability, cve-, apt
-- **Link**: [https://thehackernews.com/2026/10/cisco-patches-actively-exploited-asa.html](https://thehackernews.com/2026/10/cisco-patches-actively-exploited-asa.html)
-
-Cisco has released patches to address a high-severity security flaw in Secure Firewall Adaptive Security Appliance (ASA) Software and Secure Firewall Threat Defense (FTD) Software that it said has been exploited in the wild.
-
-The vulnerability, tracked as CVE-2026-76418, is rated 8.6 on the CVSS sco
-
----
-
-### 🔴 Attacker Tried to Exploit Alpine Linux’s GitLab via CVSS 10.0 Flaw Its Ruby Left Open
-
-- **Source**: The Hacker News
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access
-- **Keywords**: exploit, vulnerability, cve-
-- **Link**: [https://thehackernews.com/2026/10/attacker-tried-to-exploit-alpine-linuxs.html](https://thehackernews.com/2026/10/attacker-tried-to-exploit-alpine-linuxs.html)
-
-An attacker tried to exploit a critical GitLab vulnerability on the Alpine Linux project's own GitLab server a week after GitLab&nbsp;released a fix, Alpine Linux&nbsp;said&nbsp;on 28 October.
-
-The flaw, CVE-2026-97229 (CVSS score: 10.0), can let an attacker run code on a GitLab server through a cra
-
----
-
-### 🔴 Hackers Exploited Cisco SD-WAN Flaw to Plant Malware Built to Steal Encryption Keys
+### 🔴 Hackers Actively Exploit Highly Critical Drupal Commerce Core Authorization Bypass Flaw
 
 - **Source**: The Hacker News
 - **Severity**: CRITICAL
 - **MITRE Tactics**: Initial Access, Execution
-- **Keywords**: exploit, malware
-- **Link**: [https://thehackernews.com/2026/10/hackers-exploited-cisco-sd-wan-flaw-to.html](https://thehackernews.com/2026/10/hackers-exploited-cisco-sd-wan-flaw-to.html)
+- **Keywords**: exploit, vulnerability, cve-, rce
+- **Link**: [https://thehackernews.com/2026/10/hackers-actively-exploit-highly.html](https://thehackernews.com/2026/10/hackers-actively-exploit-highly.html)
 
-Hackers exploited a critical Cisco Catalyst SD-WAN flaw, fixed in February, to plant custom malware inside the systems that control an organization's SD-WAN network.
+Drupal has warned that threat actors are exploiting a "highly critical" security flaw in its Commerce Core component.
 
-The malware, called KeyDrift, is designed to copy the keys that encrypt traffic between sites and store them for later use,&nbsp;Cisc
+The vulnerability, tracked as CVE-2026-118539 (CVSS score: N/A), is a case of missing authorization affecting Commerce Core versions from 0.0.0 to 2.41 and from 3.0.0 to 3.3.13.
+
+"T
 
 ---
 
-### 🔴 New Cisco firewall zero-day exploited to crash SSL VPN devices
+### 🔴 CISA Adds Actively Exploited GitLab RCE and Cisco Firewall DoS Flaws to KEV
+
+- **Source**: The Hacker News
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access, Execution
+- **Keywords**: exploit, vulnerability, cve-, rce
+- **Link**: [https://thehackernews.com/2026/10/cisa-adds-actively-exploited-gitlab-rce.html](https://thehackernews.com/2026/10/cisa-adds-actively-exploited-gitlab-rce.html)
+
+The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added two security flaws impacting Cisco and GitLab software to its Known Exploited Vulnerabilities (KEV), citing evidence of active exploitation.
+
+The vulnerabilities are listed below -
+
+
+  CVE-2026-97229 (CVSS score: 10.0
+
+---
+
+### 🔴 ThreatsDay: Critical Firewall Flaws, Banking Trojans Rented, Weaponized PDF, Token Theft + 26 More Stories
+
+- **Source**: The Hacker News
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access, Execution, Credential Access
+- **Keywords**: exploit, trojan
+- **Link**: [https://thehackernews.com/2026/10/threatsday-critical-firewall-flaws.html](https://thehackernews.com/2026/10/threatsday-critical-firewall-flaws.html)
+
+Some attacks take real skill. Others just need someone to leave a door open. This week has both. Exposed passwords, old bugs still getting exploited, and trusted software doing things it shouldn't.
+
+There's a strange mix of clever tricks and careless mistakes. Hackers are borrowing trust from famili
+
+---
+
+### 🔴 CISA says max severity GitLab flaw now exploited in the wild
 
 - **Source**: BleepingComputer
 - **Severity**: CRITICAL
 - **MITRE Tactics**: Initial Access
-- **Keywords**: zero-day, exploit, apt
-- **Link**: [https://www.bleepingcomputer.com/news/security/cisco-warns-of-firewall-zero-day-exploited-to-crash-ssl-vpn-devices/](https://www.bleepingcomputer.com/news/security/cisco-warns-of-firewall-zero-day-exploited-to-crash-ssl-vpn-devices/)
+- **Keywords**: exploit, vulnerability
+- **Link**: [https://www.bleepingcomputer.com/news/security/hackers-now-exploiting-max-severity-gitlab-flaw-in-attacks/](https://www.bleepingcomputer.com/news/security/hackers-now-exploiting-max-severity-gitlab-flaw-in-attacks/)
 
-Cisco released security updates to patch a denial-of-service zero-day in Adaptive Security Appliance (ASA) and Threat Defense (FTD) software that attackers are exploiting to remotely crash vulnerable firewall devices. [...]
+Attackers have started exploiting a maximum-severity GitLab vulnerability patched earlier this month, according to the US Cybersecurity and Infrastructure Security Agency (CISA). [...]
 
 ---
 
-### 🔴 Police seize Virtualine bulletproof service tied to ransowmare, cybercrime
+### 🔴 Drupal warns of critical Commerce Core flaw exploited in attacks
 
 - **Source**: BleepingComputer
 - **Severity**: CRITICAL
-- **MITRE Tactics**: Execution
-- **Keywords**: rce
-- **Link**: [https://www.bleepingcomputer.com/news/security/police-seize-virtualine-bulletproof-service-tied-to-ransowmare-cybercrime/](https://www.bleepingcomputer.com/news/security/police-seize-virtualine-bulletproof-service-tied-to-ransowmare-cybercrime/)
+- **MITRE Tactics**: Initial Access, Execution
+- **Keywords**: exploit, vulnerability, rce
+- **Link**: [https://www.bleepingcomputer.com/news/security/drupal-warns-of-critical-commerce-core-flaw-exploited-in-attacks/](https://www.bleepingcomputer.com/news/security/drupal-warns-of-critical-commerce-core-flaw-exploited-in-attacks/)
 
-U.S. law enforcement has seized the primary domain of Virtualine, a bulletproof hosting service advertised on cybercrime forums for facilitating illegal activities. [...]
+Drupal warned admins to patch a critical access bypass vulnerability in the Commerce Core module that attackers are exploiting in the wild. [...]
 
 ---
 
-### 🔴 Volt Typhoon hides zero-day attacks using 'Silent Train' framework
+### 🔴 Binance links $6.3 billion crypto theft to compromised DevOps laptop
 
 - **Source**: BleepingComputer
 - **Severity**: CRITICAL
 - **MITRE Tactics**: —
-- **Keywords**: zero-day
-- **Link**: [https://www.bleepingcomputer.com/news/security/volt-typhoon-hides-zero-day-attacks-using-silent-train-framework/](https://www.bleepingcomputer.com/news/security/volt-typhoon-hides-zero-day-attacks-using-silent-train-framework/)
+- **Keywords**: apt
+- **Link**: [https://www.bleepingcomputer.com/news/security/binance-links-63-billion-crypto-theft-to-compromised-devops-laptop/](https://www.bleepingcomputer.com/news/security/binance-links-63-billion-crypto-theft-to-compromised-devops-laptop/)
 
-Chinese state-sponsored hacking group Volt Typhoon has been using a framework that relies on rotating chains of connected devices compromised on demand, including for zero-day attacks targeting high-value systems. [...]
-
----
-
-### 🔴 InfraTrust report warns of exploited flaws in critical network infrastructure
-
-- **Source**: BleepingComputer
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access
-- **Keywords**: exploit
-- **Link**: [https://www.bleepingcomputer.com/news/security/infratrust-report-warns-of-exploited-flaws-in-critical-network-infrastructure/](https://www.bleepingcomputer.com/news/security/infratrust-report-warns-of-exploited-flaws-in-critical-network-infrastructure/)
-
-Attackers are actively exploiting vulnerabilities across critical network infrastructure, and PHP flaws known as "PHP2Shell" put the web management interfaces of firewalls, VPNs, application delivery controllers, and other appliances at risk. [...]
+Binance, the world's largest crypto exchange, has linked the theft of about $6.3 billion in cryptocurrency to a DevOps engineer's compromised laptop. [...]
 
 ---
 
-### 🔴 GhostAction Hacking Wave Fizzles, But Attackers Lurk on in GitHub
+### 🔴 As Russia's Cyberwar Evolves, Belarus Steps Forward
 
 - **Source**: Dark Reading
 - **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access
-- **Keywords**: supply chain
-- **Link**: [https://www.darkreading.com/application-security/ghostaction-hacking-wave-fizzles-attackers-github](https://www.darkreading.com/application-security/ghostaction-hacking-wave-fizzles-attackers-github)
+- **MITRE Tactics**: —
+- **Keywords**: apt
+- **Link**: [https://www.darkreading.com/physical-security/russia-cyber-war-belarus-steps-forward](https://www.darkreading.com/physical-security/russia-cyber-war-belarus-steps-forward)
 
-The supply chain attack campaign's shift toward developer endpoints and cloud access signals what could be next for the cybercrime outfit.
-
----
-
-### 🔴 External Teams Chats Anchor 15-Minute Malware Delivery
-
-- **Source**: Dark Reading
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Execution, Impact
-- **Keywords**: ransomware, malware
-- **Link**: [https://www.darkreading.com/cloud-security/email-bombing-external-teams-chats-repeatable-access-path](https://www.darkreading.com/cloud-security/email-bombing-external-teams-chats-repeatable-access-path)
-
-Mail bombing is getting a new look with a wide-scale, ongoing social engineering campaign that might be tied to the Black Basta ransomware gang.
+The &quot;FrostyNeighbor&quot; advanced persistent threat (APT) launched a destructive attack in Ukraine and is raising concerns about deeper alignment with Russian cyber objectives.
 
 ---
 
-### 🔴 SBOMs Alone Can't Reveal the Scope of a Supply Chain Attack
+### 🔴 Rethinking Cybersecurity Awareness in the AI Era
 
 - **Source**: Dark Reading
 - **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access
-- **Keywords**: supply chain
-- **Link**: [https://www.darkreading.com/cyber-risk/sboms-alone-scope-supply-chain-attack](https://www.darkreading.com/cyber-risk/sboms-alone-scope-supply-chain-attack)
+- **MITRE Tactics**: Execution
+- **Keywords**: rce
+- **Link**: [https://www.darkreading.com/cyber-risk/rethinking-cybersecurity-awareness-ai-era](https://www.darkreading.com/cyber-risk/rethinking-cybersecurity-awareness-ai-era)
 
-A recent Shai-Hulud attack shows defenders need real-time visibility into production code and affected services to respond to supply chain compromises.
+This installment of the Reporters' Notebook video series discusses some of the trends and topics from Cybersecurity Awareness Month, from using AI for better training to educating next-generation workforces on modern risks and emerging threats.
+
+---
+
+### 🔴 Why CTF Competitions May Be More Important Than Ever
+
+- **Source**: Dark Reading
+- **Severity**: CRITICAL
+- **MITRE Tactics**: —
+- **Keywords**: apt
+- **Link**: [https://www.darkreading.com/cybersecurity-operations/why-ctf-more-important-than-ever](https://www.darkreading.com/cybersecurity-operations/why-ctf-more-important-than-ever)
+
+As artificial intelligence squeezes early-career learning opportunities, capture-the-flag contests could be one way to help pick up the slack.
+
+---
+
+### 🟠 Official Claude Code Extension on Cursor Marketplace Trojanized with Persistent SSH Backdoor
+
+- **Source**: The Hacker News
+- **Severity**: HIGH
+- **MITRE Tactics**: Execution, Persistence
+- **Keywords**: backdoor, trojan
+- **Link**: [https://thehackernews.com/2026/10/official-claude-code-vs-code-extension.html](https://thehackernews.com/2026/10/official-claude-code-vs-code-extension.html)
+
+Cybersecurity researchers have disclosed that a trojanized version of Anthropic's official Claude Code extension was distributed through the Cursor Marketplace as a legitimate update, attempting to install a persistent SSH backdoor on affected systems.
+
+The malicious update, version 2.1.313, was dis
 
 ---
