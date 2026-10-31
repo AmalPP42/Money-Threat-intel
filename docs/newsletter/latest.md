@@ -1,4 +1,4 @@
-# 🛡️ Daily Threat Intel — October 30, 2026
+# 🛡️ Daily Threat Intel — October 31, 2026
 
 > **Automated daily briefing** covering the most critical cybersecurity 
 > threats from 9 leading security news sources.
@@ -8,58 +8,66 @@
 ## 📊 Analyst Briefing
 
 📊 15 threats detected today.
-🔴 CRITICAL (9): Hackers Actively Exploit Highly Critical Drupal Commerce Core Authorization Bypass Flaw | CISA Adds Actively Exploited GitLab RCE and Cisco Firewall DoS Flaws to KEV | ThreatsDay: Critical Firewall Flaws, Banking Trojans Rented, Weaponized PDF, Token Theft + 26 More Stories
-🟠 HIGH (5): Official Claude Code Extension on Cursor Marketplace Trojanized with Persistent SSH Backdoor | Binance Suffers Security Breach Affecting $6.3 Billion in Assets, Nearly $3 Billion Frozen | Binance probes potential $5.8 billion crypto-theft hack
+🔴 CRITICAL (9): Attackers Chain Three Ivanti Connect Secure Flaws to Gain Unauthenticated Root Access | WordPress RCE Flaw Draws Nearly 63,000 Attack Attempts in Just 24 Hours | Critical Linux kernel flaw allows remote root attacks on MPTCP servers
+🟠 HIGH (4): Chainalysis Confirms Intrusion Into Internal Tools and Exposure of Customer Identity Data | TeamViewer Flaw Lets Remote Computers Attack Users Who Connect to Control Them | Chainalysis discloses data breach from "offensive agentic techniques"
 ⚠️ Review all articles below and patch accordingly.
 
 ---
 
 ## 🔍 Top Threats
 
-### 🔴 Hackers Actively Exploit Highly Critical Drupal Commerce Core Authorization Bypass Flaw
+### 🔴 Attackers Chain Three Ivanti Connect Secure Flaws to Gain Unauthenticated Root Access
 
 - **Source**: The Hacker News
 - **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access, Execution
-- **Keywords**: exploit, vulnerability, cve-, rce
-- **Link**: [https://thehackernews.com/2026/10/hackers-actively-exploit-highly.html](https://thehackernews.com/2026/10/hackers-actively-exploit-highly.html)
+- **MITRE Tactics**: Initial Access
+- **Keywords**: exploit, vulnerability, cve-
+- **Link**: [https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html](https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html)
 
-Drupal has warned that threat actors are exploiting a "highly critical" security flaw in its Commerce Core component.
-
-The vulnerability, tracked as CVE-2026-118539 (CVSS score: N/A), is a case of missing authorization affecting Commerce Core versions from 0.0.0 to 2.41 and from 3.0.0 to 3.3.13.
-
-"T
-
----
-
-### 🔴 CISA Adds Actively Exploited GitLab RCE and Cisco Firewall DoS Flaws to KEV
-
-- **Source**: The Hacker News
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access, Execution
-- **Keywords**: exploit, vulnerability, cve-, rce
-- **Link**: [https://thehackernews.com/2026/10/cisa-adds-actively-exploited-gitlab-rce.html](https://thehackernews.com/2026/10/cisa-adds-actively-exploited-gitlab-rce.html)
-
-The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added two security flaws impacting Cisco and GitLab software to its Known Exploited Vulnerabilities (KEV), citing evidence of active exploitation.
+The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added two security flaws impacting Ivanti Connect Secure (ICS) to its Known Exploited Vulnerabilities (KEV) catalog, following active exploitation in the wild.
 
 The vulnerabilities are listed below -
 
 
-  CVE-2026-97229 (CVSS score: 10.0
+  CVE-2026-111357 (CVSS
 
 ---
 
-### 🔴 ThreatsDay: Critical Firewall Flaws, Banking Trojans Rented, Weaponized PDF, Token Theft + 26 More Stories
+### 🔴 WordPress RCE Flaw Draws Nearly 63,000 Attack Attempts in Just 24 Hours
 
 - **Source**: The Hacker News
 - **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access, Execution, Credential Access
-- **Keywords**: exploit, trojan
-- **Link**: [https://thehackernews.com/2026/10/threatsday-critical-firewall-flaws.html](https://thehackernews.com/2026/10/threatsday-critical-firewall-flaws.html)
+- **MITRE Tactics**: Initial Access, Execution
+- **Keywords**: exploit, vulnerability, remote code execution, rce
+- **Link**: [https://thehackernews.com/2026/10/wordpress-rce-flaw-draws-nearly-63000.html](https://thehackernews.com/2026/10/wordpress-rce-flaw-draws-nearly-63000.html)
 
-Some attacks take real skill. Others just need someone to leave a door open. This week has both. Exposed passwords, old bugs still getting exploited, and trusted software doing things it shouldn't.
+Threat actors have been observed attempting to exploit a high-severity security flaw in WordPress Core shortly after patches were released.
 
-There's a strange mix of clever tricks and careless mistakes. Hackers are borrowing trust from famili
+The vulnerability, which does not have a CVE identifier, relates to a case of remote code execution impacting WordPress Core versions 4.7 through 7.1.3. It car
+
+---
+
+### 🔴 Critical Linux kernel flaw allows remote root attacks on MPTCP servers
+
+- **Source**: BleepingComputer
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access
+- **Keywords**: exploit, vulnerability
+- **Link**: [https://www.bleepingcomputer.com/news/security/critical-linux-kernel-flaw-allows-remote-root-attacks-on-mptcp-servers/](https://www.bleepingcomputer.com/news/security/critical-linux-kernel-flaw-allows-remote-root-attacks-on-mptcp-servers/)
+
+Security researchers at Anthropic have developed an exploit for a critical Linux kernel vulnerability that allows unauthenticated attackers to remotely execute commands as root on servers running Multipath TCP (MPTCP) listeners. [...]
+
+---
+
+### 🔴 SS7 and Diameter Attacks: How Signaling Flaws Expose Your Phone
+
+- **Source**: BleepingComputer
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access, Execution
+- **Keywords**: exploit, rce
+- **Link**: [https://www.bleepingcomputer.com/news/security/ss7-and-diameter-attacks-how-signaling-flaws-expose-your-phone/](https://www.bleepingcomputer.com/news/security/ss7-and-diameter-attacks-how-signaling-flaws-expose-your-phone/)
+
+Flaws in SS7 and Diameter signaling protocols can allow attackers to track phone locations, intercept calls and SMS verification codes, and impersonate subscribers without compromising their devices. Cape explains how these attacks exploit trust between networks and how its security-focused mobile s
 
 ---
 
@@ -75,27 +83,15 @@ Attackers have started exploiting a maximum-severity GitLab vulnerability patche
 
 ---
 
-### 🔴 Drupal warns of critical Commerce Core flaw exploited in attacks
+### 🔴 Behind the Scenes of How Operation Blackout Went Down
 
-- **Source**: BleepingComputer
+- **Source**: Dark Reading
 - **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access, Execution
-- **Keywords**: exploit, vulnerability, rce
-- **Link**: [https://www.bleepingcomputer.com/news/security/drupal-warns-of-critical-commerce-core-flaw-exploited-in-attacks/](https://www.bleepingcomputer.com/news/security/drupal-warns-of-critical-commerce-core-flaw-exploited-in-attacks/)
+- **MITRE Tactics**: Execution
+- **Keywords**: rce
+- **Link**: [https://www.darkreading.com/cybersecurity-operations/behind-the-scenes-how-operation-blackout-went-down](https://www.darkreading.com/cybersecurity-operations/behind-the-scenes-how-operation-blackout-went-down)
 
-Drupal warned admins to patch a critical access bypass vulnerability in the Commerce Core module that attackers are exploiting in the wild. [...]
-
----
-
-### 🔴 Binance links $6.3 billion crypto theft to compromised DevOps laptop
-
-- **Source**: BleepingComputer
-- **Severity**: CRITICAL
-- **MITRE Tactics**: —
-- **Keywords**: apt
-- **Link**: [https://www.bleepingcomputer.com/news/security/binance-links-63-billion-crypto-theft-to-compromised-devops-laptop/](https://www.bleepingcomputer.com/news/security/binance-links-63-billion-crypto-theft-to-compromised-devops-laptop/)
-
-Binance, the world's largest crypto exchange, has linked the theft of about $6.3 billion in cryptocurrency to a DevOps engineer's compromised laptop. [...]
+A recent law enforcement operation to dismantle harmful scam centers was a big success. A threat intelligence expert walks us through what happened and why he wants more of the same.
 
 ---
 
@@ -135,16 +131,16 @@ As artificial intelligence squeezes early-career learning opportunities, capture
 
 ---
 
-### 🟠 Official Claude Code Extension on Cursor Marketplace Trojanized with Persistent SSH Backdoor
+### 🟠 Chainalysis Confirms Intrusion Into Internal Tools and Exposure of Customer Identity Data
 
 - **Source**: The Hacker News
 - **Severity**: HIGH
-- **MITRE Tactics**: Execution, Persistence
-- **Keywords**: backdoor, trojan
-- **Link**: [https://thehackernews.com/2026/10/official-claude-code-vs-code-extension.html](https://thehackernews.com/2026/10/official-claude-code-vs-code-extension.html)
+- **MITRE Tactics**: Initial Access, Credential Access
+- **Keywords**: breach, credential
+- **Link**: [https://thehackernews.com/2026/10/chainalysis-confirms-intrusion-into.html](https://thehackernews.com/2026/10/chainalysis-confirms-intrusion-into.html)
 
-Cybersecurity researchers have disclosed that a trojanized version of Anthropic's official Claude Code extension was distributed through the Cursor Marketplace as a legitimate update, attempting to install a persistent SSH backdoor on affected systems.
+American blockchain analysis firm Chainalysis said it was the target of a cybersecurity incident in which an external actor accessed non-sensitive customer data.
 
-The malicious update, version 2.1.313, was dis
+However, the company noted that the breach did not result in unauthorized access to its investigation content, authentication credentials
 
 ---
