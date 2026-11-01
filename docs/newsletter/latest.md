@@ -1,4 +1,4 @@
-# 🛡️ Daily Threat Intel — October 31, 2026
+# 🛡️ Daily Threat Intel — November 01, 2026
 
 > **Automated daily briefing** covering the most critical cybersecurity 
 > threats from 9 leading security news sources.
@@ -8,8 +8,8 @@
 ## 📊 Analyst Briefing
 
 📊 15 threats detected today.
-🔴 CRITICAL (9): Attackers Chain Three Ivanti Connect Secure Flaws to Gain Unauthenticated Root Access | WordPress RCE Flaw Draws Nearly 63,000 Attack Attempts in Just 24 Hours | Critical Linux kernel flaw allows remote root attacks on MPTCP servers
-🟠 HIGH (4): Chainalysis Confirms Intrusion Into Internal Tools and Exposure of Customer Identity Data | TeamViewer Flaw Lets Remote Computers Attack Users Who Connect to Control Them | Chainalysis discloses data breach from "offensive agentic techniques"
+🔴 CRITICAL (7): Attackers Chain Three Ivanti Connect Secure Flaws to Gain Unauthenticated Root Access | Critical Linux kernel flaw allows remote root attacks on MPTCP servers | Behind the Scenes of How Operation Blackout Went Down
+🟠 HIGH (5): NetamLoader Malware Targets Government Windows 10 Systems in Asia via .NET Injection | Chainalysis Confirms Intrusion Into Internal Tools and Exposure of Customer Identity Data | Northflank security breach leads to abuse of customers' AI API keys
 ⚠️ Review all articles below and patch accordingly.
 
 ---
@@ -33,20 +33,6 @@ The vulnerabilities are listed below -
 
 ---
 
-### 🔴 WordPress RCE Flaw Draws Nearly 63,000 Attack Attempts in Just 24 Hours
-
-- **Source**: The Hacker News
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access, Execution
-- **Keywords**: exploit, vulnerability, remote code execution, rce
-- **Link**: [https://thehackernews.com/2026/10/wordpress-rce-flaw-draws-nearly-63000.html](https://thehackernews.com/2026/10/wordpress-rce-flaw-draws-nearly-63000.html)
-
-Threat actors have been observed attempting to exploit a high-severity security flaw in WordPress Core shortly after patches were released.
-
-The vulnerability, which does not have a CVE identifier, relates to a case of remote code execution impacting WordPress Core versions 4.7 through 7.1.3. It car
-
----
-
 ### 🔴 Critical Linux kernel flaw allows remote root attacks on MPTCP servers
 
 - **Source**: BleepingComputer
@@ -56,30 +42,6 @@ The vulnerability, which does not have a CVE identifier, relates to a case of re
 - **Link**: [https://www.bleepingcomputer.com/news/security/critical-linux-kernel-flaw-allows-remote-root-attacks-on-mptcp-servers/](https://www.bleepingcomputer.com/news/security/critical-linux-kernel-flaw-allows-remote-root-attacks-on-mptcp-servers/)
 
 Security researchers at Anthropic have developed an exploit for a critical Linux kernel vulnerability that allows unauthenticated attackers to remotely execute commands as root on servers running Multipath TCP (MPTCP) listeners. [...]
-
----
-
-### 🔴 SS7 and Diameter Attacks: How Signaling Flaws Expose Your Phone
-
-- **Source**: BleepingComputer
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access, Execution
-- **Keywords**: exploit, rce
-- **Link**: [https://www.bleepingcomputer.com/news/security/ss7-and-diameter-attacks-how-signaling-flaws-expose-your-phone/](https://www.bleepingcomputer.com/news/security/ss7-and-diameter-attacks-how-signaling-flaws-expose-your-phone/)
-
-Flaws in SS7 and Diameter signaling protocols can allow attackers to track phone locations, intercept calls and SMS verification codes, and impersonate subscribers without compromising their devices. Cape explains how these attacks exploit trust between networks and how its security-focused mobile s
-
----
-
-### 🔴 CISA says max severity GitLab flaw now exploited in the wild
-
-- **Source**: BleepingComputer
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access
-- **Keywords**: exploit, vulnerability
-- **Link**: [https://www.bleepingcomputer.com/news/security/hackers-now-exploiting-max-severity-gitlab-flaw-in-attacks/](https://www.bleepingcomputer.com/news/security/hackers-now-exploiting-max-severity-gitlab-flaw-in-attacks/)
-
-Attackers have started exploiting a maximum-severity GitLab vulnerability patched earlier this month, according to the US Cybersecurity and Infrastructure Security Agency (CISA). [...]
 
 ---
 
@@ -131,6 +93,32 @@ As artificial intelligence squeezes early-career learning opportunities, capture
 
 ---
 
+### 🔴 Widespread PHP Flaw May Cause Many Site Outages Today
+
+- **Source**: Krebs on Security
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access, Execution
+- **Keywords**: exploit, rce
+- **Link**: [https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/](https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/)
+
+Expect to see quite a few websites serving "404" or "Page Not Found" errors today: Nearly 70 percent of websites need to update their core software to fix a pair of vulnerabilities that allow an attacker to seize full control over affected servers. Experts say there are working exploits for the flaw
+
+---
+
+### 🟠 NetamLoader Malware Targets Government Windows 10 Systems in Asia via .NET Injection
+
+- **Source**: The Hacker News
+- **Severity**: HIGH
+- **MITRE Tactics**: Execution
+- **Keywords**: malware
+- **Link**: [https://thehackernews.com/2026/11/netamloader-malware-targets-government.html](https://thehackernews.com/2026/11/netamloader-malware-targets-government.html)
+
+Cybersecurity researchers have disclosed details of what has been described as a "highly sophisticated infection chain" targeting government organizations in Asia.
+
+The activity, detailed by Kaspersky this week, targeted a custom Windows 10 build used exclusively by government entities in Asia and i
+
+---
+
 ### 🟠 Chainalysis Confirms Intrusion Into Internal Tools and Exposure of Customer Identity Data
 
 - **Source**: The Hacker News
@@ -142,5 +130,17 @@ As artificial intelligence squeezes early-career learning opportunities, capture
 American blockchain analysis firm Chainalysis said it was the target of a cybersecurity incident in which an external actor accessed non-sensitive customer data.
 
 However, the company noted that the breach did not result in unauthorized access to its investigation content, authentication credentials
+
+---
+
+### 🟠 Northflank security breach leads to abuse of customers' AI API keys
+
+- **Source**: BleepingComputer
+- **Severity**: HIGH
+- **MITRE Tactics**: Initial Access, Credential Access
+- **Keywords**: breach, credential
+- **Link**: [https://www.bleepingcomputer.com/news/security/northflank-security-breach-leads-to-abuse-of-customers-ai-api-keys/](https://www.bleepingcomputer.com/news/security/northflank-security-breach-leads-to-abuse-of-customers-ai-api-keys/)
+
+Cloud application hosting platform Northflank is warning customers to rotate all credentials and secrets stored on its platform after a security breach led to unauthorized use of customers' AI API keys. [...]
 
 ---

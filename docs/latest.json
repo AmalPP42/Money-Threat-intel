@@ -1,7 +1,19 @@
 {
-  "date": "2026-10-31T13:27:07.303308",
-  "summary": "\ud83d\udcca 15 threats detected today.\n\ud83d\udd34 CRITICAL (9): Attackers Chain Three Ivanti Connect Secure Flaws to Gain Unauthenticated Root Access | WordPress RCE Flaw Draws Nearly 63,000 Attack Attempts in Just 24 Hours | Critical Linux kernel flaw allows remote root attacks on MPTCP servers\n\ud83d\udfe0 HIGH (4): Chainalysis Confirms Intrusion Into Internal Tools and Exposure of Customer Identity Data | TeamViewer Flaw Lets Remote Computers Attack Users Who Connect to Control Them | Chainalysis discloses data breach from \"offensive agentic techniques\"\n\u26a0\ufe0f Review all articles below and patch accordingly.",
+  "date": "2026-11-01T14:08:06.595164",
+  "summary": "\ud83d\udcca 15 threats detected today.\n\ud83d\udd34 CRITICAL (7): Attackers Chain Three Ivanti Connect Secure Flaws to Gain Unauthenticated Root Access | Critical Linux kernel flaw allows remote root attacks on MPTCP servers | Behind the Scenes of How Operation Blackout Went Down\n\ud83d\udfe0 HIGH (5): NetamLoader Malware Targets Government Windows 10 Systems in Asia via .NET Injection | Chainalysis Confirms Intrusion Into Internal Tools and Exposure of Customer Identity Data | Northflank security breach leads to abuse of customers' AI API keys\n\u26a0\ufe0f Review all articles below and patch accordingly.",
   "articles": [
+    {
+      "title": "NetamLoader Malware Targets Government Windows 10 Systems in Asia via .NET Injection",
+      "link": "https://thehackernews.com/2026/11/netamloader-malware-targets-government.html",
+      "source": "The Hacker News",
+      "severity": "high",
+      "mitre_tactics": [
+        "Execution"
+      ],
+      "keywords": [
+        "malware"
+      ]
+    },
     {
       "title": "Chainalysis Confirms Intrusion Into Internal Tools and Exposure of Customer Identity Data",
       "link": "https://thehackernews.com/2026/10/chainalysis-confirms-intrusion-into.html",
@@ -31,31 +43,41 @@
       ]
     },
     {
-      "title": "TeamViewer Flaw Lets Remote Computers Attack Users Who Connect to Control Them",
-      "link": "https://thehackernews.com/2026/10/teamviewer-flaw-lets-remote-computers.html",
-      "source": "The Hacker News",
+      "title": "Northflank security breach leads to abuse of customers' AI API keys",
+      "link": "https://www.bleepingcomputer.com/news/security/northflank-security-breach-leads-to-abuse-of-customers-ai-api-keys/",
+      "source": "BleepingComputer",
+      "severity": "high",
+      "mitre_tactics": [
+        "Initial Access",
+        "Credential Access"
+      ],
+      "keywords": [
+        "breach",
+        "credential"
+      ]
+    },
+    {
+      "title": "New Android SMS of Death exploit can remotely crash unpatched phones",
+      "link": "https://www.bleepingcomputer.com/news/security/new-android-sms-of-death-exploit-can-remotely-crash-unpatched-phones/",
+      "source": "BleepingComputer",
       "severity": "high",
       "mitre_tactics": [
         "Initial Access"
       ],
       "keywords": [
-        "exploit"
+        "exploit",
+        "vulnerability",
+        "cve-"
       ]
     },
     {
-      "title": "WordPress RCE Flaw Draws Nearly 63,000 Attack Attempts in Just 24 Hours",
-      "link": "https://thehackernews.com/2026/10/wordpress-rce-flaw-draws-nearly-63000.html",
-      "source": "The Hacker News",
-      "severity": "critical",
-      "mitre_tactics": [
-        "Initial Access",
-        "Execution"
-      ],
+      "title": "From Beginner to Bug Hunter: Learning Cybersecurity in the AI Era.",
+      "link": "https://www.bleepingcomputer.com/news/security/from-beginner-to-bug-hunter-learning-cybersecurity-in-the-ai-era/",
+      "source": "BleepingComputer",
+      "severity": "medium",
+      "mitre_tactics": [],
       "keywords": [
-        "exploit",
-        "vulnerability",
-        "remote code execution",
-        "rce"
+        "vulnerability"
       ]
     },
     {
@@ -71,47 +93,6 @@
     {
       "title": "Critical Linux kernel flaw allows remote root attacks on MPTCP servers",
       "link": "https://www.bleepingcomputer.com/news/security/critical-linux-kernel-flaw-allows-remote-root-attacks-on-mptcp-servers/",
-      "source": "BleepingComputer",
-      "severity": "critical",
-      "mitre_tactics": [
-        "Initial Access"
-      ],
-      "keywords": [
-        "exploit",
-        "vulnerability"
-      ]
-    },
-    {
-      "title": "Malicious Claude Code extension on Cursor planted SSH backdoors",
-      "link": "https://www.bleepingcomputer.com/news/security/malicious-claude-code-extension-on-cursor-planted-ssh-backdoors/",
-      "source": "BleepingComputer",
-      "severity": "high",
-      "mitre_tactics": [
-        "Execution",
-        "Persistence"
-      ],
-      "keywords": [
-        "malware",
-        "backdoor"
-      ]
-    },
-    {
-      "title": "SS7 and Diameter Attacks: How Signaling Flaws Expose Your Phone",
-      "link": "https://www.bleepingcomputer.com/news/security/ss7-and-diameter-attacks-how-signaling-flaws-expose-your-phone/",
-      "source": "BleepingComputer",
-      "severity": "critical",
-      "mitre_tactics": [
-        "Initial Access",
-        "Execution"
-      ],
-      "keywords": [
-        "exploit",
-        "rce"
-      ]
-    },
-    {
-      "title": "CISA says max severity GitLab flaw now exploited in the wild",
-      "link": "https://www.bleepingcomputer.com/news/security/hackers-now-exploiting-max-severity-gitlab-flaw-in-attacks/",
       "source": "BleepingComputer",
       "severity": "critical",
       "mitre_tactics": [
@@ -188,6 +169,20 @@
       "mitre_tactics": [],
       "keywords": [
         "apt"
+      ]
+    },
+    {
+      "title": "Widespread PHP Flaw May Cause Many Site Outages Today",
+      "link": "https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/",
+      "source": "Krebs on Security",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Initial Access",
+        "Execution"
+      ],
+      "keywords": [
+        "exploit",
+        "rce"
       ]
     }
   ]
