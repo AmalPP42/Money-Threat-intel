@@ -1,4 +1,4 @@
-# 🛡️ Daily Threat Intel — November 01, 2026
+# 🛡️ Daily Threat Intel — November 02, 2026
 
 > **Automated daily briefing** covering the most critical cybersecurity 
 > threats from 9 leading security news sources.
@@ -8,40 +8,85 @@
 ## 📊 Analyst Briefing
 
 📊 15 threats detected today.
-🔴 CRITICAL (7): Attackers Chain Three Ivanti Connect Secure Flaws to Gain Unauthenticated Root Access | Critical Linux kernel flaw allows remote root attacks on MPTCP servers | Behind the Scenes of How Operation Blackout Went Down
-🟠 HIGH (5): NetamLoader Malware Targets Government Windows 10 Systems in Asia via .NET Injection | Chainalysis Confirms Intrusion Into Internal Tools and Exposure of Customer Identity Data | Northflank security breach leads to abuse of customers' AI API keys
+🔴 CRITICAL (11): Critical Langflow Flaws Could Let Unauthenticated Attackers Run Code on Servers | Is Your SOC Ready for AI Agents? A Maturity Check Before You Deploy | BTCPay Server warns of hot wallet crypto thefts on outdated instances
+🟠 HIGH (3): Google Disrupts 1.3 Million-Device Android Botnet, Says TV Box Maker Sold Criminal Access | New VOLTA Infostealer Uses Claude, Gemini, and Kimi AI to Rank Victims by Financial Value | Your Mobile Carrier Stores Your Call Logs for Years
 ⚠️ Review all articles below and patch accordingly.
 
 ---
 
 ## 🔍 Top Threats
 
-### 🔴 Attackers Chain Three Ivanti Connect Secure Flaws to Gain Unauthenticated Root Access
+### 🔴 Critical Langflow Flaws Could Let Unauthenticated Attackers Run Code on Servers
 
 - **Source**: The Hacker News
 - **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access
-- **Keywords**: exploit, vulnerability, cve-
-- **Link**: [https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html](https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html)
+- **MITRE Tactics**: Execution
+- **Keywords**: vulnerability, rce
+- **Link**: [https://thehackernews.com/2026/11/critical-langflow-flaws-could-let.html](https://thehackernews.com/2026/11/critical-langflow-flaws-could-let.html)
 
-The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added two security flaws impacting Ivanti Connect Secure (ICS) to its Known Exploited Vulnerabilities (KEV) catalog, following active exploitation in the wild.
+Two critical flaws in Langflow could let a remote attacker with no account bypass authentication or run arbitrary code,&nbsp;IBM said last week.
 
-The vulnerabilities are listed below -
-
-
-  CVE-2026-111357 (CVSS
+Langflow is an open-source tool for building AI agents and workflows, and&nbsp;its vulnerability reports go to IBM. Every release from 1.0.0 through 1.12.
 
 ---
 
-### 🔴 Critical Linux kernel flaw allows remote root attacks on MPTCP servers
+### 🔴 Is Your SOC Ready for AI Agents? A Maturity Check Before You Deploy
+
+- **Source**: The Hacker News
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Execution
+- **Keywords**: rce
+- **Link**: [https://thehackernews.com/2026/11/is-your-soc-ready-for-ai-agents.html](https://thehackernews.com/2026/11/is-your-soc-ready-for-ai-agents.html)
+
+Forty percent of security teams now use AI every day, and another 56% are testing it. Only 4% have no plans to adopt it, according to Prophet Security's State of AI in Security Operations 2026 survey of more than 250 CISOs, SOC leaders and practitioners. For the teams still testing, the next decisio
+
+---
+
+### 🔴 BTCPay Server warns of hot wallet crypto thefts on outdated instances
 
 - **Source**: BleepingComputer
 - **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access
-- **Keywords**: exploit, vulnerability
-- **Link**: [https://www.bleepingcomputer.com/news/security/critical-linux-kernel-flaw-allows-remote-root-attacks-on-mptcp-servers/](https://www.bleepingcomputer.com/news/security/critical-linux-kernel-flaw-allows-remote-root-attacks-on-mptcp-servers/)
+- **MITRE Tactics**: Execution
+- **Keywords**: rce
+- **Link**: [https://www.bleepingcomputer.com/news/security/btcpay-server-warns-of-hot-wallet-thefts-targeting-outdated-instances/](https://www.bleepingcomputer.com/news/security/btcpay-server-warns-of-hot-wallet-thefts-targeting-outdated-instances/)
 
-Security researchers at Anthropic have developed an exploit for a critical Linux kernel vulnerability that allows unauthenticated attackers to remotely execute commands as root on servers running Multipath TCP (MPTCP) listeners. [...]
+The maintainer of BTCPay Server, an open-source cryptocurrency payment processor, has urged users to install the latest version as hackers have been draining "hot wallets" on instances running older versions. [...]
+
+---
+
+### 🔴 Over 1,000 GitLab servers vulnerable to ongoing RCE attacks
+
+- **Source**: BleepingComputer
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access, Execution
+- **Keywords**: exploit, remote code execution, rce
+- **Link**: [https://www.bleepingcomputer.com/news/security/over-1-000-gitlab-servers-vulnerable-to-code-execution-attacks/](https://www.bleepingcomputer.com/news/security/over-1-000-gitlab-servers-vulnerable-to-code-execution-attacks/)
+
+Over 1,000 Internet-exposed GitLab servers are still unpatched against a maximum-severity flaw actively exploited in remote code execution attacks. [...]
+
+---
+
+### 🔴 Synology warns of C3RB3R ransomware attacks targeting NAS devices
+
+- **Source**: BleepingComputer
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Impact
+- **Keywords**: ransomware
+- **Link**: [https://www.bleepingcomputer.com/news/security/synology-warns-customers-of-ongoing-c3rb3r-ransomware-attacks/](https://www.bleepingcomputer.com/news/security/synology-warns-customers-of-ongoing-c3rb3r-ransomware-attacks/)
+
+Taiwanese network-attached storage (NAS) appliance maker Synology warned customers to update their devices immediately due to a surge in C3RB3r ransomware attacks. [...]
+
+---
+
+### 🔴 Ivanti patches two more Connect Secure zero-days chained in attacks
+
+- **Source**: BleepingComputer
+- **Severity**: CRITICAL
+- **MITRE Tactics**: —
+- **Keywords**: zero-day
+- **Link**: [https://www.bleepingcomputer.com/news/security/ivanti-patches-two-more-connect-secure-zero-days-chained-in-attacks/](https://www.bleepingcomputer.com/news/security/ivanti-patches-two-more-connect-secure-zero-days-chained-in-attacks/)
+
+Ivanti released security updates to patch two more Connect Secure (ICS) remote access gateway flaws that have been chained in zero-day attacks since at least October 1. [...]
 
 ---
 
@@ -69,30 +114,6 @@ The &quot;FrostyNeighbor&quot; advanced persistent threat (APT) launched a destr
 
 ---
 
-### 🔴 Rethinking Cybersecurity Awareness in the AI Era
-
-- **Source**: Dark Reading
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Execution
-- **Keywords**: rce
-- **Link**: [https://www.darkreading.com/cyber-risk/rethinking-cybersecurity-awareness-ai-era](https://www.darkreading.com/cyber-risk/rethinking-cybersecurity-awareness-ai-era)
-
-This installment of the Reporters' Notebook video series discusses some of the trends and topics from Cybersecurity Awareness Month, from using AI for better training to educating next-generation workforces on modern risks and emerging threats.
-
----
-
-### 🔴 Why CTF Competitions May Be More Important Than Ever
-
-- **Source**: Dark Reading
-- **Severity**: CRITICAL
-- **MITRE Tactics**: —
-- **Keywords**: apt
-- **Link**: [https://www.darkreading.com/cybersecurity-operations/why-ctf-more-important-than-ever](https://www.darkreading.com/cybersecurity-operations/why-ctf-more-important-than-ever)
-
-As artificial intelligence squeezes early-career learning opportunities, capture-the-flag contests could be one way to help pick up the slack.
-
----
-
 ### 🔴 Widespread PHP Flaw May Cause Many Site Outages Today
 
 - **Source**: Krebs on Security
@@ -105,42 +126,14 @@ Expect to see quite a few websites serving "404" or "Page Not Found" errors toda
 
 ---
 
-### 🟠 NetamLoader Malware Targets Government Windows 10 Systems in Asia via .NET Injection
+### 🔴 Feds Suspect Ransom Negotiator Ran ShinyHunters Extortion Site
 
-- **Source**: The Hacker News
-- **Severity**: HIGH
-- **MITRE Tactics**: Execution
-- **Keywords**: malware
-- **Link**: [https://thehackernews.com/2026/11/netamloader-malware-targets-government.html](https://thehackernews.com/2026/11/netamloader-malware-targets-government.html)
+- **Source**: Krebs on Security
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Execution, Impact
+- **Keywords**: ransomware, rce
+- **Link**: [https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/](https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/)
 
-Cybersecurity researchers have disclosed details of what has been described as a "highly sophisticated infection chain" targeting government organizations in Asia.
-
-The activity, detailed by Kaspersky this week, targeted a custom Windows 10 build used exclusively by government entities in Asia and i
-
----
-
-### 🟠 Chainalysis Confirms Intrusion Into Internal Tools and Exposure of Customer Identity Data
-
-- **Source**: The Hacker News
-- **Severity**: HIGH
-- **MITRE Tactics**: Initial Access, Credential Access
-- **Keywords**: breach, credential
-- **Link**: [https://thehackernews.com/2026/10/chainalysis-confirms-intrusion-into.html](https://thehackernews.com/2026/10/chainalysis-confirms-intrusion-into.html)
-
-American blockchain analysis firm Chainalysis said it was the target of a cybersecurity incident in which an external actor accessed non-sensitive customer data.
-
-However, the company noted that the breach did not result in unauthorized access to its investigation content, authentication credentials
-
----
-
-### 🟠 Northflank security breach leads to abuse of customers' AI API keys
-
-- **Source**: BleepingComputer
-- **Severity**: HIGH
-- **MITRE Tactics**: Initial Access, Credential Access
-- **Keywords**: breach, credential
-- **Link**: [https://www.bleepingcomputer.com/news/security/northflank-security-breach-leads-to-abuse-of-customers-ai-api-keys/](https://www.bleepingcomputer.com/news/security/northflank-security-breach-leads-to-abuse-of-customers-ai-api-keys/)
-
-Cloud application hosting platform Northflank is warning customers to rotate all credentials and secrets stored on its platform after a security breach led to unauthorized use of customers' AI API keys. [...]
+U.S. federal investigators pursuing the ShinyHunters hacking group that recently stole highly sensitive data from the FBI have identified executives at two different ransomware negotiation firms who maintained unusually close relations with the extortion group, KrebsOnSecurity has learned. Sources c
 
 ---

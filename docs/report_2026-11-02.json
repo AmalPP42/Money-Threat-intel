@@ -1,0 +1,190 @@
+{
+  "date": "2026-11-02T16:54:08.353236",
+  "summary": "\ud83d\udcca 15 threats detected today.\n\ud83d\udd34 CRITICAL (11): Critical Langflow Flaws Could Let Unauthenticated Attackers Run Code on Servers | Is Your SOC Ready for AI Agents? A Maturity Check Before You Deploy | BTCPay Server warns of hot wallet crypto thefts on outdated instances\n\ud83d\udfe0 HIGH (3): Google Disrupts 1.3 Million-Device Android Botnet, Says TV Box Maker Sold Criminal Access | New VOLTA Infostealer Uses Claude, Gemini, and Kimi AI to Rank Victims by Financial Value | Your Mobile Carrier Stores Your Call Logs for Years\n\u26a0\ufe0f Review all articles below and patch accordingly.",
+  "articles": [
+    {
+      "title": "Google Disrupts 1.3 Million-Device Android Botnet, Says TV Box Maker Sold Criminal Access",
+      "link": "https://thehackernews.com/2026/11/google-disrupts-13-million-device.html",
+      "source": "The Hacker News",
+      "severity": "high",
+      "mitre_tactics": [
+        "Persistence"
+      ],
+      "keywords": [
+        "backdoor",
+        "botnet"
+      ]
+    },
+    {
+      "title": "Critical Langflow Flaws Could Let Unauthenticated Attackers Run Code on Servers",
+      "link": "https://thehackernews.com/2026/11/critical-langflow-flaws-could-let.html",
+      "source": "The Hacker News",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Execution"
+      ],
+      "keywords": [
+        "vulnerability",
+        "rce"
+      ]
+    },
+    {
+      "title": "Is Your SOC Ready for AI Agents? A Maturity Check Before You Deploy",
+      "link": "https://thehackernews.com/2026/11/is-your-soc-ready-for-ai-agents.html",
+      "source": "The Hacker News",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Execution"
+      ],
+      "keywords": [
+        "rce"
+      ]
+    },
+    {
+      "title": "New VOLTA Infostealer Uses Claude, Gemini, and Kimi AI to Rank Victims by Financial Value",
+      "link": "https://thehackernews.com/2026/11/new-volta-infostealer-uses-claude.html",
+      "source": "The Hacker News",
+      "severity": "high",
+      "mitre_tactics": [
+        "Execution",
+        "Credential Access"
+      ],
+      "keywords": [
+        "malware"
+      ]
+    },
+    {
+      "title": "BTCPay Server warns of hot wallet crypto thefts on outdated instances",
+      "link": "https://www.bleepingcomputer.com/news/security/btcpay-server-warns-of-hot-wallet-thefts-targeting-outdated-instances/",
+      "source": "BleepingComputer",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Execution"
+      ],
+      "keywords": [
+        "rce"
+      ]
+    },
+    {
+      "title": "Your Mobile Carrier Stores Your Call Logs for Years",
+      "link": "https://www.bleepingcomputer.com/news/security/your-mobile-carrier-stores-your-call-logs-for-years/",
+      "source": "BleepingComputer",
+      "severity": "high",
+      "mitre_tactics": [],
+      "keywords": [
+        "breach"
+      ]
+    },
+    {
+      "title": "Over 1,000 GitLab servers vulnerable to ongoing RCE attacks",
+      "link": "https://www.bleepingcomputer.com/news/security/over-1-000-gitlab-servers-vulnerable-to-code-execution-attacks/",
+      "source": "BleepingComputer",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Initial Access",
+        "Execution"
+      ],
+      "keywords": [
+        "exploit",
+        "remote code execution",
+        "rce"
+      ]
+    },
+    {
+      "title": "Synology warns of C3RB3R ransomware attacks targeting NAS devices",
+      "link": "https://www.bleepingcomputer.com/news/security/synology-warns-customers-of-ongoing-c3rb3r-ransomware-attacks/",
+      "source": "BleepingComputer",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Impact"
+      ],
+      "keywords": [
+        "ransomware"
+      ]
+    },
+    {
+      "title": "Ivanti patches two more Connect Secure zero-days chained in attacks",
+      "link": "https://www.bleepingcomputer.com/news/security/ivanti-patches-two-more-connect-secure-zero-days-chained-in-attacks/",
+      "source": "BleepingComputer",
+      "severity": "critical",
+      "mitre_tactics": [],
+      "keywords": [
+        "zero-day"
+      ]
+    },
+    {
+      "title": "Devs Hit by Trojanized Claude Code Extension for Cursor",
+      "link": "https://www.darkreading.com/cyberattacks-data-breaches/devs-trojanized-claude-code-extension-cursor",
+      "source": "Dark Reading",
+      "severity": "low",
+      "mitre_tactics": [
+        "Execution"
+      ],
+      "keywords": [
+        "trojan"
+      ]
+    },
+    {
+      "title": "Behind the Scenes of How Operation Blackout Went Down",
+      "link": "https://www.darkreading.com/cybersecurity-operations/behind-the-scenes-how-operation-blackout-went-down",
+      "source": "Dark Reading",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Execution"
+      ],
+      "keywords": [
+        "rce"
+      ]
+    },
+    {
+      "title": "As Russia's Cyberwar Evolves, Belarus Steps Forward",
+      "link": "https://www.darkreading.com/physical-security/russia-cyber-war-belarus-steps-forward",
+      "source": "Dark Reading",
+      "severity": "critical",
+      "mitre_tactics": [],
+      "keywords": [
+        "apt"
+      ]
+    },
+    {
+      "title": "Widespread PHP Flaw May Cause Many Site Outages Today",
+      "link": "https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/",
+      "source": "Krebs on Security",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Initial Access",
+        "Execution"
+      ],
+      "keywords": [
+        "exploit",
+        "rce"
+      ]
+    },
+    {
+      "title": "Feds Suspect Ransom Negotiator Ran ShinyHunters Extortion Site",
+      "link": "https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/",
+      "source": "Krebs on Security",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Execution",
+        "Impact"
+      ],
+      "keywords": [
+        "ransomware",
+        "rce"
+      ]
+    },
+    {
+      "title": "U.K. Sanctions Cryptomus for RU Money Laundering",
+      "link": "https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/",
+      "source": "Krebs on Security",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Impact"
+      ],
+      "keywords": [
+        "ransomware"
+      ]
+    }
+  ]
+}
