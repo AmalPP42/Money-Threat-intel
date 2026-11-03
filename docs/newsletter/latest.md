@@ -1,4 +1,4 @@
-# 🛡️ Daily Threat Intel — November 02, 2026
+# 🛡️ Daily Threat Intel — November 03, 2026
 
 > **Automated daily briefing** covering the most critical cybersecurity 
 > threats from 9 leading security news sources.
@@ -8,37 +8,117 @@
 ## 📊 Analyst Briefing
 
 📊 15 threats detected today.
-🔴 CRITICAL (11): Critical Langflow Flaws Could Let Unauthenticated Attackers Run Code on Servers | Is Your SOC Ready for AI Agents? A Maturity Check Before You Deploy | BTCPay Server warns of hot wallet crypto thefts on outdated instances
-🟠 HIGH (3): Google Disrupts 1.3 Million-Device Android Botnet, Says TV Box Maker Sold Criminal Access | New VOLTA Infostealer Uses Claude, Gemini, and Kimi AI to Rank Victims by Financial Value | Your Mobile Carrier Stores Your Call Logs for Years
+🔴 CRITICAL (9): Red Hat Patches 9.8-Rated Linux TCP RCE Flaw While Ubuntu Releases Fixes for Testing | Russia-Aligned Gorbag Hackers Exploit WinRAR Flaw to Deploy Data-Stealing Malware | Hackers Exploit BTCPay Server Flaw to Steal Bitcoin and Litecoin From Hot Wallets
+🟠 HIGH (5): The 4 Elements of Exposure Prioritization and How to Operationalize Them | Attackers Target Unpatched CryptoPayment Gateway Flaw That Can Expose Wallet Credentials | Harvard University data breach exposed info of 851,000 accounts
 ⚠️ Review all articles below and patch accordingly.
 
 ---
 
 ## 🔍 Top Threats
 
-### 🔴 Critical Langflow Flaws Could Let Unauthenticated Attackers Run Code on Servers
+### 🔴 Red Hat Patches 9.8-Rated Linux TCP RCE Flaw While Ubuntu Releases Fixes for Testing
 
 - **Source**: The Hacker News
 - **Severity**: CRITICAL
 - **MITRE Tactics**: Execution
-- **Keywords**: vulnerability, rce
-- **Link**: [https://thehackernews.com/2026/11/critical-langflow-flaws-could-let.html](https://thehackernews.com/2026/11/critical-langflow-flaws-could-let.html)
+- **Keywords**: vulnerability, cve-, rce
+- **Link**: [https://thehackernews.com/2026/11/red-hat-patches-98-rated-linux-tcp-rce.html](https://thehackernews.com/2026/11/red-hat-patches-98-rated-linux-tcp-rce.html)
 
-Two critical flaws in Langflow could let a remote attacker with no account bypass authentication or run arbitrary code,&nbsp;IBM said last week.
+Fixed kernels for a&nbsp;use-after-free vulnerability in the Linux kernel's IPv4 TCP code&nbsp;are now available for Red Hat Enterprise Linux 8, 9, and 10, while Ubuntu's fixes for its three newest long-term-support releases remain in its opt-in testing channel with no date for a regular update.
 
-Langflow is an open-source tool for building AI agents and workflows, and&nbsp;its vulnerability reports go to IBM. Every release from 1.0.0 through 1.12.
+Th
 
 ---
 
-### 🔴 Is Your SOC Ready for AI Agents? A Maturity Check Before You Deploy
+### 🔴 Russia-Aligned Gorbag Hackers Exploit WinRAR Flaw to Deploy Data-Stealing Malware
 
 - **Source**: The Hacker News
 - **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access, Execution
+- **Keywords**: exploit, malware, rce
+- **Link**: [https://thehackernews.com/2026/11/russia-aligned-gorbag-hackers-exploit.html](https://thehackernews.com/2026/11/russia-aligned-gorbag-hackers-exploit.html)
+
+A Russia-aligned threat actor known as Gorbag has been observed using simple information stealer malware in attacks targeting Ukrainian organizations.
+
+"Active since at least February 2025, the group has focused exclusively on Ukrainian targets, with a clear preference for law enforcement and justic
+
+---
+
+### 🔴 Hackers Exploit BTCPay Server Flaw to Steal Bitcoin and Litecoin From Hot Wallets
+
+- **Source**: The Hacker News
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access, Execution
+- **Keywords**: exploit, rce
+- **Link**: [https://thehackernews.com/2026/11/hackers-exploit-btcpay-server-flaw-to.html](https://thehackernews.com/2026/11/hackers-exploit-btcpay-server-flaw-to.html)
+
+BTCPay Server, a self-hosted, open-source cryptocurrency payment processor, has urged users to install the latest version of its software in response to reports of Bitcoin and Litecoin being stolen from hot wallets on instances running older versions.
+
+"Our investigation found that these attacks tar
+
+---
+
+### 🔴 Synology NAS Devices Targeted in Ransomware Attacks Exploiting Patched DSM Flaw
+
+- **Source**: The Hacker News
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access, Impact
+- **Keywords**: ransomware, exploit, vulnerability
+- **Link**: [https://thehackernews.com/2026/11/synology-nas-devices-targeted-in.html](https://thehackernews.com/2026/11/synology-nas-devices-targeted-in.html)
+
+Synology is urging customers to update the DiskStation Manager (DSM) software powering its Network Attached Storage (NAS) devices following ransomware attacks.
+
+The Taiwanese vendor said it observed threat actors exploiting a vulnerability patched in December 2024 to target devices running outdated 
+
+---
+
+### 🔴 Attackers Exploit Critical Siemens IoT2050 Flaw to Plant Remote Command Backdoors
+
+- **Source**: The Hacker News
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access, Persistence
+- **Keywords**: exploit, vulnerability, backdoor, cve-
+- **Link**: [https://thehackernews.com/2026/11/attackers-exploit-critical-siemens.html](https://thehackernews.com/2026/11/attackers-exploit-critical-siemens.html)
+
+A maximum-severity security flaw impacting Siemens SIMATIC IoT2050 Advanced devices has come under active exploitation, VulnCheck has revealed.
+
+The vulnerability, tracked as CVE-2026-58115 (CVSS score: 10.0), is a case of missing authentication for a critical function that could be exploited by an 
+
+---
+
+### 🔴 UK school estate hit by 3AM ransomware in suspected AI-assisted attack
+
+- **Source**: BleepingComputer
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Impact
+- **Keywords**: ransomware
+- **Link**: [https://www.bleepingcomputer.com/news/security/uk-school-estate-hit-by-3am-ransomware-in-suspected-ai-assisted-attack/](https://www.bleepingcomputer.com/news/security/uk-school-estate-hit-by-3am-ransomware-in-suspected-ai-assisted-attack/)
+
+A 3AM ransomware affiliate targeted a school estate in the UK and successfully encrypted around 37 of nearly 50 machines reached from an unmanaged host. [...]
+
+---
+
+### 🔴 Police seizes over 100 servers in investment scam crackdown
+
+- **Source**: BleepingComputer
+- **Severity**: CRITICAL
 - **MITRE Tactics**: Execution
 - **Keywords**: rce
-- **Link**: [https://thehackernews.com/2026/11/is-your-soc-ready-for-ai-agents.html](https://thehackernews.com/2026/11/is-your-soc-ready-for-ai-agents.html)
+- **Link**: [https://www.bleepingcomputer.com/news/security/police-seizes-over-100-servers-in-investment-scam-crackdown/](https://www.bleepingcomputer.com/news/security/police-seizes-over-100-servers-in-investment-scam-crackdown/)
 
-Forty percent of security teams now use AI every day, and another 56% are testing it. Only 4% have no plans to adopt it, according to Prophet Security's State of AI in Security Operations 2026 survey of more than 250 CISOs, SOC leaders and practitioners. For the teams still testing, the next decisio
+European law enforcement authorities arrested seven suspects and seized more than 100 servers in a joint action targeting an unnamed company suspected of providing fraudulent trading websites to criminal gangs. [...]
+
+---
+
+### 🔴 Chinese hackers use ARTEX AI in automated attacks against 200 orgs
+
+- **Source**: BleepingComputer
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Execution
+- **Keywords**: rce
+- **Link**: [https://www.bleepingcomputer.com/news/security/chinese-hackers-use-artex-ai-in-automated-attacks-against-200-orgs/](https://www.bleepingcomputer.com/news/security/chinese-hackers-use-artex-ai-in-automated-attacks-against-200-orgs/)
+
+Chinese hackers used ARTEX, an open-source, multi-agent AI penetration-testing framework, in attacks against more than 200 organizations across 14 countries. [...]
 
 ---
 
@@ -54,86 +134,14 @@ The maintainer of BTCPay Server, an open-source cryptocurrency payment processor
 
 ---
 
-### 🔴 Over 1,000 GitLab servers vulnerable to ongoing RCE attacks
+### 🟠 The 4 Elements of Exposure Prioritization and How to Operationalize Them
 
-- **Source**: BleepingComputer
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access, Execution
-- **Keywords**: exploit, remote code execution, rce
-- **Link**: [https://www.bleepingcomputer.com/news/security/over-1-000-gitlab-servers-vulnerable-to-code-execution-attacks/](https://www.bleepingcomputer.com/news/security/over-1-000-gitlab-servers-vulnerable-to-code-execution-attacks/)
+- **Source**: The Hacker News
+- **Severity**: HIGH
+- **MITRE Tactics**: Initial Access
+- **Keywords**: breach, exploit
+- **Link**: [https://thehackernews.com/2026/11/the-4-elements-of-exposure.html](https://thehackernews.com/2026/11/the-4-elements-of-exposure.html)
 
-Over 1,000 Internet-exposed GitLab servers are still unpatched against a maximum-severity flaw actively exploited in remote code execution attacks. [...]
-
----
-
-### 🔴 Synology warns of C3RB3R ransomware attacks targeting NAS devices
-
-- **Source**: BleepingComputer
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Impact
-- **Keywords**: ransomware
-- **Link**: [https://www.bleepingcomputer.com/news/security/synology-warns-customers-of-ongoing-c3rb3r-ransomware-attacks/](https://www.bleepingcomputer.com/news/security/synology-warns-customers-of-ongoing-c3rb3r-ransomware-attacks/)
-
-Taiwanese network-attached storage (NAS) appliance maker Synology warned customers to update their devices immediately due to a surge in C3RB3r ransomware attacks. [...]
-
----
-
-### 🔴 Ivanti patches two more Connect Secure zero-days chained in attacks
-
-- **Source**: BleepingComputer
-- **Severity**: CRITICAL
-- **MITRE Tactics**: —
-- **Keywords**: zero-day
-- **Link**: [https://www.bleepingcomputer.com/news/security/ivanti-patches-two-more-connect-secure-zero-days-chained-in-attacks/](https://www.bleepingcomputer.com/news/security/ivanti-patches-two-more-connect-secure-zero-days-chained-in-attacks/)
-
-Ivanti released security updates to patch two more Connect Secure (ICS) remote access gateway flaws that have been chained in zero-day attacks since at least October 1. [...]
-
----
-
-### 🔴 Behind the Scenes of How Operation Blackout Went Down
-
-- **Source**: Dark Reading
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Execution
-- **Keywords**: rce
-- **Link**: [https://www.darkreading.com/cybersecurity-operations/behind-the-scenes-how-operation-blackout-went-down](https://www.darkreading.com/cybersecurity-operations/behind-the-scenes-how-operation-blackout-went-down)
-
-A recent law enforcement operation to dismantle harmful scam centers was a big success. A threat intelligence expert walks us through what happened and why he wants more of the same.
-
----
-
-### 🔴 As Russia's Cyberwar Evolves, Belarus Steps Forward
-
-- **Source**: Dark Reading
-- **Severity**: CRITICAL
-- **MITRE Tactics**: —
-- **Keywords**: apt
-- **Link**: [https://www.darkreading.com/physical-security/russia-cyber-war-belarus-steps-forward](https://www.darkreading.com/physical-security/russia-cyber-war-belarus-steps-forward)
-
-The &quot;FrostyNeighbor&quot; advanced persistent threat (APT) launched a destructive attack in Ukraine and is raising concerns about deeper alignment with Russian cyber objectives.
-
----
-
-### 🔴 Widespread PHP Flaw May Cause Many Site Outages Today
-
-- **Source**: Krebs on Security
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access, Execution
-- **Keywords**: exploit, rce
-- **Link**: [https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/](https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/)
-
-Expect to see quite a few websites serving "404" or "Page Not Found" errors today: Nearly 70 percent of websites need to update their core software to fix a pair of vulnerabilities that allow an attacker to seize full control over affected servers. Experts say there are working exploits for the flaw
-
----
-
-### 🔴 Feds Suspect Ransom Negotiator Ran ShinyHunters Extortion Site
-
-- **Source**: Krebs on Security
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Execution, Impact
-- **Keywords**: ransomware, rce
-- **Link**: [https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/](https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/)
-
-U.S. federal investigators pursuing the ShinyHunters hacking group that recently stole highly sensitive data from the FBI have identified executives at two different ransomware negotiation firms who maintained unusually close relations with the extortion group, KrebsOnSecurity has learned. Sources c
+Your team is remediating more vulnerabilities than ever, yet your breach risk has barely changed. You’re spending too much time and effort on exposures attackers may never exploit, while higher-risk exposures sit, waiting in the queue. Gartner®’s report on exposure prioritization states that fewer t
 
 ---
