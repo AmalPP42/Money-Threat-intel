@@ -1,0 +1,189 @@
+{
+  "date": "2026-11-04T15:13:53.426726",
+  "summary": "\ud83d\udcca 15 threats detected today.\n\ud83d\udd34 CRITICAL (5): APT29-Linked Hackers Hijack Web Analytics Script to Deliver iOS and Android Exploits | Google Issues Patches for Critical Android Flaw That Could Allow RCE Without User Interaction | CISA flags WordPress RCE flaw as actively exploited in attacks\n\ud83d\udfe0 HIGH (8): China-Aligned Hackers Hijack Sogou Input Method DNS Requests to Deploy DarkVigil Backdoor | CISA Confirms Hackers Exploiting WordPress Core Flaw During Software Upgrades | Hackers use n-day exploits in zero-click attacks on iOS, Android devices\n\u26a0\ufe0f Review all articles below and patch accordingly.",
+  "articles": [
+    {
+      "title": "APT29-Linked Hackers Hijack Web Analytics Script to Deliver iOS and Android Exploits",
+      "link": "https://thehackernews.com/2026/11/apt29-linked-hackers-hijack-web.html",
+      "source": "The Hacker News",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Initial Access"
+      ],
+      "keywords": [
+        "exploit",
+        "supply chain",
+        "apt"
+      ]
+    },
+    {
+      "title": "China-Aligned Hackers Hijack Sogou Input Method DNS Requests to Deploy DarkVigil Backdoor",
+      "link": "https://thehackernews.com/2026/11/china-aligned-hackers-hijack-sogou.html",
+      "source": "The Hacker News",
+      "severity": "high",
+      "mitre_tactics": [
+        "Persistence"
+      ],
+      "keywords": [
+        "backdoor"
+      ]
+    },
+    {
+      "title": "Google Issues Patches for Critical Android Flaw That Could Allow RCE Without User Interaction",
+      "link": "https://thehackernews.com/2026/11/google-patches-critical-android-flaw.html",
+      "source": "The Hacker News",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Execution"
+      ],
+      "keywords": [
+        "cve-",
+        "rce"
+      ]
+    },
+    {
+      "title": "CISA Confirms Hackers Exploiting WordPress Core Flaw During Software Upgrades",
+      "link": "https://thehackernews.com/2026/11/cisa-confirms-hackers-exploiting.html",
+      "source": "The Hacker News",
+      "severity": "high",
+      "mitre_tactics": [
+        "Initial Access"
+      ],
+      "keywords": [
+        "exploit",
+        "vulnerability",
+        "cve-"
+      ]
+    },
+    {
+      "title": "Google Calendar phishing campaign hijacks sessions, bypasses MFA",
+      "link": "https://www.bleepingcomputer.com/news/security/google-calendar-phishing-campaign-hijacks-sessions-bypasses-mfa/",
+      "source": "BleepingComputer",
+      "severity": "medium",
+      "mitre_tactics": [
+        "Initial Access"
+      ],
+      "keywords": [
+        "phishing"
+      ]
+    },
+    {
+      "title": "CISA flags WordPress RCE flaw as actively exploited in attacks",
+      "link": "https://www.bleepingcomputer.com/news/security/cisa-flags-wordpress-rce-flaw-as-actively-exploited-in-attacks/",
+      "source": "BleepingComputer",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Initial Access",
+        "Execution"
+      ],
+      "keywords": [
+        "exploit",
+        "vulnerability",
+        "rce"
+      ]
+    },
+    {
+      "title": "Hackers use n-day exploits in zero-click attacks on iOS, Android devices",
+      "link": "https://www.bleepingcomputer.com/news/security/hackers-use-n-day-exploits-in-zero-click-attacks-on-ios-android-devices/",
+      "source": "BleepingComputer",
+      "severity": "high",
+      "mitre_tactics": [
+        "Initial Access"
+      ],
+      "keywords": [
+        "exploit"
+      ]
+    },
+    {
+      "title": "Hackers hijack cPGuard autoupdate to deploy backdoor, steal data",
+      "link": "https://www.bleepingcomputer.com/news/security/hackers-hijack-cpguard-autoupdate-to-deploy-backdoor-steal-data/",
+      "source": "BleepingComputer",
+      "severity": "high",
+      "mitre_tactics": [
+        "Persistence"
+      ],
+      "keywords": [
+        "backdoor"
+      ]
+    },
+    {
+      "title": "WorkOS says attacker used ARTEX AI to breach internal sales app",
+      "link": "https://www.bleepingcomputer.com/news/security/workos-says-attacker-used-artex-ai-to-breach-internal-sales-app/",
+      "source": "BleepingComputer",
+      "severity": "high",
+      "mitre_tactics": [],
+      "keywords": [
+        "breach"
+      ]
+    },
+    {
+      "title": "Binance says fake job interview led to $6.3 billion crypto heist",
+      "link": "https://www.bleepingcomputer.com/news/security/binance-says-fake-job-interview-led-to-63-billion-crypto-heist/",
+      "source": "BleepingComputer",
+      "severity": "high",
+      "mitre_tactics": [
+        "Execution"
+      ],
+      "keywords": [
+        "malware"
+      ]
+    },
+    {
+      "title": "Philippine Migrant Worker Data Likely Leaked in 69GB Government Breach",
+      "link": "https://www.darkreading.com/cyberattacks-data-breaches/philippine-migrant-worker-data-69gb-government-breach",
+      "source": "Dark Reading",
+      "severity": "high",
+      "mitre_tactics": [],
+      "keywords": [
+        "breach"
+      ]
+    },
+    {
+      "title": "Phishing-Resistant Isn't Enough; Yubico Takes Aim at Identity-Verification Gap",
+      "link": "https://www.darkreading.com/identity-access-management-security/beyond-phishing-resistant-yubico-identity-verification-gap",
+      "source": "Dark Reading",
+      "severity": "medium",
+      "mitre_tactics": [
+        "Initial Access",
+        "Credential Access"
+      ],
+      "keywords": [
+        "phishing",
+        "credential"
+      ]
+    },
+    {
+      "title": "LLMjacking Emerges as Thriving Cybercriminal Enterprise",
+      "link": "https://www.darkreading.com/cloud-security/llmjacking-thriving-cybercriminal-enterprise",
+      "source": "Dark Reading",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Execution"
+      ],
+      "keywords": [
+        "rce"
+      ]
+    },
+    {
+      "title": "3AM Affiliate Embraces AI-Like Loops in European School Attack",
+      "link": "https://www.darkreading.com/data-privacy/3am-affiliate-ai-loops-european-school-attack",
+      "source": "Dark Reading",
+      "severity": "high",
+      "mitre_tactics": [],
+      "keywords": [
+        "breach"
+      ]
+    },
+    {
+      "title": "One Compromised Laptop, Billions Lost: The Binance Attack-Path Warning",
+      "link": "https://www.darkreading.com/cyberattacks-data-breaches/binance-hack-test-attack-paths",
+      "source": "Dark Reading",
+      "severity": "critical",
+      "mitre_tactics": [],
+      "keywords": [
+        "breach",
+        "apt"
+      ]
+    }
+  ]
+}

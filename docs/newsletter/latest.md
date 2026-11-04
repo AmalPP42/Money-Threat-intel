@@ -1,4 +1,4 @@
-# 🛡️ Daily Threat Intel — November 03, 2026
+# 🛡️ Daily Threat Intel — November 04, 2026
 
 > **Automated daily briefing** covering the most critical cybersecurity 
 > threats from 9 leading security news sources.
@@ -8,140 +8,138 @@
 ## 📊 Analyst Briefing
 
 📊 15 threats detected today.
-🔴 CRITICAL (9): Red Hat Patches 9.8-Rated Linux TCP RCE Flaw While Ubuntu Releases Fixes for Testing | Russia-Aligned Gorbag Hackers Exploit WinRAR Flaw to Deploy Data-Stealing Malware | Hackers Exploit BTCPay Server Flaw to Steal Bitcoin and Litecoin From Hot Wallets
-🟠 HIGH (5): The 4 Elements of Exposure Prioritization and How to Operationalize Them | Attackers Target Unpatched CryptoPayment Gateway Flaw That Can Expose Wallet Credentials | Harvard University data breach exposed info of 851,000 accounts
+🔴 CRITICAL (5): APT29-Linked Hackers Hijack Web Analytics Script to Deliver iOS and Android Exploits | Google Issues Patches for Critical Android Flaw That Could Allow RCE Without User Interaction | CISA flags WordPress RCE flaw as actively exploited in attacks
+🟠 HIGH (8): China-Aligned Hackers Hijack Sogou Input Method DNS Requests to Deploy DarkVigil Backdoor | CISA Confirms Hackers Exploiting WordPress Core Flaw During Software Upgrades | Hackers use n-day exploits in zero-click attacks on iOS, Android devices
 ⚠️ Review all articles below and patch accordingly.
 
 ---
 
 ## 🔍 Top Threats
 
-### 🔴 Red Hat Patches 9.8-Rated Linux TCP RCE Flaw While Ubuntu Releases Fixes for Testing
+### 🔴 APT29-Linked Hackers Hijack Web Analytics Script to Deliver iOS and Android Exploits
+
+- **Source**: The Hacker News
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access
+- **Keywords**: exploit, supply chain, apt
+- **Link**: [https://thehackernews.com/2026/11/apt29-linked-hackers-hijack-web.html](https://thehackernews.com/2026/11/apt29-linked-hackers-hijack-web.html)
+
+The Russia-linked threat actor known as APT29 is said to be behind a large-scale watering hole campaign targeting iOS and Android users through compromised websites, fake domains, and a supply chain attack involving a Ukrainian web analytics service called Plerdy SEO Tracker.
+
+"The injected JavaScri
+
+---
+
+### 🔴 Google Issues Patches for Critical Android Flaw That Could Allow RCE Without User Interaction
 
 - **Source**: The Hacker News
 - **Severity**: CRITICAL
 - **MITRE Tactics**: Execution
-- **Keywords**: vulnerability, cve-, rce
-- **Link**: [https://thehackernews.com/2026/11/red-hat-patches-98-rated-linux-tcp-rce.html](https://thehackernews.com/2026/11/red-hat-patches-98-rated-linux-tcp-rce.html)
+- **Keywords**: cve-, rce
+- **Link**: [https://thehackernews.com/2026/11/google-patches-critical-android-flaw.html](https://thehackernews.com/2026/11/google-patches-critical-android-flaw.html)
 
-Fixed kernels for a&nbsp;use-after-free vulnerability in the Linux kernel's IPv4 TCP code&nbsp;are now available for Red Hat Enterprise Linux 8, 9, and 10, while Ubuntu's fixes for its three newest long-term-support releases remain in its opt-in testing channel with no date for a regular update.
+A critical Android flaw could allow an attacker to run code on a phone without any user action remotely, Google said in its&nbsp;November security bulletin.
 
-Th
+The flaw, CVE-2026-58868, affects Android 14 through 17. Phones get the fix with security patch level 2026-11-01 or later, which phone makers 
 
 ---
 
-### 🔴 Russia-Aligned Gorbag Hackers Exploit WinRAR Flaw to Deploy Data-Stealing Malware
+### 🔴 CISA flags WordPress RCE flaw as actively exploited in attacks
 
-- **Source**: The Hacker News
+- **Source**: BleepingComputer
 - **Severity**: CRITICAL
 - **MITRE Tactics**: Initial Access, Execution
-- **Keywords**: exploit, malware, rce
-- **Link**: [https://thehackernews.com/2026/11/russia-aligned-gorbag-hackers-exploit.html](https://thehackernews.com/2026/11/russia-aligned-gorbag-hackers-exploit.html)
+- **Keywords**: exploit, vulnerability, rce
+- **Link**: [https://www.bleepingcomputer.com/news/security/cisa-flags-wordpress-rce-flaw-as-actively-exploited-in-attacks/](https://www.bleepingcomputer.com/news/security/cisa-flags-wordpress-rce-flaw-as-actively-exploited-in-attacks/)
 
-A Russia-aligned threat actor known as Gorbag has been observed using simple information stealer malware in attacks targeting Ukrainian organizations.
-
-"Active since at least February 2025, the group has focused exclusively on Ukrainian targets, with a clear preference for law enforcement and justic
+The US Cybersecurity and Infrastructure Security Agency (CISA) warned federal agencies that attackers have started exploiting a recently patched high-severity WordPress vulnerability in the wild. [...]
 
 ---
 
-### 🔴 Hackers Exploit BTCPay Server Flaw to Steal Bitcoin and Litecoin From Hot Wallets
+### 🔴 LLMjacking Emerges as Thriving Cybercriminal Enterprise
 
-- **Source**: The Hacker News
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access, Execution
-- **Keywords**: exploit, rce
-- **Link**: [https://thehackernews.com/2026/11/hackers-exploit-btcpay-server-flaw-to.html](https://thehackernews.com/2026/11/hackers-exploit-btcpay-server-flaw-to.html)
-
-BTCPay Server, a self-hosted, open-source cryptocurrency payment processor, has urged users to install the latest version of its software in response to reports of Bitcoin and Litecoin being stolen from hot wallets on instances running older versions.
-
-"Our investigation found that these attacks tar
-
----
-
-### 🔴 Synology NAS Devices Targeted in Ransomware Attacks Exploiting Patched DSM Flaw
-
-- **Source**: The Hacker News
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access, Impact
-- **Keywords**: ransomware, exploit, vulnerability
-- **Link**: [https://thehackernews.com/2026/11/synology-nas-devices-targeted-in.html](https://thehackernews.com/2026/11/synology-nas-devices-targeted-in.html)
-
-Synology is urging customers to update the DiskStation Manager (DSM) software powering its Network Attached Storage (NAS) devices following ransomware attacks.
-
-The Taiwanese vendor said it observed threat actors exploiting a vulnerability patched in December 2024 to target devices running outdated 
-
----
-
-### 🔴 Attackers Exploit Critical Siemens IoT2050 Flaw to Plant Remote Command Backdoors
-
-- **Source**: The Hacker News
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access, Persistence
-- **Keywords**: exploit, vulnerability, backdoor, cve-
-- **Link**: [https://thehackernews.com/2026/11/attackers-exploit-critical-siemens.html](https://thehackernews.com/2026/11/attackers-exploit-critical-siemens.html)
-
-A maximum-severity security flaw impacting Siemens SIMATIC IoT2050 Advanced devices has come under active exploitation, VulnCheck has revealed.
-
-The vulnerability, tracked as CVE-2026-58115 (CVSS score: 10.0), is a case of missing authentication for a critical function that could be exploited by an 
-
----
-
-### 🔴 UK school estate hit by 3AM ransomware in suspected AI-assisted attack
-
-- **Source**: BleepingComputer
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Impact
-- **Keywords**: ransomware
-- **Link**: [https://www.bleepingcomputer.com/news/security/uk-school-estate-hit-by-3am-ransomware-in-suspected-ai-assisted-attack/](https://www.bleepingcomputer.com/news/security/uk-school-estate-hit-by-3am-ransomware-in-suspected-ai-assisted-attack/)
-
-A 3AM ransomware affiliate targeted a school estate in the UK and successfully encrypted around 37 of nearly 50 machines reached from an unmanaged host. [...]
-
----
-
-### 🔴 Police seizes over 100 servers in investment scam crackdown
-
-- **Source**: BleepingComputer
+- **Source**: Dark Reading
 - **Severity**: CRITICAL
 - **MITRE Tactics**: Execution
 - **Keywords**: rce
-- **Link**: [https://www.bleepingcomputer.com/news/security/police-seizes-over-100-servers-in-investment-scam-crackdown/](https://www.bleepingcomputer.com/news/security/police-seizes-over-100-servers-in-investment-scam-crackdown/)
+- **Link**: [https://www.darkreading.com/cloud-security/llmjacking-thriving-cybercriminal-enterprise](https://www.darkreading.com/cloud-security/llmjacking-thriving-cybercriminal-enterprise)
 
-European law enforcement authorities arrested seven suspects and seized more than 100 servers in a joint action targeting an unnamed company suspected of providing fraudulent trading websites to criminal gangs. [...]
+Cybercriminals have turned reselling cloud access to LLMs into a lucrative business model, with some victims paying as much as $1 million in resource consumption before access was revoked.
 
 ---
 
-### 🔴 Chinese hackers use ARTEX AI in automated attacks against 200 orgs
+### 🔴 One Compromised Laptop, Billions Lost: The Binance Attack-Path Warning
 
-- **Source**: BleepingComputer
+- **Source**: Dark Reading
 - **Severity**: CRITICAL
-- **MITRE Tactics**: Execution
-- **Keywords**: rce
-- **Link**: [https://www.bleepingcomputer.com/news/security/chinese-hackers-use-artex-ai-in-automated-attacks-against-200-orgs/](https://www.bleepingcomputer.com/news/security/chinese-hackers-use-artex-ai-in-automated-attacks-against-200-orgs/)
+- **MITRE Tactics**: —
+- **Keywords**: breach, apt
+- **Link**: [https://www.darkreading.com/cyberattacks-data-breaches/binance-hack-test-attack-paths](https://www.darkreading.com/cyberattacks-data-breaches/binance-hack-test-attack-paths)
 
-Chinese hackers used ARTEX, an open-source, multi-agent AI penetration-testing framework, in attacks against more than 200 organizations across 14 countries. [...]
-
----
-
-### 🔴 BTCPay Server warns of hot wallet crypto thefts on outdated instances
-
-- **Source**: BleepingComputer
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Execution
-- **Keywords**: rce
-- **Link**: [https://www.bleepingcomputer.com/news/security/btcpay-server-warns-of-hot-wallet-thefts-targeting-outdated-instances/](https://www.bleepingcomputer.com/news/security/btcpay-server-warns-of-hot-wallet-thefts-targeting-outdated-instances/)
-
-The maintainer of BTCPay Server, an open-source cryptocurrency payment processor, has urged users to install the latest version as hackers have been draining "hot wallets" on instances running older versions. [...]
+The record theft shows how weak system separation, inadequate controls, and untested attack possibilities can turn one breach into systemic loss.
 
 ---
 
-### 🟠 The 4 Elements of Exposure Prioritization and How to Operationalize Them
+### 🟠 China-Aligned Hackers Hijack Sogou Input Method DNS Requests to Deploy DarkVigil Backdoor
+
+- **Source**: The Hacker News
+- **Severity**: HIGH
+- **MITRE Tactics**: Persistence
+- **Keywords**: backdoor
+- **Link**: [https://thehackernews.com/2026/11/china-aligned-hackers-hijack-sogou.html](https://thehackernews.com/2026/11/china-aligned-hackers-hijack-sogou.html)
+
+A China-aligned threat actor known as SlippyNunchucks has been attributed to a Domain Name System (DNS) hijacking operation abusing insecure HTTP communications in Windows versions of Sogou Input Method as part of a surveillance campaign designed to deploy an implant called DarkVigil (aka FDMTP).
+
+T
+
+---
+
+### 🟠 CISA Confirms Hackers Exploiting WordPress Core Flaw During Software Upgrades
 
 - **Source**: The Hacker News
 - **Severity**: HIGH
 - **MITRE Tactics**: Initial Access
-- **Keywords**: breach, exploit
-- **Link**: [https://thehackernews.com/2026/11/the-4-elements-of-exposure.html](https://thehackernews.com/2026/11/the-4-elements-of-exposure.html)
+- **Keywords**: exploit, vulnerability, cve-
+- **Link**: [https://thehackernews.com/2026/11/cisa-confirms-hackers-exploiting.html](https://thehackernews.com/2026/11/cisa-confirms-hackers-exploiting.html)
 
-Your team is remediating more vulnerabilities than ever, yet your breach risk has barely changed. You’re spending too much time and effort on exposures attackers may never exploit, while higher-risk exposures sit, waiting in the queue. Gartner®’s report on exposure prioritization states that fewer t
+The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a security flaw in WordPress Core to the Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.
+
+The high-severity vulnerability, tracked as CVE-2026-119977 (CVSS score: 8.1), is a case of Time
+
+---
+
+### 🟠 Hackers use n-day exploits in zero-click attacks on iOS, Android devices
+
+- **Source**: BleepingComputer
+- **Severity**: HIGH
+- **MITRE Tactics**: Initial Access
+- **Keywords**: exploit
+- **Link**: [https://www.bleepingcomputer.com/news/security/hackers-use-n-day-exploits-in-zero-click-attacks-on-ios-android-devices/](https://www.bleepingcomputer.com/news/security/hackers-use-n-day-exploits-in-zero-click-attacks-on-ios-android-devices/)
+
+A large-scale watering hole attack associated with Russian hackers has been targeting iOS and Android users visiting compromised sites or fake ones impersonating legitimate portals. [...]
+
+---
+
+### 🟠 Hackers hijack cPGuard autoupdate to deploy backdoor, steal data
+
+- **Source**: BleepingComputer
+- **Severity**: HIGH
+- **MITRE Tactics**: Persistence
+- **Keywords**: backdoor
+- **Link**: [https://www.bleepingcomputer.com/news/security/hackers-hijack-cpguard-autoupdate-to-deploy-backdoor-steal-data/](https://www.bleepingcomputer.com/news/security/hackers-hijack-cpguard-autoupdate-to-deploy-backdoor-steal-data/)
+
+Attackers have compromised the update infrastructure for the cPGuard web security suite to distribute a backdoor and a data-stealing script. [...]
+
+---
+
+### 🟠 WorkOS says attacker used ARTEX AI to breach internal sales app
+
+- **Source**: BleepingComputer
+- **Severity**: HIGH
+- **MITRE Tactics**: —
+- **Keywords**: breach
+- **Link**: [https://www.bleepingcomputer.com/news/security/workos-says-attacker-used-artex-ai-to-breach-internal-sales-app/](https://www.bleepingcomputer.com/news/security/workos-says-attacker-used-artex-ai-to-breach-internal-sales-app/)
+
+Developer platform WorkOS suffered a data breach after a threat actor accessed business contact records and summaries of customer communications. [...]
 
 ---
