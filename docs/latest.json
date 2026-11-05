@@ -1,24 +1,47 @@
 {
-  "date": "2026-11-04T15:13:53.426726",
-  "summary": "\ud83d\udcca 15 threats detected today.\n\ud83d\udd34 CRITICAL (5): APT29-Linked Hackers Hijack Web Analytics Script to Deliver iOS and Android Exploits | Google Issues Patches for Critical Android Flaw That Could Allow RCE Without User Interaction | CISA flags WordPress RCE flaw as actively exploited in attacks\n\ud83d\udfe0 HIGH (8): China-Aligned Hackers Hijack Sogou Input Method DNS Requests to Deploy DarkVigil Backdoor | CISA Confirms Hackers Exploiting WordPress Core Flaw During Software Upgrades | Hackers use n-day exploits in zero-click attacks on iOS, Android devices\n\u26a0\ufe0f Review all articles below and patch accordingly.",
+  "date": "2026-11-05T15:15:17.892120",
+  "summary": "\ud83d\udcca 15 threats detected today.\n\ud83d\udd34 CRITICAL (7): Is Your Exposure Management Platform Leaving You Exposed? Five Tests to Find Out | Zyxel GS1900 Patch Fails to Block Zero-Day Exploit Allowing Root Command Execution | Debian and Ubuntu APT Flaw Lets MitM Attackers Swap Verified Packages and Run Code as Root\n\ud83d\udfe0 HIGH (8): OpenAI AI Pipeline Generates 948 Linux Root Escalation Exploits in 30-Hour Run | 5 Active Cyber Threats That Put US Enterprises at Risk in October 2026 | CERT-In Flags AI-Driven Attacks as Backdoored ARTEX Exposes 62 Consoles to Root Access\n\u26a0\ufe0f Review all articles below and patch accordingly.",
   "articles": [
     {
-      "title": "APT29-Linked Hackers Hijack Web Analytics Script to Deliver iOS and Android Exploits",
-      "link": "https://thehackernews.com/2026/11/apt29-linked-hackers-hijack-web.html",
+      "title": "Is Your Exposure Management Platform Leaving You Exposed? Five Tests to Find Out",
+      "link": "https://thehackernews.com/2026/11/is-your-exposure-management-platform.html",
       "source": "The Hacker News",
       "severity": "critical",
+      "mitre_tactics": [],
+      "keywords": [
+        "vulnerability"
+      ]
+    },
+    {
+      "title": "OpenAI AI Pipeline Generates 948 Linux Root Escalation Exploits in 30-Hour Run",
+      "link": "https://thehackernews.com/2026/11/openai-ai-pipeline-generates-948-linux.html",
+      "source": "The Hacker News",
+      "severity": "high",
+      "mitre_tactics": [
+        "Initial Access",
+        "Privilege Escalation"
+      ],
+      "keywords": [
+        "exploit",
+        "privilege escalation"
+      ]
+    },
+    {
+      "title": "5 Active Cyber Threats That Put US Enterprises at Risk in October 2026",
+      "link": "https://thehackernews.com/2026/11/5-active-cyber-threats-that-put-us.html",
+      "source": "The Hacker News",
+      "severity": "high",
       "mitre_tactics": [
         "Initial Access"
       ],
       "keywords": [
-        "exploit",
-        "supply chain",
-        "apt"
+        "breach",
+        "exploit"
       ]
     },
     {
-      "title": "China-Aligned Hackers Hijack Sogou Input Method DNS Requests to Deploy DarkVigil Backdoor",
-      "link": "https://thehackernews.com/2026/11/china-aligned-hackers-hijack-sogou.html",
+      "title": "CERT-In Flags AI-Driven Attacks as Backdoored ARTEX Exposes 62 Consoles to Root Access",
+      "link": "https://thehackernews.com/2026/11/backdoored-docker-image-for-artex-ai.html",
       "source": "The Hacker News",
       "severity": "high",
       "mitre_tactics": [
@@ -29,49 +52,23 @@
       ]
     },
     {
-      "title": "Google Issues Patches for Critical Android Flaw That Could Allow RCE Without User Interaction",
-      "link": "https://thehackernews.com/2026/11/google-patches-critical-android-flaw.html",
+      "title": "Zyxel GS1900 Patch Fails to Block Zero-Day Exploit Allowing Root Command Execution",
+      "link": "https://thehackernews.com/2026/11/zyxel-gs1900-patch-fails-to-block-zero.html",
       "source": "The Hacker News",
       "severity": "critical",
       "mitre_tactics": [
-        "Execution"
+        "Initial Access"
       ],
       "keywords": [
-        "cve-",
-        "rce"
+        "zero-day",
+        "exploit"
       ]
     },
     {
-      "title": "CISA Confirms Hackers Exploiting WordPress Core Flaw During Software Upgrades",
-      "link": "https://thehackernews.com/2026/11/cisa-confirms-hackers-exploiting.html",
+      "title": "Hackers Exploit Patched Apple Flaw to Deliver Info-Stealing Malware, CISA Says",
+      "link": "https://thehackernews.com/2026/11/hackers-exploit-patched-apple-flaw-to.html",
       "source": "The Hacker News",
       "severity": "high",
-      "mitre_tactics": [
-        "Initial Access"
-      ],
-      "keywords": [
-        "exploit",
-        "vulnerability",
-        "cve-"
-      ]
-    },
-    {
-      "title": "Google Calendar phishing campaign hijacks sessions, bypasses MFA",
-      "link": "https://www.bleepingcomputer.com/news/security/google-calendar-phishing-campaign-hijacks-sessions-bypasses-mfa/",
-      "source": "BleepingComputer",
-      "severity": "medium",
-      "mitre_tactics": [
-        "Initial Access"
-      ],
-      "keywords": [
-        "phishing"
-      ]
-    },
-    {
-      "title": "CISA flags WordPress RCE flaw as actively exploited in attacks",
-      "link": "https://www.bleepingcomputer.com/news/security/cisa-flags-wordpress-rce-flaw-as-actively-exploited-in-attacks/",
-      "source": "BleepingComputer",
-      "severity": "critical",
       "mitre_tactics": [
         "Initial Access",
         "Execution"
@@ -79,53 +76,114 @@
       "keywords": [
         "exploit",
         "vulnerability",
+        "malware",
+        "cve-"
+      ]
+    },
+    {
+      "title": "Debian and Ubuntu APT Flaw Lets MitM Attackers Swap Verified Packages and Run Code as Root",
+      "link": "https://thehackernews.com/2026/11/debian-and-ubuntu-apt-flaw-lets-mitm.html",
+      "source": "The Hacker News",
+      "severity": "critical",
+      "mitre_tactics": [],
+      "keywords": [
+        "apt"
+      ]
+    },
+    {
+      "title": "GhostMap Android flaw lets malicious app trigger persistent boot loop",
+      "link": "https://www.bleepingcomputer.com/news/security/ghostmap-android-flaw-lets-malicious-app-trigger-persistent-boot-loop/",
+      "source": "BleepingComputer",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Execution"
+      ],
+      "keywords": [
         "rce"
       ]
     },
     {
-      "title": "Hackers use n-day exploits in zero-click attacks on iOS, Android devices",
-      "link": "https://www.bleepingcomputer.com/news/security/hackers-use-n-day-exploits-in-zero-click-attacks-on-ios-android-devices/",
+      "title": "Vercel rolls out new protection against stolen session cookie attacks",
+      "link": "https://www.bleepingcomputer.com/news/security/vercel-rolls-out-new-protection-against-stolen-session-cookie-attacks/",
       "source": "BleepingComputer",
-      "severity": "high",
+      "severity": "critical",
       "mitre_tactics": [
-        "Initial Access"
+        "Initial Access",
+        "Execution",
+        "Credential Access"
       ],
       "keywords": [
-        "exploit"
+        "malware",
+        "rce",
+        "credential"
       ]
     },
     {
-      "title": "Hackers hijack cPGuard autoupdate to deploy backdoor, steal data",
-      "link": "https://www.bleepingcomputer.com/news/security/hackers-hijack-cpguard-autoupdate-to-deploy-backdoor-steal-data/",
+      "title": "Zyxel fixes zero-day exploited to hack nearly 1,000 network switches",
+      "link": "https://www.bleepingcomputer.com/news/security/zyxel-fixes-zero-day-exploited-to-hack-nearly-1-000-network-switches/",
       "source": "BleepingComputer",
-      "severity": "high",
+      "severity": "critical",
       "mitre_tactics": [
-        "Persistence"
+        "Initial Access",
+        "Credential Access"
       ],
       "keywords": [
-        "backdoor"
+        "zero-day",
+        "exploit",
+        "vulnerability",
+        "credential"
       ]
     },
     {
-      "title": "WorkOS says attacker used ARTEX AI to breach internal sales app",
-      "link": "https://www.bleepingcomputer.com/news/security/workos-says-attacker-used-artex-ai-to-breach-internal-sales-app/",
+      "title": "DreamHost confirms data breach exposed FTP logins and webmail sessions",
+      "link": "https://www.bleepingcomputer.com/news/security/dreamhost-confirms-data-breach-exposed-ftp-logins-and-webmail-sessions/",
       "source": "BleepingComputer",
       "severity": "high",
-      "mitre_tactics": [],
+      "mitre_tactics": [
+        "Credential Access"
+      ],
       "keywords": [
         "breach"
       ]
     },
     {
-      "title": "Binance says fake job interview led to $6.3 billion crypto heist",
-      "link": "https://www.bleepingcomputer.com/news/security/binance-says-fake-job-interview-led-to-63-billion-crypto-heist/",
+      "title": "NIKKE PC game launcher hacked to spread remote access, data-stealing malware",
+      "link": "https://www.bleepingcomputer.com/news/security/nikke-pc-game-launcher-hacked-to-spread-remote-access-data-stealing-malware/",
       "source": "BleepingComputer",
       "severity": "high",
       "mitre_tactics": [
-        "Execution"
+        "Initial Access",
+        "Execution",
+        "Credential Access"
       ],
       "keywords": [
-        "malware"
+        "malware",
+        "credential"
+      ]
+    },
+    {
+      "title": "Critical Rails Bug Threatens to Derail Vulnerable Servers",
+      "link": "https://www.darkreading.com/application-security/critical-rails-bug-derail-vulnerable-servers",
+      "source": "Dark Reading",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Lateral Movement"
+      ],
+      "keywords": [
+        "lateral movement"
+      ]
+    },
+    {
+      "title": "Google, Partners Disrupt 1.3 Million-Device-Strong XCPE Botnet",
+      "link": "https://www.darkreading.com/endpoint-security/google-13-million-device-strong-xcpe-botnet",
+      "source": "Dark Reading",
+      "severity": "high",
+      "mitre_tactics": [
+        "Persistence"
+      ],
+      "keywords": [
+        "backdoor",
+        "botnet"
       ]
     },
     {
@@ -136,53 +194,6 @@
       "mitre_tactics": [],
       "keywords": [
         "breach"
-      ]
-    },
-    {
-      "title": "Phishing-Resistant Isn't Enough; Yubico Takes Aim at Identity-Verification Gap",
-      "link": "https://www.darkreading.com/identity-access-management-security/beyond-phishing-resistant-yubico-identity-verification-gap",
-      "source": "Dark Reading",
-      "severity": "medium",
-      "mitre_tactics": [
-        "Initial Access",
-        "Credential Access"
-      ],
-      "keywords": [
-        "phishing",
-        "credential"
-      ]
-    },
-    {
-      "title": "LLMjacking Emerges as Thriving Cybercriminal Enterprise",
-      "link": "https://www.darkreading.com/cloud-security/llmjacking-thriving-cybercriminal-enterprise",
-      "source": "Dark Reading",
-      "severity": "critical",
-      "mitre_tactics": [
-        "Execution"
-      ],
-      "keywords": [
-        "rce"
-      ]
-    },
-    {
-      "title": "3AM Affiliate Embraces AI-Like Loops in European School Attack",
-      "link": "https://www.darkreading.com/data-privacy/3am-affiliate-ai-loops-european-school-attack",
-      "source": "Dark Reading",
-      "severity": "high",
-      "mitre_tactics": [],
-      "keywords": [
-        "breach"
-      ]
-    },
-    {
-      "title": "One Compromised Laptop, Billions Lost: The Binance Attack-Path Warning",
-      "link": "https://www.darkreading.com/cyberattacks-data-breaches/binance-hack-test-attack-paths",
-      "source": "Dark Reading",
-      "severity": "critical",
-      "mitre_tactics": [],
-      "keywords": [
-        "breach",
-        "apt"
       ]
     }
   ]
