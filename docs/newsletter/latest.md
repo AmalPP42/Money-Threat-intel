@@ -1,4 +1,4 @@
-# 🛡️ Daily Threat Intel — November 05, 2026
+# 🛡️ Daily Threat Intel — November 06, 2026
 
 > **Automated daily briefing** covering the most critical cybersecurity 
 > threats from 9 leading security news sources.
@@ -8,89 +8,89 @@
 ## 📊 Analyst Briefing
 
 📊 15 threats detected today.
-🔴 CRITICAL (7): Is Your Exposure Management Platform Leaving You Exposed? Five Tests to Find Out | Zyxel GS1900 Patch Fails to Block Zero-Day Exploit Allowing Root Command Execution | Debian and Ubuntu APT Flaw Lets MitM Attackers Swap Verified Packages and Run Code as Root
-🟠 HIGH (8): OpenAI AI Pipeline Generates 948 Linux Root Escalation Exploits in 30-Hour Run | 5 Active Cyber Threats That Put US Enterprises at Risk in October 2026 | CERT-In Flags AI-Driven Attacks as Backdoored ARTEX Exposes 62 Consoles to Root Access
+🔴 CRITICAL (7): Microsoft Paint RCE Fix Now Available, but Windows Update Won't Deliver It | Chainalysis Breach Exposes All Users' Credentials, Forces Shutdown of Key Services | D-Link warns of multiple zero-days in DGS-3130 Series switches
+🟠 HIGH (4): Malicious Browser Extensions Could Use Claude Dispatch to Run Code on Users' Computers | Hackers Hide Linux Backdoor in Control Web Panel Server to Execute Commands Without Logs | Researchers Bypass ChatGPT Lockdown Mode to Exfiltrate Chats Without User Interaction
 ⚠️ Review all articles below and patch accordingly.
 
 ---
 
 ## 🔍 Top Threats
 
-### 🔴 Is Your Exposure Management Platform Leaving You Exposed? Five Tests to Find Out
+### 🔴 Microsoft Paint RCE Fix Now Available, but Windows Update Won't Deliver It
 
 - **Source**: The Hacker News
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Execution
+- **Keywords**: cve-, remote code execution, rce
+- **Link**: [https://thehackernews.com/2026/11/microsoft-paint-rce-fix-now-available.html](https://thehackernews.com/2026/11/microsoft-paint-rce-fix-now-available.html)
+
+A fix for CVE-2026-83844, a remote code execution flaw in Windows Paint, is now in the Microsoft Store. Paint gets this fix only through a Store update, not through Windows updates.
+
+The fixed build, 11.2609.401.0, was the newest Paint build in all ten countries The Hacker News checked today.
+
+The f
+
+---
+
+### 🔴 Chainalysis Breach Exposes All Users' Credentials, Forces Shutdown of Key Services
+
+- **Source**: The Hacker News
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access, Execution, Credential Access
+- **Keywords**: breach, rce, credential
+- **Link**: [https://thehackernews.com/2026/11/chainalysis-breach-exposes-all-users.html](https://thehackernews.com/2026/11/chainalysis-breach-exposes-all-users.html)
+
+Blockchain analysis firm Chainalysis has revealed that its ongoing investigation into the agentic cyber attack targeting its systems also exposed names, usernames, password hashes and live tokens for all users.
+
+"While we investigated, we removed access to Reactor and Data Solutions," the company sa
+
+---
+
+### 🔴 D-Link warns of multiple zero-days in DGS-3130 Series switches
+
+- **Source**: BleepingComputer
 - **Severity**: CRITICAL
 - **MITRE Tactics**: —
-- **Keywords**: vulnerability
-- **Link**: [https://thehackernews.com/2026/11/is-your-exposure-management-platform.html](https://thehackernews.com/2026/11/is-your-exposure-management-platform.html)
+- **Keywords**: zero-day
+- **Link**: [https://www.bleepingcomputer.com/news/security/d-link-warns-of-multiple-zero-days-in-dgs-3130-series-switches/](https://www.bleepingcomputer.com/news/security/d-link-warns-of-multiple-zero-days-in-dgs-3130-series-switches/)
 
-A critical finding can move through several security tools and still leave the organization exposed.&nbsp;
-
-The vulnerability has a severity score, and a ticket has reached the queue. Progress then depends on information the finding may lack: who owns the system, whether attackers can reach it, what
+D-Link shared mitigation measures for multiple unpatched security flaws affecting DGS-3130 series managed Gigabit stackable switches. [...]
 
 ---
 
-### 🔴 Zyxel GS1900 Patch Fails to Block Zero-Day Exploit Allowing Root Command Execution
+### 🔴 Why Europe's Freezer Hacks Spread So Far, So Fast
 
-- **Source**: The Hacker News
+- **Source**: Dark Reading
 - **Severity**: CRITICAL
 - **MITRE Tactics**: Initial Access
-- **Keywords**: zero-day, exploit
-- **Link**: [https://thehackernews.com/2026/11/zyxel-gs1900-patch-fails-to-block-zero.html](https://thehackernews.com/2026/11/zyxel-gs1900-patch-fails-to-block-zero.html)
+- **Keywords**: supply chain
+- **Link**: [https://www.darkreading.com/ics-ot-security/europes-freezer-hacks-spread-so-far-so-fast](https://www.darkreading.com/ics-ot-security/europes-freezer-hacks-spread-so-far-so-fast)
 
-Zyxel GS1900 network switches that received the vendor's earlier fix for an actively exploited flaw are still open to the exploit attackers used, researchers at Binarly found.
-
-The exploit lets anyone who can reach a switch's web management interface run commands on it without logging in. Zyxel has 
+Europe's supermarket freezer hacks show how security issues can cascade across an industry, disrupting supply chains at scale.
 
 ---
 
-### 🔴 Debian and Ubuntu APT Flaw Lets MitM Attackers Swap Verified Packages and Run Code as Root
+### 🔴 APT29's Watering Holes Target Thousands of Mobile Users
 
-- **Source**: The Hacker News
+- **Source**: Dark Reading
 - **Severity**: CRITICAL
 - **MITRE Tactics**: —
 - **Keywords**: apt
-- **Link**: [https://thehackernews.com/2026/11/debian-and-ubuntu-apt-flaw-lets-mitm.html](https://thehackernews.com/2026/11/debian-and-ubuntu-apt-flaw-lets-mitm.html)
+- **Link**: [https://www.darkreading.com/mobile-security/apt29-watering-holes-target-mobile-users](https://www.darkreading.com/mobile-security/apt29-watering-holes-target-mobile-users)
 
-A flaw in APT, the package manager for Debian and Ubuntu, allows an attacker who can modify package downloads to swap a checked package for their own.
-
-The attacker's code then runs as root, according to advisories that&nbsp;Debian,&nbsp;Ubuntu, and&nbsp;APT's developers&nbsp;published on November 4
+After compromising websites, the Russian state-sponsored threat group is fingerprinting victims, then harvesting information from the interesting ones.
 
 ---
 
-### 🔴 GhostMap Android flaw lets malicious app trigger persistent boot loop
+### 🔴 SecurityDataPipeline.com Launches as a New Educational Resource for the AI Era
 
-- **Source**: BleepingComputer
+- **Source**: Dark Reading
 - **Severity**: CRITICAL
 - **MITRE Tactics**: Execution
 - **Keywords**: rce
-- **Link**: [https://www.bleepingcomputer.com/news/security/ghostmap-android-flaw-lets-malicious-app-trigger-persistent-boot-loop/](https://www.bleepingcomputer.com/news/security/ghostmap-android-flaw-lets-malicious-app-trigger-persistent-boot-loop/)
+- **Link**: [https://www.darkreading.com/cybersecurity-operations/securitydatapipeline-com-launches-as-a-new-educational-resource-for-the-ai-era](https://www.darkreading.com/cybersecurity-operations/securitydatapipeline-com-launches-as-a-new-educational-resource-for-the-ai-era)
 
-Attackers can force Android devices into a continuous boot loop using a specially crafted app that requires no permissions and only needs to be installed. [...]
-
----
-
-### 🔴 Vercel rolls out new protection against stolen session cookie attacks
-
-- **Source**: BleepingComputer
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access, Execution, Credential Access
-- **Keywords**: malware, rce, credential
-- **Link**: [https://www.bleepingcomputer.com/news/security/vercel-rolls-out-new-protection-against-stolen-session-cookie-attacks/](https://www.bleepingcomputer.com/news/security/vercel-rolls-out-new-protection-against-stolen-session-cookie-attacks/)
-
-Vercel is gradually rolling out Device Bound Session Credentials (DBSC) on its platform as a key defense against information stealer malware. [...]
-
----
-
-### 🔴 Zyxel fixes zero-day exploited to hack nearly 1,000 network switches
-
-- **Source**: BleepingComputer
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access, Credential Access
-- **Keywords**: zero-day, exploit, vulnerability, credential
-- **Link**: [https://www.bleepingcomputer.com/news/security/zyxel-fixes-zero-day-exploited-to-hack-nearly-1-000-network-switches/](https://www.bleepingcomputer.com/news/security/zyxel-fixes-zero-day-exploited-to-hack-nearly-1-000-network-switches/)
-
-Zyxel has patched a zero-day vulnerability in its GS1900 series network switches that hackers exploited to compromise nearly 1,000 devices worldwide and steal configuration files and credentials. [...]
+The ungated resource explains how security data pipelines reduce SIEM ingestion costs, preserve detection coverage, and prepare the data layer for AI-driven security operations.
 
 ---
 
@@ -106,42 +106,44 @@ An attacker could write arbitrary files and read sensitive files via images uplo
 
 ---
 
-### 🟠 OpenAI AI Pipeline Generates 948 Linux Root Escalation Exploits in 30-Hour Run
-
-- **Source**: The Hacker News
-- **Severity**: HIGH
-- **MITRE Tactics**: Initial Access, Privilege Escalation
-- **Keywords**: exploit, privilege escalation
-- **Link**: [https://thehackernews.com/2026/11/openai-ai-pipeline-generates-948-linux.html](https://thehackernews.com/2026/11/openai-ai-pipeline-generates-948-linux.html)
-
-OpenAI on Wednesday detailed a pipeline that employed an upcoming cyber-focused artificial intelligence (AI) model to validate and patch 948 local privilege escalation vulnerabilities in Linux for $1.2 million in API costs.
-
-"Our prototype identified and analyzed 2,308 candidate Linux kernel finding
-
----
-
-### 🟠 5 Active Cyber Threats That Put US Enterprises at Risk in October 2026
+### 🟠 Malicious Browser Extensions Could Use Claude Dispatch to Run Code on Users' Computers
 
 - **Source**: The Hacker News
 - **Severity**: HIGH
 - **MITRE Tactics**: Initial Access
-- **Keywords**: breach, exploit
-- **Link**: [https://thehackernews.com/2026/11/5-active-cyber-threats-that-put-us.html](https://thehackernews.com/2026/11/5-active-cyber-threats-that-put-us.html)
+- **Keywords**: exploit
+- **Link**: [https://thehackernews.com/2026/11/malicious-browser-extensions-could-use.html](https://thehackernews.com/2026/11/malicious-browser-extensions-could-use.html)
 
-October 2026 brought another wave of cyber threats targeting US businesses, with attackers exploiting trusted platforms, legitimate authentication processes, and everyday business workflows. For enterprises, these campaigns raise the stakes beyond individual security incidents, increasing the risk o
+A browser extension that can run scripts on claude.ai could make Claude Desktop run code on a person's computer, researchers at Forever Security, an endpoint security company, showed in a test.
+
+The attack needs Dispatch, a Claude feature that lets people send tasks from their phone to Claude Deskto
 
 ---
 
-### 🟠 CERT-In Flags AI-Driven Attacks as Backdoored ARTEX Exposes 62 Consoles to Root Access
+### 🟠 Hackers Hide Linux Backdoor in Control Web Panel Server to Execute Commands Without Logs
 
 - **Source**: The Hacker News
 - **Severity**: HIGH
 - **MITRE Tactics**: Persistence
 - **Keywords**: backdoor
-- **Link**: [https://thehackernews.com/2026/11/backdoored-docker-image-for-artex-ai.html](https://thehackernews.com/2026/11/backdoored-docker-image-for-artex-ai.html)
+- **Link**: [https://thehackernews.com/2026/11/hackers-hide-linux-backdoor-in-control.html](https://thehackernews.com/2026/11/hackers-hide-linux-backdoor-in-control.html)
 
-The Indian Computer Emergency Response Team (CERT-In) has disclosed that an artificial intelligence (AI)-assisted threat actor it tracks as Crafty Falcon is targeting organizations in the Banking, Financial Services, and Insurance (BFSI) sectors in the country.
+A backdoor has been found hiding in the web server that runs Control Web Panel (CWP), a free panel for managing Linux hosting servers, researchers at QiAnXin's XLab said this week.
 
-Describing the threat as active and o
+The backdoored web server executes commands that attackers send via web requests, and those requests never appear in i
+
+---
+
+### 🟠 Researchers Bypass ChatGPT Lockdown Mode to Exfiltrate Chats Without User Interaction
+
+- **Source**: The Hacker News
+- **Severity**: HIGH
+- **MITRE Tactics**: Initial Access, Collection
+- **Keywords**: exploit, vulnerability, phishing, exfiltration
+- **Link**: [https://thehackernews.com/2026/11/researchers-bypass-chatgpt-lockdown.html](https://thehackernews.com/2026/11/researchers-bypass-chatgpt-lockdown.html)
+
+Cybersecurity researchers have disclosed details of a now-patched vulnerability that could be exploited to bypass Lockdown Mode protections in OpenAI ChatGPT.
+
+Lockdown Mode was introduced by the artificial intelligence (AI) company in June 2026 as an optional setting to minimize data exfiltration r
 
 ---
