@@ -1,4 +1,4 @@
-# 🛡️ Daily Threat Intel — November 06, 2026
+# 🛡️ Daily Threat Intel — November 07, 2026
 
 > **Automated daily briefing** covering the most critical cybersecurity 
 > threats from 9 leading security news sources.
@@ -8,13 +8,27 @@
 ## 📊 Analyst Briefing
 
 📊 15 threats detected today.
-🔴 CRITICAL (7): Microsoft Paint RCE Fix Now Available, but Windows Update Won't Deliver It | Chainalysis Breach Exposes All Users' Credentials, Forces Shutdown of Key Services | D-Link warns of multiple zero-days in DGS-3130 Series switches
-🟠 HIGH (4): Malicious Browser Extensions Could Use Claude Dispatch to Run Code on Users' Computers | Hackers Hide Linux Backdoor in Control Web Panel Server to Execute Commands Without Logs | Researchers Bypass ChatGPT Lockdown Mode to Exfiltrate Chats Without User Interaction
+🔴 CRITICAL (5): Installing the Fix for an Exploited WordPress Flaw Can Expose Some Sites One Last Time | Microsoft Paint RCE Fix Now Available, but Windows Update Won't Deliver It | Chainalysis Breach Exposes All Users' Credentials, Forces Shutdown of Key Services
+🟠 HIGH (9): Hackers Target OpenSSH SSHole Flaw Within Hours of Disclosure, Gain Root on Honeypot | OpenAI Launches GPT-6 Cyber After AI Helps Find 81 Firefox Flaws, 948 Linux Exploits | Malicious Browser Extensions Could Use Claude Dispatch to Run Code on Users' Computers
 ⚠️ Review all articles below and patch accordingly.
 
 ---
 
 ## 🔍 Top Threats
+
+### 🔴 Installing the Fix for an Exploited WordPress Flaw Can Expose Some Sites One Last Time
+
+- **Source**: The Hacker News
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access
+- **Keywords**: exploit
+- **Link**: [https://thehackernews.com/2026/11/installing-fix-for-exploited-wordpress.html](https://thehackernews.com/2026/11/installing-fix-for-exploited-wordpress.html)
+
+Some WordPress sites can still be attacked while they install the fix for an actively exploited flaw, according to Umut Bayram, the Picus Security researcher who found it.
+
+The update that installs the fix still unpacks its files using the site's old, unpatched code, so an attacker who strikes at th
+
+---
 
 ### 🔴 Microsoft Paint RCE Fix Now Available, but Windows Update Won't Deliver It
 
@@ -46,18 +60,6 @@ Blockchain analysis firm Chainalysis has revealed that its ongoing investigation
 
 ---
 
-### 🔴 D-Link warns of multiple zero-days in DGS-3130 Series switches
-
-- **Source**: BleepingComputer
-- **Severity**: CRITICAL
-- **MITRE Tactics**: —
-- **Keywords**: zero-day
-- **Link**: [https://www.bleepingcomputer.com/news/security/d-link-warns-of-multiple-zero-days-in-dgs-3130-series-switches/](https://www.bleepingcomputer.com/news/security/d-link-warns-of-multiple-zero-days-in-dgs-3130-series-switches/)
-
-D-Link shared mitigation measures for multiple unpatched security flaws affecting DGS-3130 series managed Gigabit stackable switches. [...]
-
----
-
 ### 🔴 Why Europe's Freezer Hacks Spread So Far, So Fast
 
 - **Source**: Dark Reading
@@ -82,27 +84,31 @@ After compromising websites, the Russian state-sponsored threat group is fingerp
 
 ---
 
-### 🔴 SecurityDataPipeline.com Launches as a New Educational Resource for the AI Era
+### 🟠 Hackers Target OpenSSH SSHole Flaw Within Hours of Disclosure, Gain Root on Honeypot
 
-- **Source**: Dark Reading
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Execution
-- **Keywords**: rce
-- **Link**: [https://www.darkreading.com/cybersecurity-operations/securitydatapipeline-com-launches-as-a-new-educational-resource-for-the-ai-era](https://www.darkreading.com/cybersecurity-operations/securitydatapipeline-com-launches-as-a-new-educational-resource-for-the-ai-era)
+- **Source**: The Hacker News
+- **Severity**: HIGH
+- **MITRE Tactics**: Initial Access, Credential Access
+- **Keywords**: exploit, vulnerability, cve-
+- **Link**: [https://thehackernews.com/2026/11/hackers-exploited-openssh-sshole-flaw.html](https://thehackernews.com/2026/11/hackers-exploited-openssh-sshole-flaw.html)
 
-The ungated resource explains how security data pipelines reduce SIEM ingestion costs, preserve detection coverage, and prepare the data layer for AI-driven security operations.
+Threat actors are attempting to exploit a recently disclosed security flaw impacting OpenSSH that can enable sign-ins to accounts that have no password set, according to Previdian.
+
+The vulnerability, tracked as CVE-2026-123158 (CVSS score: 8.1) and codenamed SSHole (or *sshole), impacts Linux syste
 
 ---
 
-### 🔴 Critical Rails Bug Threatens to Derail Vulnerable Servers
+### 🟠 OpenAI Launches GPT-6 Cyber After AI Helps Find 81 Firefox Flaws, 948 Linux Exploits
 
-- **Source**: Dark Reading
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Lateral Movement
-- **Keywords**: lateral movement
-- **Link**: [https://www.darkreading.com/application-security/critical-rails-bug-derail-vulnerable-servers](https://www.darkreading.com/application-security/critical-rails-bug-derail-vulnerable-servers)
+- **Source**: The Hacker News
+- **Severity**: HIGH
+- **MITRE Tactics**: Initial Access
+- **Keywords**: exploit
+- **Link**: [https://thehackernews.com/2026/11/openai-launches-gpt-6-cyber-after-ai.html](https://thehackernews.com/2026/11/openai-launches-gpt-6-cyber-after-ai.html)
 
-An attacker could write arbitrary files and read sensitive files via images uploaded to the Rails Active Storage ImageMagick integration, possibly positioning a threat actor for lateral movement.
+OpenAI on Thursday unveiled GPT‑6 Cyber, which it described as a major step forward in security research that brings together stronger cybersecurity capabilities with a step-change improvement in model alignment.
+
+The new model is "more capable at finding and fixing vulnerabilities, and far more rel
 
 ---
 
@@ -120,30 +126,26 @@ The attack needs Dispatch, a Claude feature that lets people send tasks from the
 
 ---
 
-### 🟠 Hackers Hide Linux Backdoor in Control Web Panel Server to Execute Commands Without Logs
+### 🟠 SonicWall warns of new SSL-VPN MFA bypass flaw exploited in attacks
 
-- **Source**: The Hacker News
+- **Source**: BleepingComputer
 - **Severity**: HIGH
-- **MITRE Tactics**: Persistence
-- **Keywords**: backdoor
-- **Link**: [https://thehackernews.com/2026/11/hackers-hide-linux-backdoor-in-control.html](https://thehackernews.com/2026/11/hackers-hide-linux-backdoor-in-control.html)
+- **MITRE Tactics**: Initial Access
+- **Keywords**: exploit
+- **Link**: [https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/](https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/)
 
-A backdoor has been found hiding in the web server that runs Control Web Panel (CWP), a free panel for managing Linux hosting servers, researchers at QiAnXin's XLab said this week.
-
-The backdoored web server executes commands that attackers send via web requests, and those requests never appear in i
+SonicWall has released security updates to fix seven vulnerabilities in SonicOS firewalls, including an SSL-VPN authentication bypass flaw exploited in attacks. [...]
 
 ---
 
-### 🟠 Researchers Bypass ChatGPT Lockdown Mode to Exfiltrate Chats Without User Interaction
+### 🟠 Runaway AI hacking agent behind WorkOS breach after escaping sandbox
 
-- **Source**: The Hacker News
+- **Source**: BleepingComputer
 - **Severity**: HIGH
-- **MITRE Tactics**: Initial Access, Collection
-- **Keywords**: exploit, vulnerability, phishing, exfiltration
-- **Link**: [https://thehackernews.com/2026/11/researchers-bypass-chatgpt-lockdown.html](https://thehackernews.com/2026/11/researchers-bypass-chatgpt-lockdown.html)
+- **MITRE Tactics**: —
+- **Keywords**: breach
+- **Link**: [https://www.bleepingcomputer.com/news/security/runaway-ai-hacking-agent-behind-workos-breach-after-escaping-sandbox/](https://www.bleepingcomputer.com/news/security/runaway-ai-hacking-agent-behind-workos-breach-after-escaping-sandbox/)
 
-Cybersecurity researchers have disclosed details of a now-patched vulnerability that could be exploited to bypass Lockdown Mode protections in OpenAI ChatGPT.
-
-Lockdown Mode was introduced by the artificial intelligence (AI) company in June 2026 as an optional setting to minimize data exfiltration r
+WorkOS says an AI-powered hacking agent that breached its internal sales application and accessed customer information was operated by a security researcher who claims the tool escaped its testing environment and unintentionally attacked the company. [...]
 
 ---
