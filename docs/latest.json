@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-07T13:47:36.865182",
+  "date": "2026-11-08T14:08:57.130023",
   "summary": "\ud83d\udcca 15 threats detected today.\n\ud83d\udd34 CRITICAL (5): Installing the Fix for an Exploited WordPress Flaw Can Expose Some Sites One Last Time | Microsoft Paint RCE Fix Now Available, but Windows Update Won't Deliver It | Chainalysis Breach Exposes All Users' Credentials, Forces Shutdown of Key Services\n\ud83d\udfe0 HIGH (9): Hackers Target OpenSSH SSHole Flaw Within Hours of Disclosure, Gain Root on Honeypot | OpenAI Launches GPT-6 Cyber After AI Helps Find 81 Firefox Flaws, 948 Linux Exploits | Malicious Browser Extensions Could Use Claude Dispatch to Run Code on Users' Computers\n\u26a0\ufe0f Review all articles below and patch accordingly.",
   "articles": [
     {
@@ -84,6 +84,18 @@
       ]
     },
     {
+      "title": "CTM360 Exposes Fake Gift Card Scams Exploiting Trusted Brands",
+      "link": "https://www.bleepingcomputer.com/news/security/ctm360-exposes-fake-gift-card-scams-exploiting-trusted-brands/",
+      "source": "BleepingComputer",
+      "severity": "high",
+      "mitre_tactics": [
+        "Initial Access"
+      ],
+      "keywords": [
+        "exploit"
+      ]
+    },
+    {
       "title": "SonicWall warns of new SSL-VPN MFA bypass flaw exploited in attacks",
       "link": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/",
       "source": "BleepingComputer",
@@ -143,20 +155,6 @@
         "breach",
         "exploit",
         "vulnerability"
-      ]
-    },
-    {
-      "title": "Chainalysis says breach exposed credentials for all customers",
-      "link": "https://www.bleepingcomputer.com/news/security/chainalysis-says-breach-exposed-credentials-for-all-customers/",
-      "source": "BleepingComputer",
-      "severity": "high",
-      "mitre_tactics": [
-        "Initial Access",
-        "Credential Access"
-      ],
-      "keywords": [
-        "breach",
-        "credential"
       ]
     },
     {

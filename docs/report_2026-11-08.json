@@ -1,0 +1,195 @@
+{
+  "date": "2026-11-08T14:08:57.130023",
+  "summary": "\ud83d\udcca 15 threats detected today.\n\ud83d\udd34 CRITICAL (5): Installing the Fix for an Exploited WordPress Flaw Can Expose Some Sites One Last Time | Microsoft Paint RCE Fix Now Available, but Windows Update Won't Deliver It | Chainalysis Breach Exposes All Users' Credentials, Forces Shutdown of Key Services\n\ud83d\udfe0 HIGH (9): Hackers Target OpenSSH SSHole Flaw Within Hours of Disclosure, Gain Root on Honeypot | OpenAI Launches GPT-6 Cyber After AI Helps Find 81 Firefox Flaws, 948 Linux Exploits | Malicious Browser Extensions Could Use Claude Dispatch to Run Code on Users' Computers\n\u26a0\ufe0f Review all articles below and patch accordingly.",
+  "articles": [
+    {
+      "title": "Installing the Fix for an Exploited WordPress Flaw Can Expose Some Sites One Last Time",
+      "link": "https://thehackernews.com/2026/11/installing-fix-for-exploited-wordpress.html",
+      "source": "The Hacker News",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Initial Access"
+      ],
+      "keywords": [
+        "exploit"
+      ]
+    },
+    {
+      "title": "Hackers Target OpenSSH SSHole Flaw Within Hours of Disclosure, Gain Root on Honeypot",
+      "link": "https://thehackernews.com/2026/11/hackers-exploited-openssh-sshole-flaw.html",
+      "source": "The Hacker News",
+      "severity": "high",
+      "mitre_tactics": [
+        "Initial Access",
+        "Credential Access"
+      ],
+      "keywords": [
+        "exploit",
+        "vulnerability",
+        "cve-"
+      ]
+    },
+    {
+      "title": "OpenAI Launches GPT-6 Cyber After AI Helps Find 81 Firefox Flaws, 948 Linux Exploits",
+      "link": "https://thehackernews.com/2026/11/openai-launches-gpt-6-cyber-after-ai.html",
+      "source": "The Hacker News",
+      "severity": "high",
+      "mitre_tactics": [
+        "Initial Access"
+      ],
+      "keywords": [
+        "exploit"
+      ]
+    },
+    {
+      "title": "Microsoft Paint RCE Fix Now Available, but Windows Update Won't Deliver It",
+      "link": "https://thehackernews.com/2026/11/microsoft-paint-rce-fix-now-available.html",
+      "source": "The Hacker News",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Execution"
+      ],
+      "keywords": [
+        "cve-",
+        "remote code execution",
+        "rce"
+      ]
+    },
+    {
+      "title": "Malicious Browser Extensions Could Use Claude Dispatch to Run Code on Users' Computers",
+      "link": "https://thehackernews.com/2026/11/malicious-browser-extensions-could-use.html",
+      "source": "The Hacker News",
+      "severity": "high",
+      "mitre_tactics": [
+        "Initial Access"
+      ],
+      "keywords": [
+        "exploit"
+      ]
+    },
+    {
+      "title": "Chainalysis Breach Exposes All Users' Credentials, Forces Shutdown of Key Services",
+      "link": "https://thehackernews.com/2026/11/chainalysis-breach-exposes-all-users.html",
+      "source": "The Hacker News",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Initial Access",
+        "Execution",
+        "Credential Access"
+      ],
+      "keywords": [
+        "breach",
+        "rce",
+        "credential"
+      ]
+    },
+    {
+      "title": "CTM360 Exposes Fake Gift Card Scams Exploiting Trusted Brands",
+      "link": "https://www.bleepingcomputer.com/news/security/ctm360-exposes-fake-gift-card-scams-exploiting-trusted-brands/",
+      "source": "BleepingComputer",
+      "severity": "high",
+      "mitre_tactics": [
+        "Initial Access"
+      ],
+      "keywords": [
+        "exploit"
+      ]
+    },
+    {
+      "title": "SonicWall warns of new SSL-VPN MFA bypass flaw exploited in attacks",
+      "link": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/",
+      "source": "BleepingComputer",
+      "severity": "high",
+      "mitre_tactics": [
+        "Initial Access"
+      ],
+      "keywords": [
+        "exploit"
+      ]
+    },
+    {
+      "title": "Runaway AI hacking agent behind WorkOS breach after escaping sandbox",
+      "link": "https://www.bleepingcomputer.com/news/security/runaway-ai-hacking-agent-behind-workos-breach-after-escaping-sandbox/",
+      "source": "BleepingComputer",
+      "severity": "high",
+      "mitre_tactics": [],
+      "keywords": [
+        "breach"
+      ]
+    },
+    {
+      "title": "OpenAI's new GPT-6 Cyber AI finds 81 Firefox flaws, 948 Linux bugs",
+      "link": "https://www.bleepingcomputer.com/news/security/openais-new-gpt-6-cyber-ai-finds-81-firefox-flaws-948-linux-bugs/",
+      "source": "BleepingComputer",
+      "severity": "high",
+      "mitre_tactics": [
+        "Initial Access"
+      ],
+      "keywords": [
+        "exploit"
+      ]
+    },
+    {
+      "title": "Fake security tools on GitHub push backdoors and infostealers",
+      "link": "https://www.bleepingcomputer.com/news/security/fake-security-tools-on-github-push-backdoors-and-infostealers/",
+      "source": "BleepingComputer",
+      "severity": "high",
+      "mitre_tactics": [
+        "Execution",
+        "Persistence"
+      ],
+      "keywords": [
+        "malware",
+        "backdoor"
+      ]
+    },
+    {
+      "title": "QNAP says hackers breaching NAS devices in Plex2Shell attacks",
+      "link": "https://www.bleepingcomputer.com/news/security/qnap-says-hackers-breaching-nas-devices-in-plex2shell-attacks/",
+      "source": "BleepingComputer",
+      "severity": "high",
+      "mitre_tactics": [
+        "Initial Access"
+      ],
+      "keywords": [
+        "breach",
+        "exploit",
+        "vulnerability"
+      ]
+    },
+    {
+      "title": "Why Europe's Freezer Hacks Spread So Far, So Fast",
+      "link": "https://www.darkreading.com/ics-ot-security/europes-freezer-hacks-spread-so-far-so-fast",
+      "source": "Dark Reading",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Initial Access"
+      ],
+      "keywords": [
+        "supply chain"
+      ]
+    },
+    {
+      "title": "What We Missed: Knicks Phishing Test Goes Out of Bounds",
+      "link": "https://www.darkreading.com/cyber-risk/what-we-missed-knicks-phishing-test-out-of-bounds",
+      "source": "Dark Reading",
+      "severity": "medium",
+      "mitre_tactics": [
+        "Initial Access"
+      ],
+      "keywords": [
+        "phishing"
+      ]
+    },
+    {
+      "title": "APT29's Watering Holes Target Thousands of Mobile Users",
+      "link": "https://www.darkreading.com/mobile-security/apt29-watering-holes-target-mobile-users",
+      "source": "Dark Reading",
+      "severity": "critical",
+      "mitre_tactics": [],
+      "keywords": [
+        "apt"
+      ]
+    }
+  ]
+}

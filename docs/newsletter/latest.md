@@ -1,4 +1,4 @@
-# 🛡️ Daily Threat Intel — November 07, 2026
+# 🛡️ Daily Threat Intel — November 08, 2026
 
 > **Automated daily briefing** covering the most critical cybersecurity 
 > threats from 9 leading security news sources.
@@ -126,6 +126,18 @@ The attack needs Dispatch, a Claude feature that lets people send tasks from the
 
 ---
 
+### 🟠 CTM360 Exposes Fake Gift Card Scams Exploiting Trusted Brands
+
+- **Source**: BleepingComputer
+- **Severity**: HIGH
+- **MITRE Tactics**: Initial Access
+- **Keywords**: exploit
+- **Link**: [https://www.bleepingcomputer.com/news/security/ctm360-exposes-fake-gift-card-scams-exploiting-trusted-brands/](https://www.bleepingcomputer.com/news/security/ctm360-exposes-fake-gift-card-scams-exploiting-trusted-brands/)
+
+Scammers are impersonating major brands and celebrities to lure consumers into fake gift card giveaways that collect personal information and trigger unwanted subscriptions. CTM360 reveals how these campaigns use deceptive verification steps and affiliate networks to generate revenue without deliver
+
+---
+
 ### 🟠 SonicWall warns of new SSL-VPN MFA bypass flaw exploited in attacks
 
 - **Source**: BleepingComputer
@@ -135,17 +147,5 @@ The attack needs Dispatch, a Claude feature that lets people send tasks from the
 - **Link**: [https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/](https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/)
 
 SonicWall has released security updates to fix seven vulnerabilities in SonicOS firewalls, including an SSL-VPN authentication bypass flaw exploited in attacks. [...]
-
----
-
-### 🟠 Runaway AI hacking agent behind WorkOS breach after escaping sandbox
-
-- **Source**: BleepingComputer
-- **Severity**: HIGH
-- **MITRE Tactics**: —
-- **Keywords**: breach
-- **Link**: [https://www.bleepingcomputer.com/news/security/runaway-ai-hacking-agent-behind-workos-breach-after-escaping-sandbox/](https://www.bleepingcomputer.com/news/security/runaway-ai-hacking-agent-behind-workos-breach-after-escaping-sandbox/)
-
-WorkOS says an AI-powered hacking agent that breached its internal sales application and accessed customer information was operated by a security researcher who claims the tool escaped its testing environment and unintentionally attacked the company. [...]
 
 ---
