@@ -1,4 +1,4 @@
-# 🛡️ Daily Threat Intel — November 08, 2026
+# 🛡️ Daily Threat Intel — November 09, 2026
 
 > **Automated daily briefing** covering the most critical cybersecurity 
 > threats from 9 leading security news sources.
@@ -8,55 +8,79 @@
 ## 📊 Analyst Briefing
 
 📊 15 threats detected today.
-🔴 CRITICAL (5): Installing the Fix for an Exploited WordPress Flaw Can Expose Some Sites One Last Time | Microsoft Paint RCE Fix Now Available, but Windows Update Won't Deliver It | Chainalysis Breach Exposes All Users' Credentials, Forces Shutdown of Key Services
-🟠 HIGH (9): Hackers Target OpenSSH SSHole Flaw Within Hours of Disclosure, Gain Root on Honeypot | OpenAI Launches GPT-6 Cyber After AI Helps Find 81 Firefox Flaws, 948 Linux Exploits | Malicious Browser Extensions Could Use Claude Dispatch to Run Code on Users' Computers
+🔴 CRITICAL (9): Bitter Hackers Deploy New PapRAT Backdoor in Cyberespionage Campaign Targeting South Asia | ⚡ Weekly Recap: SSHole Exploited, APT Root RCE, Robot Takeovers, 15K Hacked Sites, and More | LNbits Urges All Operators to Shut Down Their Bitcoin Lightning Wallet Servers Amid Attacks
+🟠 HIGH (5): Web3Auth Flaw Exploited to Steal Keplr Crypto, Provider Empties Other Wallets for Safety | Binance denies data breach after alleged ShinyHunters claims | Hackers exploit SSHole OpenSSH flaw to breach Linux systems
 ⚠️ Review all articles below and patch accordingly.
 
 ---
 
 ## 🔍 Top Threats
 
-### 🔴 Installing the Fix for an Exploited WordPress Flaw Can Expose Some Sites One Last Time
+### 🔴 Bitter Hackers Deploy New PapRAT Backdoor in Cyberespionage Campaign Targeting South Asia
 
 - **Source**: The Hacker News
 - **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access
-- **Keywords**: exploit
-- **Link**: [https://thehackernews.com/2026/11/installing-fix-for-exploited-wordpress.html](https://thehackernews.com/2026/11/installing-fix-for-exploited-wordpress.html)
+- **MITRE Tactics**: Execution, Persistence
+- **Keywords**: backdoor, apt, trojan
+- **Link**: [https://thehackernews.com/2026/11/bitter-hackers-deploy-new-paprat.html](https://thehackernews.com/2026/11/bitter-hackers-deploy-new-paprat.html)
 
-Some WordPress sites can still be attacked while they install the fix for an actively exploited flaw, according to Umut Bayram, the Picus Security researcher who found it.
+The South Asian cyber espionage group known as Bitter (aka APT-C-08, APT-Q-37, Hazy Tiger, Orange Yali, T-APT-17, and TA397) has been observed targeting South Asian organizations with a previously unreported remote access trojan called PapRAT.
 
-The update that installs the fix still unpacks its files using the site's old, unpatched code, so an attacker who strikes at th
-
----
-
-### 🔴 Microsoft Paint RCE Fix Now Available, but Windows Update Won't Deliver It
-
-- **Source**: The Hacker News
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Execution
-- **Keywords**: cve-, remote code execution, rce
-- **Link**: [https://thehackernews.com/2026/11/microsoft-paint-rce-fix-now-available.html](https://thehackernews.com/2026/11/microsoft-paint-rce-fix-now-available.html)
-
-A fix for CVE-2026-83844, a remote code execution flaw in Windows Paint, is now in the Microsoft Store. Paint gets this fix only through a Store update, not through Windows updates.
-
-The fixed build, 11.2609.401.0, was the newest Paint build in all ten countries The Hacker News checked today.
-
-The f
+"PapRAT has both C++ and Rust implementations," Fortine
 
 ---
 
-### 🔴 Chainalysis Breach Exposes All Users' Credentials, Forces Shutdown of Key Services
+### 🔴 ⚡ Weekly Recap: SSHole Exploited, APT Root RCE, Robot Takeovers, 15K Hacked Sites, and More
 
 - **Source**: The Hacker News
 - **Severity**: CRITICAL
 - **MITRE Tactics**: Initial Access, Execution, Credential Access
-- **Keywords**: breach, rce, credential
-- **Link**: [https://thehackernews.com/2026/11/chainalysis-breach-exposes-all-users.html](https://thehackernews.com/2026/11/chainalysis-breach-exposes-all-users.html)
+- **Keywords**: exploit, rce, apt, credential
+- **Link**: [https://thehackernews.com/2026/11/weekly-recap-sshole-exploited-apt-root.html](https://thehackernews.com/2026/11/weekly-recap-sshole-exploited-apt-root.html)
 
-Blockchain analysis firm Chainalysis has revealed that its ongoing investigation into the agentic cyber attack targeting its systems also exposed names, usernames, password hashes and live tokens for all users.
+A system doesn't always need a complicated bug to let someone in. Sometimes, a blank password is enough. That's one of the bigger stories this week. And it gets worse when the tools meant to keep systems updated or running safely become part of the attack.
 
-"While we investigated, we removed access to Reactor and Data Solutions," the company sa
+Elsewhere, attackers are hiding inside nor
+
+---
+
+### 🔴 LNbits Urges All Operators to Shut Down Their Bitcoin Lightning Wallet Servers Amid Attacks
+
+- **Source**: The Hacker News
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access, Execution
+- **Keywords**: exploit, rce
+- **Link**: [https://thehackernews.com/2026/11/lnbits-urges-all-operators-to-shut-down.html](https://thehackernews.com/2026/11/lnbits-urges-all-operators-to-shut-down.html)
+
+Everyone running LNbits, a free, open-source Bitcoin Lightning wallet system, should shut down their servers now because of a wave of attacks, the project said yesterday.
+
+It has several security fixes to release and asked operators to be careful until they are out. One operator said new accounts us
+
+---
+
+### 🔴 U.S. Agencies Warn Refrigeration Controller Attacks Could Cause Fires and Inventory Losses
+
+- **Source**: The Hacker News
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access, Execution
+- **Keywords**: exploit, rce
+- **Link**: [https://thehackernews.com/2026/11/us-agencies-warn-refrigeration.html](https://thehackernews.com/2026/11/us-agencies-warn-refrigeration.html)
+
+U.S. government agencies have warned that threat actors are actively targeting industrial refrigeration and cold-chain monitoring systems globally with an aim to cause service disruptions, fire hazards, and loss of inventory.
+
+"The actors may exploit vulnerabilities or weaknesses in unpatched or int
+
+---
+
+### 🔴 Ukraine dismantles crypto scam network that stole €4.3 million
+
+- **Source**: BleepingComputer
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Execution
+- **Keywords**: rce
+- **Link**: [https://www.bleepingcomputer.com/news/security/ukraine-dismantles-crypto-scam-network-that-stole-43-million/](https://www.bleepingcomputer.com/news/security/ukraine-dismantles-crypto-scam-network-that-stole-43-million/)
+
+Ukrainian law enforcement arrested four suspects in a case involving the theft of more than €4.3 million using a network of cryptocurrency investment scam call centers. [...]
 
 ---
 
@@ -72,80 +96,52 @@ Europe's supermarket freezer hacks show how security issues can cascade across a
 
 ---
 
-### 🔴 APT29's Watering Holes Target Thousands of Mobile Users
+### 🔴 Widespread PHP Flaw May Cause Many Site Outages Today
 
-- **Source**: Dark Reading
+- **Source**: Krebs on Security
 - **Severity**: CRITICAL
-- **MITRE Tactics**: —
-- **Keywords**: apt
-- **Link**: [https://www.darkreading.com/mobile-security/apt29-watering-holes-target-mobile-users](https://www.darkreading.com/mobile-security/apt29-watering-holes-target-mobile-users)
+- **MITRE Tactics**: Initial Access, Execution
+- **Keywords**: exploit, rce
+- **Link**: [https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/](https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/)
 
-After compromising websites, the Russian state-sponsored threat group is fingerprinting victims, then harvesting information from the interesting ones.
-
----
-
-### 🟠 Hackers Target OpenSSH SSHole Flaw Within Hours of Disclosure, Gain Root on Honeypot
-
-- **Source**: The Hacker News
-- **Severity**: HIGH
-- **MITRE Tactics**: Initial Access, Credential Access
-- **Keywords**: exploit, vulnerability, cve-
-- **Link**: [https://thehackernews.com/2026/11/hackers-exploited-openssh-sshole-flaw.html](https://thehackernews.com/2026/11/hackers-exploited-openssh-sshole-flaw.html)
-
-Threat actors are attempting to exploit a recently disclosed security flaw impacting OpenSSH that can enable sign-ins to accounts that have no password set, according to Previdian.
-
-The vulnerability, tracked as CVE-2026-123158 (CVSS score: 8.1) and codenamed SSHole (or *sshole), impacts Linux syste
+Expect to see quite a few websites serving "404" or "Page Not Found" errors today: Nearly 70 percent of websites need to update their core software to fix a pair of vulnerabilities that allow an attacker to seize full control over affected servers. Experts say there are working exploits for the flaw
 
 ---
 
-### 🟠 OpenAI Launches GPT-6 Cyber After AI Helps Find 81 Firefox Flaws, 948 Linux Exploits
+### 🔴 Feds Suspect Ransom Negotiator Ran ShinyHunters Extortion Site
 
-- **Source**: The Hacker News
-- **Severity**: HIGH
-- **MITRE Tactics**: Initial Access
-- **Keywords**: exploit
-- **Link**: [https://thehackernews.com/2026/11/openai-launches-gpt-6-cyber-after-ai.html](https://thehackernews.com/2026/11/openai-launches-gpt-6-cyber-after-ai.html)
+- **Source**: Krebs on Security
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Execution, Impact
+- **Keywords**: ransomware, rce
+- **Link**: [https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/](https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/)
 
-OpenAI on Thursday unveiled GPT‑6 Cyber, which it described as a major step forward in security research that brings together stronger cybersecurity capabilities with a step-change improvement in model alignment.
-
-The new model is "more capable at finding and fixing vulnerabilities, and far more rel
+U.S. federal investigators pursuing the ShinyHunters hacking group that recently stole highly sensitive data from the FBI have identified executives at two different ransomware negotiation firms who maintained unusually close relations with the extortion group, KrebsOnSecurity has learned. Sources c
 
 ---
 
-### 🟠 Malicious Browser Extensions Could Use Claude Dispatch to Run Code on Users' Computers
+### 🔴 U.K. Sanctions Cryptomus for RU Money Laundering
+
+- **Source**: Krebs on Security
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Impact
+- **Keywords**: ransomware
+- **Link**: [https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/](https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/)
+
+The United Kingdom has issued economic sanctions against Cryptomus, a chameleonic cryptocurrency platform that experts say serves as a major conduit for payments related to ransomware, narcotics, darknet markets, fraud and cybercrime services that are helping Russia circumvent existing financial res
+
+---
+
+### 🟠 Web3Auth Flaw Exploited to Steal Keplr Crypto, Provider Empties Other Wallets for Safety
 
 - **Source**: The Hacker News
 - **Severity**: HIGH
 - **MITRE Tactics**: Initial Access
 - **Keywords**: exploit
-- **Link**: [https://thehackernews.com/2026/11/malicious-browser-extensions-could-use.html](https://thehackernews.com/2026/11/malicious-browser-extensions-could-use.html)
+- **Link**: [https://thehackernews.com/2026/11/web3auth-flaw-exploited-to-steal-keplr.html](https://thehackernews.com/2026/11/web3auth-flaw-exploited-to-steal-keplr.html)
 
-A browser extension that can run scripts on claude.ai could make Claude Desktop run code on a person's computer, researchers at Forever Security, an endpoint security company, showed in a test.
+Some people who set up a Keplr crypto wallet with their Google or Apple account have had money stolen by an attacker.
 
-The attack needs Dispatch, a Claude feature that lets people send tasks from their phone to Claude Deskto
-
----
-
-### 🟠 CTM360 Exposes Fake Gift Card Scams Exploiting Trusted Brands
-
-- **Source**: BleepingComputer
-- **Severity**: HIGH
-- **MITRE Tactics**: Initial Access
-- **Keywords**: exploit
-- **Link**: [https://www.bleepingcomputer.com/news/security/ctm360-exposes-fake-gift-card-scams-exploiting-trusted-brands/](https://www.bleepingcomputer.com/news/security/ctm360-exposes-fake-gift-card-scams-exploiting-trusted-brands/)
-
-Scammers are impersonating major brands and celebrities to lure consumers into fake gift card giveaways that collect personal information and trigger unwanted subscriptions. CTM360 reveals how these campaigns use deceptive verification steps and affiliate networks to generate revenue without deliver
-
----
-
-### 🟠 SonicWall warns of new SSL-VPN MFA bypass flaw exploited in attacks
-
-- **Source**: BleepingComputer
-- **Severity**: HIGH
-- **MITRE Tactics**: Initial Access
-- **Keywords**: exploit
-- **Link**: [https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/](https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/)
-
-SonicWall has released security updates to fix seven vulnerabilities in SonicOS firewalls, including an SSL-VPN authentication bypass flaw exploited in attacks. [...]
+Keplr uses a company called Web3Auth to run that Google and Apple sign-in. The attacker used a security flaw at that company to reach the wallets, both companies said late last week
 
 ---
