@@ -1,4 +1,4 @@
-# 🛡️ Daily Threat Intel — November 09, 2026
+# 🛡️ Daily Threat Intel — November 10, 2026
 
 > **Automated daily briefing** covering the most critical cybersecurity 
 > threats from 9 leading security news sources.
@@ -8,140 +8,134 @@
 ## 📊 Analyst Briefing
 
 📊 15 threats detected today.
-🔴 CRITICAL (9): Bitter Hackers Deploy New PapRAT Backdoor in Cyberespionage Campaign Targeting South Asia | ⚡ Weekly Recap: SSHole Exploited, APT Root RCE, Robot Takeovers, 15K Hacked Sites, and More | LNbits Urges All Operators to Shut Down Their Bitcoin Lightning Wallet Servers Amid Attacks
-🟠 HIGH (5): Web3Auth Flaw Exploited to Steal Keplr Crypto, Provider Empties Other Wallets for Safety | Binance denies data breach after alleged ShinyHunters claims | Hackers exploit SSHole OpenSSH flaw to breach Linux systems
+🔴 CRITICAL (10): Binance Warns of iOS Sandbox Escape That Could Expose Crypto Wallet Keys, No Fix Confirmed | SAP Patches Four CVSS 10.0 Flaws, Including Two Enabling Remote Code Execution | Google Issues Chrome Security Update for Eighth Actively Exploited Zero-Day of 2026
+🟠 HIGH (5): Russian Turla Hackers Use New Cereal Malware to Steal Emails From Government Exchange Servers | Fireworks AI discloses new breach after cloud provider hack | SEGA newsletter data breach exposes 2.2 million email addresses
 ⚠️ Review all articles below and patch accordingly.
 
 ---
 
 ## 🔍 Top Threats
 
-### 🔴 Bitter Hackers Deploy New PapRAT Backdoor in Cyberespionage Campaign Targeting South Asia
-
-- **Source**: The Hacker News
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Execution, Persistence
-- **Keywords**: backdoor, apt, trojan
-- **Link**: [https://thehackernews.com/2026/11/bitter-hackers-deploy-new-paprat.html](https://thehackernews.com/2026/11/bitter-hackers-deploy-new-paprat.html)
-
-The South Asian cyber espionage group known as Bitter (aka APT-C-08, APT-Q-37, Hazy Tiger, Orange Yali, T-APT-17, and TA397) has been observed targeting South Asian organizations with a previously unreported remote access trojan called PapRAT.
-
-"PapRAT has both C++ and Rust implementations," Fortine
-
----
-
-### 🔴 ⚡ Weekly Recap: SSHole Exploited, APT Root RCE, Robot Takeovers, 15K Hacked Sites, and More
+### 🔴 Binance Warns of iOS Sandbox Escape That Could Expose Crypto Wallet Keys, No Fix Confirmed
 
 - **Source**: The Hacker News
 - **Severity**: CRITICAL
 - **MITRE Tactics**: Initial Access, Execution, Credential Access
-- **Keywords**: exploit, rce, apt, credential
-- **Link**: [https://thehackernews.com/2026/11/weekly-recap-sshole-exploited-apt-root.html](https://thehackernews.com/2026/11/weekly-recap-sshole-exploited-apt-root.html)
+- **Keywords**: rce, credential
+- **Link**: [https://thehackernews.com/2026/11/binance-warns-of-ios-sandbox-escape.html](https://thehackernews.com/2026/11/binance-warns-of-ios-sandbox-escape.html)
 
-A system doesn't always need a complicated bug to let someone in. Sometimes, a blank password is enough. That's one of the bigger stories this week. And it gets worse when the tools meant to keep systems updated or running safely become part of the attack.
-
-Elsewhere, attackers are hiding inside nor
+An iOS sandbox escape published on GitHub lets an app read other apps' files on iPhones running iOS 26 and 27. That puts seed phrases, private keys, and login credentials at risk of exposure to malicious apps, Binance warned today. Apple's updates for iOS 26 and 27, released yesterday, do not list a
 
 ---
 
-### 🔴 LNbits Urges All Operators to Shut Down Their Bitcoin Lightning Wallet Servers Amid Attacks
+### 🔴 SAP Patches Four CVSS 10.0 Flaws, Including Two Enabling Remote Code Execution
 
 - **Source**: The Hacker News
 - **Severity**: CRITICAL
 - **MITRE Tactics**: Initial Access, Execution
-- **Keywords**: exploit, rce
-- **Link**: [https://thehackernews.com/2026/11/lnbits-urges-all-operators-to-shut-down.html](https://thehackernews.com/2026/11/lnbits-urges-all-operators-to-shut-down.html)
+- **Keywords**: exploit, remote code execution
+- **Link**: [https://thehackernews.com/2026/11/sap-patches-four-cvss-100-flaws.html](https://thehackernews.com/2026/11/sap-patches-four-cvss-100-flaws.html)
 
-Everyone running LNbits, a free, open-source Bitcoin Lightning wallet system, should shut down their servers now because of a wave of attacks, the project said yesterday.
+Four flaws that attackers could exploit without logging in were fixed today as part of SAP's monthly Security Patch Day—the vendor rates all four 10.0, the maximum CVSS score.
 
-It has several security fixes to release and asked operators to be careful until they are out. One operator said new accounts us
+Three are in the SAP NetWeaver application server, the software SAP systems run on, and one is in the Web Dispatcher, which
 
 ---
 
-### 🔴 U.S. Agencies Warn Refrigeration Controller Attacks Could Cause Fires and Inventory Losses
+### 🔴 Google Issues Chrome Security Update for Eighth Actively Exploited Zero-Day of 2026
 
 - **Source**: The Hacker News
 - **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access, Execution
-- **Keywords**: exploit, rce
-- **Link**: [https://thehackernews.com/2026/11/us-agencies-warn-refrigeration.html](https://thehackernews.com/2026/11/us-agencies-warn-refrigeration.html)
+- **MITRE Tactics**: Initial Access
+- **Keywords**: zero-day, exploit, vulnerability, cve-
+- **Link**: [https://thehackernews.com/2026/11/google-issues-chrome-security-update.html](https://thehackernews.com/2026/11/google-issues-chrome-security-update.html)
 
-U.S. government agencies have warned that threat actors are actively targeting industrial refrigeration and cold-chain monitoring systems globally with an aim to cause service disruptions, fire hazards, and loss of inventory.
+Google on Monday released updates to patch nine security vulnerabilities, including one that has come under active exploitation in the wild.
 
-"The actors may exploit vulnerabilities or weaknesses in unpatched or int
+The high-severity vulnerability, assigned the CVE identifier CVE-2026-125350 (CVSS score: N/A), has been described as a use-after-free bug in the XML componen
 
 ---
 
-### 🔴 Ukraine dismantles crypto scam network that stole €4.3 million
+### 🔴 Ransomware recovery is now a client retention metric
+
+- **Source**: BleepingComputer
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Impact
+- **Keywords**: ransomware
+- **Link**: [https://www.bleepingcomputer.com/news/security/ransomware-recovery-is-now-a-client-retention-metric/](https://www.bleepingcomputer.com/news/security/ransomware-recovery-is-now-a-client-retention-metric/)
+
+Recovering from ransomware doesn't guarantee an MSP will retain its clients, especially when delays, poor communication, and unexpected costs undermine trust. Kaseya examines how disconnected recovery tools create these problems and how integrated workflows can improve response times, transparency, 
+
+---
+
+### 🔴 Hackers now exploit critical Barracuda ESG flaws to gain root access
+
+- **Source**: BleepingComputer
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access
+- **Keywords**: exploit
+- **Link**: [https://www.bleepingcomputer.com/news/security/hackers-exploit-barracuda-email-security-gateway-flaws-to-get-root-access/](https://www.bleepingcomputer.com/news/security/hackers-exploit-barracuda-email-security-gateway-flaws-to-get-root-access/)
+
+Cybersecurity company Barracuda Networks warned that attackers have begun exploiting two recently patched Email Security Gateway (ESG) vulnerabilities that let them run commands with root privileges. [...]
+
+---
+
+### 🔴 Turla hackers use new Cereal malware to spy on govt Exchange servers
 
 - **Source**: BleepingComputer
 - **Severity**: CRITICAL
 - **MITRE Tactics**: Execution
-- **Keywords**: rce
-- **Link**: [https://www.bleepingcomputer.com/news/security/ukraine-dismantles-crypto-scam-network-that-stole-43-million/](https://www.bleepingcomputer.com/news/security/ukraine-dismantles-crypto-scam-network-that-stole-43-million/)
+- **Keywords**: malware, rce
+- **Link**: [https://www.bleepingcomputer.com/news/security/turla-hackers-use-new-ceral-malware-to-spy-on-govt-exchange-servers/](https://www.bleepingcomputer.com/news/security/turla-hackers-use-new-ceral-malware-to-spy-on-govt-exchange-servers/)
 
-Ukrainian law enforcement arrested four suspects in a case involving the theft of more than €4.3 million using a network of cryptocurrency investment scam call centers. [...]
+The Russian state-backed threat group Turla has been using a new malicious toolset called 'Cereal' to intercept emails on Microsoft Exchange servers at government organizations. [...]
 
 ---
 
-### 🔴 Why Europe's Freezer Hacks Spread So Far, So Fast
+### 🔴 Google patches eighth Chrome zero-day exploited in attacks this year
+
+- **Source**: BleepingComputer
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access
+- **Keywords**: zero-day, exploit, vulnerability
+- **Link**: [https://www.bleepingcomputer.com/news/security/google-patches-eighth-chrome-zero-day-exploited-in-attacks-this-year/](https://www.bleepingcomputer.com/news/security/google-patches-eighth-chrome-zero-day-exploited-in-attacks-this-year/)
+
+Google has released emergency security updates to patch a new Chrome vulnerability exploited in zero-day attacks, the eighth such flaw since the start of the year. [...]
+
+---
+
+### 🔴 Vanderbilt University hit in BYOD ransomware attack, data theft claimed
+
+- **Source**: BleepingComputer
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Collection, Impact
+- **Keywords**: ransomware
+- **Link**: [https://www.bleepingcomputer.com/news/security/vanderbilt-university-hit-in-byod-ransomware-attack-data-theft-claimed/](https://www.bleepingcomputer.com/news/security/vanderbilt-university-hit-in-byod-ransomware-attack-data-theft-claimed/)
+
+Vanderbilt University warns it is responding to a cyberattack claimed by the BYOD ransomware gang, which claims to have encrypted the university's databases and stolen sensitive student, employee, and research data. [...]
+
+---
+
+### 🔴 CISA Announces Enhanced Reporting Form for Cyber Incidents
 
 - **Source**: Dark Reading
 - **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access
-- **Keywords**: supply chain
-- **Link**: [https://www.darkreading.com/ics-ot-security/europes-freezer-hacks-spread-so-far-so-fast](https://www.darkreading.com/ics-ot-security/europes-freezer-hacks-spread-so-far-so-fast)
+- **MITRE Tactics**: —
+- **Keywords**: apt
+- **Link**: [https://www.darkreading.com/cyberattacks-data-breaches/cisa-announces-enhanced-reporting-form-cyber-incidents](https://www.darkreading.com/cyberattacks-data-breaches/cisa-announces-enhanced-reporting-form-cyber-incidents)
 
-Europe's supermarket freezer hacks show how security issues can cascade across an industry, disrupting supply chains at scale.
+New questionnaire captures critical data and information that improves the agency’s ability to assess incidents, identify trends and prioritize response actions.
 
 ---
 
-### 🔴 Widespread PHP Flaw May Cause Many Site Outages Today
+### 🔴 Microsoft Fixes RCE Bug in Windows Paint After Weeks of Confusion
 
-- **Source**: Krebs on Security
+- **Source**: Dark Reading
 - **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access, Execution
-- **Keywords**: exploit, rce
-- **Link**: [https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/](https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/)
+- **MITRE Tactics**: Execution
+- **Keywords**: vulnerability, rce
+- **Link**: [https://www.darkreading.com/application-security/microsoft-rce-bug-windows-paint-confusion](https://www.darkreading.com/application-security/microsoft-rce-bug-windows-paint-confusion)
 
-Expect to see quite a few websites serving "404" or "Page Not Found" errors today: Nearly 70 percent of websites need to update their core software to fix a pair of vulnerabilities that allow an attacker to seize full control over affected servers. Experts say there are working exploits for the flaw
-
----
-
-### 🔴 Feds Suspect Ransom Negotiator Ran ShinyHunters Extortion Site
-
-- **Source**: Krebs on Security
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Execution, Impact
-- **Keywords**: ransomware, rce
-- **Link**: [https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/](https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/)
-
-U.S. federal investigators pursuing the ShinyHunters hacking group that recently stole highly sensitive data from the FBI have identified executives at two different ransomware negotiation firms who maintained unusually close relations with the extortion group, KrebsOnSecurity has learned. Sources c
-
----
-
-### 🔴 U.K. Sanctions Cryptomus for RU Money Laundering
-
-- **Source**: Krebs on Security
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Impact
-- **Keywords**: ransomware
-- **Link**: [https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/](https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/)
-
-The United Kingdom has issued economic sanctions against Cryptomus, a chameleonic cryptocurrency platform that experts say serves as a major conduit for payments related to ransomware, narcotics, darknet markets, fraud and cybercrime services that are helping Russia circumvent existing financial res
-
----
-
-### 🟠 Web3Auth Flaw Exploited to Steal Keplr Crypto, Provider Empties Other Wallets for Safety
-
-- **Source**: The Hacker News
-- **Severity**: HIGH
-- **MITRE Tactics**: Initial Access
-- **Keywords**: exploit
-- **Link**: [https://thehackernews.com/2026/11/web3auth-flaw-exploited-to-steal-keplr.html](https://thehackernews.com/2026/11/web3auth-flaw-exploited-to-steal-keplr.html)
-
-Some people who set up a Keplr crypto wallet with their Google or Apple account have had money stolen by an attacker.
-
-Keplr uses a company called Web3Auth to run that Google and Apple sign-in. The attacker used a security flaw at that company to reach the wallets, both companies said late last week
+Last month, Microsoft disclosed a vulnerability in Microsoft Paint, but messaging regarding a patch was unclear.
 
 ---
