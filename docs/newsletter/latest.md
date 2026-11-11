@@ -1,4 +1,4 @@
-# 🛡️ Daily Threat Intel — November 10, 2026
+# 🛡️ Daily Threat Intel — November 11, 2026
 
 > **Automated daily briefing** covering the most critical cybersecurity 
 > threats from 9 leading security news sources.
@@ -8,134 +8,140 @@
 ## 📊 Analyst Briefing
 
 📊 15 threats detected today.
-🔴 CRITICAL (10): Binance Warns of iOS Sandbox Escape That Could Expose Crypto Wallet Keys, No Fix Confirmed | SAP Patches Four CVSS 10.0 Flaws, Including Two Enabling Remote Code Execution | Google Issues Chrome Security Update for Eighth Actively Exploited Zero-Day of 2026
-🟠 HIGH (5): Russian Turla Hackers Use New Cereal Malware to Steal Emails From Government Exchange Servers | Fireworks AI discloses new breach after cloud provider hack | SEGA newsletter data breach exposes 2.2 million email addresses
+🔴 CRITICAL (6): Cisco BroadWorks and Openwave Flaws Actively Exploited Despite Available Patches | N-able releases security hotfixes for zero-day vulnerabilities | CISA flags Cisco BroadWorks flaw as actively exploited in attacks
+🟠 HIGH (8): Hackers Target Qlik Sense Servers With Reverse Shells, Stage ActiveMQ and Veeam Exploits | Microsoft Patches 1,259 Flaws, Including Exploited Outlook Bug That May Expose NTLMv2 Hashes | Railway Says Stolen Customer AI Keys Led to $740,000 in Estimated Unauthorized Usage Charges
 ⚠️ Review all articles below and patch accordingly.
 
 ---
 
 ## 🔍 Top Threats
 
-### 🔴 Binance Warns of iOS Sandbox Escape That Could Expose Crypto Wallet Keys, No Fix Confirmed
+### 🔴 Cisco BroadWorks and Openwave Flaws Actively Exploited Despite Available Patches
 
 - **Source**: The Hacker News
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access
+- **Keywords**: exploit, cve-
+- **Link**: [https://thehackernews.com/2026/11/cisco-broadworks-and-openwave-flaws.html](https://thehackernews.com/2026/11/cisco-broadworks-and-openwave-flaws.html)
+
+The U.S. Cybersecurity and Infrastructure Security Agency (CISA) Tuesday added two security flaws impacting Cisco BroadWorks and Openwave Messaging Webtop Media Transcoder to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.
+
+Details of the vulnerabilities ar
+
+---
+
+### 🔴 N-able releases security hotfixes for zero-day vulnerabilities
+
+- **Source**: BleepingComputer
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Execution
+- **Keywords**: zero-day, rce
+- **Link**: [https://www.bleepingcomputer.com/news/security/n-able-releases-security-hotfixes-for-zero-day-vulnerabilities/](https://www.bleepingcomputer.com/news/security/n-able-releases-security-hotfixes-for-zero-day-vulnerabilities/)
+
+N-able released hotfixes to address zero-day bugs affecting its N-central remote monitoring and management (RMM) platform, which were publicly disclosed over the weekend and forced it to take vulnerable hosted environments offline. [...]
+
+---
+
+### 🔴 CISA flags Cisco BroadWorks flaw as actively exploited in attacks
+
+- **Source**: BleepingComputer
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access
+- **Keywords**: exploit, vulnerability
+- **Link**: [https://www.bleepingcomputer.com/news/security/cisa-flags-cisco-broadworks-flaw-as-actively-exploited-in-attacks/](https://www.bleepingcomputer.com/news/security/cisa-flags-cisco-broadworks-flaw-as-actively-exploited-in-attacks/)
+
+The US Cybersecurity and Infrastructure Security Agency (CISA) warned on Tuesday that hackers are now exploiting a high-severity Cisco BroadWorks vulnerability in attacks. [...]
+
+---
+
+### 🔴 November Patch Tuesday: An Overflowing Cornucopia of CVEs
+
+- **Source**: Dark Reading
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access
+- **Keywords**: zero-day, exploit
+- **Link**: [https://www.darkreading.com/vulnerabilities-threats/november-patch-tuesday-cornucopia-cves](https://www.darkreading.com/vulnerabilities-threats/november-patch-tuesday-cornucopia-cves)
+
+Microsoft serves up an actively exploited Outlook zero-day, and a wave of critical Exchange, SharePoint, Windows Search, and LDAP bugs that exhausted defenders need to prioritize fast.
+
+---
+
+### 🔴 Artex: The AI Pen-Test Tool Hackers Turned Into a Weapon
+
+- **Source**: Dark Reading
 - **Severity**: CRITICAL
 - **MITRE Tactics**: Initial Access, Execution, Credential Access
-- **Keywords**: rce, credential
-- **Link**: [https://thehackernews.com/2026/11/binance-warns-of-ios-sandbox-escape.html](https://thehackernews.com/2026/11/binance-warns-of-ios-sandbox-escape.html)
+- **Keywords**: breach, rce, credential
+- **Link**: [https://www.darkreading.com/cyberattacks-data-breaches/artex-ai-pen-test-tool-hackers-weapon](https://www.darkreading.com/cyberattacks-data-breaches/artex-ai-pen-test-tool-hackers-weapon)
 
-An iOS sandbox escape published on GitHub lets an app read other apps' files on iPhones running iOS 26 and 27. That puts seed phrases, private keys, and login credentials at risk of exposure to malicious apps, Binance warned today. Apple's updates for iOS 26 and 27, released yesterday, do not list a
-
----
-
-### 🔴 SAP Patches Four CVSS 10.0 Flaws, Including Two Enabling Remote Code Execution
-
-- **Source**: The Hacker News
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access, Execution
-- **Keywords**: exploit, remote code execution
-- **Link**: [https://thehackernews.com/2026/11/sap-patches-four-cvss-100-flaws.html](https://thehackernews.com/2026/11/sap-patches-four-cvss-100-flaws.html)
-
-Four flaws that attackers could exploit without logging in were fixed today as part of SAP's monthly Security Patch Day—the vendor rates all four 10.0, the maximum CVSS score.
-
-Three are in the SAP NetWeaver application server, the software SAP systems run on, and one is in the Web Dispatcher, which
+Forks of the open source Artex framework, along with 45 similar pen-testing tools, remain capable of executing credential attacks and cloud breaches at machine speed across multiple industries.
 
 ---
 
-### 🔴 Google Issues Chrome Security Update for Eighth Actively Exploited Zero-Day of 2026
+### 🔴 Microsoft Fixes Nearly 1,100 Security Vulnerabilities
 
-- **Source**: The Hacker News
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access
-- **Keywords**: zero-day, exploit, vulnerability, cve-
-- **Link**: [https://thehackernews.com/2026/11/google-issues-chrome-security-update.html](https://thehackernews.com/2026/11/google-issues-chrome-security-update.html)
-
-Google on Monday released updates to patch nine security vulnerabilities, including one that has come under active exploitation in the wild.
-
-The high-severity vulnerability, assigned the CVE identifier CVE-2026-125350 (CVSS score: N/A), has been described as a use-after-free bug in the XML componen
-
----
-
-### 🔴 Ransomware recovery is now a client retention metric
-
-- **Source**: BleepingComputer
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Impact
-- **Keywords**: ransomware
-- **Link**: [https://www.bleepingcomputer.com/news/security/ransomware-recovery-is-now-a-client-retention-metric/](https://www.bleepingcomputer.com/news/security/ransomware-recovery-is-now-a-client-retention-metric/)
-
-Recovering from ransomware doesn't guarantee an MSP will retain its clients, especially when delays, poor communication, and unexpected costs undermine trust. Kaseya examines how disconnected recovery tools create these problems and how integrated workflows can improve response times, transparency, 
-
----
-
-### 🔴 Hackers now exploit critical Barracuda ESG flaws to gain root access
-
-- **Source**: BleepingComputer
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access
-- **Keywords**: exploit
-- **Link**: [https://www.bleepingcomputer.com/news/security/hackers-exploit-barracuda-email-security-gateway-flaws-to-get-root-access/](https://www.bleepingcomputer.com/news/security/hackers-exploit-barracuda-email-security-gateway-flaws-to-get-root-access/)
-
-Cybersecurity company Barracuda Networks warned that attackers have begun exploiting two recently patched Email Security Gateway (ESG) vulnerabilities that let them run commands with root privileges. [...]
-
----
-
-### 🔴 Turla hackers use new Cereal malware to spy on govt Exchange servers
-
-- **Source**: BleepingComputer
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Execution
-- **Keywords**: malware, rce
-- **Link**: [https://www.bleepingcomputer.com/news/security/turla-hackers-use-new-ceral-malware-to-spy-on-govt-exchange-servers/](https://www.bleepingcomputer.com/news/security/turla-hackers-use-new-ceral-malware-to-spy-on-govt-exchange-servers/)
-
-The Russian state-backed threat group Turla has been using a new malicious toolset called 'Cereal' to intercept emails on Microsoft Exchange servers at government organizations. [...]
-
----
-
-### 🔴 Google patches eighth Chrome zero-day exploited in attacks this year
-
-- **Source**: BleepingComputer
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access
-- **Keywords**: zero-day, exploit, vulnerability
-- **Link**: [https://www.bleepingcomputer.com/news/security/google-patches-eighth-chrome-zero-day-exploited-in-attacks-this-year/](https://www.bleepingcomputer.com/news/security/google-patches-eighth-chrome-zero-day-exploited-in-attacks-this-year/)
-
-Google has released emergency security updates to patch a new Chrome vulnerability exploited in zero-day attacks, the eighth such flaw since the start of the year. [...]
-
----
-
-### 🔴 Vanderbilt University hit in BYOD ransomware attack, data theft claimed
-
-- **Source**: BleepingComputer
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Collection, Impact
-- **Keywords**: ransomware
-- **Link**: [https://www.bleepingcomputer.com/news/security/vanderbilt-university-hit-in-byod-ransomware-attack-data-theft-claimed/](https://www.bleepingcomputer.com/news/security/vanderbilt-university-hit-in-byod-ransomware-attack-data-theft-claimed/)
-
-Vanderbilt University warns it is responding to a cyberattack claimed by the BYOD ransomware gang, which claims to have encrypted the university's databases and stolen sensitive student, employee, and research data. [...]
-
----
-
-### 🔴 CISA Announces Enhanced Reporting Form for Cyber Incidents
-
-- **Source**: Dark Reading
+- **Source**: Krebs on Security
 - **Severity**: CRITICAL
 - **MITRE Tactics**: —
-- **Keywords**: apt
-- **Link**: [https://www.darkreading.com/cyberattacks-data-breaches/cisa-announces-enhanced-reporting-form-cyber-incidents](https://www.darkreading.com/cyberattacks-data-breaches/cisa-announces-enhanced-reporting-form-cyber-incidents)
+- **Keywords**: zero-day
+- **Link**: [https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/](https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/)
 
-New questionnaire captures critical data and information that improves the agency’s ability to assess incidents, identify trends and prioritize response actions.
+Microsoft did another four-digit patch drop today, releasing updates to fix almost 1,100 security vulnerabilities in its Windows operating systems and supported software. This month's Patch Tuesday addresses 63 critical flaws -- including a zero-day in Microsoft Outlook -- and comes amid important s
 
 ---
 
-### 🔴 Microsoft Fixes RCE Bug in Windows Paint After Weeks of Confusion
+### 🟠 Hackers Target Qlik Sense Servers With Reverse Shells, Stage ActiveMQ and Veeam Exploits
 
-- **Source**: Dark Reading
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Execution
-- **Keywords**: vulnerability, rce
-- **Link**: [https://www.darkreading.com/application-security/microsoft-rce-bug-windows-paint-confusion](https://www.darkreading.com/application-security/microsoft-rce-bug-windows-paint-confusion)
+- **Source**: The Hacker News
+- **Severity**: HIGH
+- **MITRE Tactics**: Initial Access
+- **Keywords**: exploit
+- **Link**: [https://thehackernews.com/2026/11/hackers-target-qlik-sense-servers-with.html](https://thehackernews.com/2026/11/hackers-target-qlik-sense-servers-with.html)
 
-Last month, Microsoft disclosed a vulnerability in Microsoft Paint, but messaging regarding a patch was unclear.
+Threat actors have been observed targeting Qlik Sense servers to unsuccessfully deliver PowerShell reverse shell commands against multiple environments in October 2026.
+
+Cynet's CyOps and Research teams said they identified the suspicious activity in October 2026 against several E.U.-based customers
+
+---
+
+### 🟠 Microsoft Patches 1,259 Flaws, Including Exploited Outlook Bug That May Expose NTLMv2 Hashes
+
+- **Source**: The Hacker News
+- **Severity**: HIGH
+- **MITRE Tactics**: Initial Access, Credential Access
+- **Keywords**: exploit
+- **Link**: [https://thehackernews.com/2026/11/microsoft-patches-1259-flaws-including.html](https://thehackernews.com/2026/11/microsoft-patches-1259-flaws-including.html)
+
+Microsoft on Tuesday released patches for a total of 1,259 vulnerabilities spanning its software portfolio, the second consecutive month where the patch volume has exceeded 1,000 flaws.
+
+These cover 726 flaws in Windows, 174 in Office, 61 in Developer Tools, 59 in SQL Server, 53 in Developer Tools, 
+
+---
+
+### 🟠 Railway Says Stolen Customer AI Keys Led to $740,000 in Estimated Unauthorized Usage Charges
+
+- **Source**: The Hacker News
+- **Severity**: HIGH
+- **MITRE Tactics**: —
+- **Keywords**: breach
+- **Link**: [https://thehackernews.com/2026/11/railway-says-stolen-customer-ai-keys.html](https://thehackernews.com/2026/11/railway-says-stolen-customer-ai-keys.html)
+
+AI provider keys that customers stored on Railway were stolen in an October breach and used to commit an estimated $740,000 in unauthorized spending, the platform-as-a-service provider said yesterday. It has promised to pay those charges itself when an AI provider will not refund them.
+
+The company 
+
+---
+
+### 🟠 Microsoft Researchers Show AI Agents Can Be Backdoored by Editing Fewer Than 10 Neurons
+
+- **Source**: The Hacker News
+- **Severity**: HIGH
+- **MITRE Tactics**: Persistence
+- **Keywords**: backdoor
+- **Link**: [https://thehackernews.com/2026/11/microsoft-researchers-show-ai-agents.html](https://thehackernews.com/2026/11/microsoft-researchers-show-ai-agents.html)
+
+An AI model can be given a hidden backdoor by editing fewer than 10 of its rarely used neurons, without retraining the model, Microsoft researchers have shown.
+
+When a chosen trigger appears, the model outputs an attacker's command, which an agent using that model would run with the agent's own perm
 
 ---
