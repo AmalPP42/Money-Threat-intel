@@ -1,4 +1,4 @@
-# 🛡️ Daily Threat Intel — November 11, 2026
+# 🛡️ Daily Threat Intel — November 12, 2026
 
 > **Automated daily briefing** covering the most critical cybersecurity 
 > threats from 9 leading security news sources.
@@ -8,140 +8,138 @@
 ## 📊 Analyst Briefing
 
 📊 15 threats detected today.
-🔴 CRITICAL (6): Cisco BroadWorks and Openwave Flaws Actively Exploited Despite Available Patches | N-able releases security hotfixes for zero-day vulnerabilities | CISA flags Cisco BroadWorks flaw as actively exploited in attacks
-🟠 HIGH (8): Hackers Target Qlik Sense Servers With Reverse Shells, Stage ActiveMQ and Veeam Exploits | Microsoft Patches 1,259 Flaws, Including Exploited Outlook Bug That May Expose NTLMv2 Hashes | Railway Says Stolen Customer AI Keys Led to $740,000 in Estimated Unauthorized Usage Charges
+🔴 CRITICAL (7): New N-central Exploits Work Against Patched Servers, Enable Root RCE and Windows SYSTEM Access | PTC Patches Critical Windchill and FlexPLM Flaw That Could Enable Remote Code Execution | Critical Pre-Auth MongoDB Flaw (CVE-2026-118383) Can Crash Lagging Servers on Failover
+🟠 HIGH (6): Your Endpoint Management Platform Could Be Your Biggest Security Risk | Baker Tilly notifies clients of data breach at third-party provider | Active ScreenConnect attacks breach MSPs, impact dozens of organizations
 ⚠️ Review all articles below and patch accordingly.
 
 ---
 
 ## 🔍 Top Threats
 
-### 🔴 Cisco BroadWorks and Openwave Flaws Actively Exploited Despite Available Patches
+### 🔴 New N-central Exploits Work Against Patched Servers, Enable Root RCE and Windows SYSTEM Access
 
 - **Source**: The Hacker News
 - **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access
-- **Keywords**: exploit, cve-
-- **Link**: [https://thehackernews.com/2026/11/cisco-broadworks-and-openwave-flaws.html](https://thehackernews.com/2026/11/cisco-broadworks-and-openwave-flaws.html)
+- **MITRE Tactics**: Initial Access, Execution
+- **Keywords**: exploit, rce
+- **Link**: [https://thehackernews.com/2026/11/new-n-central-exploits-work-against.html](https://thehackernews.com/2026/11/new-n-central-exploits-work-against.html)
 
-The U.S. Cybersecurity and Infrastructure Security Agency (CISA) Tuesday added two security flaws impacting Cisco BroadWorks and Openwave Messaging Webtop Media Transcoder to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.
+N-able on Thursday said it's investigating a new public disclosure containing claims of additional vulnerabilities in on-premise versions of N-central running version 2026.4.1 HF2.
 
-Details of the vulnerabilities ar
+"Based on our initial review, the server issue described depends on a non-default configuration in which the Legacy AP
 
 ---
 
-### 🔴 N-able releases security hotfixes for zero-day vulnerabilities
+### 🔴 PTC Patches Critical Windchill and FlexPLM Flaw That Could Enable Remote Code Execution
+
+- **Source**: The Hacker News
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access, Execution
+- **Keywords**: exploit, vulnerability, cve-, remote code execution
+- **Link**: [https://thehackernews.com/2026/11/ptc-patches-critical-windchill-and.html](https://thehackernews.com/2026/11/ptc-patches-critical-windchill-and.html)
+
+PTC has released patches for a new critical vulnerability impacting Windchill and FlexPLM software that, if successfully exploited, could result in remote code execution.
+
+The security flaw, tracked as CVE-2026-126325, carries a CVSS v4 score of 9.2 out of a maximum of 10.0.
+
+It has been described a
+
+---
+
+### 🔴 Critical Pre-Auth MongoDB Flaw (CVE-2026-118383) Can Crash Lagging Servers on Failover
+
+- **Source**: The Hacker News
+- **Severity**: CRITICAL
+- **MITRE Tactics**: —
+- **Keywords**: cve-
+- **Link**: [https://thehackernews.com/2026/11/critical-pre-auth-mongodb-flaw-cve-2026.html](https://thehackernews.com/2026/11/critical-pre-auth-mongodb-flaw-cve-2026.html)
+
+A critical flaw in MongoDB Server allows an unauthenticated attacker to send two requests that trigger a crash on the database server. The crash occurs only if that server is later chosen to take over as the main server while it still lacks some recent changes.
+
+MongoDB, the company that makes the d
+
+---
+
+### 🔴 Police dismantle Gootloader, CastleRAT, StealC malware infrastructure
 
 - **Source**: BleepingComputer
 - **Severity**: CRITICAL
 - **MITRE Tactics**: Execution
-- **Keywords**: zero-day, rce
-- **Link**: [https://www.bleepingcomputer.com/news/security/n-able-releases-security-hotfixes-for-zero-day-vulnerabilities/](https://www.bleepingcomputer.com/news/security/n-able-releases-security-hotfixes-for-zero-day-vulnerabilities/)
+- **Keywords**: malware, rce
+- **Link**: [https://www.bleepingcomputer.com/news/security/police-dismantles-gootloader-castlerat-stealc-malware-infrastructure/](https://www.bleepingcomputer.com/news/security/police-dismantles-gootloader-castlerat-stealc-malware-infrastructure/)
 
-N-able released hotfixes to address zero-day bugs affecting its N-central remote monitoring and management (RMM) platform, which were publicly disclosed over the weekend and forced it to take vulnerable hosted environments offline. [...]
+Europol and law enforcement partners from nine countries have seized hundreds of servers and domains used by the Gootloader, CastleRAT, and StealC malware operations. [...]
 
 ---
 
-### 🔴 CISA flags Cisco BroadWorks flaw as actively exploited in attacks
+### 🔴 Apify rotates API tokens, prompts 2FA resets after breach
 
 - **Source**: BleepingComputer
 - **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access
-- **Keywords**: exploit, vulnerability
-- **Link**: [https://www.bleepingcomputer.com/news/security/cisa-flags-cisco-broadworks-flaw-as-actively-exploited-in-attacks/](https://www.bleepingcomputer.com/news/security/cisa-flags-cisco-broadworks-flaw-as-actively-exploited-in-attacks/)
+- **MITRE Tactics**: —
+- **Keywords**: breach
+- **Link**: [https://www.bleepingcomputer.com/news/security/apify-rotates-api-tokens-prompts-2fa-resets-after-breach/](https://www.bleepingcomputer.com/news/security/apify-rotates-api-tokens-prompts-2fa-resets-after-breach/)
 
-The US Cybersecurity and Infrastructure Security Agency (CISA) warned on Tuesday that hackers are now exploiting a high-severity Cisco BroadWorks vulnerability in attacks. [...]
+Apify has rotated critical internal secrets and revoked some third-party OAuth connections after detecting unauthorized access to its internal systems. [...]
 
 ---
 
-### 🔴 November Patch Tuesday: An Overflowing Cornucopia of CVEs
+### 🔴 Hackers plant GSocket on Linux servers for persistent access
+
+- **Source**: BleepingComputer
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access, Execution
+- **Keywords**: exploit, rce
+- **Link**: [https://www.bleepingcomputer.com/news/security/hackers-plant-gsocket-on-linux-servers-for-persistent-access/](https://www.bleepingcomputer.com/news/security/hackers-plant-gsocket-on-linux-servers-for-persistent-access/)
+
+Multiple threat actors are abusing GSocket, a legitimate open-source remote access tool, to maintain access to Linux servers even after patching the vulnerabilities exploited to gain initial access. [...]
+
+---
+
+### 🔴 N-able Takes N-central Platform Offline After Discovery of 33 Flaws
 
 - **Source**: Dark Reading
 - **Severity**: CRITICAL
 - **MITRE Tactics**: Initial Access
 - **Keywords**: zero-day, exploit
-- **Link**: [https://www.darkreading.com/vulnerabilities-threats/november-patch-tuesday-cornucopia-cves](https://www.darkreading.com/vulnerabilities-threats/november-patch-tuesday-cornucopia-cves)
+- **Link**: [https://www.darkreading.com/endpoint-security/n-able-n-central-offline-33-flaws](https://www.darkreading.com/endpoint-security/n-able-n-central-offline-33-flaws)
 
-Microsoft serves up an actively exploited Outlook zero-day, and a wave of critical Exchange, SharePoint, Windows Search, and LDAP bugs that exhausted defenders need to prioritize fast.
-
----
-
-### 🔴 Artex: The AI Pen-Test Tool Hackers Turned Into a Weapon
-
-- **Source**: Dark Reading
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access, Execution, Credential Access
-- **Keywords**: breach, rce, credential
-- **Link**: [https://www.darkreading.com/cyberattacks-data-breaches/artex-ai-pen-test-tool-hackers-weapon](https://www.darkreading.com/cyberattacks-data-breaches/artex-ai-pen-test-tool-hackers-weapon)
-
-Forks of the open source Artex framework, along with 45 similar pen-testing tools, remain capable of executing credential attacks and cloud breaches at machine speed across multiple industries.
+The RMM provider also released a hotfix as a recommended mitigation to address public exploits for the alleged zero-days, which allow for attacker takeover.
 
 ---
 
-### 🔴 Microsoft Fixes Nearly 1,100 Security Vulnerabilities
+### 🟠 Your Endpoint Management Platform Could Be Your Biggest Security Risk
 
-- **Source**: Krebs on Security
-- **Severity**: CRITICAL
-- **MITRE Tactics**: —
-- **Keywords**: zero-day
-- **Link**: [https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/](https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/)
-
-Microsoft did another four-digit patch drop today, releasing updates to fix almost 1,100 security vulnerabilities in its Windows operating systems and supported software. This month's Patch Tuesday addresses 63 critical flaws -- including a zero-day in Microsoft Outlook -- and comes amid important s
-
----
-
-### 🟠 Hackers Target Qlik Sense Servers With Reverse Shells, Stage ActiveMQ and Veeam Exploits
-
-- **Source**: The Hacker News
+- **Source**: BleepingComputer
 - **Severity**: HIGH
-- **MITRE Tactics**: Initial Access
-- **Keywords**: exploit
-- **Link**: [https://thehackernews.com/2026/11/hackers-target-qlik-sense-servers-with.html](https://thehackernews.com/2026/11/hackers-target-qlik-sense-servers-with.html)
+- **MITRE Tactics**: Execution
+- **Keywords**: malware
+- **Link**: [https://www.bleepingcomputer.com/news/security/your-endpoint-management-platform-could-be-your-biggest-security-risk/](https://www.bleepingcomputer.com/news/security/your-endpoint-management-platform-could-be-your-biggest-security-risk/)
 
-Threat actors have been observed targeting Qlik Sense servers to unsuccessfully deliver PowerShell reverse shell commands against multiple environments in October 2026.
-
-Cynet's CyOps and Research teams said they identified the suspicious activity in October 2026 against several E.U.-based customers
+Endpoint management platforms can become powerful attack tools when compromised, allowing hackers to deploy malware, execute commands, and disrupt thousands of devices. Action1 explains how customer-controlled cryptographic authorization can prevent attackers from abusing sensitive endpoint operatio
 
 ---
 
-### 🟠 Microsoft Patches 1,259 Flaws, Including Exploited Outlook Bug That May Expose NTLMv2 Hashes
+### 🟠 Baker Tilly notifies clients of data breach at third-party provider
 
-- **Source**: The Hacker News
-- **Severity**: HIGH
-- **MITRE Tactics**: Initial Access, Credential Access
-- **Keywords**: exploit
-- **Link**: [https://thehackernews.com/2026/11/microsoft-patches-1259-flaws-including.html](https://thehackernews.com/2026/11/microsoft-patches-1259-flaws-including.html)
-
-Microsoft on Tuesday released patches for a total of 1,259 vulnerabilities spanning its software portfolio, the second consecutive month where the patch volume has exceeded 1,000 flaws.
-
-These cover 726 flaws in Windows, 174 in Office, 61 in Developer Tools, 59 in SQL Server, 53 in Developer Tools, 
-
----
-
-### 🟠 Railway Says Stolen Customer AI Keys Led to $740,000 in Estimated Unauthorized Usage Charges
-
-- **Source**: The Hacker News
+- **Source**: BleepingComputer
 - **Severity**: HIGH
 - **MITRE Tactics**: —
 - **Keywords**: breach
-- **Link**: [https://thehackernews.com/2026/11/railway-says-stolen-customer-ai-keys.html](https://thehackernews.com/2026/11/railway-says-stolen-customer-ai-keys.html)
+- **Link**: [https://www.bleepingcomputer.com/news/security/baker-tilly-notifies-clients-of-data-breach-at-third-party-provider/](https://www.bleepingcomputer.com/news/security/baker-tilly-notifies-clients-of-data-breach-at-third-party-provider/)
 
-AI provider keys that customers stored on Railway were stolen in an October breach and used to commit an estimated $740,000 in unauthorized spending, the platform-as-a-service provider said yesterday. It has promised to pay those charges itself when an AI provider will not refund them.
-
-The company 
+The Baker Tilly Advisory Group is notifying clients that a data breach has compromised certain personal information about them and their dependents. [...]
 
 ---
 
-### 🟠 Microsoft Researchers Show AI Agents Can Be Backdoored by Editing Fewer Than 10 Neurons
+### 🟠 Active ScreenConnect attacks breach MSPs, impact dozens of organizations
 
-- **Source**: The Hacker News
+- **Source**: BleepingComputer
 - **Severity**: HIGH
-- **MITRE Tactics**: Persistence
-- **Keywords**: backdoor
-- **Link**: [https://thehackernews.com/2026/11/microsoft-researchers-show-ai-agents.html](https://thehackernews.com/2026/11/microsoft-researchers-show-ai-agents.html)
+- **MITRE Tactics**: Execution
+- **Keywords**: breach, malware
+- **Link**: [https://www.bleepingcomputer.com/news/security/active-screenconnect-attacks-breach-msps-impact-dozens-of-organizations/](https://www.bleepingcomputer.com/news/security/active-screenconnect-attacks-breach-msps-impact-dozens-of-organizations/)
 
-An AI model can be given a hidden backdoor by editing fewer than 10 of its rarely used neurons, without retraining the model, Microsoft researchers have shown.
-
-When a chosen trigger appears, the model outputs an attacker's command, which an agent using that model would run with the agent's own perm
+ConnectWise is investigating an active malware campaign targeting managed service providers (MSPs) that uses compromised ScreenConnect environments to deploy rogue remote-access clients to customer devices. [...]
 
 ---
