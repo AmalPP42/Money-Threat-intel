@@ -1,4 +1,4 @@
-# 🛡️ Daily Threat Intel — November 13, 2026
+# 🛡️ Daily Threat Intel — November 14, 2026
 
 > **Automated daily briefing** covering the most critical cybersecurity 
 > threats from 9 leading security news sources.
@@ -8,13 +8,41 @@
 ## 📊 Analyst Briefing
 
 📊 15 threats detected today.
-🔴 CRITICAL (7): SilentAir Hijacks Asian Telecom Networks to Intercept SMS 2FA Codes and Spy on Taiwanese Users | Operation Endgame Takes Down Gootloader, CastleRAT and StealC Servers, Seizes 6.4M Stolen Logins | Check Point warns of zero-day flaw exploited for root access
-🟠 HIGH (8): Hackers Exploit PHP2Shell Flaws in Check Point Gateways to Deploy TSGA Backdoor and Wipe ESXi Files | Hackers Exploit N-central Flaws to Infect 21 Servers, Including 19 Running Hotfix 2 | Hackers compromise 4,800 GitHub accounts to steal cloud credentials
+🔴 CRITICAL (8): Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection | PostgreSQL Patches 52 Flaws, Including 22-Year-Old Bug Enabling Authenticated RCE | SilentAir Hijacks Asian Telecom Networks to Intercept SMS 2FA Codes and Spy on Taiwanese Users
+🟠 HIGH (7): Check Point gateways hacked via PHP2Shell to deploy VMware ESXi wiper | ArcticRAT Cybercrime Gang Profiles Victim Finances With AI | Attackers in Binance Breach Targeted Known Weakness, Missing Controls
 ⚠️ Review all articles below and patch accordingly.
 
 ---
 
 ## 🔍 Top Threats
+
+### 🔴 Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection
+
+- **Source**: The Hacker News
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access, Execution
+- **Keywords**: exploit, vulnerability, cve-, rce
+- **Link**: [https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html](https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html)
+
+The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added a high-severity security flaw impacting UnrealIRCd, an open-source Internet Relay Chat (IRC) server, to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation.
+
+The vulnerability, tr
+
+---
+
+### 🔴 PostgreSQL Patches 52 Flaws, Including 22-Year-Old Bug Enabling Authenticated RCE
+
+- **Source**: The Hacker News
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Execution
+- **Keywords**: cve-, rce
+- **Link**: [https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html](https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html)
+
+A type confusion flaw in PostgreSQL lets a database user who can create objects run code on the server. Updates released yesterday fix it, along with 51 other security flaws. Full protection from this flaw also requires rebuilding any C-language extensions installed on the server.
+
+The flaw, tracked
+
+---
 
 ### 🔴 SilentAir Hijacks Asian Telecom Networks to Intercept SMS 2FA Codes and Spy on Taiwanese Users
 
@@ -56,18 +84,6 @@ Check Point Software has released emergency hotfixes to address a high-severity 
 
 ---
 
-### 🔴 New worm-like 'SCKit' malware targets MSPs in ScreenConnect attacks
-
-- **Source**: BleepingComputer
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Execution
-- **Keywords**: malware
-- **Link**: [https://www.bleepingcomputer.com/news/security/new-worm-like-sckit-malware-targets-msps-in-screenconnect-attacks/](https://www.bleepingcomputer.com/news/security/new-worm-like-sckit-malware-targets-msps-in-screenconnect-attacks/)
-
-A new worm-like malware toolkit named SCKit was deployed in the recent ScreenConnect attacks targeting managed service providers (MSPs), designed to spread from infected customer devices to MSP technicians' computers and compromise additional managed networks. [...]
-
----
-
 ### 🔴 Who Runs the Ransomware Group Qilin?
 
 - **Source**: Krebs on Security
@@ -104,42 +120,26 @@ Expect to see quite a few websites serving "404" or "Page Not Found" errors toda
 
 ---
 
-### 🟠 Hackers Exploit PHP2Shell Flaws in Check Point Gateways to Deploy TSGA Backdoor and Wipe ESXi Files
-
-- **Source**: The Hacker News
-- **Severity**: HIGH
-- **MITRE Tactics**: Initial Access, Persistence, Privilege Escalation
-- **Keywords**: exploit, backdoor, privilege escalation
-- **Link**: [https://thehackernews.com/2026/11/hackers-exploit-php2shell-flaws-in.html](https://thehackernews.com/2026/11/hackers-exploit-php2shell-flaws-in.html)
-
-An unknown threat actor has been observed targeting unpatched Check Point Security Gateways to obtain initial access via the PHP2Shell vulnerabilities and then a previously unreported local privilege escalation flaw in Gaia OS&nbsp; to deploy a backdoor called TSGA.
-
-The activity, detailed by Check 
-
----
-
-### 🟠 Hackers Exploit N-central Flaws to Infect 21 Servers, Including 19 Running Hotfix 2
-
-- **Source**: The Hacker News
-- **Severity**: HIGH
-- **MITRE Tactics**: Initial Access
-- **Keywords**: exploit
-- **Link**: [https://thehackernews.com/2026/11/hackers-exploit-n-central-flaws-to.html](https://thehackernews.com/2026/11/hackers-exploit-n-central-flaws-to.html)
-
-N-able on Thursday said it's taking additional precautions in the wake of public disclosure of a new set of flaws tracked as 4EverAble2Shell and Agent2Shell.
-
-"We are restricting certain N-central features and integrations," the company said in a Thursday update. "These measures may affect some func
-
----
-
-### 🟠 Hackers compromise 4,800 GitHub accounts to steal cloud credentials
+### 🟠 Check Point gateways hacked via PHP2Shell to deploy VMware ESXi wiper
 
 - **Source**: BleepingComputer
 - **Severity**: HIGH
-- **MITRE Tactics**: Initial Access, Execution, Credential Access
-- **Keywords**: malware, credential
-- **Link**: [https://www.bleepingcomputer.com/news/security/hackers-compromise-4-800-github-accounts-to-steal-cloud-credentials/](https://www.bleepingcomputer.com/news/security/hackers-compromise-4-800-github-accounts-to-steal-cloud-credentials/)
+- **MITRE Tactics**: Execution, Impact
+- **Keywords**: malware
+- **Link**: [https://www.bleepingcomputer.com/news/security/check-point-gateways-hacked-via-php2shell-to-deploy-vmware-esxi-wiper/](https://www.bleepingcomputer.com/news/security/check-point-gateways-hacked-via-php2shell-to-deploy-vmware-esxi-wiper/)
 
-A new campaign dubbed 'wfx-loot' has unfolded on GitHub where threat actors used 4,837 compromised accounts to probe 61,764 repositories, open pull requests, and push secrets-stealing malware. [...]
+Vulnerable Check Point Security Gateway instances have been targeted in PHP2Shell attacks that deployed data-wiping malware on VMware ESXi hosts. [...]
+
+---
+
+### 🟠 ArcticRAT Cybercrime Gang Profiles Victim Finances With AI
+
+- **Source**: Dark Reading
+- **Severity**: HIGH
+- **MITRE Tactics**: Execution
+- **Keywords**: malware
+- **Link**: [https://www.darkreading.com/mobile-security/arcticrat-cybercrime-gang-profiles-victim-finances-ai](https://www.darkreading.com/mobile-security/arcticrat-cybercrime-gang-profiles-victim-finances-ai)
+
+The Android malware has expanded from focusing on crypto theft to full device control, and the attackers have added advanced analysis of stolen information.
 
 ---

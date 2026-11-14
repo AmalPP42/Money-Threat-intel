@@ -1,7 +1,36 @@
 {
-  "date": "2026-11-13T15:11:29.230384",
-  "summary": "\ud83d\udcca 15 threats detected today.\n\ud83d\udd34 CRITICAL (7): SilentAir Hijacks Asian Telecom Networks to Intercept SMS 2FA Codes and Spy on Taiwanese Users | Operation Endgame Takes Down Gootloader, CastleRAT and StealC Servers, Seizes 6.4M Stolen Logins | Check Point warns of zero-day flaw exploited for root access\n\ud83d\udfe0 HIGH (8): Hackers Exploit PHP2Shell Flaws in Check Point Gateways to Deploy TSGA Backdoor and Wipe ESXi Files | Hackers Exploit N-central Flaws to Infect 21 Servers, Including 19 Running Hotfix 2 | Hackers compromise 4,800 GitHub accounts to steal cloud credentials\n\u26a0\ufe0f Review all articles below and patch accordingly.",
+  "date": "2026-11-14T13:59:24.900369",
+  "summary": "\ud83d\udcca 15 threats detected today.\n\ud83d\udd34 CRITICAL (8): Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection | PostgreSQL Patches 52 Flaws, Including 22-Year-Old Bug Enabling Authenticated RCE | SilentAir Hijacks Asian Telecom Networks to Intercept SMS 2FA Codes and Spy on Taiwanese Users\n\ud83d\udfe0 HIGH (7): Check Point gateways hacked via PHP2Shell to deploy VMware ESXi wiper | ArcticRAT Cybercrime Gang Profiles Victim Finances With AI | Attackers in Binance Breach Targeted Known Weakness, Missing Controls\n\u26a0\ufe0f Review all articles below and patch accordingly.",
   "articles": [
+    {
+      "title": "Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection",
+      "link": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html",
+      "source": "The Hacker News",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Initial Access",
+        "Execution"
+      ],
+      "keywords": [
+        "exploit",
+        "vulnerability",
+        "cve-",
+        "rce"
+      ]
+    },
+    {
+      "title": "PostgreSQL Patches 52 Flaws, Including 22-Year-Old Bug Enabling Authenticated RCE",
+      "link": "https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html",
+      "source": "The Hacker News",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Execution"
+      ],
+      "keywords": [
+        "cve-",
+        "rce"
+      ]
+    },
     {
       "title": "SilentAir Hijacks Asian Telecom Networks to Intercept SMS 2FA Codes and Spy on Taiwanese Users",
       "link": "https://thehackernews.com/2026/11/silentair-hijacks-asian-telecom.html",
@@ -30,31 +59,16 @@
       ]
     },
     {
-      "title": "Hackers Exploit PHP2Shell Flaws in Check Point Gateways to Deploy TSGA Backdoor and Wipe ESXi Files",
-      "link": "https://thehackernews.com/2026/11/hackers-exploit-php2shell-flaws-in.html",
-      "source": "The Hacker News",
+      "title": "Check Point gateways hacked via PHP2Shell to deploy VMware ESXi wiper",
+      "link": "https://www.bleepingcomputer.com/news/security/check-point-gateways-hacked-via-php2shell-to-deploy-vmware-esxi-wiper/",
+      "source": "BleepingComputer",
       "severity": "high",
       "mitre_tactics": [
-        "Initial Access",
-        "Persistence",
-        "Privilege Escalation"
+        "Execution",
+        "Impact"
       ],
       "keywords": [
-        "exploit",
-        "backdoor",
-        "privilege escalation"
-      ]
-    },
-    {
-      "title": "Hackers Exploit N-central Flaws to Infect 21 Servers, Including 19 Running Hotfix 2",
-      "link": "https://thehackernews.com/2026/11/hackers-exploit-n-central-flaws-to.html",
-      "source": "The Hacker News",
-      "severity": "high",
-      "mitre_tactics": [
-        "Initial Access"
-      ],
-      "keywords": [
-        "exploit"
+        "malware"
       ]
     },
     {
@@ -71,30 +85,15 @@
       ]
     },
     {
-      "title": "New worm-like 'SCKit' malware targets MSPs in ScreenConnect attacks",
-      "link": "https://www.bleepingcomputer.com/news/security/new-worm-like-sckit-malware-targets-msps-in-screenconnect-attacks/",
-      "source": "BleepingComputer",
-      "severity": "critical",
+      "title": "ArcticRAT Cybercrime Gang Profiles Victim Finances With AI",
+      "link": "https://www.darkreading.com/mobile-security/arcticrat-cybercrime-gang-profiles-victim-finances-ai",
+      "source": "Dark Reading",
+      "severity": "high",
       "mitre_tactics": [
         "Execution"
       ],
       "keywords": [
         "malware"
-      ]
-    },
-    {
-      "title": "Hackers compromise 4,800 GitHub accounts to steal cloud credentials",
-      "link": "https://www.bleepingcomputer.com/news/security/hackers-compromise-4-800-github-accounts-to-steal-cloud-credentials/",
-      "source": "BleepingComputer",
-      "severity": "high",
-      "mitre_tactics": [
-        "Initial Access",
-        "Execution",
-        "Credential Access"
-      ],
-      "keywords": [
-        "malware",
-        "credential"
       ]
     },
     {
