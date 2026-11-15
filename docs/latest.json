@@ -1,7 +1,20 @@
 {
-  "date": "2026-11-14T13:59:24.900369",
-  "summary": "\ud83d\udcca 15 threats detected today.\n\ud83d\udd34 CRITICAL (8): Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection | PostgreSQL Patches 52 Flaws, Including 22-Year-Old Bug Enabling Authenticated RCE | SilentAir Hijacks Asian Telecom Networks to Intercept SMS 2FA Codes and Spy on Taiwanese Users\n\ud83d\udfe0 HIGH (7): Check Point gateways hacked via PHP2Shell to deploy VMware ESXi wiper | ArcticRAT Cybercrime Gang Profiles Victim Finances With AI | Attackers in Binance Breach Targeted Known Weakness, Missing Controls\n\u26a0\ufe0f Review all articles below and patch accordingly.",
+  "date": "2026-11-15T14:35:35.361133",
+  "summary": "\ud83d\udcca 15 threats detected today.\n\ud83d\udd34 CRITICAL (6): Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection | PostgreSQL Patches 52 Flaws, Including 22-Year-Old Bug Enabling Authenticated RCE | Check Point warns of zero-day flaw exploited for root access\n\ud83d\udfe0 HIGH (9): Cursor Says Stolen Fireworks AI Key Led to Trojanized Claude Code Extension Incident | Cursor confirms security breach led to malicious Claude Code extension | Check Point gateways hacked via PHP2Shell to deploy VMware ESXi wiper\n\u26a0\ufe0f Review all articles below and patch accordingly.",
   "articles": [
+    {
+      "title": "Cursor Says Stolen Fireworks AI Key Led to Trojanized Claude Code Extension Incident",
+      "link": "https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html",
+      "source": "The Hacker News",
+      "severity": "high",
+      "mitre_tactics": [
+        "Execution"
+      ],
+      "keywords": [
+        "breach",
+        "trojan"
+      ]
+    },
     {
       "title": "Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection",
       "link": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html",
@@ -32,30 +45,17 @@
       ]
     },
     {
-      "title": "SilentAir Hijacks Asian Telecom Networks to Intercept SMS 2FA Codes and Spy on Taiwanese Users",
-      "link": "https://thehackernews.com/2026/11/silentair-hijacks-asian-telecom.html",
-      "source": "The Hacker News",
-      "severity": "critical",
+      "title": "Cursor confirms security breach led to malicious Claude Code extension",
+      "link": "https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/",
+      "source": "BleepingComputer",
+      "severity": "high",
       "mitre_tactics": [
-        "Execution"
+        "Initial Access",
+        "Credential Access"
       ],
       "keywords": [
-        "rce"
-      ]
-    },
-    {
-      "title": "Operation Endgame Takes Down Gootloader, CastleRAT and StealC Servers, Seizes 6.4M Stolen Logins",
-      "link": "https://thehackernews.com/2026/11/operation-endgame-takes-down-gootloader.html",
-      "source": "The Hacker News",
-      "severity": "critical",
-      "mitre_tactics": [
-        "Execution",
-        "Credential Access",
-        "Impact"
-      ],
-      "keywords": [
-        "ransomware",
-        "malware"
+        "breach",
+        "credential"
       ]
     },
     {

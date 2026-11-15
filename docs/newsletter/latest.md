@@ -1,4 +1,4 @@
-# 🛡️ Daily Threat Intel — November 14, 2026
+# 🛡️ Daily Threat Intel — November 15, 2026
 
 > **Automated daily briefing** covering the most critical cybersecurity 
 > threats from 9 leading security news sources.
@@ -8,8 +8,8 @@
 ## 📊 Analyst Briefing
 
 📊 15 threats detected today.
-🔴 CRITICAL (8): Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection | PostgreSQL Patches 52 Flaws, Including 22-Year-Old Bug Enabling Authenticated RCE | SilentAir Hijacks Asian Telecom Networks to Intercept SMS 2FA Codes and Spy on Taiwanese Users
-🟠 HIGH (7): Check Point gateways hacked via PHP2Shell to deploy VMware ESXi wiper | ArcticRAT Cybercrime Gang Profiles Victim Finances With AI | Attackers in Binance Breach Targeted Known Weakness, Missing Controls
+🔴 CRITICAL (6): Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection | PostgreSQL Patches 52 Flaws, Including 22-Year-Old Bug Enabling Authenticated RCE | Check Point warns of zero-day flaw exploited for root access
+🟠 HIGH (9): Cursor Says Stolen Fireworks AI Key Led to Trojanized Claude Code Extension Incident | Cursor confirms security breach led to malicious Claude Code extension | Check Point gateways hacked via PHP2Shell to deploy VMware ESXi wiper
 ⚠️ Review all articles below and patch accordingly.
 
 ---
@@ -41,34 +41,6 @@ The vulnerability, tr
 A type confusion flaw in PostgreSQL lets a database user who can create objects run code on the server. Updates released yesterday fix it, along with 51 other security flaws. Full protection from this flaw also requires rebuilding any C-language extensions installed on the server.
 
 The flaw, tracked
-
----
-
-### 🔴 SilentAir Hijacks Asian Telecom Networks to Intercept SMS 2FA Codes and Spy on Taiwanese Users
-
-- **Source**: The Hacker News
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Execution
-- **Keywords**: rce
-- **Link**: [https://thehackernews.com/2026/11/silentair-hijacks-asian-telecom.html](https://thehackernews.com/2026/11/silentair-hijacks-asian-telecom.html)
-
-A newly identified spying group used hacked equipment inside Asian mobile operators to intercept the calls and texts of selected people, mostly in Taiwan.
-
-Enea, a telecom and cybersecurity software company based in Stockholm, found the group's attack sources in at least six Asian countries and name
-
----
-
-### 🔴 Operation Endgame Takes Down Gootloader, CastleRAT and StealC Servers, Seizes 6.4M Stolen Logins
-
-- **Source**: The Hacker News
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Execution, Credential Access, Impact
-- **Keywords**: ransomware, malware
-- **Link**: [https://thehackernews.com/2026/11/operation-endgame-takes-down-gootloader.html](https://thehackernews.com/2026/11/operation-endgame-takes-down-gootloader.html)
-
-An international police operation took down servers behind Gootloader, CastleRAT and StealC this week. Criminals used the three malware tools to gain access to computers, steal passwords, and launch ransomware attacks.
-
-Police also seized about 6.4 million stolen logins belonging to more than 40,000
 
 ---
 
@@ -117,6 +89,32 @@ Microsoft did another four-digit patch drop today, releasing updates to fix almo
 - **Link**: [https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/](https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/)
 
 Expect to see quite a few websites serving "404" or "Page Not Found" errors today: Nearly 70 percent of websites need to update their core software to fix a pair of vulnerabilities that allow an attacker to seize full control over affected servers. Experts say there are working exploits for the flaw
+
+---
+
+### 🟠 Cursor Says Stolen Fireworks AI Key Led to Trojanized Claude Code Extension Incident
+
+- **Source**: The Hacker News
+- **Severity**: HIGH
+- **MITRE Tactics**: Execution
+- **Keywords**: breach, trojan
+- **Link**: [https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html](https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html)
+
+The compromise of Anthropic's official Claude Code extension on Cursor's extension marketplace was the result of the theft of an access key that was exposed in the wake of a breach targeting Fireworks AI.
+
+"An attacker obtained an access key we had issued to Fireworks," Cursor said in a Friday updat
+
+---
+
+### 🟠 Cursor confirms security breach led to malicious Claude Code extension
+
+- **Source**: BleepingComputer
+- **Severity**: HIGH
+- **MITRE Tactics**: Initial Access, Credential Access
+- **Keywords**: breach, credential
+- **Link**: [https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/](https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/)
+
+Cursor confirmed it suffered a security breach that let hackers distribute a malicious Claude Code extension through its marketplace after stealing credentials from AI infrastructure provider Fireworks AI. [...]
 
 ---
 
