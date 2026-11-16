@@ -1,7 +1,53 @@
 {
-  "date": "2026-11-15T14:35:35.361133",
-  "summary": "\ud83d\udcca 15 threats detected today.\n\ud83d\udd34 CRITICAL (6): Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection | PostgreSQL Patches 52 Flaws, Including 22-Year-Old Bug Enabling Authenticated RCE | Check Point warns of zero-day flaw exploited for root access\n\ud83d\udfe0 HIGH (9): Cursor Says Stolen Fireworks AI Key Led to Trojanized Claude Code Extension Incident | Cursor confirms security breach led to malicious Claude Code extension | Check Point gateways hacked via PHP2Shell to deploy VMware ESXi wiper\n\u26a0\ufe0f Review all articles below and patch accordingly.",
+  "date": "2026-11-16T16:50:54.195341",
+  "summary": "\ud83d\udcca 15 threats detected today.\n\ud83d\udd34 CRITICAL (4): Retadup Worm Resurfaces 7 Years After Takedown to Spread CoffeeLoader Malware | Amazon Uncovers AI Agent Campaign Targeting LiteLLM, Dify, and Other Apps for API Keys | Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection\n\ud83d\udfe0 HIGH (10): SANSAR Linux Cryptomining Malware Uses Modified NVIDIA Library to Hide GPU Activity | BO Team Exploits Log4Shell in VMware vCenter, Compromises Russian Firm's Code-Signing Server | Cursor Says Stolen Fireworks AI Key Led to Trojanized Claude Code Extension Incident\n\u26a0\ufe0f Review all articles below and patch accordingly.",
   "articles": [
+    {
+      "title": "Retadup Worm Resurfaces 7 Years After Takedown to Spread CoffeeLoader Malware",
+      "link": "https://thehackernews.com/2026/11/retadup-worm-resurfaces-7-years-after.html",
+      "source": "The Hacker News",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Execution"
+      ],
+      "keywords": [
+        "malware"
+      ]
+    },
+    {
+      "title": "SANSAR Linux Cryptomining Malware Uses Modified NVIDIA Library to Hide GPU Activity",
+      "link": "https://thehackernews.com/2026/11/sansar-linux-cryptomining-malware-uses.html",
+      "source": "The Hacker News",
+      "severity": "high",
+      "mitre_tactics": [
+        "Execution"
+      ],
+      "keywords": [
+        "malware"
+      ]
+    },
+    {
+      "title": "Amazon Uncovers AI Agent Campaign Targeting LiteLLM, Dify, and Other Apps for API Keys",
+      "link": "https://thehackernews.com/2026/11/amazon-uncovers-ai-agent-campaign.html",
+      "source": "The Hacker News",
+      "severity": "critical",
+      "mitre_tactics": [],
+      "keywords": [
+        "apt"
+      ]
+    },
+    {
+      "title": "BO Team Exploits Log4Shell in VMware vCenter, Compromises Russian Firm's Code-Signing Server",
+      "link": "https://thehackernews.com/2026/11/bo-team-exploits-log4shell-in-vmware.html",
+      "source": "The Hacker News",
+      "severity": "high",
+      "mitre_tactics": [
+        "Initial Access"
+      ],
+      "keywords": [
+        "exploit"
+      ]
+    },
     {
       "title": "Cursor Says Stolen Fireworks AI Key Led to Trojanized Claude Code Extension Incident",
       "link": "https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html",
@@ -32,56 +78,49 @@
       ]
     },
     {
-      "title": "PostgreSQL Patches 52 Flaws, Including 22-Year-Old Bug Enabling Authenticated RCE",
-      "link": "https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html",
-      "source": "The Hacker News",
+      "title": "Fandango says hackers stole payment card details from checkout pages",
+      "link": "https://www.bleepingcomputer.com/news/security/fandango-says-hackers-stole-payment-card-details-from-checkout-pages/",
+      "source": "BleepingComputer",
+      "severity": "high",
+      "mitre_tactics": [],
+      "keywords": [
+        "breach"
+      ]
+    },
+    {
+      "title": "7 Tips For Complying with CJIS Password and MFA Requirements",
+      "link": "https://www.bleepingcomputer.com/news/security/7-tips-for-complying-with-cjis-password-and-mfa-requirements/",
+      "source": "BleepingComputer",
       "severity": "critical",
       "mitre_tactics": [
-        "Execution"
+        "Execution",
+        "Credential Access"
       ],
       "keywords": [
-        "cve-",
         "rce"
       ]
     },
     {
-      "title": "Cursor confirms security breach led to malicious Claude Code extension",
-      "link": "https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/",
+      "title": "Google warns that fully-automated AI attacks are coming soon",
+      "link": "https://www.bleepingcomputer.com/news/security/google-warns-that-fully-automated-ai-attacks-are-coming-soon/",
       "source": "BleepingComputer",
       "severity": "high",
-      "mitre_tactics": [
-        "Initial Access",
-        "Credential Access"
-      ],
-      "keywords": [
-        "breach",
-        "credential"
-      ]
-    },
-    {
-      "title": "Check Point gateways hacked via PHP2Shell to deploy VMware ESXi wiper",
-      "link": "https://www.bleepingcomputer.com/news/security/check-point-gateways-hacked-via-php2shell-to-deploy-vmware-esxi-wiper/",
-      "source": "BleepingComputer",
-      "severity": "high",
-      "mitre_tactics": [
-        "Execution",
-        "Impact"
-      ],
-      "keywords": [
-        "malware"
-      ]
-    },
-    {
-      "title": "Check Point warns of zero-day flaw exploited for root access",
-      "link": "https://www.bleepingcomputer.com/news/security/check-point-patches-zero-day-that-lets-hackers-get-root-access/",
-      "source": "BleepingComputer",
-      "severity": "critical",
       "mitre_tactics": [
         "Initial Access"
       ],
       "keywords": [
-        "zero-day",
-        "exploit"
+        "exploit",
+        "vulnerability"
+      ]
+    },
+    {
+      "title": "New NoisyTCP vulnerability lets attackers crash Linux servers",
+      "link": "https://www.bleepingcomputer.com/news/linux/new-noisytcp-linux-kernel-flaw-lets-attackers-crash-servers/",
+      "source": "BleepingComputer",
+      "severity": "medium",
+      "mitre_tactics": [],
+      "keywords": [
+        "vulnerability"
       ]
     },
     {
@@ -139,52 +178,6 @@
       "mitre_tactics": [],
       "keywords": [
         "breach"
-      ]
-    },
-    {
-      "title": "Who Runs the Ransomware Group Qilin?",
-      "link": "https://krebsonsecurity.com/2026/11/who-runs-the-ransomware-group-qilin/",
-      "source": "Krebs on Security",
-      "severity": "critical",
-      "mitre_tactics": [
-        "Impact"
-      ],
-      "keywords": [
-        "ransomware"
-      ]
-    },
-    {
-      "title": "Microsoft Fixes Nearly 1,100 Security Vulnerabilities",
-      "link": "https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/",
-      "source": "Krebs on Security",
-      "severity": "critical",
-      "mitre_tactics": [],
-      "keywords": [
-        "zero-day"
-      ]
-    },
-    {
-      "title": "Tech Firms Dismantle Botnet That Turned 1.3M TV Boxes Into Proxies",
-      "link": "https://krebsonsecurity.com/2026/11/tech-firms-dismantle-botnet-that-turned-1-3m-tv-boxes-into-proxies/",
-      "source": "Krebs on Security",
-      "severity": "high",
-      "mitre_tactics": [],
-      "keywords": [
-        "botnet"
-      ]
-    },
-    {
-      "title": "Widespread PHP Flaw May Cause Many Site Outages Today",
-      "link": "https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/",
-      "source": "Krebs on Security",
-      "severity": "critical",
-      "mitre_tactics": [
-        "Initial Access",
-        "Execution"
-      ],
-      "keywords": [
-        "exploit",
-        "rce"
       ]
     }
   ]
