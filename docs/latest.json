@@ -1,44 +1,36 @@
 {
-  "date": "2026-11-16T16:50:54.195341",
-  "summary": "\ud83d\udcca 15 threats detected today.\n\ud83d\udd34 CRITICAL (4): Retadup Worm Resurfaces 7 Years After Takedown to Spread CoffeeLoader Malware | Amazon Uncovers AI Agent Campaign Targeting LiteLLM, Dify, and Other Apps for API Keys | Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection\n\ud83d\udfe0 HIGH (10): SANSAR Linux Cryptomining Malware Uses Modified NVIDIA Library to Hide GPU Activity | BO Team Exploits Log4Shell in VMware vCenter, Compromises Russian Firm's Code-Signing Server | Cursor Says Stolen Fireworks AI Key Led to Trojanized Claude Code Extension Incident\n\u26a0\ufe0f Review all articles below and patch accordingly.",
+  "date": "2026-11-17T16:45:46.244645",
+  "summary": "\ud83d\udcca 15 threats detected today.\n\ud83d\udd34 CRITICAL (7): Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap | N-able Patches 17 N-central Flaws as Attackers Exploit Earlier Bugs to Deploy Crypto Miners | Inside Modern Phishing Kits Built to Steal Microsoft 365 Sessions\n\ud83d\udfe0 HIGH (8): New GitDoor and GraphDoor Backdoors Turn GitHub and SharePoint Into Covert C2 Channels | Hijacked Optimizely Scripts Served Card Skimmer and iOS Exploit Kits to CNN, BBC and Zoom Visitors | Google Finds Hackers Using AI Agents to Build and Run Exploits From Software Patches\n\u26a0\ufe0f Review all articles below and patch accordingly.",
   "articles": [
     {
-      "title": "Retadup Worm Resurfaces 7 Years After Takedown to Spread CoffeeLoader Malware",
-      "link": "https://thehackernews.com/2026/11/retadup-worm-resurfaces-7-years-after.html",
+      "title": "Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap",
+      "link": "https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html",
       "source": "The Hacker News",
       "severity": "critical",
       "mitre_tactics": [
+        "Initial Access",
         "Execution"
       ],
       "keywords": [
-        "malware"
+        "rce",
+        "supply chain"
       ]
     },
     {
-      "title": "SANSAR Linux Cryptomining Malware Uses Modified NVIDIA Library to Hide GPU Activity",
-      "link": "https://thehackernews.com/2026/11/sansar-linux-cryptomining-malware-uses.html",
+      "title": "New GitDoor and GraphDoor Backdoors Turn GitHub and SharePoint Into Covert C2 Channels",
+      "link": "https://thehackernews.com/2026/11/new-gitdoor-and-graphdoor-backdoors.html",
       "source": "The Hacker News",
       "severity": "high",
       "mitre_tactics": [
-        "Execution"
+        "Persistence"
       ],
       "keywords": [
-        "malware"
+        "backdoor"
       ]
     },
     {
-      "title": "Amazon Uncovers AI Agent Campaign Targeting LiteLLM, Dify, and Other Apps for API Keys",
-      "link": "https://thehackernews.com/2026/11/amazon-uncovers-ai-agent-campaign.html",
-      "source": "The Hacker News",
-      "severity": "critical",
-      "mitre_tactics": [],
-      "keywords": [
-        "apt"
-      ]
-    },
-    {
-      "title": "BO Team Exploits Log4Shell in VMware vCenter, Compromises Russian Firm's Code-Signing Server",
-      "link": "https://thehackernews.com/2026/11/bo-team-exploits-log4shell-in-vmware.html",
+      "title": "Hijacked Optimizely Scripts Served Card Skimmer and iOS Exploit Kits to CNN, BBC and Zoom Visitors",
+      "link": "https://thehackernews.com/2026/11/hijacked-optimizely-scripts-served-card.html",
       "source": "The Hacker News",
       "severity": "high",
       "mitre_tactics": [
@@ -49,37 +41,57 @@
       ]
     },
     {
-      "title": "Cursor Says Stolen Fireworks AI Key Led to Trojanized Claude Code Extension Incident",
-      "link": "https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html",
-      "source": "The Hacker News",
-      "severity": "high",
-      "mitre_tactics": [
-        "Execution"
-      ],
-      "keywords": [
-        "breach",
-        "trojan"
-      ]
-    },
-    {
-      "title": "Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection",
-      "link": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html",
+      "title": "N-able Patches 17 N-central Flaws as Attackers Exploit Earlier Bugs to Deploy Crypto Miners",
+      "link": "https://thehackernews.com/2026/11/n-able-patches-17-n-central-flaws-as.html",
       "source": "The Hacker News",
       "severity": "critical",
       "mitre_tactics": [
-        "Initial Access",
-        "Execution"
+        "Initial Access"
       ],
       "keywords": [
-        "exploit",
-        "vulnerability",
-        "cve-",
-        "rce"
+        "exploit"
       ]
     },
     {
-      "title": "Fandango says hackers stole payment card details from checkout pages",
-      "link": "https://www.bleepingcomputer.com/news/security/fandango-says-hackers-stole-payment-card-details-from-checkout-pages/",
+      "title": "Google Finds Hackers Using AI Agents to Build and Run Exploits From Software Patches",
+      "link": "https://thehackernews.com/2026/11/google-finds-hackers-using-ai-agents-to.html",
+      "source": "The Hacker News",
+      "severity": "high",
+      "mitre_tactics": [
+        "Initial Access"
+      ],
+      "keywords": [
+        "exploit"
+      ]
+    },
+    {
+      "title": "Inside Modern Phishing Kits Built to Steal Microsoft 365 Sessions",
+      "link": "https://www.bleepingcomputer.com/news/security/inside-modern-phishing-kits-built-to-steal-microsoft-365-sessions/",
+      "source": "BleepingComputer",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Initial Access"
+      ],
+      "keywords": [
+        "phishing",
+        "apt"
+      ]
+    },
+    {
+      "title": "Court clears brothers of $25 million Ethereum crypto heist charges",
+      "link": "https://www.bleepingcomputer.com/news/security/court-clears-brothers-of-25-million-ethereum-crypto-heist-charges/",
+      "source": "BleepingComputer",
+      "severity": "high",
+      "mitre_tactics": [
+        "Initial Access"
+      ],
+      "keywords": [
+        "exploit"
+      ]
+    },
+    {
+      "title": "Uber notifies drivers of data breach affecting nearly 150,000 people",
+      "link": "https://www.bleepingcomputer.com/news/security/uber-notifies-drivers-of-data-breach-affecting-nearly-150-000-people/",
       "source": "BleepingComputer",
       "severity": "high",
       "mitre_tactics": [],
@@ -88,39 +100,67 @@
       ]
     },
     {
-      "title": "7 Tips For Complying with CJIS Password and MFA Requirements",
-      "link": "https://www.bleepingcomputer.com/news/security/7-tips-for-complying-with-cjis-password-and-mfa-requirements/",
+      "title": "Ransomware affiliate suspect extradited to US, faces 27 years in prison",
+      "link": "https://www.bleepingcomputer.com/news/security/alleged-inc-lynx-ransomware-affiliate-extradited-to-us-faces-27-years-in-prison/",
       "source": "BleepingComputer",
       "severity": "critical",
       "mitre_tactics": [
-        "Execution",
-        "Credential Access"
+        "Impact"
       ],
       "keywords": [
-        "rce"
+        "ransomware"
       ]
     },
     {
-      "title": "Google warns that fully-automated AI attacks are coming soon",
-      "link": "https://www.bleepingcomputer.com/news/security/google-warns-that-fully-automated-ai-attacks-are-coming-soon/",
+      "title": "Optimizely hack infected CNN, Fox News, BBC, Salesforce sites with malware",
+      "link": "https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-delivers-malware-to-cnn-fox-news-bbc-salesforce-sites/",
       "source": "BleepingComputer",
-      "severity": "high",
+      "severity": "critical",
       "mitre_tactics": [
-        "Initial Access"
+        "Initial Access",
+        "Execution"
       ],
       "keywords": [
         "exploit",
-        "vulnerability"
+        "malware",
+        "rce",
+        "supply chain"
       ]
     },
     {
-      "title": "New NoisyTCP vulnerability lets attackers crash Linux servers",
-      "link": "https://www.bleepingcomputer.com/news/linux/new-noisytcp-linux-kernel-flaw-lets-attackers-crash-servers/",
-      "source": "BleepingComputer",
-      "severity": "medium",
+      "title": "Ransomware Attacks Increase Behind AI, But Payments Decline",
+      "link": "https://www.darkreading.com/threat-intelligence/ransomware-attacks-increase-ai-payments-decline",
+      "source": "Dark Reading",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Initial Access",
+        "Impact"
+      ],
+      "keywords": [
+        "ransomware",
+        "phishing"
+      ]
+    },
+    {
+      "title": "'Sleeper Agent' Tactic Hides Payloads in Open-Weight AI Models",
+      "link": "https://www.darkreading.com/vulnerabilities-threats/sleeper-agent-tactic-payloads-open-weight-ai-models",
+      "source": "Dark Reading",
+      "severity": "high",
+      "mitre_tactics": [
+        "Execution"
+      ],
+      "keywords": [
+        "malware"
+      ]
+    },
+    {
+      "title": "China-Nexus Actors Breach 10 Organizations in AI-Driven Attacks",
+      "link": "https://www.darkreading.com/cyberattacks-data-breaches/china-nexus-actors-breach-10-organizations-ai-driven-attacks",
+      "source": "Dark Reading",
+      "severity": "high",
       "mitre_tactics": [],
       "keywords": [
-        "vulnerability"
+        "breach"
       ]
     },
     {
@@ -136,48 +176,15 @@
       ]
     },
     {
-      "title": "Attackers in Binance Breach Targeted Known Weakness, Missing Controls",
-      "link": "https://www.darkreading.com/cybersecurity-operations/attackers-binance-breach-targeted-weakness-missing-controls",
-      "source": "Dark Reading",
-      "severity": "high",
-      "mitre_tactics": [],
-      "keywords": [
-        "breach"
-      ]
-    },
-    {
-      "title": "Inside an AI Attack Against a US Retailer",
-      "link": "https://www.darkreading.com/cyberattacks-data-breaches/inside-ai-attack-us-retailer",
-      "source": "Dark Reading",
-      "severity": "high",
+      "title": "Who Runs the Ransomware Group Qilin?",
+      "link": "https://krebsonsecurity.com/2026/11/who-runs-the-ransomware-group-qilin/",
+      "source": "Krebs on Security",
+      "severity": "critical",
       "mitre_tactics": [
-        "Lateral Movement"
+        "Impact"
       ],
       "keywords": [
-        "breach",
-        "lateral movement"
-      ]
-    },
-    {
-      "title": "Chinese AI Project Scouts Spies in Taiwan Chip Industry",
-      "link": "https://www.darkreading.com/threat-intelligence/chinese-ai-project-scouts-spies-taiwan-chip-industry",
-      "source": "Dark Reading",
-      "severity": "high",
-      "mitre_tactics": [
-        "Initial Access"
-      ],
-      "keywords": [
-        "exploit"
-      ]
-    },
-    {
-      "title": "Japan Pushes Emergency Funding for Cybersecurity as AI-Assisted Breaches Rise",
-      "link": "https://www.darkreading.com/cybersecurity-operations/japan-emergency-funding-cybersecurity-ai-assisted-breaches",
-      "source": "Dark Reading",
-      "severity": "high",
-      "mitre_tactics": [],
-      "keywords": [
-        "breach"
+        "ransomware"
       ]
     }
   ]
