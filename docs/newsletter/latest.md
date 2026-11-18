@@ -1,4 +1,4 @@
-# 🛡️ Daily Threat Intel — November 17, 2026
+# 🛡️ Daily Threat Intel — November 18, 2026
 
 > **Automated daily briefing** covering the most critical cybersecurity 
 > threats from 9 leading security news sources.
@@ -8,140 +8,144 @@
 ## 📊 Analyst Briefing
 
 📊 15 threats detected today.
-🔴 CRITICAL (7): Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap | N-able Patches 17 N-central Flaws as Attackers Exploit Earlier Bugs to Deploy Crypto Miners | Inside Modern Phishing Kits Built to Steal Microsoft 365 Sessions
-🟠 HIGH (8): New GitDoor and GraphDoor Backdoors Turn GitHub and SharePoint Into Covert C2 Channels | Hijacked Optimizely Scripts Served Card Skimmer and iOS Exploit Kits to CNN, BBC and Zoom Visitors | Google Finds Hackers Using AI Agents to Build and Run Exploits From Software Patches
+🔴 CRITICAL (8): New EggStreme Malware Variant Goes Silent to Evade Security Tools in Government Attacks | New Attack Bypasses TPM Lockout to Crack Windows Hello and BitLocker PINs in Days, Not Years | Java4Shell Flaw (CVE-2026-114938) Enables Pre-Auth RCE in Jira, Jenkins, Keycloak and More
+🟠 HIGH (5): AI Pentesting Checklist for Web Apps: 15 Questions to Ask Before Choosing a Vendor | Quality Isn’t The Main Worry About AI Pentesting — Data Privacy and Production Safety Are | Cloud keys leaked in Docker Hub images are stolen within seconds
 ⚠️ Review all articles below and patch accordingly.
 
 ---
 
 ## 🔍 Top Threats
 
-### 🔴 Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap
+### 🔴 New EggStreme Malware Variant Goes Silent to Evade Security Tools in Government Attacks
+
+- **Source**: The Hacker News
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Execution, Credential Access
+- **Keywords**: malware, apt
+- **Link**: [https://thehackernews.com/2026/11/eggstreme-hackers-rebuild-malware-with.html](https://thehackernews.com/2026/11/eggstreme-hackers-rebuild-malware-with.html)
+
+The suspected Chinese advanced persistent threat (APT) group behind the sophisticated EggStreme malware has rebuilt its toolkit as it continues to target government organizations in the Philippines.
+
+"When attackers are exposed, the cheap response is to rotate," Bitdefender said in a technical repor
+
+---
+
+### 🔴 New Attack Bypasses TPM Lockout to Crack Windows Hello and BitLocker PINs in Days, Not Years
+
+- **Source**: The Hacker News
+- **Severity**: CRITICAL
+- **MITRE Tactics**: —
+- **Keywords**: apt
+- **Link**: [https://thehackernews.com/2026/11/flash-chip-attack-bypasses-tpm-lockout.html](https://thehackernews.com/2026/11/flash-chip-attack-bypasses-tpm-lockout.html)
+
+On AMD-based PCs and some Intel PCs, the TPM lockout for Windows Hello and BitLocker PINs can be reset by someone who opens the PC's case, researchers at Technische Universität Berlin say.
+
+That leaves short PINs open to guessing. In lab tests, the researchers found a four-digit Hello PIN on an AMD 
+
+---
+
+### 🔴 Java4Shell Flaw (CVE-2026-114938) Enables Pre-Auth RCE in Jira, Jenkins, Keycloak and More
+
+- **Source**: The Hacker News
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Execution
+- **Keywords**: cve-, rce
+- **Link**: [https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html](https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html)
+
+A Java flaw called Java4Shell can let attackers without an account run their own code on Jira, Jenkins, Keycloak, and three other widely used applications, says Calif, the security research firm that disclosed it this week.
+
+The flaw is present in Java 17.0.6 and later, and the vulnerable code runs 
+
+---
+
+### 🔴 Hackers Exploiting Critical Puppet RCE Flaw Affecting Enterprise Management Servers
 
 - **Source**: The Hacker News
 - **Severity**: CRITICAL
 - **MITRE Tactics**: Initial Access, Execution
-- **Keywords**: rce, supply chain
-- **Link**: [https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html](https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html)
+- **Keywords**: exploit, vulnerability, cve-, rce
+- **Link**: [https://thehackernews.com/2026/11/hackers-exploiting-critical-puppet-rce.html](https://thehackernews.com/2026/11/hackers-exploiting-critical-puppet-rce.html)
 
-Pinning GitHub Actions to an exact version of their code, known as SHA pinning, has become the go-to defense against software supply chain attacks. Attackers have already found a way around it.
-
-In March 2026, the hackers who hijacked Trivy, a widely used open-source security scanner, planted malici
+The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added a critical security flaw impacting Perforce Puppet, an enterprise infrastructure-as-code (IaC) and configuration management platform, to its Known Exploited Vulnerabilities (KEV) catalog, citing reports of active explo
 
 ---
 
-### 🔴 N-able Patches 17 N-central Flaws as Attackers Exploit Earlier Bugs to Deploy Crypto Miners
+### 🔴 CISA Urges Immediate Patching of Java4Shell Flaw That Could Allow Remote Code Execution
 
 - **Source**: The Hacker News
 - **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access
-- **Keywords**: exploit
-- **Link**: [https://thehackernews.com/2026/11/n-able-patches-17-n-central-flaws-as.html](https://thehackernews.com/2026/11/n-able-patches-17-n-central-flaws-as.html)
+- **MITRE Tactics**: Execution
+- **Keywords**: cve-, remote code execution
+- **Link**: [https://thehackernews.com/2026/11/cisa-urges-immediate-patching-of.html](https://thehackernews.com/2026/11/cisa-urges-immediate-patching-of.html)
 
-N-able has released a new security update to address additional critical security flaws impacting N-central.
+The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has urged organizations to immediately patch a newly disclosed critical security flaw impacting Oracle Java.
 
-Describing N-central 2026.4 Hotfix 3 as a critical security update, the company said it includes a number of security patches and fixes that enhance the security of the Remote Monitoring and
-
----
-
-### 🔴 Inside Modern Phishing Kits Built to Steal Microsoft 365 Sessions
-
-- **Source**: BleepingComputer
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access
-- **Keywords**: phishing, apt
-- **Link**: [https://www.bleepingcomputer.com/news/security/inside-modern-phishing-kits-built-to-steal-microsoft-365-sessions/](https://www.bleepingcomputer.com/news/security/inside-modern-phishing-kits-built-to-steal-microsoft-365-sessions/)
-
-Huntress researchers break down how EvilTokens, Knight Office, and Kali365 capture and replay M365 tokens, plus how defenders can detect and contain them.  [...]
+The flaw, tracked as CVE-2026-114938 (CVSS score: 8.1), refers to a case of out-of-bounds write that can lead to denial-of-se
 
 ---
 
-### 🔴 Ransomware affiliate suspect extradited to US, faces 27 years in prison
-
-- **Source**: BleepingComputer
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Impact
-- **Keywords**: ransomware
-- **Link**: [https://www.bleepingcomputer.com/news/security/alleged-inc-lynx-ransomware-affiliate-extradited-to-us-faces-27-years-in-prison/](https://www.bleepingcomputer.com/news/security/alleged-inc-lynx-ransomware-affiliate-extradited-to-us-faces-27-years-in-prison/)
-
-A Kazakh national has been extradited from Italy to face charges alleging he targeted US schools, hospitals, and healthcare entities in ransomware attacks. [...]
-
----
-
-### 🔴 Optimizely hack infected CNN, Fox News, BBC, Salesforce sites with malware
+### 🔴 Apache warns of Roller RCE vulnerability exploited in attacks
 
 - **Source**: BleepingComputer
 - **Severity**: CRITICAL
 - **MITRE Tactics**: Initial Access, Execution
-- **Keywords**: exploit, malware, rce, supply chain
-- **Link**: [https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-delivers-malware-to-cnn-fox-news-bbc-salesforce-sites/](https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-delivers-malware-to-cnn-fox-news-bbc-salesforce-sites/)
+- **Keywords**: exploit, vulnerability, rce
+- **Link**: [https://www.bleepingcomputer.com/news/security/apache-warns-of-roller-rce-vulnerability-exploited-in-attacks/](https://www.bleepingcomputer.com/news/security/apache-warns-of-roller-rce-vulnerability-exploited-in-attacks/)
 
-A suspected supply chain attack targeting Optimizely has led to malicious JavaScript being loaded on numerous popular websites, including Zoom, CNN, Fox News, BBC, Salesforce, and GitLab, exposing visitors to scripts designed to steal cryptocurrency and payment information and exploit vulnerabilitie
+Apache has released security updates to address a critical Roller flaw that threat actors are exploiting to gain code execution on vulnerable servers. [...]
 
 ---
 
-### 🔴 Ransomware Attacks Increase Behind AI, But Payments Decline
+### 🔴 Critical Java4Shell flaw allows RCE attacks on major Java applications
+
+- **Source**: BleepingComputer
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Execution
+- **Keywords**: vulnerability, rce
+- **Link**: [https://www.bleepingcomputer.com/news/security/critical-java4shell-flaw-allows-rce-attacks-on-major-java-applications/](https://www.bleepingcomputer.com/news/security/critical-java4shell-flaw-allows-rce-attacks-on-major-java-applications/)
+
+A critical vulnerability dubbed Java4Shell in OpenJDK, the open-source implementation of Java, can allow unauthenticated attackers to remotely execute code on popular enterprise applications, including Jenkins, Atlassian Jira, Confluence, and Keycloak. [...]
+
+---
+
+### 🔴 Major Brazilian Signature Apps Enable RCE &amp; Fraud
 
 - **Source**: Dark Reading
 - **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access, Impact
-- **Keywords**: ransomware, phishing
-- **Link**: [https://www.darkreading.com/threat-intelligence/ransomware-attacks-increase-ai-payments-decline](https://www.darkreading.com/threat-intelligence/ransomware-attacks-increase-ai-payments-decline)
+- **MITRE Tactics**: Execution
+- **Keywords**: rce
+- **Link**: [https://www.darkreading.com/vulnerabilities-threats/major-brazilian-signature-app-rce-fraud](https://www.darkreading.com/vulnerabilities-threats/major-brazilian-signature-app-rce-fraud)
 
-Large language models and other AI systems allow a growing number of ransomware groups to create convincing phishing emails and identify sensitive data quickly.
-
----
-
-### 🔴 Who Runs the Ransomware Group Qilin?
-
-- **Source**: Krebs on Security
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Impact
-- **Keywords**: ransomware
-- **Link**: [https://krebsonsecurity.com/2026/11/who-runs-the-ransomware-group-qilin/](https://krebsonsecurity.com/2026/11/who-runs-the-ransomware-group-qilin/)
-
-The cybercrime group Qilin has emerged as the world's most active ransomware affiliate program, claiming at least 365 victim organizations in the past three months alone. But even top Russian hackers make operational security mistakes, and the administrator of Qilin has made a few key missteps over 
+Government-sanctioned authentication middleware is used for exceptionally important legal documents, yet it's often rife with RCE bugs.
 
 ---
 
-### 🟠 New GitDoor and GraphDoor Backdoors Turn GitHub and SharePoint Into Covert C2 Channels
-
-- **Source**: The Hacker News
-- **Severity**: HIGH
-- **MITRE Tactics**: Persistence
-- **Keywords**: backdoor
-- **Link**: [https://thehackernews.com/2026/11/new-gitdoor-and-graphdoor-backdoors.html](https://thehackernews.com/2026/11/new-gitdoor-and-graphdoor-backdoors.html)
-
-Government sectors in Asia and Africa have been targeted by an active cyber intrusion campaign that delivers to previously undocumented backdoors that leverage legitimate services like Microsoft SharePoint and GitHub for command‑and‑control (C2).
-
-The activity has been codenamed Operation ShadowClou
-
----
-
-### 🟠 Hijacked Optimizely Scripts Served Card Skimmer and iOS Exploit Kits to CNN, BBC and Zoom Visitors
+### 🟠 AI Pentesting Checklist for Web Apps: 15 Questions to Ask Before Choosing a Vendor
 
 - **Source**: The Hacker News
 - **Severity**: HIGH
 - **MITRE Tactics**: Initial Access
 - **Keywords**: exploit
-- **Link**: [https://thehackernews.com/2026/11/hijacked-optimizely-scripts-served-card.html](https://thehackernews.com/2026/11/hijacked-optimizely-scripts-served-card.html)
+- **Link**: [https://thehackernews.com/2026/11/ai-pentesting-checklist-for-web-apps-15.html](https://thehackernews.com/2026/11/ai-pentesting-checklist-for-web-apps-15.html)
 
-An attacker exploited a flaw in Optimizely Web Experimentation to plant malicious code in some of the scripts that customers' websites load from the service, Optimizely said early today.
+TL;DR
 
-Visitors to sites run by at least 178 organizations, including CNN, the BBC and Zoom, received the code yesterda
+
+  Attackers move first. On average, exploitation now starts before a patch exists (Mandiant M-Trends 2026). In 1H 2026, 23% of vulnerabilities VulnCheck added to its exploited list were hit on or before disclosure day.
+  AI pentesting vendors aren't interchangeable. Most look convincing in a
 
 ---
 
-### 🟠 Google Finds Hackers Using AI Agents to Build and Run Exploits From Software Patches
+### 🟠 Quality Isn’t The Main Worry About AI Pentesting — Data Privacy and Production Safety Are
 
 - **Source**: The Hacker News
 - **Severity**: HIGH
 - **MITRE Tactics**: Initial Access
 - **Keywords**: exploit
-- **Link**: [https://thehackernews.com/2026/11/google-finds-hackers-using-ai-agents-to.html](https://thehackernews.com/2026/11/google-finds-hackers-using-ai-agents-to.html)
+- **Link**: [https://thehackernews.com/2026/11/quality-isnt-main-worry-about-ai.html](https://thehackernews.com/2026/11/quality-isnt-main-worry-about-ai.html)
 
-Google on Monday revealed that adversarial use of artificial intelligence (AI) by threat actors has gone beyond manual prompting to deploying autonomous multi-agent offensive frameworks like ARTEX, CAIRN, CyberStrikeAI, and PentAGI to execute multi-stage intrusions at greater operational velocity.
+AI is speeding up how software is built, which means more code, more changes, and more chances for vulnerabilities to reach production. It's speeding up how attackers find and exploit them too, with time-to-exploit now down to a single day. Security testing has to keep up with both.
 
-
+AI pentesting h
 
 ---
