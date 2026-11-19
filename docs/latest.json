@@ -1,71 +1,10 @@
 {
-  "date": "2026-11-18T16:16:43.344360",
-  "summary": "\ud83d\udcca 15 threats detected today.\n\ud83d\udd34 CRITICAL (8): New EggStreme Malware Variant Goes Silent to Evade Security Tools in Government Attacks | New Attack Bypasses TPM Lockout to Crack Windows Hello and BitLocker PINs in Days, Not Years | Java4Shell Flaw (CVE-2026-114938) Enables Pre-Auth RCE in Jira, Jenkins, Keycloak and More\n\ud83d\udfe0 HIGH (5): AI Pentesting Checklist for Web Apps: 15 Questions to Ask Before Choosing a Vendor | Quality Isn\u2019t The Main Worry About AI Pentesting \u2014 Data Privacy and Production Safety Are | Cloud keys leaked in Docker Hub images are stolen within seconds\n\u26a0\ufe0f Review all articles below and patch accordingly.",
+  "date": "2026-11-19T16:25:20.031499",
+  "summary": "\ud83d\udcca 15 threats detected today.\n\ud83d\udd34 CRITICAL (12): PHP Fixes 7 Critical Flaws, Including Bugs That Could Allow Remote Code Execution | Drupal Patches Critical Installer Flaw That Could Give Unauthenticated Attackers Control of Sites | Ruby Releases Fixes for 7 Regex and String Flaws, Warns 5 Have Proof-of-Concept RCE\n\ud83d\udfe0 HIGH (2): Everything Is a Web Application, Including Your Firewall | Hackers Breach N-able Cloud Server, Disrupting Email Security Management Across 3 Regions\n\u26a0\ufe0f Review all articles below and patch accordingly.",
   "articles": [
     {
-      "title": "New EggStreme Malware Variant Goes Silent to Evade Security Tools in Government Attacks",
-      "link": "https://thehackernews.com/2026/11/eggstreme-hackers-rebuild-malware-with.html",
-      "source": "The Hacker News",
-      "severity": "critical",
-      "mitre_tactics": [
-        "Execution",
-        "Credential Access"
-      ],
-      "keywords": [
-        "malware",
-        "apt"
-      ]
-    },
-    {
-      "title": "New Attack Bypasses TPM Lockout to Crack Windows Hello and BitLocker PINs in Days, Not Years",
-      "link": "https://thehackernews.com/2026/11/flash-chip-attack-bypasses-tpm-lockout.html",
-      "source": "The Hacker News",
-      "severity": "critical",
-      "mitre_tactics": [],
-      "keywords": [
-        "apt"
-      ]
-    },
-    {
-      "title": "AI Pentesting Checklist for Web Apps: 15 Questions to Ask Before Choosing a Vendor",
-      "link": "https://thehackernews.com/2026/11/ai-pentesting-checklist-for-web-apps-15.html",
-      "source": "The Hacker News",
-      "severity": "high",
-      "mitre_tactics": [
-        "Initial Access"
-      ],
-      "keywords": [
-        "exploit"
-      ]
-    },
-    {
-      "title": "Java4Shell Flaw (CVE-2026-114938) Enables Pre-Auth RCE in Jira, Jenkins, Keycloak and More",
-      "link": "https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html",
-      "source": "The Hacker News",
-      "severity": "critical",
-      "mitre_tactics": [
-        "Execution"
-      ],
-      "keywords": [
-        "cve-",
-        "rce"
-      ]
-    },
-    {
-      "title": "Quality Isn\u2019t The Main Worry About AI Pentesting \u2014 Data Privacy and Production Safety Are",
-      "link": "https://thehackernews.com/2026/11/quality-isnt-main-worry-about-ai.html",
-      "source": "The Hacker News",
-      "severity": "high",
-      "mitre_tactics": [
-        "Initial Access"
-      ],
-      "keywords": [
-        "exploit"
-      ]
-    },
-    {
-      "title": "Hackers Exploiting Critical Puppet RCE Flaw Affecting Enterprise Management Servers",
-      "link": "https://thehackernews.com/2026/11/hackers-exploiting-critical-puppet-rce.html",
+      "title": "PHP Fixes 7 Critical Flaws, Including Bugs That Could Allow Remote Code Execution",
+      "link": "https://thehackernews.com/2026/11/php-fixes-7-critical-flaws-including.html",
       "source": "The Hacker News",
       "severity": "critical",
       "mitre_tactics": [
@@ -75,86 +14,185 @@
       "keywords": [
         "exploit",
         "vulnerability",
-        "cve-",
-        "rce"
-      ]
-    },
-    {
-      "title": "CISA Urges Immediate Patching of Java4Shell Flaw That Could Allow Remote Code Execution",
-      "link": "https://thehackernews.com/2026/11/cisa-urges-immediate-patching-of.html",
-      "source": "The Hacker News",
-      "severity": "critical",
-      "mitre_tactics": [
-        "Execution"
-      ],
-      "keywords": [
         "cve-",
         "remote code execution"
       ]
     },
     {
-      "title": "Attackers Compromise Microsoft's Agent Framework PyPI Package to Steal Cloud Credentials",
-      "link": "https://thehackernews.com/2026/11/attackers-compromise-microsofts-agent.html",
+      "title": "Drupal Patches Critical Installer Flaw That Could Give Unauthenticated Attackers Control of Sites",
+      "link": "https://thehackernews.com/2026/11/drupal-patches-critical-installer-flaw.html",
       "source": "The Hacker News",
-      "severity": "medium",
+      "severity": "critical",
       "mitre_tactics": [
         "Initial Access",
+        "Execution",
         "Credential Access"
       ],
       "keywords": [
+        "vulnerability",
+        "remote code execution",
         "credential"
       ]
     },
     {
-      "title": "Apache warns of Roller RCE vulnerability exploited in attacks",
-      "link": "https://www.bleepingcomputer.com/news/security/apache-warns-of-roller-rce-vulnerability-exploited-in-attacks/",
-      "source": "BleepingComputer",
-      "severity": "critical",
-      "mitre_tactics": [
-        "Initial Access",
-        "Execution"
-      ],
-      "keywords": [
-        "exploit",
-        "vulnerability",
-        "rce"
-      ]
-    },
-    {
-      "title": "Critical Java4Shell flaw allows RCE attacks on major Java applications",
-      "link": "https://www.bleepingcomputer.com/news/security/critical-java4shell-flaw-allows-rce-attacks-on-major-java-applications/",
-      "source": "BleepingComputer",
-      "severity": "critical",
-      "mitre_tactics": [
-        "Execution"
-      ],
-      "keywords": [
-        "vulnerability",
-        "rce"
-      ]
-    },
-    {
-      "title": "Cloud keys leaked in Docker Hub images are stolen within seconds",
-      "link": "https://www.bleepingcomputer.com/news/security/cloud-keys-leaked-in-docker-hub-images-are-stolen-within-seconds/",
-      "source": "BleepingComputer",
+      "title": "Everything Is a Web Application, Including Your Firewall",
+      "link": "https://thehackernews.com/2026/11/everything-is-web-application-including.html",
+      "source": "The Hacker News",
       "severity": "high",
       "mitre_tactics": [
-        "Initial Access",
-        "Credential Access"
+        "Initial Access"
       ],
       "keywords": [
         "exploit",
-        "credential"
+        "cve-"
       ]
     },
     {
-      "title": "Japan takes Fugaku supercomputer offlline after cyberattack",
-      "link": "https://www.bleepingcomputer.com/news/security/japan-takes-fugaku-supercomputer-offlline-after-cyberattack/",
-      "source": "BleepingComputer",
+      "title": "Hackers Breach N-able Cloud Server, Disrupting Email Security Management Across 3 Regions",
+      "link": "https://thehackernews.com/2026/11/n-able-confirms-hackers-accessed-cloud.html",
+      "source": "The Hacker News",
       "severity": "high",
       "mitre_tactics": [],
       "keywords": [
         "breach"
+      ]
+    },
+    {
+      "title": "Ruby Releases Fixes for 7 Regex and String Flaws, Warns 5 Have Proof-of-Concept RCE",
+      "link": "https://thehackernews.com/2026/11/ruby-releases-fixes-for-7-regex-and.html",
+      "source": "The Hacker News",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Initial Access",
+        "Execution"
+      ],
+      "keywords": [
+        "exploit",
+        "remote code execution",
+        "rce"
+      ]
+    },
+    {
+      "title": "Researcher Demonstrates Database RCE Exploits Affecting PostgreSQL, MySQL and Oracle",
+      "link": "https://thehackernews.com/2026/11/researcher-demonstrates-database-rce.html",
+      "source": "The Hacker News",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Initial Access",
+        "Execution"
+      ],
+      "keywords": [
+        "exploit",
+        "rce"
+      ]
+    },
+    {
+      "title": "CISA Warns of 4 Exploited Flaws Linked to Ransomware, Cryptomining, and LLMjacking Attacks",
+      "link": "https://thehackernews.com/2026/11/cisa-warns-of-4-exploited-flaws-linked.html",
+      "source": "The Hacker News",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Initial Access",
+        "Impact"
+      ],
+      "keywords": [
+        "ransomware",
+        "exploit",
+        "apt"
+      ]
+    },
+    {
+      "title": "Five warning signs of ransomware breach before encryption or data theft",
+      "link": "https://www.bleepingcomputer.com/news/security/five-warning-signs-of-ransomware-breach-before-encryption-or-data-theft/",
+      "source": "BleepingComputer",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Initial Access",
+        "Credential Access",
+        "Lateral Movement",
+        "Collection",
+        "Impact"
+      ],
+      "keywords": [
+        "ransomware",
+        "breach",
+        "lateral movement",
+        "credential"
+      ]
+    },
+    {
+      "title": "Drupal patches critical RCE flaw, warns exploits may surface quickly",
+      "link": "https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaw-warns-exploits-may-surface-quickly/",
+      "source": "BleepingComputer",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Initial Access",
+        "Execution"
+      ],
+      "keywords": [
+        "exploit",
+        "vulnerability",
+        "remote code execution",
+        "rce"
+      ]
+    },
+    {
+      "title": "NVIDIA investigating Gentlemen ransomware breach claims",
+      "link": "https://www.bleepingcomputer.com/news/security/nvidia-investigating-gentlemen-ransomware-breach-claims/",
+      "source": "BleepingComputer",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Impact"
+      ],
+      "keywords": [
+        "ransomware",
+        "breach",
+        "data leak"
+      ]
+    },
+    {
+      "title": "Ukraine, FBI arrest ransomware gang members tied to $40M in ransoms",
+      "link": "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/",
+      "source": "BleepingComputer",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Impact"
+      ],
+      "keywords": [
+        "ransomware"
+      ]
+    },
+    {
+      "title": "Russia's Cold Relic APT Turns One Cloud Breach Into Another",
+      "link": "https://www.darkreading.com/cyberattacks-data-breaches/cold-relic-turns-one-cloud-breach-into-another",
+      "source": "Dark Reading",
+      "severity": "critical",
+      "mitre_tactics": [],
+      "keywords": [
+        "breach",
+        "apt"
+      ]
+    },
+    {
+      "title": "AttackIQ Research Reveals How Iranian Cyber Groups Hand Off Network Access to Enable Destructive Attacks",
+      "link": "https://www.darkreading.com/threat-intelligence/attackiq-research-reveals-iranian-cyber-groups",
+      "source": "Dark Reading",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Impact"
+      ],
+      "keywords": [
+        "ransomware"
+      ]
+    },
+    {
+      "title": "Java4Shell Flaw Threatens Global Enterprises, Java Application Ecosystem",
+      "link": "https://www.darkreading.com/vulnerabilities-threats/java4shell-flaw-threatens-global-java-application-ecosystem",
+      "source": "Dark Reading",
+      "severity": "medium",
+      "mitre_tactics": [],
+      "keywords": [
+        "vulnerability"
       ]
     },
     {
@@ -167,30 +205,6 @@
       ],
       "keywords": [
         "rce"
-      ]
-    },
-    {
-      "title": "Optimizely Malware Attacks Highlight Third-Party Vendor Risks",
-      "link": "https://www.darkreading.com/cyber-risk/optimizely-malware-attacks-third-party-vendor-risks",
-      "source": "Dark Reading",
-      "severity": "high",
-      "mitre_tactics": [
-        "Execution"
-      ],
-      "keywords": [
-        "malware"
-      ]
-    },
-    {
-      "title": "'TheMailer' Phishing Kit Puts AI in the Driver's Seat",
-      "link": "https://www.darkreading.com/perimeter/themailer-phishing-kit-ai-drivers-seat",
-      "source": "Dark Reading",
-      "severity": "medium",
-      "mitre_tactics": [
-        "Initial Access"
-      ],
-      "keywords": [
-        "phishing"
       ]
     }
   ]

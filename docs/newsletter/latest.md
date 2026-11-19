@@ -1,4 +1,4 @@
-# 🛡️ Daily Threat Intel — November 18, 2026
+# 🛡️ Daily Threat Intel — November 19, 2026
 
 > **Automated daily briefing** covering the most critical cybersecurity 
 > threats from 9 leading security news sources.
@@ -8,144 +8,141 @@
 ## 📊 Analyst Briefing
 
 📊 15 threats detected today.
-🔴 CRITICAL (8): New EggStreme Malware Variant Goes Silent to Evade Security Tools in Government Attacks | New Attack Bypasses TPM Lockout to Crack Windows Hello and BitLocker PINs in Days, Not Years | Java4Shell Flaw (CVE-2026-114938) Enables Pre-Auth RCE in Jira, Jenkins, Keycloak and More
-🟠 HIGH (5): AI Pentesting Checklist for Web Apps: 15 Questions to Ask Before Choosing a Vendor | Quality Isn’t The Main Worry About AI Pentesting — Data Privacy and Production Safety Are | Cloud keys leaked in Docker Hub images are stolen within seconds
+🔴 CRITICAL (12): PHP Fixes 7 Critical Flaws, Including Bugs That Could Allow Remote Code Execution | Drupal Patches Critical Installer Flaw That Could Give Unauthenticated Attackers Control of Sites | Ruby Releases Fixes for 7 Regex and String Flaws, Warns 5 Have Proof-of-Concept RCE
+🟠 HIGH (2): Everything Is a Web Application, Including Your Firewall | Hackers Breach N-able Cloud Server, Disrupting Email Security Management Across 3 Regions
 ⚠️ Review all articles below and patch accordingly.
 
 ---
 
 ## 🔍 Top Threats
 
-### 🔴 New EggStreme Malware Variant Goes Silent to Evade Security Tools in Government Attacks
-
-- **Source**: The Hacker News
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Execution, Credential Access
-- **Keywords**: malware, apt
-- **Link**: [https://thehackernews.com/2026/11/eggstreme-hackers-rebuild-malware-with.html](https://thehackernews.com/2026/11/eggstreme-hackers-rebuild-malware-with.html)
-
-The suspected Chinese advanced persistent threat (APT) group behind the sophisticated EggStreme malware has rebuilt its toolkit as it continues to target government organizations in the Philippines.
-
-"When attackers are exposed, the cheap response is to rotate," Bitdefender said in a technical repor
-
----
-
-### 🔴 New Attack Bypasses TPM Lockout to Crack Windows Hello and BitLocker PINs in Days, Not Years
-
-- **Source**: The Hacker News
-- **Severity**: CRITICAL
-- **MITRE Tactics**: —
-- **Keywords**: apt
-- **Link**: [https://thehackernews.com/2026/11/flash-chip-attack-bypasses-tpm-lockout.html](https://thehackernews.com/2026/11/flash-chip-attack-bypasses-tpm-lockout.html)
-
-On AMD-based PCs and some Intel PCs, the TPM lockout for Windows Hello and BitLocker PINs can be reset by someone who opens the PC's case, researchers at Technische Universität Berlin say.
-
-That leaves short PINs open to guessing. In lab tests, the researchers found a four-digit Hello PIN on an AMD 
-
----
-
-### 🔴 Java4Shell Flaw (CVE-2026-114938) Enables Pre-Auth RCE in Jira, Jenkins, Keycloak and More
-
-- **Source**: The Hacker News
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Execution
-- **Keywords**: cve-, rce
-- **Link**: [https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html](https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html)
-
-A Java flaw called Java4Shell can let attackers without an account run their own code on Jira, Jenkins, Keycloak, and three other widely used applications, says Calif, the security research firm that disclosed it this week.
-
-The flaw is present in Java 17.0.6 and later, and the vulnerable code runs 
-
----
-
-### 🔴 Hackers Exploiting Critical Puppet RCE Flaw Affecting Enterprise Management Servers
+### 🔴 PHP Fixes 7 Critical Flaws, Including Bugs That Could Allow Remote Code Execution
 
 - **Source**: The Hacker News
 - **Severity**: CRITICAL
 - **MITRE Tactics**: Initial Access, Execution
-- **Keywords**: exploit, vulnerability, cve-, rce
-- **Link**: [https://thehackernews.com/2026/11/hackers-exploiting-critical-puppet-rce.html](https://thehackernews.com/2026/11/hackers-exploiting-critical-puppet-rce.html)
+- **Keywords**: exploit, vulnerability, cve-, remote code execution
+- **Link**: [https://thehackernews.com/2026/11/php-fixes-7-critical-flaws-including.html](https://thehackernews.com/2026/11/php-fixes-7-critical-flaws-including.html)
 
-The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added a critical security flaw impacting Perforce Puppet, an enterprise infrastructure-as-code (IaC) and configuration management platform, to its Known Exploited Vulnerabilities (KEV) catalog, citing reports of active explo
+The PHP Foundation has released security updates to address multiple critical security flaws that could be exploited to achieve remote code execution on affected deployments, including CVE-2026-115560.
+
+The list of vulnerabilities is as follows -
+
+
+  CVE-2026-115560 (CVSS score: 9.2) - An improper i
 
 ---
 
-### 🔴 CISA Urges Immediate Patching of Java4Shell Flaw That Could Allow Remote Code Execution
+### 🔴 Drupal Patches Critical Installer Flaw That Could Give Unauthenticated Attackers Control of Sites
 
 - **Source**: The Hacker News
 - **Severity**: CRITICAL
-- **MITRE Tactics**: Execution
-- **Keywords**: cve-, remote code execution
-- **Link**: [https://thehackernews.com/2026/11/cisa-urges-immediate-patching-of.html](https://thehackernews.com/2026/11/cisa-urges-immediate-patching-of.html)
+- **MITRE Tactics**: Initial Access, Execution, Credential Access
+- **Keywords**: vulnerability, remote code execution, credential
+- **Link**: [https://thehackernews.com/2026/11/drupal-patches-critical-installer-flaw.html](https://thehackernews.com/2026/11/drupal-patches-critical-installer-flaw.html)
 
-The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has urged organizations to immediately patch a newly disclosed critical security flaw impacting Oracle Java.
+Under specific conditions, a critical vulnerability in Drupal core can allow an attacker without login credentials to use the built-in installer to attempt to reinstall a site.
 
-The flaw, tracked as CVE-2026-114938 (CVSS score: 8.1), refers to a case of out-of-bounds write that can lead to denial-of-se
+That can lead to a site takeover or remote code execution, and the project rates the vulnerable configurations as uncommon
 
 ---
 
-### 🔴 Apache warns of Roller RCE vulnerability exploited in attacks
+### 🔴 Ruby Releases Fixes for 7 Regex and String Flaws, Warns 5 Have Proof-of-Concept RCE
+
+- **Source**: The Hacker News
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access, Execution
+- **Keywords**: exploit, remote code execution, rce
+- **Link**: [https://thehackernews.com/2026/11/ruby-releases-fixes-for-7-regex-and.html](https://thehackernews.com/2026/11/ruby-releases-fixes-for-7-regex-and.html)
+
+Ruby contains seven memory-safety flaws in its regular expression engine and its string case-conversion code. For five of them, its maintainers say, proof-of-concept exploits, or PoCs, have shown that crafted input can run code on the machine.
+
+"We are aware of PoCs that prove some of them can be us
+
+---
+
+### 🔴 Researcher Demonstrates Database RCE Exploits Affecting PostgreSQL, MySQL and Oracle
+
+- **Source**: The Hacker News
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access, Execution
+- **Keywords**: exploit, rce
+- **Link**: [https://thehackernews.com/2026/11/researcher-demonstrates-database-rce.html](https://thehackernews.com/2026/11/researcher-demonstrates-database-rce.html)
+
+Low-privilege database accounts that cannot read a single application table can still be used to run code on the database server itself, a researcher has shown, by reaching memory-corruption bugs in the engine code behind ordinary SQL.
+
+The exploits, published yesterday, are the researcher's proofs 
+
+---
+
+### 🔴 CISA Warns of 4 Exploited Flaws Linked to Ransomware, Cryptomining, and LLMjacking Attacks
+
+- **Source**: The Hacker News
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access, Impact
+- **Keywords**: ransomware, exploit, apt
+- **Link**: [https://thehackernews.com/2026/11/cisa-warns-of-4-exploited-flaws-linked.html](https://thehackernews.com/2026/11/cisa-warns-of-4-exploited-flaws-linked.html)
+
+The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added four vulnerabilities impacting Synology DiskStation Manager (DSM), BerriAI LiteLLM, Apache Axis, and Vanderbilt University Research Electronic Data Capture (REDCap) to its Known Exploited Vulnerabilities (KEV) catalo
+
+---
+
+### 🔴 Five warning signs of ransomware breach before encryption or data theft
+
+- **Source**: BleepingComputer
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access, Credential Access, Lateral Movement, Collection, Impact
+- **Keywords**: ransomware, breach, lateral movement, credential
+- **Link**: [https://www.bleepingcomputer.com/news/security/five-warning-signs-of-ransomware-breach-before-encryption-or-data-theft/](https://www.bleepingcomputer.com/news/security/five-warning-signs-of-ransomware-breach-before-encryption-or-data-theft/)
+
+Ransomware attacks often involve credential theft, lateral movement, and attempts to disable security controls long before encryption begins. Acronis examines five warning signs that can help defenders detect intrusions earlier, contain malicious activity, and protect critical systems and backups. [
+
+---
+
+### 🔴 Drupal patches critical RCE flaw, warns exploits may surface quickly
 
 - **Source**: BleepingComputer
 - **Severity**: CRITICAL
 - **MITRE Tactics**: Initial Access, Execution
-- **Keywords**: exploit, vulnerability, rce
-- **Link**: [https://www.bleepingcomputer.com/news/security/apache-warns-of-roller-rce-vulnerability-exploited-in-attacks/](https://www.bleepingcomputer.com/news/security/apache-warns-of-roller-rce-vulnerability-exploited-in-attacks/)
+- **Keywords**: exploit, vulnerability, remote code execution, rce
+- **Link**: [https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaw-warns-exploits-may-surface-quickly/](https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaw-warns-exploits-may-surface-quickly/)
 
-Apache has released security updates to address a critical Roller flaw that threat actors are exploiting to gain code execution on vulnerable servers. [...]
+The Drupal Security Team has patched a critical remote code execution vulnerability that can let attackers take over vulnerable sites. [...]
 
 ---
 
-### 🔴 Critical Java4Shell flaw allows RCE attacks on major Java applications
+### 🔴 NVIDIA investigating Gentlemen ransomware breach claims
 
 - **Source**: BleepingComputer
 - **Severity**: CRITICAL
-- **MITRE Tactics**: Execution
-- **Keywords**: vulnerability, rce
-- **Link**: [https://www.bleepingcomputer.com/news/security/critical-java4shell-flaw-allows-rce-attacks-on-major-java-applications/](https://www.bleepingcomputer.com/news/security/critical-java4shell-flaw-allows-rce-attacks-on-major-java-applications/)
+- **MITRE Tactics**: Impact
+- **Keywords**: ransomware, breach, data leak
+- **Link**: [https://www.bleepingcomputer.com/news/security/nvidia-investigating-gentlemen-ransomware-breach-claims/](https://www.bleepingcomputer.com/news/security/nvidia-investigating-gentlemen-ransomware-breach-claims/)
 
-A critical vulnerability dubbed Java4Shell in OpenJDK, the open-source implementation of Java, can allow unauthenticated attackers to remotely execute code on popular enterprise applications, including Jenkins, Atlassian Jira, Confluence, and Keycloak. [...]
+NVIDIA is investigating claims of a security breach after the Gentlemen ransomware group has added the company to its dark web data leak site. [...]
 
 ---
 
-### 🔴 Major Brazilian Signature Apps Enable RCE &amp; Fraud
+### 🔴 Ukraine, FBI arrest ransomware gang members tied to $40M in ransoms
+
+- **Source**: BleepingComputer
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Impact
+- **Keywords**: ransomware
+- **Link**: [https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/](https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/)
+
+Ukrainian authorities, working with the FBI, have arrested four suspected members of an international ransomware organization linked to more than $40.5 million in ransom payments from at least 28 companies worldwide. [...]
+
+---
+
+### 🔴 Russia's Cold Relic APT Turns One Cloud Breach Into Another
 
 - **Source**: Dark Reading
 - **Severity**: CRITICAL
-- **MITRE Tactics**: Execution
-- **Keywords**: rce
-- **Link**: [https://www.darkreading.com/vulnerabilities-threats/major-brazilian-signature-app-rce-fraud](https://www.darkreading.com/vulnerabilities-threats/major-brazilian-signature-app-rce-fraud)
+- **MITRE Tactics**: —
+- **Keywords**: breach, apt
+- **Link**: [https://www.darkreading.com/cyberattacks-data-breaches/cold-relic-turns-one-cloud-breach-into-another](https://www.darkreading.com/cyberattacks-data-breaches/cold-relic-turns-one-cloud-breach-into-another)
 
-Government-sanctioned authentication middleware is used for exceptionally important legal documents, yet it's often rife with RCE bugs.
-
----
-
-### 🟠 AI Pentesting Checklist for Web Apps: 15 Questions to Ask Before Choosing a Vendor
-
-- **Source**: The Hacker News
-- **Severity**: HIGH
-- **MITRE Tactics**: Initial Access
-- **Keywords**: exploit
-- **Link**: [https://thehackernews.com/2026/11/ai-pentesting-checklist-for-web-apps-15.html](https://thehackernews.com/2026/11/ai-pentesting-checklist-for-web-apps-15.html)
-
-TL;DR
-
-
-  Attackers move first. On average, exploitation now starts before a patch exists (Mandiant M-Trends 2026). In 1H 2026, 23% of vulnerabilities VulnCheck added to its exploited list were hit on or before disclosure day.
-  AI pentesting vendors aren't interchangeable. Most look convincing in a
-
----
-
-### 🟠 Quality Isn’t The Main Worry About AI Pentesting — Data Privacy and Production Safety Are
-
-- **Source**: The Hacker News
-- **Severity**: HIGH
-- **MITRE Tactics**: Initial Access
-- **Keywords**: exploit
-- **Link**: [https://thehackernews.com/2026/11/quality-isnt-main-worry-about-ai.html](https://thehackernews.com/2026/11/quality-isnt-main-worry-about-ai.html)
-
-AI is speeding up how software is built, which means more code, more changes, and more chances for vulnerabilities to reach production. It's speeding up how attackers find and exploit them too, with time-to-exploit now down to a single day. Security testing has to keep up with both.
-
-AI pentesting h
+The state-sponsored threat group is using data stolen from one victim to target others via convincing impersonations and social engineering attacks.
 
 ---

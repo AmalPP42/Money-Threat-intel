@@ -1,0 +1,211 @@
+{
+  "date": "2026-11-19T16:25:20.031499",
+  "summary": "\ud83d\udcca 15 threats detected today.\n\ud83d\udd34 CRITICAL (12): PHP Fixes 7 Critical Flaws, Including Bugs That Could Allow Remote Code Execution | Drupal Patches Critical Installer Flaw That Could Give Unauthenticated Attackers Control of Sites | Ruby Releases Fixes for 7 Regex and String Flaws, Warns 5 Have Proof-of-Concept RCE\n\ud83d\udfe0 HIGH (2): Everything Is a Web Application, Including Your Firewall | Hackers Breach N-able Cloud Server, Disrupting Email Security Management Across 3 Regions\n\u26a0\ufe0f Review all articles below and patch accordingly.",
+  "articles": [
+    {
+      "title": "PHP Fixes 7 Critical Flaws, Including Bugs That Could Allow Remote Code Execution",
+      "link": "https://thehackernews.com/2026/11/php-fixes-7-critical-flaws-including.html",
+      "source": "The Hacker News",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Initial Access",
+        "Execution"
+      ],
+      "keywords": [
+        "exploit",
+        "vulnerability",
+        "cve-",
+        "remote code execution"
+      ]
+    },
+    {
+      "title": "Drupal Patches Critical Installer Flaw That Could Give Unauthenticated Attackers Control of Sites",
+      "link": "https://thehackernews.com/2026/11/drupal-patches-critical-installer-flaw.html",
+      "source": "The Hacker News",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Initial Access",
+        "Execution",
+        "Credential Access"
+      ],
+      "keywords": [
+        "vulnerability",
+        "remote code execution",
+        "credential"
+      ]
+    },
+    {
+      "title": "Everything Is a Web Application, Including Your Firewall",
+      "link": "https://thehackernews.com/2026/11/everything-is-web-application-including.html",
+      "source": "The Hacker News",
+      "severity": "high",
+      "mitre_tactics": [
+        "Initial Access"
+      ],
+      "keywords": [
+        "exploit",
+        "cve-"
+      ]
+    },
+    {
+      "title": "Hackers Breach N-able Cloud Server, Disrupting Email Security Management Across 3 Regions",
+      "link": "https://thehackernews.com/2026/11/n-able-confirms-hackers-accessed-cloud.html",
+      "source": "The Hacker News",
+      "severity": "high",
+      "mitre_tactics": [],
+      "keywords": [
+        "breach"
+      ]
+    },
+    {
+      "title": "Ruby Releases Fixes for 7 Regex and String Flaws, Warns 5 Have Proof-of-Concept RCE",
+      "link": "https://thehackernews.com/2026/11/ruby-releases-fixes-for-7-regex-and.html",
+      "source": "The Hacker News",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Initial Access",
+        "Execution"
+      ],
+      "keywords": [
+        "exploit",
+        "remote code execution",
+        "rce"
+      ]
+    },
+    {
+      "title": "Researcher Demonstrates Database RCE Exploits Affecting PostgreSQL, MySQL and Oracle",
+      "link": "https://thehackernews.com/2026/11/researcher-demonstrates-database-rce.html",
+      "source": "The Hacker News",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Initial Access",
+        "Execution"
+      ],
+      "keywords": [
+        "exploit",
+        "rce"
+      ]
+    },
+    {
+      "title": "CISA Warns of 4 Exploited Flaws Linked to Ransomware, Cryptomining, and LLMjacking Attacks",
+      "link": "https://thehackernews.com/2026/11/cisa-warns-of-4-exploited-flaws-linked.html",
+      "source": "The Hacker News",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Initial Access",
+        "Impact"
+      ],
+      "keywords": [
+        "ransomware",
+        "exploit",
+        "apt"
+      ]
+    },
+    {
+      "title": "Five warning signs of ransomware breach before encryption or data theft",
+      "link": "https://www.bleepingcomputer.com/news/security/five-warning-signs-of-ransomware-breach-before-encryption-or-data-theft/",
+      "source": "BleepingComputer",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Initial Access",
+        "Credential Access",
+        "Lateral Movement",
+        "Collection",
+        "Impact"
+      ],
+      "keywords": [
+        "ransomware",
+        "breach",
+        "lateral movement",
+        "credential"
+      ]
+    },
+    {
+      "title": "Drupal patches critical RCE flaw, warns exploits may surface quickly",
+      "link": "https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaw-warns-exploits-may-surface-quickly/",
+      "source": "BleepingComputer",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Initial Access",
+        "Execution"
+      ],
+      "keywords": [
+        "exploit",
+        "vulnerability",
+        "remote code execution",
+        "rce"
+      ]
+    },
+    {
+      "title": "NVIDIA investigating Gentlemen ransomware breach claims",
+      "link": "https://www.bleepingcomputer.com/news/security/nvidia-investigating-gentlemen-ransomware-breach-claims/",
+      "source": "BleepingComputer",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Impact"
+      ],
+      "keywords": [
+        "ransomware",
+        "breach",
+        "data leak"
+      ]
+    },
+    {
+      "title": "Ukraine, FBI arrest ransomware gang members tied to $40M in ransoms",
+      "link": "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/",
+      "source": "BleepingComputer",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Impact"
+      ],
+      "keywords": [
+        "ransomware"
+      ]
+    },
+    {
+      "title": "Russia's Cold Relic APT Turns One Cloud Breach Into Another",
+      "link": "https://www.darkreading.com/cyberattacks-data-breaches/cold-relic-turns-one-cloud-breach-into-another",
+      "source": "Dark Reading",
+      "severity": "critical",
+      "mitre_tactics": [],
+      "keywords": [
+        "breach",
+        "apt"
+      ]
+    },
+    {
+      "title": "AttackIQ Research Reveals How Iranian Cyber Groups Hand Off Network Access to Enable Destructive Attacks",
+      "link": "https://www.darkreading.com/threat-intelligence/attackiq-research-reveals-iranian-cyber-groups",
+      "source": "Dark Reading",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Impact"
+      ],
+      "keywords": [
+        "ransomware"
+      ]
+    },
+    {
+      "title": "Java4Shell Flaw Threatens Global Enterprises, Java Application Ecosystem",
+      "link": "https://www.darkreading.com/vulnerabilities-threats/java4shell-flaw-threatens-global-java-application-ecosystem",
+      "source": "Dark Reading",
+      "severity": "medium",
+      "mitre_tactics": [],
+      "keywords": [
+        "vulnerability"
+      ]
+    },
+    {
+      "title": "Major Brazilian Signature Apps Enable RCE &amp; Fraud",
+      "link": "https://www.darkreading.com/vulnerabilities-threats/major-brazilian-signature-app-rce-fraud",
+      "source": "Dark Reading",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Execution"
+      ],
+      "keywords": [
+        "rce"
+      ]
+    }
+  ]
+}
