@@ -1,4 +1,4 @@
-# 🛡️ Daily Threat Intel — November 20, 2026
+# 🛡️ Daily Threat Intel — November 21, 2026
 
 > **Automated daily briefing** covering the most critical cybersecurity 
 > threats from 9 leading security news sources.
@@ -8,67 +8,79 @@
 ## 📊 Analyst Briefing
 
 📊 15 threats detected today.
-🔴 CRITICAL (8): SonicWall Warns Gen 6 Firewalls Won't Get Security Patches, Even for Critical Flaws | Hackers Exploit Critical Cisco Expressway Flaw, Breach Four Devices and Reach Internal Network | China-Linked Hackers Exploit Critical VMware vCenter Zero-Day to Gain Admin Access and Steal Data
-🟠 HIGH (5): ROMULUS ClickFix Attacks Deliver RAT That Can Spy on Users and Control PCs | ThreatsDay: GPT-6.2 Jailbreak Flaws, BubbleLoader PNG Malware, $500M Ransom Demands + 17 More Stories | N-able says recent security breach led to major service outage
+🔴 CRITICAL (7): GnuPG Warns Critical GPGME Flaw Could Expose App Data via Malicious OpenPGP Keys | Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access | Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge
+🟠 HIGH (5): WhatsApp Patches 3 Security Flaws, Including Android Bug Suspected of Use in Scams | Bazuka Android Malware Uses Fake Screen Overlays to Hide Credential Theft and Device Control | Bell Canada says 'agentic' hacker stole enterprise customer data
 ⚠️ Review all articles below and patch accordingly.
 
 ---
 
 ## 🔍 Top Threats
 
-### 🔴 SonicWall Warns Gen 6 Firewalls Won't Get Security Patches, Even for Critical Flaws
-
-- **Source**: The Hacker News
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access
-- **Keywords**: exploit
-- **Link**: [https://thehackernews.com/2026/11/sonicwall-warns-gen-6-firewalls-wont.html](https://thehackernews.com/2026/11/sonicwall-warns-gen-6-firewalls-wont.html)
-
-SonicWall has urged all customers still running Generation 6 firewalls to retire and replace them immediately and stop exposing the devices on the internet edge, citing security risks fueled by AI-assisted attacks.
-
-"Attackers now use automation and AI to find and exploit unsupported edge devices fa
-
----
-
-### 🔴 Hackers Exploit Critical Cisco Expressway Flaw, Breach Four Devices and Reach Internal Network
-
-- **Source**: The Hacker News
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access
-- **Keywords**: breach, exploit, vulnerability, cve-
-- **Link**: [https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html](https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html)
-
-Threat actors have been observed exploiting a recently disclosed critical security flaw in Cisco Expressway to breach a Russian organization shortly after the public release of a proof-of-concept (PoC) exploit.
-
-The activity involves the exploitation of CVE-2026-76466 (CVSS score: 9.8), a vulnerabil
-
----
-
-### 🔴 China-Linked Hackers Exploit Critical VMware vCenter Zero-Day to Gain Admin Access and Steal Data
-
-- **Source**: The Hacker News
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access
-- **Keywords**: zero-day, exploit, vulnerability, cve-
-- **Link**: [https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html](https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html)
-
-The suspected China-nexus cyber espionage group known as Armory Castle (formerly UNC5221) has been attributed to the zero-day exploitation of a critical security flaw in VMware vCenter Server in early September 2026.
-
-The vulnerability, tracked as CVE-2026-123890 (CVSS score: 9.8), is a case of auth
-
----
-
-### 🔴 New Unpatched Windows 0-Day FastUnlock Lets Someone Holding a Locked PC Run Programs on It
+### 🔴 GnuPG Warns Critical GPGME Flaw Could Expose App Data via Malicious OpenPGP Keys
 
 - **Source**: The Hacker News
 - **Severity**: CRITICAL
 - **MITRE Tactics**: —
-- **Keywords**: zero-day, 0-day
-- **Link**: [https://thehackernews.com/2026/11/new-unpatched-windows-0-day-fastunlock.html](https://thehackernews.com/2026/11/new-unpatched-windows-0-day-fastunlock.html)
+- **Keywords**: cve-
+- **Link**: [https://thehackernews.com/2026/11/gnupg-warns-critical-gpgme-flaw-could.html](https://thehackernews.com/2026/11/gnupg-warns-critical-gpgme-flaw-could.html)
 
-A newly disclosed unpatched zero-day technique called FastUnlock lets someone with physical access to a locked Windows computer start programs without signing in. Whoever uses it gets only a limited account, not administrator control of the machine.
+A malicious OpenPGP key with an unusually long user ID can trigger a critical memory bug in GPGME, the standard library that programs use to work with GnuPG.
 
-The method was posted yesterday by a researcher w
+The GnuPG project warned yesterday that the flaw could be used to steal data from affected applications and has released fixed versions.
+
+The
+
+---
+
+### 🔴 Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access
+
+- **Source**: The Hacker News
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Execution
+- **Keywords**: zero-day, rce
+- **Link**: [https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html](https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html)
+
+Suspected China-linked hackers used autonomous AI agents to find a previously unknown flaw in MONAI Label, an open-source medical imaging server, and gain root access to a university server, Amazon Threat Intelligence said this week.
+
+The flaw allows an attacker with no account to write files outsid
+
+---
+
+### 🔴 Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge
+
+- **Source**: The Hacker News
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access
+- **Keywords**: exploit, vulnerability, cve-
+- **Link**: [https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html](https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html)
+
+The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added four flaws impacting Apache Roller, Cisco Expressway, SAP NetWeaver, and Broadcom VMware vCenter to its Known Exploited Vulnerabilities (KEV), citing evidence of active exploitation.
+
+The vulnerabilities are listed belo
+
+---
+
+### 🔴 FBI reportedly hacked again, this time targeting nationwide police database
+
+- **Source**: BleepingComputer
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Execution
+- **Keywords**: breach, rce
+- **Link**: [https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/](https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/)
+
+FBI systems have reportedly been breached for the second time in two months, this time targeting the agency's National Crime Information Center (NCIC), which is used to share information between local, state, and federal law enforcement agencies. [...]
+
+---
+
+### 🔴 Hackers use autonomous AI tool Cairn to find zero-day, take over server
+
+- **Source**: BleepingComputer
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Execution
+- **Keywords**: zero-day, vulnerability, rce
+- **Link**: [https://www.bleepingcomputer.com/news/security/hackers-use-autonomous-ai-tool-cairn-to-find-zero-day-take-over-server/](https://www.bleepingcomputer.com/news/security/hackers-use-autonomous-ai-tool-cairn-to-find-zero-day-take-over-server/)
+
+Threat actors used the open-source AI penetration-testing framework Cairn to find a previously unknown vulnerability in a medical imaging application. [...]
 
 ---
 
@@ -84,64 +96,54 @@ US cybersecurity company F5 warned customers to patch five critical BIG-IP vulne
 
 ---
 
-### 🔴 VMware patches vCenter zero-day exploited in attacks since September
+### 🔴 China's 'Armory Castle' Lays Siege to VMware vCenter Zero-Day
+
+- **Source**: Dark Reading
+- **Severity**: CRITICAL
+- **MITRE Tactics**: —
+- **Keywords**: zero-day
+- **Link**: [https://www.darkreading.com/cyberattacks-data-breaches/china-armory-castle-vmware-vcenter-zero-day](https://www.darkreading.com/cyberattacks-data-breaches/china-armory-castle-vmware-vcenter-zero-day)
+
+During the last wave of major VMware vCenter security updates, a China-nexus threat group likely already had its next zero-day up its sleeve.
+
+---
+
+### 🟠 WhatsApp Patches 3 Security Flaws, Including Android Bug Suspected of Use in Scams
+
+- **Source**: The Hacker News
+- **Severity**: HIGH
+- **MITRE Tactics**: Initial Access
+- **Keywords**: exploit, vulnerability, cve-
+- **Link**: [https://thehackernews.com/2026/11/whatsapp-patches-3-security-flaws.html](https://thehackernews.com/2026/11/whatsapp-patches-3-security-flaws.html)
+
+Meta-owned WhatsApp has addressed security vulnerabilities, including one impacting its Android app that it suspects may have been exploited in connection with scam messages.
+
+The vulnerability, tracked as CVE-2026-23871 (CVSS score: 3.5), has been described as a case of incomplete validation of ext
+
+---
+
+### 🟠 Bazuka Android Malware Uses Fake Screen Overlays to Hide Credential Theft and Device Control
+
+- **Source**: The Hacker News
+- **Severity**: HIGH
+- **MITRE Tactics**: Initial Access, Execution, Credential Access
+- **Keywords**: malware, trojan, credential
+- **Link**: [https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html](https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html)
+
+Cybersecurity researchers have disclosed details of a previously unknown Android malware framework called Bazuka that offers large language model (LLM) integration for victim management and control at scale.
+
+Dutch mobile security company ThreatFabric said it discovered the threat in late October 20
+
+---
+
+### 🟠 Bell Canada says 'agentic' hacker stole enterprise customer data
 
 - **Source**: BleepingComputer
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access
-- **Keywords**: zero-day, exploit, vulnerability
-- **Link**: [https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/](https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/)
-
-Broadcom has released security updates to fix a critical VMware vCenter Server authentication bypass vulnerability that Chinese-linked hackers have exploited in zero-day attacks since September 2026. [...]
-
----
-
-### 🔴 Qwen Incidents Show Self-Hosted AI Models Need Stronger Steering
-
-- **Source**: Dark Reading
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Execution
-- **Keywords**: rce
-- **Link**: [https://www.darkreading.com/cyber-risk/qwen-incidents-self-hosted-ai-models-stronger-steering](https://www.darkreading.com/cyber-risk/qwen-incidents-self-hosted-ai-models-stronger-steering)
-
-Companies deploying AI agents have the illusion of control, but several incidents demonstrate that businesses need to be ready to enforce directions.
-
----
-
-### 🔴 Critical PHP Flaws Allow Code Execution, But Don't Panic 'PHP2Shell'-Style
-
-- **Source**: Dark Reading
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access
-- **Keywords**: exploit
-- **Link**: [https://www.darkreading.com/application-security/critical-php-flaws-code-execution-panic-php2shell](https://www.darkreading.com/application-security/critical-php-flaws-code-execution-panic-php2shell)
-
-November's monthly security release patches seven critical PHP flaws that should be addressed ASAP, though experts say exploitability varies and depends heavily on configuration.
-
----
-
-### 🟠 ROMULUS ClickFix Attacks Deliver RAT That Can Spy on Users and Control PCs
-
-- **Source**: The Hacker News
 - **Severity**: HIGH
-- **MITRE Tactics**: Execution
-- **Keywords**: malware, trojan
-- **Link**: [https://thehackernews.com/2026/11/romulus-clickfix-attacks-deliver-rat.html](https://thehackernews.com/2026/11/romulus-clickfix-attacks-deliver-rat.html)
+- **MITRE Tactics**: —
+- **Keywords**: breach
+- **Link**: [https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/](https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/)
 
-Threat actors have been observed using the ROMULUS ClickFix malware delivery platform to deliver a previously undocumented remote access trojan (RAT) that shares similarities with CNCMachineRMS.
-
-"ROMULUS likely operates as a delivery service, distributing CNCMachineRMS and Legion Loader through sep
-
----
-
-### 🟠 ThreatsDay: GPT-6.2 Jailbreak Flaws, BubbleLoader PNG Malware, $500M Ransom Demands + 17 More Stories
-
-- **Source**: The Hacker News
-- **Severity**: HIGH
-- **MITRE Tactics**: Execution
-- **Keywords**: malware
-- **Link**: [https://thehackernews.com/2026/11/threatsday-gpt-62-jailbreak-flaws.html](https://thehackernews.com/2026/11/threatsday-gpt-62-jailbreak-flaws.html)
-
-The easiest way to fool someone is to give them something they already expect. A job offer. A message about a service outage. A familiar app. Nothing looks strange at first. And that's the problem. This week's stories show how ordinary things are being used to steal data, spread malware, and get peo
+Bell Canada has confirmed that an "agentic" threat actor breached its systems on November 17, 2026, and stole enterprise customer data, including information from a system used to order and provision telecommunications circuits. [...]
 
 ---
