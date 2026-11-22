@@ -1,7 +1,19 @@
 {
-  "date": "2026-11-21T15:09:56.615002",
-  "summary": "\ud83d\udcca 15 threats detected today.\n\ud83d\udd34 CRITICAL (7): GnuPG Warns Critical GPGME Flaw Could Expose App Data via Malicious OpenPGP Keys | Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access | Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge\n\ud83d\udfe0 HIGH (5): WhatsApp Patches 3 Security Flaws, Including Android Bug Suspected of Use in Scams | Bazuka Android Malware Uses Fake Screen Overlays to Hide Credential Theft and Device Control | Bell Canada says 'agentic' hacker stole enterprise customer data\n\u26a0\ufe0f Review all articles below and patch accordingly.",
+  "date": "2026-11-22T15:07:22.539885",
+  "summary": "\ud83d\udcca 15 threats detected today.\n\ud83d\udd34 CRITICAL (7): Researchers Demonstrate Ghostscript Sandbox-Escape RCE via Crafted File Uploads in Popular Apps | GnuPG Warns Critical GPGME Flaw Could Expose App Data via Malicious OpenPGP Keys | Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access\n\ud83d\udfe0 HIGH (6): WhatsApp Patches 3 Security Flaws, Including Android Bug Suspected of Use in Scams | Rackspace Spot breach let hackers access customer Kubernetes secrets | Microsoft Entra Connect Health flaw exploited to steal tenant data\n\u26a0\ufe0f Review all articles below and patch accordingly.",
   "articles": [
+    {
+      "title": "Researchers Demonstrate Ghostscript Sandbox-Escape RCE via Crafted File Uploads in Popular Apps",
+      "link": "https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html",
+      "source": "The Hacker News",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Execution"
+      ],
+      "keywords": [
+        "rce"
+      ]
+    },
     {
       "title": "A Single Malicious Webpage Let Researchers Hijack Meta Muse and Access Private Chats",
       "link": "https://thehackernews.com/2026/11/a-single-malicious-webpage-let.html",
@@ -67,29 +79,44 @@
       ]
     },
     {
-      "title": "Bazuka Android Malware Uses Fake Screen Overlays to Hide Credential Theft and Device Control",
-      "link": "https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html",
-      "source": "The Hacker News",
+      "title": "Rackspace Spot breach let hackers access customer Kubernetes secrets",
+      "link": "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/",
+      "source": "BleepingComputer",
       "severity": "high",
       "mitre_tactics": [
         "Initial Access",
-        "Execution",
         "Credential Access"
       ],
       "keywords": [
-        "malware",
-        "trojan",
+        "breach",
         "credential"
       ]
     },
     {
-      "title": "Linux KVM Flaw CVE-2026-99312 Lets Guest VMs Access Host Memory on AMD Hosts",
-      "link": "https://thehackernews.com/2026/11/new-linux-kvm-flaw-cve-2026-99312-lets.html",
-      "source": "The Hacker News",
-      "severity": "medium",
-      "mitre_tactics": [],
+      "title": "Microsoft Entra Connect Health flaw exploited to steal tenant data",
+      "link": "https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/",
+      "source": "BleepingComputer",
+      "severity": "high",
+      "mitre_tactics": [
+        "Initial Access"
+      ],
       "keywords": [
-        "cve-"
+        "breach",
+        "exploit",
+        "vulnerability"
+      ]
+    },
+    {
+      "title": "BADBOX botnet returns with record-breaking 40 billion daily ad requests",
+      "link": "https://www.bleepingcomputer.com/news/security/badbox-30-botnet-returns-with-record-breaking-40-billion-daily-ad-requests/",
+      "source": "BleepingComputer",
+      "severity": "high",
+      "mitre_tactics": [
+        "Execution"
+      ],
+      "keywords": [
+        "malware",
+        "botnet"
       ]
     },
     {
@@ -150,31 +177,6 @@
       ],
       "keywords": [
         "credential"
-      ]
-    },
-    {
-      "title": "N-able says recent security breach led to major service outage",
-      "link": "https://www.bleepingcomputer.com/news/microsoft/n-able-says-recent-security-breach-led-to-major-service-outage/",
-      "source": "BleepingComputer",
-      "severity": "high",
-      "mitre_tactics": [],
-      "keywords": [
-        "breach"
-      ]
-    },
-    {
-      "title": "F5 releases emergency patches for critical BIG-IP RCE flaws",
-      "link": "https://www.bleepingcomputer.com/news/security/f5-releases-emergency-patches-for-critical-big-ip-rce-flaws/",
-      "source": "BleepingComputer",
-      "severity": "critical",
-      "mitre_tactics": [
-        "Initial Access",
-        "Execution"
-      ],
-      "keywords": [
-        "exploit",
-        "remote code execution",
-        "rce"
       ]
     },
     {

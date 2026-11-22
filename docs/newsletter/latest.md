@@ -1,4 +1,4 @@
-# 🛡️ Daily Threat Intel — November 21, 2026
+# 🛡️ Daily Threat Intel — November 22, 2026
 
 > **Automated daily briefing** covering the most critical cybersecurity 
 > threats from 9 leading security news sources.
@@ -8,13 +8,27 @@
 ## 📊 Analyst Briefing
 
 📊 15 threats detected today.
-🔴 CRITICAL (7): GnuPG Warns Critical GPGME Flaw Could Expose App Data via Malicious OpenPGP Keys | Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access | Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge
-🟠 HIGH (5): WhatsApp Patches 3 Security Flaws, Including Android Bug Suspected of Use in Scams | Bazuka Android Malware Uses Fake Screen Overlays to Hide Credential Theft and Device Control | Bell Canada says 'agentic' hacker stole enterprise customer data
+🔴 CRITICAL (7): Researchers Demonstrate Ghostscript Sandbox-Escape RCE via Crafted File Uploads in Popular Apps | GnuPG Warns Critical GPGME Flaw Could Expose App Data via Malicious OpenPGP Keys | Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access
+🟠 HIGH (6): WhatsApp Patches 3 Security Flaws, Including Android Bug Suspected of Use in Scams | Rackspace Spot breach let hackers access customer Kubernetes secrets | Microsoft Entra Connect Health flaw exploited to steal tenant data
 ⚠️ Review all articles below and patch accordingly.
 
 ---
 
 ## 🔍 Top Threats
+
+### 🔴 Researchers Demonstrate Ghostscript Sandbox-Escape RCE via Crafted File Uploads in Popular Apps
+
+- **Source**: The Hacker News
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Execution
+- **Keywords**: rce
+- **Link**: [https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html](https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html)
+
+A now-patched flaw in Ghostscript allows a crafted file to escape the program's security sandbox and run commands on the server that processes it.
+
+Ghostscript is the interpreter that many Linux servers use to convert uploaded PDFs, PostScript files, and images into other formats, often without the 
+
+---
 
 ### 🔴 GnuPG Warns Critical GPGME Flaw Could Expose App Data via Malicious OpenPGP Keys
 
@@ -84,18 +98,6 @@ Threat actors used the open-source AI penetration-testing framework Cairn to fin
 
 ---
 
-### 🔴 F5 releases emergency patches for critical BIG-IP RCE flaws
-
-- **Source**: BleepingComputer
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access, Execution
-- **Keywords**: exploit, remote code execution, rce
-- **Link**: [https://www.bleepingcomputer.com/news/security/f5-releases-emergency-patches-for-critical-big-ip-rce-flaws/](https://www.bleepingcomputer.com/news/security/f5-releases-emergency-patches-for-critical-big-ip-rce-flaws/)
-
-US cybersecurity company F5 warned customers to patch five critical BIG-IP vulnerabilities that attackers can exploit to trigger denial-of-service (DoS) or gain remote code execution. [...]
-
----
-
 ### 🔴 China's 'Armory Castle' Lays Siege to VMware vCenter Zero-Day
 
 - **Source**: Dark Reading
@@ -122,28 +124,26 @@ The vulnerability, tracked as CVE-2026-23871 (CVSS score: 3.5), has been describ
 
 ---
 
-### 🟠 Bazuka Android Malware Uses Fake Screen Overlays to Hide Credential Theft and Device Control
-
-- **Source**: The Hacker News
-- **Severity**: HIGH
-- **MITRE Tactics**: Initial Access, Execution, Credential Access
-- **Keywords**: malware, trojan, credential
-- **Link**: [https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html](https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html)
-
-Cybersecurity researchers have disclosed details of a previously unknown Android malware framework called Bazuka that offers large language model (LLM) integration for victim management and control at scale.
-
-Dutch mobile security company ThreatFabric said it discovered the threat in late October 20
-
----
-
-### 🟠 Bell Canada says 'agentic' hacker stole enterprise customer data
+### 🟠 Rackspace Spot breach let hackers access customer Kubernetes secrets
 
 - **Source**: BleepingComputer
 - **Severity**: HIGH
-- **MITRE Tactics**: —
-- **Keywords**: breach
-- **Link**: [https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/](https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/)
+- **MITRE Tactics**: Initial Access, Credential Access
+- **Keywords**: breach, credential
+- **Link**: [https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/](https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/)
 
-Bell Canada has confirmed that an "agentic" threat actor breached its systems on November 17, 2026, and stole enterprise customer data, including information from a system used to order and provision telecommunications circuits. [...]
+Rackspace warned customers that hackers breached its Rackspace Spot cloud platform using compromised credentials, allowing them to deploy unauthorized workloads and access Kubernetes secrets in customer clusters. [...]
+
+---
+
+### 🟠 Microsoft Entra Connect Health flaw exploited to steal tenant data
+
+- **Source**: BleepingComputer
+- **Severity**: HIGH
+- **MITRE Tactics**: Initial Access
+- **Keywords**: breach, exploit, vulnerability
+- **Link**: [https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/](https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/)
+
+Microsoft is warning organizations that it suffered a data breach after attackers exploited a vulnerability in its Entra Connect Health service to gain unauthorized access to administrator email addresses and tenant configuration information. [...]
 
 ---
