@@ -1,10 +1,10 @@
 {
-  "date": "2026-11-22T15:07:22.539885",
-  "summary": "\ud83d\udcca 15 threats detected today.\n\ud83d\udd34 CRITICAL (7): Researchers Demonstrate Ghostscript Sandbox-Escape RCE via Crafted File Uploads in Popular Apps | GnuPG Warns Critical GPGME Flaw Could Expose App Data via Malicious OpenPGP Keys | Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access\n\ud83d\udfe0 HIGH (6): WhatsApp Patches 3 Security Flaws, Including Android Bug Suspected of Use in Scams | Rackspace Spot breach let hackers access customer Kubernetes secrets | Microsoft Entra Connect Health flaw exploited to steal tenant data\n\u26a0\ufe0f Review all articles below and patch accordingly.",
+  "date": "2026-11-23T19:03:29.265843",
+  "summary": "\ud83d\udcca 15 threats detected today.\n\ud83d\udd34 CRITICAL (12): Webworm Suspected of Modifying SoftEther VPN to Evade Detection and Hide Remote Access | \u26a1 Weekly Recap: VMware 0-Day, Java4Shell, NGINX2Root, Ruby2Shell, and a Whole Lot of Shell Trouble | Critical binary-parser Flaw Enables JavaScript Injection via Malicious Parser Definitions\n\ud83d\udfe0 HIGH (3): Hackers Exploited GL.iNet Cloud Flaw to Install Malware on Routers and KVM Devices | Spanish LaLiga confirms hackers stole soccer fans\u2019 personal data | Hackers exploit GL.iNet cloud flaw to infect routers, KVM devices\n\u26a0\ufe0f Review all articles below and patch accordingly.",
   "articles": [
     {
-      "title": "Researchers Demonstrate Ghostscript Sandbox-Escape RCE via Crafted File Uploads in Popular Apps",
-      "link": "https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html",
+      "title": "Webworm Suspected of Modifying SoftEther VPN to Evade Detection and Hide Remote Access",
+      "link": "https://thehackernews.com/2026/11/webworm-suspected-of-modifying.html",
       "source": "The Hacker News",
       "severity": "critical",
       "mitre_tactics": [
@@ -15,168 +15,162 @@
       ]
     },
     {
-      "title": "A Single Malicious Webpage Let Researchers Hijack Meta Muse and Access Private Chats",
-      "link": "https://thehackernews.com/2026/11/a-single-malicious-webpage-let.html",
-      "source": "The Hacker News",
-      "severity": "medium",
-      "mitre_tactics": [
-        "Initial Access",
-        "Credential Access"
-      ],
-      "keywords": [
-        "credential"
-      ]
-    },
-    {
-      "title": "GnuPG Warns Critical GPGME Flaw Could Expose App Data via Malicious OpenPGP Keys",
-      "link": "https://thehackernews.com/2026/11/gnupg-warns-critical-gpgme-flaw-could.html",
+      "title": "\u26a1 Weekly Recap: VMware 0-Day, Java4Shell, NGINX2Root, Ruby2Shell, and a Whole Lot of Shell Trouble",
+      "link": "https://thehackernews.com/2026/11/weekly-recap-vmware-0-day-java4shell.html",
       "source": "The Hacker News",
       "severity": "critical",
       "mitre_tactics": [],
       "keywords": [
+        "0-day",
+        "breach"
+      ]
+    },
+    {
+      "title": "Critical binary-parser Flaw Enables JavaScript Injection via Malicious Parser Definitions",
+      "link": "https://thehackernews.com/2026/11/critical-binary-parser-flaw-enables.html",
+      "source": "The Hacker News",
+      "severity": "critical",
+      "mitre_tactics": [],
+      "keywords": [
+        "vulnerability",
         "cve-"
       ]
     },
     {
-      "title": "Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access",
-      "link": "https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html",
+      "title": "Hackers Exploit Critical ScreenConnect Flaw to Hijack MSP Technician PCs Without Warning",
+      "link": "https://thehackernews.com/2026/11/hackers-exploit-critical-screenconnect.html",
       "source": "The Hacker News",
       "severity": "critical",
       "mitre_tactics": [
+        "Initial Access"
+      ],
+      "keywords": [
+        "exploit",
+        "cve-"
+      ]
+    },
+    {
+      "title": "N-able Discloses Critical Mail Assure Vulnerability Found During Breach Investigation",
+      "link": "https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html",
+      "source": "The Hacker News",
+      "severity": "critical",
+      "mitre_tactics": [],
+      "keywords": [
+        "breach",
+        "vulnerability",
+        "cve-"
+      ]
+    },
+    {
+      "title": "Hackers Exploit Critical ASP.NET Anti-CSRF Library Flaw Allowing Unauthenticated RCE",
+      "link": "https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html",
+      "source": "The Hacker News",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Initial Access",
         "Execution"
       ],
       "keywords": [
-        "zero-day",
+        "exploit",
+        "vulnerability",
+        "cve-",
         "rce"
       ]
     },
     {
-      "title": "Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge",
-      "link": "https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html",
+      "title": "Hackers Exploited GL.iNet Cloud Flaw to Install Malware on Routers and KVM Devices",
+      "link": "https://thehackernews.com/2026/11/hackers-exploited-glinet-cloud-flaw-to.html",
       "source": "The Hacker News",
-      "severity": "critical",
-      "mitre_tactics": [
-        "Initial Access"
-      ],
-      "keywords": [
-        "exploit",
-        "vulnerability",
-        "cve-"
-      ]
-    },
-    {
-      "title": "WhatsApp Patches 3 Security Flaws, Including Android Bug Suspected of Use in Scams",
-      "link": "https://thehackernews.com/2026/11/whatsapp-patches-3-security-flaws.html",
-      "source": "The Hacker News",
-      "severity": "high",
-      "mitre_tactics": [
-        "Initial Access"
-      ],
-      "keywords": [
-        "exploit",
-        "vulnerability",
-        "cve-"
-      ]
-    },
-    {
-      "title": "Rackspace Spot breach let hackers access customer Kubernetes secrets",
-      "link": "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/",
-      "source": "BleepingComputer",
       "severity": "high",
       "mitre_tactics": [
         "Initial Access",
-        "Credential Access"
+        "Execution"
       ],
       "keywords": [
-        "breach",
-        "credential"
-      ]
-    },
-    {
-      "title": "Microsoft Entra Connect Health flaw exploited to steal tenant data",
-      "link": "https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/",
-      "source": "BleepingComputer",
-      "severity": "high",
-      "mitre_tactics": [
-        "Initial Access"
-      ],
-      "keywords": [
-        "breach",
         "exploit",
-        "vulnerability"
+        "vulnerability",
+        "malware"
       ]
     },
     {
-      "title": "BADBOX botnet returns with record-breaking 40 billion daily ad requests",
-      "link": "https://www.bleepingcomputer.com/news/security/badbox-30-botnet-returns-with-record-breaking-40-billion-daily-ad-requests/",
+      "title": "Spanish LaLiga confirms hackers stole soccer fans\u2019 personal data",
+      "link": "https://www.bleepingcomputer.com/news/security/spanish-laliga-confirms-hackers-stole-soccer-fans-personal-data/",
       "source": "BleepingComputer",
       "severity": "high",
+      "mitre_tactics": [],
+      "keywords": [
+        "breach"
+      ]
+    },
+    {
+      "title": "Microsoft confirms Windows printing issues affecting Forcepoint users",
+      "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-printing-issues-after-kb5132043-windows-hotpatch/",
+      "source": "BleepingComputer",
+      "severity": "critical",
       "mitre_tactics": [
         "Execution"
       ],
       "keywords": [
+        "rce"
+      ]
+    },
+    {
+      "title": "CISA flags critical Cisco RCE flaw as actively exploited in attacks",
+      "link": "https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/",
+      "source": "BleepingComputer",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Initial Access",
+        "Execution"
+      ],
+      "keywords": [
+        "exploit",
+        "vulnerability",
+        "rce"
+      ]
+    },
+    {
+      "title": "Hackers exploit GL.iNet cloud flaw to infect routers, KVM devices",
+      "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/",
+      "source": "BleepingComputer",
+      "severity": "high",
+      "mitre_tactics": [
+        "Initial Access",
+        "Execution",
+        "Persistence"
+      ],
+      "keywords": [
+        "exploit",
+        "vulnerability",
         "malware",
-        "botnet"
+        "backdoor"
       ]
     },
     {
-      "title": "FBI reportedly hacked again, this time targeting nationwide police database",
-      "link": "https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/",
-      "source": "BleepingComputer",
+      "title": "Behind the Alias: How One Researcher Unmasked a Decade of Ransomware Actors",
+      "link": "https://www.darkreading.com/cybersecurity-operations/alias-researcher-unmasked-ransomware-actors",
+      "source": "Dark Reading",
       "severity": "critical",
       "mitre_tactics": [
-        "Execution"
+        "Execution",
+        "Impact"
       ],
       "keywords": [
-        "breach",
+        "ransomware",
         "rce"
       ]
     },
     {
-      "title": "Bell Canada says 'agentic' hacker stole enterprise customer data",
-      "link": "https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/",
-      "source": "BleepingComputer",
-      "severity": "high",
-      "mitre_tactics": [],
-      "keywords": [
-        "breach"
-      ]
-    },
-    {
-      "title": "Hackers use autonomous AI tool Cairn to find zero-day, take over server",
-      "link": "https://www.bleepingcomputer.com/news/security/hackers-use-autonomous-ai-tool-cairn-to-find-zero-day-take-over-server/",
-      "source": "BleepingComputer",
+      "title": "AI Agents Zip From Flaw Discovery to Root Access in 11 Minutes",
+      "link": "https://www.darkreading.com/cyberattacks-data-breaches/ai-agents-flaw-discovery-root-access-11-minutes",
+      "source": "Dark Reading",
       "severity": "critical",
       "mitre_tactics": [
-        "Execution"
+        "Initial Access"
       ],
       "keywords": [
         "zero-day",
-        "vulnerability",
-        "rce"
-      ]
-    },
-    {
-      "title": "Vendor data breach exposes Chase, Visa, Mastercard customer info",
-      "link": "https://www.bleepingcomputer.com/news/security/vendor-data-breach-exposes-chase-visa-mastercard-customer-info/",
-      "source": "BleepingComputer",
-      "severity": "high",
-      "mitre_tactics": [],
-      "keywords": [
-        "breach"
-      ]
-    },
-    {
-      "title": "Still tracking company passwords in spreadsheets? You\u2019re flying blind.",
-      "link": "https://www.bleepingcomputer.com/news/security/still-tracking-company-passwords-in-spreadsheets-youre-flying-blind/",
-      "source": "BleepingComputer",
-      "severity": "medium",
-      "mitre_tactics": [
-        "Initial Access",
-        "Credential Access"
-      ],
-      "keywords": [
-        "credential"
+        "exploit"
       ]
     },
     {
@@ -187,6 +181,18 @@
       "mitre_tactics": [],
       "keywords": [
         "zero-day"
+      ]
+    },
+    {
+      "title": "CTO of \u2018RansomwareHelp\u2019 Indicted for Wire Fraud",
+      "link": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
+      "source": "Krebs on Security",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Impact"
+      ],
+      "keywords": [
+        "ransomware"
       ]
     }
   ]

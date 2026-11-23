@@ -1,4 +1,4 @@
-# 🛡️ Daily Threat Intel — November 22, 2026
+# 🛡️ Daily Threat Intel — November 23, 2026
 
 > **Automated daily briefing** covering the most critical cybersecurity 
 > threats from 9 leading security news sources.
@@ -8,142 +8,140 @@
 ## 📊 Analyst Briefing
 
 📊 15 threats detected today.
-🔴 CRITICAL (7): Researchers Demonstrate Ghostscript Sandbox-Escape RCE via Crafted File Uploads in Popular Apps | GnuPG Warns Critical GPGME Flaw Could Expose App Data via Malicious OpenPGP Keys | Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access
-🟠 HIGH (6): WhatsApp Patches 3 Security Flaws, Including Android Bug Suspected of Use in Scams | Rackspace Spot breach let hackers access customer Kubernetes secrets | Microsoft Entra Connect Health flaw exploited to steal tenant data
+🔴 CRITICAL (12): Webworm Suspected of Modifying SoftEther VPN to Evade Detection and Hide Remote Access | ⚡ Weekly Recap: VMware 0-Day, Java4Shell, NGINX2Root, Ruby2Shell, and a Whole Lot of Shell Trouble | Critical binary-parser Flaw Enables JavaScript Injection via Malicious Parser Definitions
+🟠 HIGH (3): Hackers Exploited GL.iNet Cloud Flaw to Install Malware on Routers and KVM Devices | Spanish LaLiga confirms hackers stole soccer fans’ personal data | Hackers exploit GL.iNet cloud flaw to infect routers, KVM devices
 ⚠️ Review all articles below and patch accordingly.
 
 ---
 
 ## 🔍 Top Threats
 
-### 🔴 Researchers Demonstrate Ghostscript Sandbox-Escape RCE via Crafted File Uploads in Popular Apps
+### 🔴 Webworm Suspected of Modifying SoftEther VPN to Evade Detection and Hide Remote Access
 
 - **Source**: The Hacker News
 - **Severity**: CRITICAL
 - **MITRE Tactics**: Execution
 - **Keywords**: rce
-- **Link**: [https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html](https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html)
+- **Link**: [https://thehackernews.com/2026/11/webworm-suspected-of-modifying.html](https://thehackernews.com/2026/11/webworm-suspected-of-modifying.html)
 
-A now-patched flaw in Ghostscript allows a crafted file to escape the program's security sandbox and run commands on the server that processes it.
-
-Ghostscript is the interpreter that many Linux servers use to convert uploaded PDFs, PostScript files, and images into other formats, often without the 
+The China-aligned threat actor known as Webworm is suspected to be using a custom version of the open-source SoftEther VPN Bridge tool in an attempt to remove recognizable detection fingerprints, while disguising it as network-monitoring software to establish covert remote access to compromised netw
 
 ---
 
-### 🔴 GnuPG Warns Critical GPGME Flaw Could Expose App Data via Malicious OpenPGP Keys
+### 🔴 ⚡ Weekly Recap: VMware 0-Day, Java4Shell, NGINX2Root, Ruby2Shell, and a Whole Lot of Shell Trouble
 
 - **Source**: The Hacker News
 - **Severity**: CRITICAL
 - **MITRE Tactics**: —
-- **Keywords**: cve-
-- **Link**: [https://thehackernews.com/2026/11/gnupg-warns-critical-gpgme-flaw-could.html](https://thehackernews.com/2026/11/gnupg-warns-critical-gpgme-flaw-could.html)
+- **Keywords**: 0-day, breach
+- **Link**: [https://thehackernews.com/2026/11/weekly-recap-vmware-0-day-java4shell.html](https://thehackernews.com/2026/11/weekly-recap-vmware-0-day-java4shell.html)
 
-A malicious OpenPGP key with an unusually long user ID can trigger a critical memory bug in GPGME, the standard library that programs use to work with GnuPG.
+A stolen key. A trusted message. A routine update. None of these looks like the start of a major security problem. That's partly why they work. Attackers don't always need to break down a door. Sometimes they just use one that's already open.
 
-The GnuPG project warned yesterday that the flaw could be used to steal data from affected applications and has released fixed versions.
-
-The
+This week's stories show how quickly a small opening can
 
 ---
 
-### 🔴 Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access
+### 🔴 Critical binary-parser Flaw Enables JavaScript Injection via Malicious Parser Definitions
 
 - **Source**: The Hacker News
 - **Severity**: CRITICAL
-- **MITRE Tactics**: Execution
-- **Keywords**: zero-day, rce
-- **Link**: [https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html](https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html)
+- **MITRE Tactics**: —
+- **Keywords**: vulnerability, cve-
+- **Link**: [https://thehackernews.com/2026/11/critical-binary-parser-flaw-enables.html](https://thehackernews.com/2026/11/critical-binary-parser-flaw-enables.html)
 
-Suspected China-linked hackers used autonomous AI agents to find a previously unknown flaw in MONAI Label, an open-source medical imaging server, and gain root access to a university server, Amazon Threat Intelligence said this week.
+A critical security flaw has been disclosed in the popular binary-parser library that could allow an attacker who controls parser definitions to execute arbitrary code.
 
-The flaw allows an attacker with no account to write files outsid
+The vulnerability, tracked as CVE-2026-134814 (CVSS score: 9.2 / 8.1), is a case of code injection impacting binary-parser version
 
 ---
 
-### 🔴 Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge
+### 🔴 Hackers Exploit Critical ScreenConnect Flaw to Hijack MSP Technician PCs Without Warning
 
 - **Source**: The Hacker News
 - **Severity**: CRITICAL
 - **MITRE Tactics**: Initial Access
-- **Keywords**: exploit, vulnerability, cve-
-- **Link**: [https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html](https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html)
+- **Keywords**: exploit, cve-
+- **Link**: [https://thehackernews.com/2026/11/hackers-exploit-critical-screenconnect.html](https://thehackernews.com/2026/11/hackers-exploit-critical-screenconnect.html)
 
-The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added four flaws impacting Apache Roller, Cisco Expressway, SAP NetWeaver, and Broadcom VMware vCenter to its Known Exploited Vulnerabilities (KEV), citing evidence of active exploitation.
+Threat actors are exploiting a now-patched security flaw in ConnectWise ScreenConnect to target managed service provider (MSP) servers.
 
-The vulnerabilities are listed belo
+The activity revolves around CVE-2026-84869 (CVSS score: 9.9), a critical ScreenConnect client flaw that allows a guest to transfer and execute a malicious payload
 
 ---
 
-### 🔴 FBI reportedly hacked again, this time targeting nationwide police database
+### 🔴 N-able Discloses Critical Mail Assure Vulnerability Found During Breach Investigation
+
+- **Source**: The Hacker News
+- **Severity**: CRITICAL
+- **MITRE Tactics**: —
+- **Keywords**: breach, vulnerability, cve-
+- **Link**: [https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html](https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html)
+
+N-able yesterday disclosed a critical flaw it found while investigating the breach of its Mail Assure and SpamExperts Hosted Cloud, an email filtering service it runs for managed service providers.
+
+The bug, tracked as CVE-2026-134624, is a server-side request forgery (SSRF) flaw. It allowed a user 
+
+---
+
+### 🔴 Hackers Exploit Critical ASP.NET Anti-CSRF Library Flaw Allowing Unauthenticated RCE
+
+- **Source**: The Hacker News
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access, Execution
+- **Keywords**: exploit, vulnerability, cve-, rce
+- **Link**: [https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html](https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html)
+
+Cybersecurity researchers have urged users to discontinue using a legacy ASP.NET anti-CSRF library named Idunno.AntiCsrf ("Idunno.AntiCsrf.dll") following the discovery of a critical vulnerability that has been exploited in the wild.
+
+The vulnerability, tracked as CVE-2026-131914, carries a CVSS sco
+
+---
+
+### 🔴 Microsoft confirms Windows printing issues affecting Forcepoint users
 
 - **Source**: BleepingComputer
 - **Severity**: CRITICAL
 - **MITRE Tactics**: Execution
-- **Keywords**: breach, rce
-- **Link**: [https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/](https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/)
+- **Keywords**: rce
+- **Link**: [https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-printing-issues-after-kb5132043-windows-hotpatch/](https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-printing-issues-after-kb5132043-windows-hotpatch/)
 
-FBI systems have reportedly been breached for the second time in two months, this time targeting the agency's National Crime Information Center (NCIC), which is used to share information between local, state, and federal law enforcement agencies. [...]
+Microsoft confirmed printing issues on systems running Forcepoint DLP software after installing the KB5132043 November 2026 Windows 11 hotpatch. [...]
 
 ---
 
-### 🔴 Hackers use autonomous AI tool Cairn to find zero-day, take over server
+### 🔴 CISA flags critical Cisco RCE flaw as actively exploited in attacks
 
 - **Source**: BleepingComputer
 - **Severity**: CRITICAL
-- **MITRE Tactics**: Execution
-- **Keywords**: zero-day, vulnerability, rce
-- **Link**: [https://www.bleepingcomputer.com/news/security/hackers-use-autonomous-ai-tool-cairn-to-find-zero-day-take-over-server/](https://www.bleepingcomputer.com/news/security/hackers-use-autonomous-ai-tool-cairn-to-find-zero-day-take-over-server/)
+- **MITRE Tactics**: Initial Access, Execution
+- **Keywords**: exploit, vulnerability, rce
+- **Link**: [https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/](https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/)
 
-Threat actors used the open-source AI penetration-testing framework Cairn to find a previously unknown vulnerability in a medical imaging application. [...]
+The US Cybersecurity and Infrastructure Security Agency (CISA) warned federal agencies that attackers are now exploiting a recently patched critical Cisco Expressway vulnerability in the wild. [...]
 
 ---
 
-### 🔴 China's 'Armory Castle' Lays Siege to VMware vCenter Zero-Day
+### 🔴 Behind the Alias: How One Researcher Unmasked a Decade of Ransomware Actors
 
 - **Source**: Dark Reading
 - **Severity**: CRITICAL
-- **MITRE Tactics**: —
-- **Keywords**: zero-day
-- **Link**: [https://www.darkreading.com/cyberattacks-data-breaches/china-armory-castle-vmware-vcenter-zero-day](https://www.darkreading.com/cyberattacks-data-breaches/china-armory-castle-vmware-vcenter-zero-day)
+- **MITRE Tactics**: Execution, Impact
+- **Keywords**: ransomware, rce
+- **Link**: [https://www.darkreading.com/cybersecurity-operations/alias-researcher-unmasked-ransomware-actors](https://www.darkreading.com/cybersecurity-operations/alias-researcher-unmasked-ransomware-actors)
 
-During the last wave of major VMware vCenter security updates, a China-nexus threat group likely already had its next zero-day up its sleeve.
+Ransomware isn't slowing down. A new framework gives security teams the edge to trace attackers back to their source.
 
 ---
 
-### 🟠 WhatsApp Patches 3 Security Flaws, Including Android Bug Suspected of Use in Scams
+### 🔴 AI Agents Zip From Flaw Discovery to Root Access in 11 Minutes
 
-- **Source**: The Hacker News
-- **Severity**: HIGH
+- **Source**: Dark Reading
+- **Severity**: CRITICAL
 - **MITRE Tactics**: Initial Access
-- **Keywords**: exploit, vulnerability, cve-
-- **Link**: [https://thehackernews.com/2026/11/whatsapp-patches-3-security-flaws.html](https://thehackernews.com/2026/11/whatsapp-patches-3-security-flaws.html)
+- **Keywords**: zero-day, exploit
+- **Link**: [https://www.darkreading.com/cyberattacks-data-breaches/ai-agents-flaw-discovery-root-access-11-minutes](https://www.darkreading.com/cyberattacks-data-breaches/ai-agents-flaw-discovery-root-access-11-minutes)
 
-Meta-owned WhatsApp has addressed security vulnerabilities, including one impacting its Android app that it suspects may have been exploited in connection with scam messages.
-
-The vulnerability, tracked as CVE-2026-23871 (CVSS score: 3.5), has been described as a case of incomplete validation of ext
-
----
-
-### 🟠 Rackspace Spot breach let hackers access customer Kubernetes secrets
-
-- **Source**: BleepingComputer
-- **Severity**: HIGH
-- **MITRE Tactics**: Initial Access, Credential Access
-- **Keywords**: breach, credential
-- **Link**: [https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/](https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/)
-
-Rackspace warned customers that hackers breached its Rackspace Spot cloud platform using compromised credentials, allowing them to deploy unauthorized workloads and access Kubernetes secrets in customer clusters. [...]
-
----
-
-### 🟠 Microsoft Entra Connect Health flaw exploited to steal tenant data
-
-- **Source**: BleepingComputer
-- **Severity**: HIGH
-- **MITRE Tactics**: Initial Access
-- **Keywords**: breach, exploit, vulnerability
-- **Link**: [https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/](https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/)
-
-Microsoft is warning organizations that it suffered a data breach after attackers exploited a vulnerability in its Entra Connect Health service to gain unauthorized access to administrator email addresses and tenant configuration information. [...]
+A China-nexus actor used the Cairn penetration testing tool in attacks against East Asian universities, exploiting a zero-day in a medical imaging app.
 
 ---
