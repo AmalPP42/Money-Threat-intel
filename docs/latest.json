@@ -1,198 +1,187 @@
 {
-  "date": "2026-11-23T19:03:29.265843",
-  "summary": "\ud83d\udcca 15 threats detected today.\n\ud83d\udd34 CRITICAL (12): Webworm Suspected of Modifying SoftEther VPN to Evade Detection and Hide Remote Access | \u26a1 Weekly Recap: VMware 0-Day, Java4Shell, NGINX2Root, Ruby2Shell, and a Whole Lot of Shell Trouble | Critical binary-parser Flaw Enables JavaScript Injection via Malicious Parser Definitions\n\ud83d\udfe0 HIGH (3): Hackers Exploited GL.iNet Cloud Flaw to Install Malware on Routers and KVM Devices | Spanish LaLiga confirms hackers stole soccer fans\u2019 personal data | Hackers exploit GL.iNet cloud flaw to infect routers, KVM devices\n\u26a0\ufe0f Review all articles below and patch accordingly.",
+  "date": "2026-11-24T18:43:26.569413",
+  "summary": "\ud83d\udcca 15 threats detected today.\n\ud83d\udd34 CRITICAL (7): Iran-Aligned Volant Manticore Uses IPFS-Based KuboShell Backdoor in Espionage Campaigns | VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation | Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap\n\ud83d\udfe0 HIGH (6): Okta Links ShinyHunters-Associated Vishing Group to New INCEPTION Data Leak Site | Radware discloses breach exposing customer cloud access keys | ShinyHunters claims to return after FBI arrests, uses old PGP keys as proof\n\u26a0\ufe0f Review all articles below and patch accordingly.",
   "articles": [
     {
-      "title": "Webworm Suspected of Modifying SoftEther VPN to Evade Detection and Hide Remote Access",
-      "link": "https://thehackernews.com/2026/11/webworm-suspected-of-modifying.html",
+      "title": "Iran-Aligned Volant Manticore Uses IPFS-Based KuboShell Backdoor in Espionage Campaigns",
+      "link": "https://thehackernews.com/2026/11/iran-aligned-volant-manticore-uses-ipfs.html",
       "source": "The Hacker News",
       "severity": "critical",
       "mitre_tactics": [
-        "Execution"
-      ],
-      "keywords": [
-        "rce"
-      ]
-    },
-    {
-      "title": "\u26a1 Weekly Recap: VMware 0-Day, Java4Shell, NGINX2Root, Ruby2Shell, and a Whole Lot of Shell Trouble",
-      "link": "https://thehackernews.com/2026/11/weekly-recap-vmware-0-day-java4shell.html",
-      "source": "The Hacker News",
-      "severity": "critical",
-      "mitre_tactics": [],
-      "keywords": [
-        "0-day",
-        "breach"
-      ]
-    },
-    {
-      "title": "Critical binary-parser Flaw Enables JavaScript Injection via Malicious Parser Definitions",
-      "link": "https://thehackernews.com/2026/11/critical-binary-parser-flaw-enables.html",
-      "source": "The Hacker News",
-      "severity": "critical",
-      "mitre_tactics": [],
-      "keywords": [
-        "vulnerability",
-        "cve-"
-      ]
-    },
-    {
-      "title": "Hackers Exploit Critical ScreenConnect Flaw to Hijack MSP Technician PCs Without Warning",
-      "link": "https://thehackernews.com/2026/11/hackers-exploit-critical-screenconnect.html",
-      "source": "The Hacker News",
-      "severity": "critical",
-      "mitre_tactics": [
-        "Initial Access"
-      ],
-      "keywords": [
-        "exploit",
-        "cve-"
-      ]
-    },
-    {
-      "title": "N-able Discloses Critical Mail Assure Vulnerability Found During Breach Investigation",
-      "link": "https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html",
-      "source": "The Hacker News",
-      "severity": "critical",
-      "mitre_tactics": [],
-      "keywords": [
-        "breach",
-        "vulnerability",
-        "cve-"
-      ]
-    },
-    {
-      "title": "Hackers Exploit Critical ASP.NET Anti-CSRF Library Flaw Allowing Unauthenticated RCE",
-      "link": "https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html",
-      "source": "The Hacker News",
-      "severity": "critical",
-      "mitre_tactics": [
-        "Initial Access",
-        "Execution"
-      ],
-      "keywords": [
-        "exploit",
-        "vulnerability",
-        "cve-",
-        "rce"
-      ]
-    },
-    {
-      "title": "Hackers Exploited GL.iNet Cloud Flaw to Install Malware on Routers and KVM Devices",
-      "link": "https://thehackernews.com/2026/11/hackers-exploited-glinet-cloud-flaw-to.html",
-      "source": "The Hacker News",
-      "severity": "high",
-      "mitre_tactics": [
-        "Initial Access",
-        "Execution"
-      ],
-      "keywords": [
-        "exploit",
-        "vulnerability",
-        "malware"
-      ]
-    },
-    {
-      "title": "Spanish LaLiga confirms hackers stole soccer fans\u2019 personal data",
-      "link": "https://www.bleepingcomputer.com/news/security/spanish-laliga-confirms-hackers-stole-soccer-fans-personal-data/",
-      "source": "BleepingComputer",
-      "severity": "high",
-      "mitre_tactics": [],
-      "keywords": [
-        "breach"
-      ]
-    },
-    {
-      "title": "Microsoft confirms Windows printing issues affecting Forcepoint users",
-      "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-printing-issues-after-kb5132043-windows-hotpatch/",
-      "source": "BleepingComputer",
-      "severity": "critical",
-      "mitre_tactics": [
-        "Execution"
-      ],
-      "keywords": [
-        "rce"
-      ]
-    },
-    {
-      "title": "CISA flags critical Cisco RCE flaw as actively exploited in attacks",
-      "link": "https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/",
-      "source": "BleepingComputer",
-      "severity": "critical",
-      "mitre_tactics": [
-        "Initial Access",
-        "Execution"
-      ],
-      "keywords": [
-        "exploit",
-        "vulnerability",
-        "rce"
-      ]
-    },
-    {
-      "title": "Hackers exploit GL.iNet cloud flaw to infect routers, KVM devices",
-      "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/",
-      "source": "BleepingComputer",
-      "severity": "high",
-      "mitre_tactics": [
-        "Initial Access",
-        "Execution",
         "Persistence"
       ],
       "keywords": [
-        "exploit",
-        "vulnerability",
-        "malware",
         "backdoor"
       ]
     },
     {
-      "title": "Behind the Alias: How One Researcher Unmasked a Decade of Ransomware Actors",
-      "link": "https://www.darkreading.com/cybersecurity-operations/alias-researcher-unmasked-ransomware-actors",
-      "source": "Dark Reading",
-      "severity": "critical",
-      "mitre_tactics": [
-        "Execution",
-        "Impact"
-      ],
-      "keywords": [
-        "ransomware",
-        "rce"
-      ]
-    },
-    {
-      "title": "AI Agents Zip From Flaw Discovery to Root Access in 11 Minutes",
-      "link": "https://www.darkreading.com/cyberattacks-data-breaches/ai-agents-flaw-discovery-root-access-11-minutes",
-      "source": "Dark Reading",
+      "title": "VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation",
+      "link": "https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html",
+      "source": "The Hacker News",
       "severity": "critical",
       "mitre_tactics": [
         "Initial Access"
       ],
       "keywords": [
         "zero-day",
+        "exploit",
+        "vulnerability",
+        "cve-"
+      ]
+    },
+    {
+      "title": "Okta Links ShinyHunters-Associated Vishing Group to New INCEPTION Data Leak Site",
+      "link": "https://thehackernews.com/2026/11/okta-links-shinyhunters-associated.html",
+      "source": "The Hacker News",
+      "severity": "high",
+      "mitre_tactics": [
+        "Initial Access",
+        "Credential Access"
+      ],
+      "keywords": [
+        "phishing",
+        "data leak",
+        "credential"
+      ]
+    },
+    {
+      "title": "Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap",
+      "link": "https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html",
+      "source": "The Hacker News",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Initial Access",
+        "Execution"
+      ],
+      "keywords": [
+        "rce",
+        "supply chain"
+      ]
+    },
+    {
+      "title": "Google Researcher Shows How a Single Bit Change in .NET Files Bypassed Windows Code Integrity",
+      "link": "https://thehackernews.com/2026/11/google-researcher-shows-how-single-bit.html",
+      "source": "The Hacker News",
+      "severity": "medium",
+      "mitre_tactics": [],
+      "keywords": [
+        "cve-"
+      ]
+    },
+    {
+      "title": "2027 SOC Budget Reset: 5 Priorities to Cut Costs and Reduce Cyber Risk",
+      "link": "https://thehackernews.com/2026/11/2027-soc-budget-reset-5-priorities-to.html",
+      "source": "The Hacker News",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Execution"
+      ],
+      "keywords": [
+        "rce"
+      ]
+    },
+    {
+      "title": "Microsoft Fixes Azure API Management Classic Flaw as Actor Targets Customer Secrets",
+      "link": "https://thehackernews.com/2026/11/microsoft-fixes-azure-api-management.html",
+      "source": "The Hacker News",
+      "severity": "medium",
+      "mitre_tactics": [],
+      "keywords": [
+        "vulnerability"
+      ]
+    },
+    {
+      "title": "Radware discloses breach exposing customer cloud access keys",
+      "link": "https://www.bleepingcomputer.com/news/security/radware-discloses-breach-exposing-customer-cloud-access-keys/",
+      "source": "BleepingComputer",
+      "severity": "high",
+      "mitre_tactics": [],
+      "keywords": [
+        "breach"
+      ]
+    },
+    {
+      "title": "ShinyHunters claims to return after FBI arrests, uses old PGP keys as proof",
+      "link": "https://www.bleepingcomputer.com/news/security/shinyhunters-resurfaces-after-fbi-arrests-uses-old-pgp-keys-as-proof/",
+      "source": "BleepingComputer",
+      "severity": "high",
+      "mitre_tactics": [],
+      "keywords": [
+        "data leak"
+      ]
+    },
+    {
+      "title": "European Commission confirms data theft in EU Academy breach",
+      "link": "https://www.bleepingcomputer.com/news/security/european-commission-confirms-data-theft-in-eu-academy-breach/",
+      "source": "BleepingComputer",
+      "severity": "high",
+      "mitre_tactics": [
+        "Collection"
+      ],
+      "keywords": [
+        "breach"
+      ]
+    },
+    {
+      "title": "Hackers compromise Check Point Servers in 22 organizations",
+      "link": "https://www.bleepingcomputer.com/news/security/hackers-compromise-check-point-servers-in-22-organizations/",
+      "source": "BleepingComputer",
+      "severity": "high",
+      "mitre_tactics": [
+        "Initial Access"
+      ],
+      "keywords": [
         "exploit"
       ]
     },
     {
-      "title": "China's 'Armory Castle' Lays Siege to VMware vCenter Zero-Day",
-      "link": "https://www.darkreading.com/cyberattacks-data-breaches/china-armory-castle-vmware-vcenter-zero-day",
-      "source": "Dark Reading",
+      "title": "Police disrupt 57 illegal streaming services with 7.3 million visits",
+      "link": "https://www.bleepingcomputer.com/news/security/police-disrupt-57-illegal-streaming-services-with-73-million-visits/",
+      "source": "BleepingComputer",
       "severity": "critical",
-      "mitre_tactics": [],
+      "mitre_tactics": [
+        "Execution"
+      ],
       "keywords": [
-        "zero-day"
+        "rce"
       ]
     },
     {
-      "title": "CTO of \u2018RansomwareHelp\u2019 Indicted for Wire Fraud",
-      "link": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
-      "source": "Krebs on Security",
+      "title": "From Vulnerability Noise to Resilience: Rethinking Security in the AI Era",
+      "link": "https://www.bleepingcomputer.com/news/security/from-vulnerability-noise-to-resilience-rethinking-security-in-the-ai-era/",
+      "source": "BleepingComputer",
       "severity": "critical",
       "mitre_tactics": [
-        "Impact"
+        "Initial Access"
       ],
       "keywords": [
-        "ransomware"
+        "vulnerability",
+        "supply chain"
+      ]
+    },
+    {
+      "title": "McDonald's Japan data breach exposes customer location information",
+      "link": "https://www.bleepingcomputer.com/news/security/mcdonalds-japan-data-breach-exposes-customer-location-information/",
+      "source": "BleepingComputer",
+      "severity": "high",
+      "mitre_tactics": [],
+      "keywords": [
+        "breach"
+      ]
+    },
+    {
+      "title": "New Shirudo tool uses AI to shield unpatched Linux systems from exploits",
+      "link": "https://www.bleepingcomputer.com/news/security/new-shirudo-tool-uses-ai-to-shield-unpatched-linux-systems-from-exploits/",
+      "source": "BleepingComputer",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Initial Access",
+        "Execution"
+      ],
+      "keywords": [
+        "exploit",
+        "vulnerability",
+        "rce"
       ]
     }
   ]

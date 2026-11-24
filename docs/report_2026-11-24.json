@@ -1,0 +1,188 @@
+{
+  "date": "2026-11-24T18:43:26.569413",
+  "summary": "\ud83d\udcca 15 threats detected today.\n\ud83d\udd34 CRITICAL (7): Iran-Aligned Volant Manticore Uses IPFS-Based KuboShell Backdoor in Espionage Campaigns | VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation | Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap\n\ud83d\udfe0 HIGH (6): Okta Links ShinyHunters-Associated Vishing Group to New INCEPTION Data Leak Site | Radware discloses breach exposing customer cloud access keys | ShinyHunters claims to return after FBI arrests, uses old PGP keys as proof\n\u26a0\ufe0f Review all articles below and patch accordingly.",
+  "articles": [
+    {
+      "title": "Iran-Aligned Volant Manticore Uses IPFS-Based KuboShell Backdoor in Espionage Campaigns",
+      "link": "https://thehackernews.com/2026/11/iran-aligned-volant-manticore-uses-ipfs.html",
+      "source": "The Hacker News",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Persistence"
+      ],
+      "keywords": [
+        "backdoor"
+      ]
+    },
+    {
+      "title": "VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation",
+      "link": "https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html",
+      "source": "The Hacker News",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Initial Access"
+      ],
+      "keywords": [
+        "zero-day",
+        "exploit",
+        "vulnerability",
+        "cve-"
+      ]
+    },
+    {
+      "title": "Okta Links ShinyHunters-Associated Vishing Group to New INCEPTION Data Leak Site",
+      "link": "https://thehackernews.com/2026/11/okta-links-shinyhunters-associated.html",
+      "source": "The Hacker News",
+      "severity": "high",
+      "mitre_tactics": [
+        "Initial Access",
+        "Credential Access"
+      ],
+      "keywords": [
+        "phishing",
+        "data leak",
+        "credential"
+      ]
+    },
+    {
+      "title": "Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap",
+      "link": "https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html",
+      "source": "The Hacker News",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Initial Access",
+        "Execution"
+      ],
+      "keywords": [
+        "rce",
+        "supply chain"
+      ]
+    },
+    {
+      "title": "Google Researcher Shows How a Single Bit Change in .NET Files Bypassed Windows Code Integrity",
+      "link": "https://thehackernews.com/2026/11/google-researcher-shows-how-single-bit.html",
+      "source": "The Hacker News",
+      "severity": "medium",
+      "mitre_tactics": [],
+      "keywords": [
+        "cve-"
+      ]
+    },
+    {
+      "title": "2027 SOC Budget Reset: 5 Priorities to Cut Costs and Reduce Cyber Risk",
+      "link": "https://thehackernews.com/2026/11/2027-soc-budget-reset-5-priorities-to.html",
+      "source": "The Hacker News",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Execution"
+      ],
+      "keywords": [
+        "rce"
+      ]
+    },
+    {
+      "title": "Microsoft Fixes Azure API Management Classic Flaw as Actor Targets Customer Secrets",
+      "link": "https://thehackernews.com/2026/11/microsoft-fixes-azure-api-management.html",
+      "source": "The Hacker News",
+      "severity": "medium",
+      "mitre_tactics": [],
+      "keywords": [
+        "vulnerability"
+      ]
+    },
+    {
+      "title": "Radware discloses breach exposing customer cloud access keys",
+      "link": "https://www.bleepingcomputer.com/news/security/radware-discloses-breach-exposing-customer-cloud-access-keys/",
+      "source": "BleepingComputer",
+      "severity": "high",
+      "mitre_tactics": [],
+      "keywords": [
+        "breach"
+      ]
+    },
+    {
+      "title": "ShinyHunters claims to return after FBI arrests, uses old PGP keys as proof",
+      "link": "https://www.bleepingcomputer.com/news/security/shinyhunters-resurfaces-after-fbi-arrests-uses-old-pgp-keys-as-proof/",
+      "source": "BleepingComputer",
+      "severity": "high",
+      "mitre_tactics": [],
+      "keywords": [
+        "data leak"
+      ]
+    },
+    {
+      "title": "European Commission confirms data theft in EU Academy breach",
+      "link": "https://www.bleepingcomputer.com/news/security/european-commission-confirms-data-theft-in-eu-academy-breach/",
+      "source": "BleepingComputer",
+      "severity": "high",
+      "mitre_tactics": [
+        "Collection"
+      ],
+      "keywords": [
+        "breach"
+      ]
+    },
+    {
+      "title": "Hackers compromise Check Point Servers in 22 organizations",
+      "link": "https://www.bleepingcomputer.com/news/security/hackers-compromise-check-point-servers-in-22-organizations/",
+      "source": "BleepingComputer",
+      "severity": "high",
+      "mitre_tactics": [
+        "Initial Access"
+      ],
+      "keywords": [
+        "exploit"
+      ]
+    },
+    {
+      "title": "Police disrupt 57 illegal streaming services with 7.3 million visits",
+      "link": "https://www.bleepingcomputer.com/news/security/police-disrupt-57-illegal-streaming-services-with-73-million-visits/",
+      "source": "BleepingComputer",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Execution"
+      ],
+      "keywords": [
+        "rce"
+      ]
+    },
+    {
+      "title": "From Vulnerability Noise to Resilience: Rethinking Security in the AI Era",
+      "link": "https://www.bleepingcomputer.com/news/security/from-vulnerability-noise-to-resilience-rethinking-security-in-the-ai-era/",
+      "source": "BleepingComputer",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Initial Access"
+      ],
+      "keywords": [
+        "vulnerability",
+        "supply chain"
+      ]
+    },
+    {
+      "title": "McDonald's Japan data breach exposes customer location information",
+      "link": "https://www.bleepingcomputer.com/news/security/mcdonalds-japan-data-breach-exposes-customer-location-information/",
+      "source": "BleepingComputer",
+      "severity": "high",
+      "mitre_tactics": [],
+      "keywords": [
+        "breach"
+      ]
+    },
+    {
+      "title": "New Shirudo tool uses AI to shield unpatched Linux systems from exploits",
+      "link": "https://www.bleepingcomputer.com/news/security/new-shirudo-tool-uses-ai-to-shield-unpatched-linux-systems-from-exploits/",
+      "source": "BleepingComputer",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Initial Access",
+        "Execution"
+      ],
+      "keywords": [
+        "exploit",
+        "vulnerability",
+        "rce"
+      ]
+    }
+  ]
+}

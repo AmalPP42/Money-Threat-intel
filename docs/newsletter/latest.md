@@ -1,4 +1,4 @@
-# 🛡️ Daily Threat Intel — November 23, 2026
+# 🛡️ Daily Threat Intel — November 24, 2026
 
 > **Automated daily briefing** covering the most critical cybersecurity 
 > threats from 9 leading security news sources.
@@ -8,140 +8,140 @@
 ## 📊 Analyst Briefing
 
 📊 15 threats detected today.
-🔴 CRITICAL (12): Webworm Suspected of Modifying SoftEther VPN to Evade Detection and Hide Remote Access | ⚡ Weekly Recap: VMware 0-Day, Java4Shell, NGINX2Root, Ruby2Shell, and a Whole Lot of Shell Trouble | Critical binary-parser Flaw Enables JavaScript Injection via Malicious Parser Definitions
-🟠 HIGH (3): Hackers Exploited GL.iNet Cloud Flaw to Install Malware on Routers and KVM Devices | Spanish LaLiga confirms hackers stole soccer fans’ personal data | Hackers exploit GL.iNet cloud flaw to infect routers, KVM devices
+🔴 CRITICAL (7): Iran-Aligned Volant Manticore Uses IPFS-Based KuboShell Backdoor in Espionage Campaigns | VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation | Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap
+🟠 HIGH (6): Okta Links ShinyHunters-Associated Vishing Group to New INCEPTION Data Leak Site | Radware discloses breach exposing customer cloud access keys | ShinyHunters claims to return after FBI arrests, uses old PGP keys as proof
 ⚠️ Review all articles below and patch accordingly.
 
 ---
 
 ## 🔍 Top Threats
 
-### 🔴 Webworm Suspected of Modifying SoftEther VPN to Evade Detection and Hide Remote Access
+### 🔴 Iran-Aligned Volant Manticore Uses IPFS-Based KuboShell Backdoor in Espionage Campaigns
+
+- **Source**: The Hacker News
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Persistence
+- **Keywords**: backdoor
+- **Link**: [https://thehackernews.com/2026/11/iran-aligned-volant-manticore-uses-ipfs.html](https://thehackernews.com/2026/11/iran-aligned-volant-manticore-uses-ipfs.html)
+
+A previously undocumented Iran-aligned cyber espionage group called Volant Manticore has targeted telecommunications companies, airlines, and critical infrastructure in Cyprus.
+
+Central to the group's operations is a backdoor called KuboShell that uses the InterPlanetary File System (IPFS) for comma
+
+---
+
+### 🔴 VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation
+
+- **Source**: The Hacker News
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access
+- **Keywords**: zero-day, exploit, vulnerability, cve-
+- **Link**: [https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html](https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html)
+
+Broadcom has shipped patches to address 23 vulnerabilities impacting VMware ESX, vCenter, Workstation, Fusion, and Avi Load Balancer, including one critical bug that could be abused to bypass authentication.
+
+The critical vulnerability, tracked as CVE-2026-123903, is rated 9.8 out of 10.0 on the CVS
+
+---
+
+### 🔴 Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap
+
+- **Source**: The Hacker News
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access, Execution
+- **Keywords**: rce, supply chain
+- **Link**: [https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html](https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html)
+
+Pinning GitHub Actions to an exact version of their code, known as SHA pinning, has become the go-to defense against software supply chain attacks. Attackers have already found a way around it.
+
+In March 2026, the hackers who hijacked Trivy, a widely used open-source security scanner, planted malici
+
+---
+
+### 🔴 2027 SOC Budget Reset: 5 Priorities to Cut Costs and Reduce Cyber Risk
 
 - **Source**: The Hacker News
 - **Severity**: CRITICAL
 - **MITRE Tactics**: Execution
 - **Keywords**: rce
-- **Link**: [https://thehackernews.com/2026/11/webworm-suspected-of-modifying.html](https://thehackernews.com/2026/11/webworm-suspected-of-modifying.html)
+- **Link**: [https://thehackernews.com/2026/11/2027-soc-budget-reset-5-priorities-to.html](https://thehackernews.com/2026/11/2027-soc-budget-reset-5-priorities-to.html)
 
-The China-aligned threat actor known as Webworm is suspected to be using a custom version of the open-source SoftEther VPN Bridge tool in an attempt to remove recognizable detection fingerprints, while disguising it as network-monitoring software to establish covert remote access to compromised netw
+What if your biggest SOC budget problem isn't how much you spend, but how much analyst time you lose?
 
----
-
-### 🔴 ⚡ Weekly Recap: VMware 0-Day, Java4Shell, NGINX2Root, Ruby2Shell, and a Whole Lot of Shell Trouble
-
-- **Source**: The Hacker News
-- **Severity**: CRITICAL
-- **MITRE Tactics**: —
-- **Keywords**: 0-day, breach
-- **Link**: [https://thehackernews.com/2026/11/weekly-recap-vmware-0-day-java4shell.html](https://thehackernews.com/2026/11/weekly-recap-vmware-0-day-java4shell.html)
-
-A stolen key. A trusted message. A routine update. None of these looks like the start of a major security problem. That's partly why they work. Attackers don't always need to break down a door. Sometimes they just use one that's already open.
-
-This week's stories show how quickly a small opening can
+According to ANY.RUN's estimates, SOC teams could recover 450 analyst hours per 1,000 investigated alerts through faster threat analysis and IOC research. That's a significant opportunity as manual
 
 ---
 
-### 🔴 Critical binary-parser Flaw Enables JavaScript Injection via Malicious Parser Definitions
-
-- **Source**: The Hacker News
-- **Severity**: CRITICAL
-- **MITRE Tactics**: —
-- **Keywords**: vulnerability, cve-
-- **Link**: [https://thehackernews.com/2026/11/critical-binary-parser-flaw-enables.html](https://thehackernews.com/2026/11/critical-binary-parser-flaw-enables.html)
-
-A critical security flaw has been disclosed in the popular binary-parser library that could allow an attacker who controls parser definitions to execute arbitrary code.
-
-The vulnerability, tracked as CVE-2026-134814 (CVSS score: 9.2 / 8.1), is a case of code injection impacting binary-parser version
-
----
-
-### 🔴 Hackers Exploit Critical ScreenConnect Flaw to Hijack MSP Technician PCs Without Warning
-
-- **Source**: The Hacker News
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access
-- **Keywords**: exploit, cve-
-- **Link**: [https://thehackernews.com/2026/11/hackers-exploit-critical-screenconnect.html](https://thehackernews.com/2026/11/hackers-exploit-critical-screenconnect.html)
-
-Threat actors are exploiting a now-patched security flaw in ConnectWise ScreenConnect to target managed service provider (MSP) servers.
-
-The activity revolves around CVE-2026-84869 (CVSS score: 9.9), a critical ScreenConnect client flaw that allows a guest to transfer and execute a malicious payload
-
----
-
-### 🔴 N-able Discloses Critical Mail Assure Vulnerability Found During Breach Investigation
-
-- **Source**: The Hacker News
-- **Severity**: CRITICAL
-- **MITRE Tactics**: —
-- **Keywords**: breach, vulnerability, cve-
-- **Link**: [https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html](https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html)
-
-N-able yesterday disclosed a critical flaw it found while investigating the breach of its Mail Assure and SpamExperts Hosted Cloud, an email filtering service it runs for managed service providers.
-
-The bug, tracked as CVE-2026-134624, is a server-side request forgery (SSRF) flaw. It allowed a user 
-
----
-
-### 🔴 Hackers Exploit Critical ASP.NET Anti-CSRF Library Flaw Allowing Unauthenticated RCE
-
-- **Source**: The Hacker News
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access, Execution
-- **Keywords**: exploit, vulnerability, cve-, rce
-- **Link**: [https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html](https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html)
-
-Cybersecurity researchers have urged users to discontinue using a legacy ASP.NET anti-CSRF library named Idunno.AntiCsrf ("Idunno.AntiCsrf.dll") following the discovery of a critical vulnerability that has been exploited in the wild.
-
-The vulnerability, tracked as CVE-2026-131914, carries a CVSS sco
-
----
-
-### 🔴 Microsoft confirms Windows printing issues affecting Forcepoint users
+### 🔴 Police disrupt 57 illegal streaming services with 7.3 million visits
 
 - **Source**: BleepingComputer
 - **Severity**: CRITICAL
 - **MITRE Tactics**: Execution
 - **Keywords**: rce
-- **Link**: [https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-printing-issues-after-kb5132043-windows-hotpatch/](https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-printing-issues-after-kb5132043-windows-hotpatch/)
+- **Link**: [https://www.bleepingcomputer.com/news/security/police-disrupt-57-illegal-streaming-services-with-73-million-visits/](https://www.bleepingcomputer.com/news/security/police-disrupt-57-illegal-streaming-services-with-73-million-visits/)
 
-Microsoft confirmed printing issues on systems running Forcepoint DLP software after installing the KB5132043 November 2026 Windows 11 hotpatch. [...]
+Law enforcement authorities from 11 countries have disrupted 57 illegal streaming services that operated hundreds of websites and drew over 7.3 million visits each year. [...]
 
 ---
 
-### 🔴 CISA flags critical Cisco RCE flaw as actively exploited in attacks
+### 🔴 From Vulnerability Noise to Resilience: Rethinking Security in the AI Era
+
+- **Source**: BleepingComputer
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access
+- **Keywords**: vulnerability, supply chain
+- **Link**: [https://www.bleepingcomputer.com/news/security/from-vulnerability-noise-to-resilience-rethinking-security-in-the-ai-era/](https://www.bleepingcomputer.com/news/security/from-vulnerability-noise-to-resilience-rethinking-security-in-the-ai-era/)
+
+AI-driven development is adding complexity to software supply chains, leaving security teams overwhelmed by vulnerabilities that may pose little actual risk. RapidFort explains how runtime visibility, container hardening, and automated remediation can reduce vulnerability noise and improve software 
+
+---
+
+### 🔴 New Shirudo tool uses AI to shield unpatched Linux systems from exploits
 
 - **Source**: BleepingComputer
 - **Severity**: CRITICAL
 - **MITRE Tactics**: Initial Access, Execution
 - **Keywords**: exploit, vulnerability, rce
-- **Link**: [https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/](https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/)
+- **Link**: [https://www.bleepingcomputer.com/news/security/new-shirudo-tool-uses-ai-to-shield-unpatched-linux-systems-from-exploits/](https://www.bleepingcomputer.com/news/security/new-shirudo-tool-uses-ai-to-shield-unpatched-linux-systems-from-exploits/)
 
-The US Cybersecurity and Infrastructure Security Agency (CISA) warned federal agencies that attackers are now exploiting a recently patched critical Cisco Expressway vulnerability in the wild. [...]
-
----
-
-### 🔴 Behind the Alias: How One Researcher Unmasked a Decade of Ransomware Actors
-
-- **Source**: Dark Reading
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Execution, Impact
-- **Keywords**: ransomware, rce
-- **Link**: [https://www.darkreading.com/cybersecurity-operations/alias-researcher-unmasked-ransomware-actors](https://www.darkreading.com/cybersecurity-operations/alias-researcher-unmasked-ransomware-actors)
-
-Ransomware isn't slowing down. A new framework gives security teams the edge to trace attackers back to their source.
+OpenAI and Cisco launched an open-source Linux security tool named Shirudo that deploys temporary runtime protections to block vulnerability exploitation while administrators prepare and roll out patches, without restarting services. [...]
 
 ---
 
-### 🔴 AI Agents Zip From Flaw Discovery to Root Access in 11 Minutes
+### 🟠 Okta Links ShinyHunters-Associated Vishing Group to New INCEPTION Data Leak Site
 
-- **Source**: Dark Reading
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access
-- **Keywords**: zero-day, exploit
-- **Link**: [https://www.darkreading.com/cyberattacks-data-breaches/ai-agents-flaw-discovery-root-access-11-minutes](https://www.darkreading.com/cyberattacks-data-breaches/ai-agents-flaw-discovery-root-access-11-minutes)
+- **Source**: The Hacker News
+- **Severity**: HIGH
+- **MITRE Tactics**: Initial Access, Credential Access
+- **Keywords**: phishing, data leak, credential
+- **Link**: [https://thehackernews.com/2026/11/okta-links-shinyhunters-associated.html](https://thehackernews.com/2026/11/okta-links-shinyhunters-associated.html)
 
-A China-nexus actor used the Cairn penetration testing tool in attacks against East Asian universities, exploiting a zero-day in a medical imaging app.
+A threat cluster previously assessed to be affiliated with the ShinyHunters extortion crew may have rebranded and continued operations under a new name called INCEPTION, according to Okta's Threat Intelligence team.
+
+The cluster, dubbed O-UNC-053, is characterized by the use of voice phishing (aka v
+
+---
+
+### 🟠 Radware discloses breach exposing customer cloud access keys
+
+- **Source**: BleepingComputer
+- **Severity**: HIGH
+- **MITRE Tactics**: —
+- **Keywords**: breach
+- **Link**: [https://www.bleepingcomputer.com/news/security/radware-discloses-breach-exposing-customer-cloud-access-keys/](https://www.bleepingcomputer.com/news/security/radware-discloses-breach-exposing-customer-cloud-access-keys/)
+
+Cybersecurity company Radware says attackers gained access to some of its customers' account details and cloud access keys through an unsecured internal Cloud WAF (Web Application Firewall) management API that was left exposed online. [...]
+
+---
+
+### 🟠 ShinyHunters claims to return after FBI arrests, uses old PGP keys as proof
+
+- **Source**: BleepingComputer
+- **Severity**: HIGH
+- **MITRE Tactics**: —
+- **Keywords**: data leak
+- **Link**: [https://www.bleepingcomputer.com/news/security/shinyhunters-resurfaces-after-fbi-arrests-uses-old-pgp-keys-as-proof/](https://www.bleepingcomputer.com/news/security/shinyhunters-resurfaces-after-fbi-arrests-uses-old-pgp-keys-as-proof/)
+
+The ShinyHunters extortion gang claims to have returned in posts on a new data leak site after a series of arrests over the past two months targeting alleged members. [...]
 
 ---
