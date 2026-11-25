@@ -1,4 +1,4 @@
-# 🛡️ Daily Threat Intel — November 24, 2026
+# 🛡️ Daily Threat Intel — November 25, 2026
 
 > **Automated daily briefing** covering the most critical cybersecurity 
 > threats from 9 leading security news sources.
@@ -8,140 +8,145 @@
 ## 📊 Analyst Briefing
 
 📊 15 threats detected today.
-🔴 CRITICAL (7): Iran-Aligned Volant Manticore Uses IPFS-Based KuboShell Backdoor in Espionage Campaigns | VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation | Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap
-🟠 HIGH (6): Okta Links ShinyHunters-Associated Vishing Group to New INCEPTION Data Leak Site | Radware discloses breach exposing customer cloud access keys | ShinyHunters claims to return after FBI arrests, uses old PGP keys as proof
+🔴 CRITICAL (13): Hackers Exploit Two GeoServer Flaws as Researchers Warn of Unauthenticated RCE Chains | U.S. Treasury's Financial Crimes Agency Takes Some Systems Offline After Cyber Intrusion | Credential Remediation Is Slow When You Don’t Know What Will Break
+🟠 HIGH (2): Rackspace shuts down Spot cloud platform after security breach | Attackers Target .NET Developers With Poisoned Job Assessments
 ⚠️ Review all articles below and patch accordingly.
 
 ---
 
 ## 🔍 Top Threats
 
-### 🔴 Iran-Aligned Volant Manticore Uses IPFS-Based KuboShell Backdoor in Espionage Campaigns
-
-- **Source**: The Hacker News
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Persistence
-- **Keywords**: backdoor
-- **Link**: [https://thehackernews.com/2026/11/iran-aligned-volant-manticore-uses-ipfs.html](https://thehackernews.com/2026/11/iran-aligned-volant-manticore-uses-ipfs.html)
-
-A previously undocumented Iran-aligned cyber espionage group called Volant Manticore has targeted telecommunications companies, airlines, and critical infrastructure in Cyprus.
-
-Central to the group's operations is a backdoor called KuboShell that uses the InterPlanetary File System (IPFS) for comma
-
----
-
-### 🔴 VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation
-
-- **Source**: The Hacker News
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access
-- **Keywords**: zero-day, exploit, vulnerability, cve-
-- **Link**: [https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html](https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html)
-
-Broadcom has shipped patches to address 23 vulnerabilities impacting VMware ESX, vCenter, Workstation, Fusion, and Avi Load Balancer, including one critical bug that could be abused to bypass authentication.
-
-The critical vulnerability, tracked as CVE-2026-123903, is rated 9.8 out of 10.0 on the CVS
-
----
-
-### 🔴 Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap
+### 🔴 Hackers Exploit Two GeoServer Flaws as Researchers Warn of Unauthenticated RCE Chains
 
 - **Source**: The Hacker News
 - **Severity**: CRITICAL
 - **MITRE Tactics**: Initial Access, Execution
-- **Keywords**: rce, supply chain
-- **Link**: [https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html](https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html)
+- **Keywords**: exploit, vulnerability, cve-, rce
+- **Link**: [https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html](https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html)
 
-Pinning GitHub Actions to an exact version of their code, known as SHA pinning, has become the go-to defense against software supply chain attacks. Attackers have already found a way around it.
+Threat actors are actively exploiting two newly patched security flaws in GeoServer, according to watchTowr.
 
-In March 2026, the hackers who hijacked Trivy, a widely used open-source security scanner, planted malici
+The vulnerabilities in question are CVE-2026-120705 and CVE-2026-129243, details of which are below -
+
+
+  CVE-2026-120705 (CVSS score: 8.6) - An arbitrary file read vulnerability that could 
 
 ---
 
-### 🔴 2027 SOC Budget Reset: 5 Priorities to Cut Costs and Reduce Cyber Risk
+### 🔴 U.S. Treasury's Financial Crimes Agency Takes Some Systems Offline After Cyber Intrusion
 
 - **Source**: The Hacker News
 - **Severity**: CRITICAL
 - **MITRE Tactics**: Execution
 - **Keywords**: rce
-- **Link**: [https://thehackernews.com/2026/11/2027-soc-budget-reset-5-priorities-to.html](https://thehackernews.com/2026/11/2027-soc-budget-reset-5-priorities-to.html)
+- **Link**: [https://thehackernews.com/2026/11/us-treasurys-fincen-takes-some-systems.html](https://thehackernews.com/2026/11/us-treasurys-fincen-takes-some-systems.html)
 
-What if your biggest SOC budget problem isn't how much you spend, but how much analyst time you lose?
+The U.S. Treasury Department's Financial Crimes Enforcement Network (FinCEN) has been hit by a cybersecurity incident that resulted in "unauthorized access to a limited subset of its systems," the bureau said on Tuesday. As a precaution, it has taken some systems offline.
 
-According to ANY.RUN's estimates, SOC teams could recover 450 analyst hours per 1,000 investigated alerts through faster threat analysis and IOC research. That's a significant opportunity as manual
+The bureau collects suspic
 
 ---
 
-### 🔴 Police disrupt 57 illegal streaming services with 7.3 million visits
+### 🔴 Credential Remediation Is Slow When You Don’t Know What Will Break
+
+- **Source**: The Hacker News
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access, Credential Access
+- **Keywords**: credential
+- **Link**: [https://thehackernews.com/2026/11/credential-remediation-is-slow-when-you.html](https://thehackernews.com/2026/11/credential-remediation-is-slow-when-you.html)
+
+TL;DR
+
+
+  More than 64% still valid after four years: GitGuardian’s State of Secrets Sprawl 2026 found that most valid secrets discovered in 2022 still worked in January 2026, because teams stall on what a revoke will break.
+  Validity-only triage misses 46% of critical secrets: Prioritize by impact
+
+---
+
+### 🔴 Drupal Fail2Install Exploit Details Emerge as Critical RCE Flaw Faces Active Exploitation
+
+- **Source**: The Hacker News
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access, Execution
+- **Keywords**: exploit, vulnerability, cve-, remote code execution, rce
+- **Link**: [https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html](https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html)
+
+The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added a critical flaw impacting Drupal to its Known Exploited Vulnerabilities (KEV) catalog, requiring federal agencies to apply the fixes by November 27, 2026.
+
+The vulnerability, tracked as CVE-2026-132165 aka Fail2Install
+
+---
+
+### 🔴 Hackers Exploited CVSS 10.0 Hex.pm RCE Flaw to Compromise 6 Package Registry Servers
+
+- **Source**: The Hacker News
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access, Execution, Persistence
+- **Keywords**: exploit, rce
+- **Link**: [https://thehackernews.com/2026/11/hackers-exploited-cvss-100-hexpm-rce.html](https://thehackernews.com/2026/11/hackers-exploited-cvss-100-hexpm-rce.html)
+
+An attacker ran operating system commands on Monday on six production servers of Hex.pm, the package registry that Elixir and Erlang developers fetch their dependencies from.
+
+The flaw used in the attack had been in the registry's code since February 2016, and the team that maintains the service had
+
+---
+
+### 🔴 CISA warns of critical unpatched flaw in Danfoss refrigeration controllers
 
 - **Source**: BleepingComputer
 - **Severity**: CRITICAL
-- **MITRE Tactics**: Execution
-- **Keywords**: rce
-- **Link**: [https://www.bleepingcomputer.com/news/security/police-disrupt-57-illegal-streaming-services-with-73-million-visits/](https://www.bleepingcomputer.com/news/security/police-disrupt-57-illegal-streaming-services-with-73-million-visits/)
+- **MITRE Tactics**: —
+- **Keywords**: vulnerability
+- **Link**: [https://www.bleepingcomputer.com/news/security/cisa-warns-of-critical-unpatched-flaw-in-danfoss-refrigeration-controllers/](https://www.bleepingcomputer.com/news/security/cisa-warns-of-critical-unpatched-flaw-in-danfoss-refrigeration-controllers/)
 
-Law enforcement authorities from 11 countries have disrupted 57 illegal streaming services that operated hundreds of websites and drew over 7.3 million visits each year. [...]
+The U.S. Cybersecurity and Infrastructure Security Agency (CISA) is warning about a critical vulnerability in Danfoss AK-SM 8xxA Series controllers used by food retailers to manage commercial refrigeration, HVAC, and lighting systems. [...]
 
 ---
 
-### 🔴 From Vulnerability Noise to Resilience: Rethinking Security in the AI Era
+### 🔴 InfraTrust warns of exploited supply chain flaws in network appliances
 
 - **Source**: BleepingComputer
 - **Severity**: CRITICAL
 - **MITRE Tactics**: Initial Access
-- **Keywords**: vulnerability, supply chain
-- **Link**: [https://www.bleepingcomputer.com/news/security/from-vulnerability-noise-to-resilience-rethinking-security-in-the-ai-era/](https://www.bleepingcomputer.com/news/security/from-vulnerability-noise-to-resilience-rethinking-security-in-the-ai-era/)
+- **Keywords**: exploit, supply chain
+- **Link**: [https://www.bleepingcomputer.com/news/security/infratrust-warns-of-exploited-supply-chain-flaws-in-network-appliances/](https://www.bleepingcomputer.com/news/security/infratrust-warns-of-exploited-supply-chain-flaws-in-network-appliances/)
 
-AI-driven development is adding complexity to software supply chains, leaving security teams overwhelmed by vulnerabilities that may pose little actual risk. RapidFort explains how runtime visibility, container hardening, and automated remediation can reduce vulnerability noise and improve software 
+Eclypsium's November InfraTrust report warns that most infrastructure security advisories addressing exploited vulnerabilities over the past month involve flaws in third-party software bundled into products rather than code developed by the vendors themselves. [...]
 
 ---
 
-### 🔴 New Shirudo tool uses AI to shield unpatched Linux systems from exploits
+### 🔴 Hackers now exploit critical Drupal RCE flaw to hijack sites
 
 - **Source**: BleepingComputer
 - **Severity**: CRITICAL
 - **MITRE Tactics**: Initial Access, Execution
 - **Keywords**: exploit, vulnerability, rce
-- **Link**: [https://www.bleepingcomputer.com/news/security/new-shirudo-tool-uses-ai-to-shield-unpatched-linux-systems-from-exploits/](https://www.bleepingcomputer.com/news/security/new-shirudo-tool-uses-ai-to-shield-unpatched-linux-systems-from-exploits/)
+- **Link**: [https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-drupal-rce-flaw-to-hijack-sites/](https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-drupal-rce-flaw-to-hijack-sites/)
 
-OpenAI and Cisco launched an open-source Linux security tool named Shirudo that deploys temporary runtime protections to block vulnerability exploitation while administrators prepare and roll out patches, without restarting services. [...]
-
----
-
-### 🟠 Okta Links ShinyHunters-Associated Vishing Group to New INCEPTION Data Leak Site
-
-- **Source**: The Hacker News
-- **Severity**: HIGH
-- **MITRE Tactics**: Initial Access, Credential Access
-- **Keywords**: phishing, data leak, credential
-- **Link**: [https://thehackernews.com/2026/11/okta-links-shinyhunters-associated.html](https://thehackernews.com/2026/11/okta-links-shinyhunters-associated.html)
-
-A threat cluster previously assessed to be affiliated with the ShinyHunters extortion crew may have rebranded and continued operations under a new name called INCEPTION, according to Okta's Threat Intelligence team.
-
-The cluster, dubbed O-UNC-053, is characterized by the use of voice phishing (aka v
+The Drupal security team has confirmed that a critical vulnerability that lets attackers hijack unpatched sites has been actively exploited since at least Thursday. [...]
 
 ---
 
-### 🟠 Radware discloses breach exposing customer cloud access keys
+### 🔴 Microsoft confirms authentication issues after November updates
 
 - **Source**: BleepingComputer
-- **Severity**: HIGH
-- **MITRE Tactics**: —
-- **Keywords**: breach
-- **Link**: [https://www.bleepingcomputer.com/news/security/radware-discloses-breach-exposing-customer-cloud-access-keys/](https://www.bleepingcomputer.com/news/security/radware-discloses-breach-exposing-customer-cloud-access-keys/)
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Execution
+- **Keywords**: vulnerability, remote code execution
+- **Link**: [https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-authentication-issues-after-november-updates/](https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-authentication-issues-after-november-updates/)
 
-Cybersecurity company Radware says attackers gained access to some of its customers' account details and cloud access keys through an unsecured internal Cloud WAF (Web Application Firewall) management API that was left exposed online. [...]
+Microsoft has confirmed that customers may experience authentication issues after installing November security updates that address a high-severity remote code execution vulnerability. [...]
 
 ---
 
-### 🟠 ShinyHunters claims to return after FBI arrests, uses old PGP keys as proof
+### 🔴 Hackers reportedly breached CIA intelligence analysis system
 
 - **Source**: BleepingComputer
-- **Severity**: HIGH
-- **MITRE Tactics**: —
-- **Keywords**: data leak
-- **Link**: [https://www.bleepingcomputer.com/news/security/shinyhunters-resurfaces-after-fbi-arrests-uses-old-pgp-keys-as-proof/](https://www.bleepingcomputer.com/news/security/shinyhunters-resurfaces-after-fbi-arrests-uses-old-pgp-keys-as-proof/)
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Execution
+- **Keywords**: breach, rce
+- **Link**: [https://www.bleepingcomputer.com/news/security/hackers-reportedly-breached-cia-intelligence-analysis-system/](https://www.bleepingcomputer.com/news/security/hackers-reportedly-breached-cia-intelligence-analysis-system/)
 
-The ShinyHunters extortion gang claims to have returned in posts on a new data leak site after a series of arrests over the past two months targeting alleged members. [...]
+Unknown attackers have reportedly breached an open-source intelligence analysis system at the US Central Intelligence Agency (CIA) [...]
 
 ---
