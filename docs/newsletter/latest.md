@@ -1,4 +1,4 @@
-# 🛡️ Daily Threat Intel — November 25, 2026
+# 🛡️ Daily Threat Intel — November 26, 2026
 
 > **Automated daily briefing** covering the most critical cybersecurity 
 > threats from 9 leading security news sources.
@@ -8,13 +8,41 @@
 ## 📊 Analyst Briefing
 
 📊 15 threats detected today.
-🔴 CRITICAL (13): Hackers Exploit Two GeoServer Flaws as Researchers Warn of Unauthenticated RCE Chains | U.S. Treasury's Financial Crimes Agency Takes Some Systems Offline After Cyber Intrusion | Credential Remediation Is Slow When You Don’t Know What Will Break
-🟠 HIGH (2): Rackspace shuts down Spot cloud platform after security breach | Attackers Target .NET Developers With Poisoned Job Assessments
+🔴 CRITICAL (7): 1Password Hacked, Customer Data and Source Code Stolen in GitHub Account Breach | Drupal Warns of New Highly Critical Site Takeover Vulnerability Under Active Exploitation | Hackers Exploit Two GeoServer Flaws as Researchers Warn of Unauthenticated RCE Chains
+🟠 HIGH (6): North Korea-Linked PolinRider Poisons Over 7,600 GitHub Repositories to Spread Malware | Hackers Exploit 10 Vulnerabilities Across Mitel, Juniper, Vates, and Danfoss Products | 13 Malicious NuGet Packages Turn Fake .NET Job Assessments Into Malware Delivery Traps
 ⚠️ Review all articles below and patch accordingly.
 
 ---
 
 ## 🔍 Top Threats
+
+### 🔴 1Password Hacked, Customer Data and Source Code Stolen in GitHub Account Breach
+
+- **Source**: The Hacker News
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Execution, Credential Access
+- **Keywords**: breach, rce
+- **Link**: [https://thehackernews.com/2026/11/1password-hacked-customer-data-and.html](https://thehackernews.com/2026/11/1password-hacked-customer-data-and.html)
+
+Popular password management software 1Password on Wednesday disclosed a security incident involving its backend systems that led to the unauthorized access of some customer information, but emphasized that customer password vaults and other secrets were not accessed.
+
+"While we took immediate steps 
+
+---
+
+### 🔴 Drupal Warns of New Highly Critical Site Takeover Vulnerability Under Active Exploitation
+
+- **Source**: The Hacker News
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access
+- **Keywords**: exploit, vulnerability, cve-
+- **Link**: [https://thehackernews.com/2026/11/drupal-warns-of-new-highly-critical.html](https://thehackernews.com/2026/11/drupal-warns-of-new-highly-critical.html)
+
+Drupal has warned of a new "highly critical" security flaw impacting Drupal core that it said has been exploited in the wild.
+
+The vulnerability, tracked as CVE-2026-136716 (CVSS score: N/A), has been described as a case of improper checking for unusual or exceptional conditions. It also relates to 
+
+---
 
 ### 🔴 Hackers Exploit Two GeoServer Flaws as Researchers Warn of Unauthenticated RCE Chains
 
@@ -47,47 +75,27 @@ The bureau collects suspic
 
 ---
 
-### 🔴 Credential Remediation Is Slow When You Don’t Know What Will Break
+### 🔴 Remus malware steals Gmail messages via fake Google Sheets extension
 
-- **Source**: The Hacker News
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access, Credential Access
-- **Keywords**: credential
-- **Link**: [https://thehackernews.com/2026/11/credential-remediation-is-slow-when-you.html](https://thehackernews.com/2026/11/credential-remediation-is-slow-when-you.html)
-
-TL;DR
-
-
-  More than 64% still valid after four years: GitGuardian’s State of Secrets Sprawl 2026 found that most valid secrets discovered in 2022 still worked in January 2026, because teams stall on what a revoke will break.
-  Validity-only triage misses 46% of critical secrets: Prioritize by impact
-
----
-
-### 🔴 Drupal Fail2Install Exploit Details Emerge as Critical RCE Flaw Faces Active Exploitation
-
-- **Source**: The Hacker News
+- **Source**: BleepingComputer
 - **Severity**: CRITICAL
 - **MITRE Tactics**: Initial Access, Execution
-- **Keywords**: exploit, vulnerability, cve-, remote code execution, rce
-- **Link**: [https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html](https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html)
+- **Keywords**: zero-day, exploit, malware
+- **Link**: [https://www.bleepingcomputer.com/news/security/remus-malware-steals-gmail-messages-via-fake-google-sheets-extension/](https://www.bleepingcomputer.com/news/security/remus-malware-steals-gmail-messages-via-fake-google-sheets-extension/)
 
-The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added a critical flaw impacting Drupal to its Known Exploited Vulnerabilities (KEV) catalog, requiring federal agencies to apply the fixes by November 27, 2026.
-
-The vulnerability, tracked as CVE-2026-132165 aka Fail2Install
+The Remus infostealer is stealing Gmail messages through a stealthy malicious Chrome extension, a capability the malware operators marketed as a zero-day exploit in Google's email service. [...]
 
 ---
 
-### 🔴 Hackers Exploited CVSS 10.0 Hex.pm RCE Flaw to Compromise 6 Package Registry Servers
+### 🔴 SYS010 malware abuses browser management to spy on Gmail, Outlook
 
-- **Source**: The Hacker News
+- **Source**: BleepingComputer
 - **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access, Execution, Persistence
-- **Keywords**: exploit, rce
-- **Link**: [https://thehackernews.com/2026/11/hackers-exploited-cvss-100-hexpm-rce.html](https://thehackernews.com/2026/11/hackers-exploited-cvss-100-hexpm-rce.html)
+- **MITRE Tactics**: Execution
+- **Keywords**: malware, rce
+- **Link**: [https://www.bleepingcomputer.com/news/security/sys010-malware-abuses-browser-management-to-spy-on-gmail-outlook/](https://www.bleepingcomputer.com/news/security/sys010-malware-abuses-browser-management-to-spy-on-gmail-outlook/)
 
-An attacker ran operating system commands on Monday on six production servers of Hex.pm, the package registry that Elixir and Erlang developers fetch their dependencies from.
-
-The flaw used in the attack had been in the registry's code since February 2016, and the team that maintains the service had
+A new version of the SYS01 infostealer malware delivered through Meta ads is enrolling browsers into enterprise-style management to force the installation of an extension that steals sensitive data, including Gmail and Outlook emails. [...]
 
 ---
 
@@ -103,50 +111,47 @@ The U.S. Cybersecurity and Infrastructure Security Agency (CISA) is warning abou
 
 ---
 
-### 🔴 InfraTrust warns of exploited supply chain flaws in network appliances
+### 🟠 North Korea-Linked PolinRider Poisons Over 7,600 GitHub Repositories to Spread Malware
 
-- **Source**: BleepingComputer
-- **Severity**: CRITICAL
+- **Source**: The Hacker News
+- **Severity**: HIGH
+- **MITRE Tactics**: Execution
+- **Keywords**: malware
+- **Link**: [https://thehackernews.com/2026/11/north-korea-linked-polinrider-poisons.html](https://thehackernews.com/2026/11/north-korea-linked-polinrider-poisons.html)
+
+The threat actors behind the PolinRider campaign have been observed planting a Python loader in GitHub repositories, as evidence emerges that the activity may have started as far back as February 2025.
+
+"The loader hides in a small utils package or in conftest.py," SafeDep said in a report published
+
+---
+
+### 🟠 Hackers Exploit 10 Vulnerabilities Across Mitel, Juniper, Vates, and Danfoss Products
+
+- **Source**: The Hacker News
+- **Severity**: HIGH
 - **MITRE Tactics**: Initial Access
-- **Keywords**: exploit, supply chain
-- **Link**: [https://www.bleepingcomputer.com/news/security/infratrust-warns-of-exploited-supply-chain-flaws-in-network-appliances/](https://www.bleepingcomputer.com/news/security/infratrust-warns-of-exploited-supply-chain-flaws-in-network-appliances/)
+- **Keywords**: exploit, vulnerability, cve-
+- **Link**: [https://thehackernews.com/2026/11/hackers-exploit-10-vulnerabilities.html](https://thehackernews.com/2026/11/hackers-exploit-10-vulnerabilities.html)
 
-Eclypsium's November InfraTrust report warns that most infrastructure security advisories addressing exploited vulnerabilities over the past month involve flaws in third-party software bundled into products rather than code developed by the vendors themselves. [...]
+The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added 10 security flaws to its Known Exploited Vulnerabilities (KEV) catalog, including five vulnerabilities impacting Mitel MiCollab that were disclosed last week.
 
----
+The Mitel MiCollab vulnerabilities are listed below -
 
-### 🔴 Hackers now exploit critical Drupal RCE flaw to hijack sites
 
-- **Source**: BleepingComputer
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access, Execution
-- **Keywords**: exploit, vulnerability, rce
-- **Link**: [https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-drupal-rce-flaw-to-hijack-sites/](https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-drupal-rce-flaw-to-hijack-sites/)
 
-The Drupal security team has confirmed that a critical vulnerability that lets attackers hijack unpatched sites has been actively exploited since at least Thursday. [...]
 
 ---
 
-### 🔴 Microsoft confirms authentication issues after November updates
+### 🟠 13 Malicious NuGet Packages Turn Fake .NET Job Assessments Into Malware Delivery Traps
 
-- **Source**: BleepingComputer
-- **Severity**: CRITICAL
+- **Source**: The Hacker News
+- **Severity**: HIGH
 - **MITRE Tactics**: Execution
-- **Keywords**: vulnerability, remote code execution
-- **Link**: [https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-authentication-issues-after-november-updates/](https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-authentication-issues-after-november-updates/)
+- **Keywords**: malware
+- **Link**: [https://thehackernews.com/2026/11/13-malicious-nuget-packages-turn-fake.html](https://thehackernews.com/2026/11/13-malicious-nuget-packages-turn-fake.html)
 
-Microsoft has confirmed that customers may experience authentication issues after installing November security updates that address a high-severity remote code execution vulnerability. [...]
+Cybersecurity researchers have discovered 13 malicious NuGet packages that are designed to target Windows .NET developers under the guise of a fake take-home job assessment.
 
----
-
-### 🔴 Hackers reportedly breached CIA intelligence analysis system
-
-- **Source**: BleepingComputer
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Execution
-- **Keywords**: breach, rce
-- **Link**: [https://www.bleepingcomputer.com/news/security/hackers-reportedly-breached-cia-intelligence-analysis-system/](https://www.bleepingcomputer.com/news/security/hackers-reportedly-breached-cia-intelligence-analysis-system/)
-
-Unknown attackers have reportedly breached an open-source intelligence analysis system at the US Central Intelligence Agency (CIA) [...]
+"Most of the packages pose as WinUI 3 and WPF [Windows Presentation Foundation] button controls," Socket security researcher 
 
 ---
