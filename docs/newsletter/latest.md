@@ -1,4 +1,4 @@
-# 🛡️ Daily Threat Intel — November 26, 2026
+# 🛡️ Daily Threat Intel — November 27, 2026
 
 > **Automated daily briefing** covering the most critical cybersecurity 
 > threats from 9 leading security news sources.
@@ -8,150 +8,138 @@
 ## 📊 Analyst Briefing
 
 📊 15 threats detected today.
-🔴 CRITICAL (7): 1Password Hacked, Customer Data and Source Code Stolen in GitHub Account Breach | Drupal Warns of New Highly Critical Site Takeover Vulnerability Under Active Exploitation | Hackers Exploit Two GeoServer Flaws as Researchers Warn of Unauthenticated RCE Chains
-🟠 HIGH (6): North Korea-Linked PolinRider Poisons Over 7,600 GitHub Repositories to Spread Malware | Hackers Exploit 10 Vulnerabilities Across Mitel, Juniper, Vates, and Danfoss Products | 13 Malicious NuGet Packages Turn Fake .NET Job Assessments Into Malware Delivery Traps
+🔴 CRITICAL (11): Hackers Trojanize Official Q-Dir and DesktopOK Downloads to Deliver Remote Access Malware | Switzerland Confirms AI-Assisted Cyberattacks Breached Critical Infrastructure Operators | Unpatched Cacti Zero-Day Enables RCE in Just Four HTTP Requests via Guest Access
+🟠 HIGH (3): North Korea-Linked PolinRider Poisons Over 7,600 GitHub Repositories to Spread Malware | Malwarebytes Antivirus: Get 50% off during Black Friday 2026 | Attackers Target .NET Developers With Poisoned Job Assessments
 ⚠️ Review all articles below and patch accordingly.
 
 ---
 
 ## 🔍 Top Threats
 
-### 🔴 1Password Hacked, Customer Data and Source Code Stolen in GitHub Account Breach
-
-- **Source**: The Hacker News
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Execution, Credential Access
-- **Keywords**: breach, rce
-- **Link**: [https://thehackernews.com/2026/11/1password-hacked-customer-data-and.html](https://thehackernews.com/2026/11/1password-hacked-customer-data-and.html)
-
-Popular password management software 1Password on Wednesday disclosed a security incident involving its backend systems that led to the unauthorized access of some customer information, but emphasized that customer password vaults and other secrets were not accessed.
-
-"While we took immediate steps 
-
----
-
-### 🔴 Drupal Warns of New Highly Critical Site Takeover Vulnerability Under Active Exploitation
-
-- **Source**: The Hacker News
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access
-- **Keywords**: exploit, vulnerability, cve-
-- **Link**: [https://thehackernews.com/2026/11/drupal-warns-of-new-highly-critical.html](https://thehackernews.com/2026/11/drupal-warns-of-new-highly-critical.html)
-
-Drupal has warned of a new "highly critical" security flaw impacting Drupal core that it said has been exploited in the wild.
-
-The vulnerability, tracked as CVE-2026-136716 (CVSS score: N/A), has been described as a case of improper checking for unusual or exceptional conditions. It also relates to 
-
----
-
-### 🔴 Hackers Exploit Two GeoServer Flaws as Researchers Warn of Unauthenticated RCE Chains
+### 🔴 Hackers Trojanize Official Q-Dir and DesktopOK Downloads to Deliver Remote Access Malware
 
 - **Source**: The Hacker News
 - **Severity**: CRITICAL
 - **MITRE Tactics**: Initial Access, Execution
-- **Keywords**: exploit, vulnerability, cve-, rce
-- **Link**: [https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html](https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html)
+- **Keywords**: malware, supply chain, trojan
+- **Link**: [https://thehackernews.com/2026/11/hackers-trojanize-official-q-dir-and.html](https://thehackernews.com/2026/11/hackers-trojanize-official-q-dir-and.html)
 
-Threat actors are actively exploiting two newly patched security flaws in GeoServer, according to watchTowr.
+Cybersecurity researchers have disclosed details of a software supply chain attack that has tampered with Q-Dir and DesktopOK installation files distributed via the official SoftwareOK website.
 
-The vulnerabilities in question are CVE-2026-120705 and CVE-2026-129243, details of which are below -
-
-
-  CVE-2026-120705 (CVSS score: 8.6) - An arbitrary file read vulnerability that could 
+"Evidence indicates that malicious files were generated not only when users downloaded the programs direc
 
 ---
 
-### 🔴 U.S. Treasury's Financial Crimes Agency Takes Some Systems Offline After Cyber Intrusion
+### 🔴 Switzerland Confirms AI-Assisted Cyberattacks Breached Critical Infrastructure Operators
 
 - **Source**: The Hacker News
+- **Severity**: CRITICAL
+- **MITRE Tactics**: —
+- **Keywords**: breach
+- **Link**: [https://thehackernews.com/2026/11/switzerland-confirms-ai-assisted.html](https://thehackernews.com/2026/11/switzerland-confirms-ai-assisted.html)
+
+Attackers using AI agents have broken into computer systems at Swiss organizations in four of five confirmed attacks, the first such cases in the country, the country's cybersecurity agency said yesterday.
+
+Three of the attacks targeted critical infrastructure operators, and two of those succeeded, 
+
+---
+
+### 🔴 Unpatched Cacti Zero-Day Enables RCE in Just Four HTTP Requests via Guest Access
+
+- **Source**: The Hacker News
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access, Execution
+- **Keywords**: zero-day, exploit, vulnerability, remote code execution, rce
+- **Link**: [https://thehackernews.com/2026/11/unpatched-cacti-zero-day-enables-rce-in.html](https://thehackernews.com/2026/11/unpatched-cacti-zero-day-enables-rce-in.html)
+
+Details have emerged about a new zero-day vulnerability in Cacti, an open-source network monitoring tool, that could be exploited to achieve remote code execution.
+
+The proof-of-concept (PoC) exploit, which has yet to be assigned a CVE identifier, has been tracked as 4HTTP2SHELL and 4HTTP2ROOT.
+
+"I 
+
+---
+
+### 🔴 Unpatched Cacti zero-day with public PoC gives remote code execution
+
+- **Source**: BleepingComputer
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access, Execution
+- **Keywords**: zero-day, exploit, vulnerability, remote code execution
+- **Link**: [https://www.bleepingcomputer.com/news/security/unpatched-cacti-zero-day-with-public-poc-gives-remote-code-execution/](https://www.bleepingcomputer.com/news/security/unpatched-cacti-zero-day-with-public-poc-gives-remote-code-execution/)
+
+A zero-day vulnerability in the Cacti network monitoring platform has been publicly disclosed, along with a proof-of-concept exploit that lets unauthenticated attackers execute commands on vulnerable servers. [...]
+
+---
+
+### 🔴 US Air Force cloud platform reportedly hacked in latest federal breach
+
+- **Source**: BleepingComputer
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Execution
+- **Keywords**: breach, rce
+- **Link**: [https://www.bleepingcomputer.com/news/security/us-air-force-cloud-platform-reportedly-hacked-in-latest-federal-breach/](https://www.bleepingcomputer.com/news/security/us-air-force-cloud-platform-reportedly-hacked-in-latest-federal-breach/)
+
+Hackers have reportedly breached the US Air Force's Cloud One computing platform, adding to a recent wave of cyberattacks affecting US government agencies, including the FBI, CIA, and Treasury Department. [...]
+
+---
+
+### 🔴 Your Firewall Isn't Enough: The Hidden Risk of Unmanaged VMs
+
+- **Source**: BleepingComputer
 - **Severity**: CRITICAL
 - **MITRE Tactics**: Execution
 - **Keywords**: rce
-- **Link**: [https://thehackernews.com/2026/11/us-treasurys-fincen-takes-some-systems.html](https://thehackernews.com/2026/11/us-treasurys-fincen-takes-some-systems.html)
+- **Link**: [https://www.bleepingcomputer.com/news/security/your-firewall-isnt-enough-the-hidden-risk-of-unmanaged-vms/](https://www.bleepingcomputer.com/news/security/your-firewall-isnt-enough-the-hidden-risk-of-unmanaged-vms/)
 
-The U.S. Treasury Department's Financial Crimes Enforcement Network (FinCEN) has been hit by a cybersecurity incident that resulted in "unauthorized access to a limited subset of its systems," the bureau said on Tuesday. As a precaution, it has taken some systems offline.
-
-The bureau collects suspic
+Forgotten virtual machines, unpatched servers, and excessive access permissions can create security blind spots across IT infrastructure. ISPsystem explains how centralized infrastructure management, access controls, and resource lifecycle automation can help reduce these risks. [...]
 
 ---
 
-### 🔴 Remus malware steals Gmail messages via fake Google Sheets extension
+### 🔴 Drupal warns of new site takeover flaw exploited in attacks
 
 - **Source**: BleepingComputer
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Initial Access
+- **Keywords**: breach, exploit, vulnerability
+- **Link**: [https://www.bleepingcomputer.com/news/security/drupal-warns-of-new-access-bypass-flaw-exploited-in-attacks/](https://www.bleepingcomputer.com/news/security/drupal-warns-of-new-access-bypass-flaw-exploited-in-attacks/)
+
+The Drupal security team says attackers are exploiting a second critical vulnerability that lets them breach and hijack unpatched websites. [...]
+
+---
+
+### 🔴 CTO of ‘RansomwareHelp’ Indicted for Wire Fraud
+
+- **Source**: Krebs on Security
+- **Severity**: CRITICAL
+- **MITRE Tactics**: Impact
+- **Keywords**: ransomware
+- **Link**: [https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/](https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/)
+
+The chief technology officer and co-founder of ransomwarehelp.com, a six year old Florida business that claimed to use "advanced cryptographic tools" to restore data locked by ransomware, has been charged with wire fraud after an FBI sting operation found the company was simply paying the attackers 
+
+---
+
+### 🔴 Attackers Used Optimizely to A/B Test Malware on Top Websites
+
+- **Source**: Krebs on Security
 - **Severity**: CRITICAL
 - **MITRE Tactics**: Initial Access, Execution
-- **Keywords**: zero-day, exploit, malware
-- **Link**: [https://www.bleepingcomputer.com/news/security/remus-malware-steals-gmail-messages-via-fake-google-sheets-extension/](https://www.bleepingcomputer.com/news/security/remus-malware-steals-gmail-messages-via-fake-google-sheets-extension/)
+- **Keywords**: exploit, vulnerability, malware, rce
+- **Link**: [https://krebsonsecurity.com/2026/11/attackers-used-optimizely-to-a-b-test-malware-on-top-websites/](https://krebsonsecurity.com/2026/11/attackers-used-optimizely-to-a-b-test-malware-on-top-websites/)
 
-The Remus infostealer is stealing Gmail messages through a stealthy malicious Chrome extension, a capability the malware operators marketed as a zero-day exploit in Google's email service. [...]
+At least 178 top web destinations unwittingly served a variety of malware exploits against visitors over the past 24 hours thanks to a security vulnerability involving Optimizely, a company that helps websites customize user experiences and test out new features. Experts say the incident, which saw 
 
 ---
 
-### 🔴 SYS010 malware abuses browser management to spy on Gmail, Outlook
+### 🔴 Who Runs the Ransomware Group Qilin?
 
-- **Source**: BleepingComputer
+- **Source**: Krebs on Security
 - **Severity**: CRITICAL
-- **MITRE Tactics**: Execution
-- **Keywords**: malware, rce
-- **Link**: [https://www.bleepingcomputer.com/news/security/sys010-malware-abuses-browser-management-to-spy-on-gmail-outlook/](https://www.bleepingcomputer.com/news/security/sys010-malware-abuses-browser-management-to-spy-on-gmail-outlook/)
+- **MITRE Tactics**: Impact
+- **Keywords**: ransomware
+- **Link**: [https://krebsonsecurity.com/2026/11/who-runs-the-ransomware-group-qilin/](https://krebsonsecurity.com/2026/11/who-runs-the-ransomware-group-qilin/)
 
-A new version of the SYS01 infostealer malware delivered through Meta ads is enrolling browsers into enterprise-style management to force the installation of an extension that steals sensitive data, including Gmail and Outlook emails. [...]
-
----
-
-### 🔴 CISA warns of critical unpatched flaw in Danfoss refrigeration controllers
-
-- **Source**: BleepingComputer
-- **Severity**: CRITICAL
-- **MITRE Tactics**: —
-- **Keywords**: vulnerability
-- **Link**: [https://www.bleepingcomputer.com/news/security/cisa-warns-of-critical-unpatched-flaw-in-danfoss-refrigeration-controllers/](https://www.bleepingcomputer.com/news/security/cisa-warns-of-critical-unpatched-flaw-in-danfoss-refrigeration-controllers/)
-
-The U.S. Cybersecurity and Infrastructure Security Agency (CISA) is warning about a critical vulnerability in Danfoss AK-SM 8xxA Series controllers used by food retailers to manage commercial refrigeration, HVAC, and lighting systems. [...]
-
----
-
-### 🟠 North Korea-Linked PolinRider Poisons Over 7,600 GitHub Repositories to Spread Malware
-
-- **Source**: The Hacker News
-- **Severity**: HIGH
-- **MITRE Tactics**: Execution
-- **Keywords**: malware
-- **Link**: [https://thehackernews.com/2026/11/north-korea-linked-polinrider-poisons.html](https://thehackernews.com/2026/11/north-korea-linked-polinrider-poisons.html)
-
-The threat actors behind the PolinRider campaign have been observed planting a Python loader in GitHub repositories, as evidence emerges that the activity may have started as far back as February 2025.
-
-"The loader hides in a small utils package or in conftest.py," SafeDep said in a report published
-
----
-
-### 🟠 Hackers Exploit 10 Vulnerabilities Across Mitel, Juniper, Vates, and Danfoss Products
-
-- **Source**: The Hacker News
-- **Severity**: HIGH
-- **MITRE Tactics**: Initial Access
-- **Keywords**: exploit, vulnerability, cve-
-- **Link**: [https://thehackernews.com/2026/11/hackers-exploit-10-vulnerabilities.html](https://thehackernews.com/2026/11/hackers-exploit-10-vulnerabilities.html)
-
-The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added 10 security flaws to its Known Exploited Vulnerabilities (KEV) catalog, including five vulnerabilities impacting Mitel MiCollab that were disclosed last week.
-
-The Mitel MiCollab vulnerabilities are listed below -
-
-
-
-
----
-
-### 🟠 13 Malicious NuGet Packages Turn Fake .NET Job Assessments Into Malware Delivery Traps
-
-- **Source**: The Hacker News
-- **Severity**: HIGH
-- **MITRE Tactics**: Execution
-- **Keywords**: malware
-- **Link**: [https://thehackernews.com/2026/11/13-malicious-nuget-packages-turn-fake.html](https://thehackernews.com/2026/11/13-malicious-nuget-packages-turn-fake.html)
-
-Cybersecurity researchers have discovered 13 malicious NuGet packages that are designed to target Windows .NET developers under the guise of a fake take-home job assessment.
-
-"Most of the packages pose as WinUI 3 and WPF [Windows Presentation Foundation] button controls," Socket security researcher 
+The cybercrime group Qilin has emerged as the world's most active ransomware affiliate program, claiming at least 365 victim organizations in the past three months alone. But even top Russian hackers make operational security mistakes, and the administrator of Qilin has made a few key missteps over 
 
 ---

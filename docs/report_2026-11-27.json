@@ -1,0 +1,201 @@
+{
+  "date": "2026-11-27T17:18:03.300965",
+  "summary": "\ud83d\udcca 15 threats detected today.\n\ud83d\udd34 CRITICAL (11): Hackers Trojanize Official Q-Dir and DesktopOK Downloads to Deliver Remote Access Malware | Switzerland Confirms AI-Assisted Cyberattacks Breached Critical Infrastructure Operators | Unpatched Cacti Zero-Day Enables RCE in Just Four HTTP Requests via Guest Access\n\ud83d\udfe0 HIGH (3): North Korea-Linked PolinRider Poisons Over 7,600 GitHub Repositories to Spread Malware | Malwarebytes Antivirus: Get 50% off during Black Friday 2026 | Attackers Target .NET Developers With Poisoned Job Assessments\n\u26a0\ufe0f Review all articles below and patch accordingly.",
+  "articles": [
+    {
+      "title": "Microsoft Store App Found Delivering Vinci RAT Capable of Remote System Control",
+      "link": "https://thehackernews.com/2026/11/microsoft-store-app-found-delivering.html",
+      "source": "The Hacker News",
+      "severity": "low",
+      "mitre_tactics": [
+        "Execution"
+      ],
+      "keywords": [
+        "trojan"
+      ]
+    },
+    {
+      "title": "Hackers Trojanize Official Q-Dir and DesktopOK Downloads to Deliver Remote Access Malware",
+      "link": "https://thehackernews.com/2026/11/hackers-trojanize-official-q-dir-and.html",
+      "source": "The Hacker News",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Initial Access",
+        "Execution"
+      ],
+      "keywords": [
+        "malware",
+        "supply chain",
+        "trojan"
+      ]
+    },
+    {
+      "title": "Switzerland Confirms AI-Assisted Cyberattacks Breached Critical Infrastructure Operators",
+      "link": "https://thehackernews.com/2026/11/switzerland-confirms-ai-assisted.html",
+      "source": "The Hacker News",
+      "severity": "critical",
+      "mitre_tactics": [],
+      "keywords": [
+        "breach"
+      ]
+    },
+    {
+      "title": "Unpatched Cacti Zero-Day Enables RCE in Just Four HTTP Requests via Guest Access",
+      "link": "https://thehackernews.com/2026/11/unpatched-cacti-zero-day-enables-rce-in.html",
+      "source": "The Hacker News",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Initial Access",
+        "Execution"
+      ],
+      "keywords": [
+        "zero-day",
+        "exploit",
+        "vulnerability",
+        "remote code execution",
+        "rce"
+      ]
+    },
+    {
+      "title": "North Korea-Linked PolinRider Poisons Over 7,600 GitHub Repositories to Spread Malware",
+      "link": "https://thehackernews.com/2026/11/north-korea-linked-polinrider-poisons.html",
+      "source": "The Hacker News",
+      "severity": "high",
+      "mitre_tactics": [
+        "Execution"
+      ],
+      "keywords": [
+        "malware"
+      ]
+    },
+    {
+      "title": "Unpatched Cacti zero-day with public PoC gives remote code execution",
+      "link": "https://www.bleepingcomputer.com/news/security/unpatched-cacti-zero-day-with-public-poc-gives-remote-code-execution/",
+      "source": "BleepingComputer",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Initial Access",
+        "Execution"
+      ],
+      "keywords": [
+        "zero-day",
+        "exploit",
+        "vulnerability",
+        "remote code execution"
+      ]
+    },
+    {
+      "title": "US Air Force cloud platform reportedly hacked in latest federal breach",
+      "link": "https://www.bleepingcomputer.com/news/security/us-air-force-cloud-platform-reportedly-hacked-in-latest-federal-breach/",
+      "source": "BleepingComputer",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Execution"
+      ],
+      "keywords": [
+        "breach",
+        "rce"
+      ]
+    },
+    {
+      "title": "Your Firewall Isn't Enough: The Hidden Risk of Unmanaged VMs",
+      "link": "https://www.bleepingcomputer.com/news/security/your-firewall-isnt-enough-the-hidden-risk-of-unmanaged-vms/",
+      "source": "BleepingComputer",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Execution"
+      ],
+      "keywords": [
+        "rce"
+      ]
+    },
+    {
+      "title": "Malwarebytes Antivirus: Get 50% off during Black Friday 2026",
+      "link": "https://www.bleepingcomputer.com/news/security/malwarebytes-antivirus-get-50-percent-off-during-black-friday-2026/",
+      "source": "BleepingComputer",
+      "severity": "high",
+      "mitre_tactics": [
+        "Execution"
+      ],
+      "keywords": [
+        "malware"
+      ]
+    },
+    {
+      "title": "Drupal warns of new site takeover flaw exploited in attacks",
+      "link": "https://www.bleepingcomputer.com/news/security/drupal-warns-of-new-access-bypass-flaw-exploited-in-attacks/",
+      "source": "BleepingComputer",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Initial Access"
+      ],
+      "keywords": [
+        "breach",
+        "exploit",
+        "vulnerability"
+      ]
+    },
+    {
+      "title": "Attackers Target .NET Developers With Poisoned Job Assessments",
+      "link": "https://www.darkreading.com/threat-intelligence/attackers-net-developers-poisoned-job-assessments",
+      "source": "Dark Reading",
+      "severity": "high",
+      "mitre_tactics": [
+        "Execution"
+      ],
+      "keywords": [
+        "malware"
+      ]
+    },
+    {
+      "title": "CTO of \u2018RansomwareHelp\u2019 Indicted for Wire Fraud",
+      "link": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
+      "source": "Krebs on Security",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Impact"
+      ],
+      "keywords": [
+        "ransomware"
+      ]
+    },
+    {
+      "title": "Attackers Used Optimizely to A/B Test Malware on Top Websites",
+      "link": "https://krebsonsecurity.com/2026/11/attackers-used-optimizely-to-a-b-test-malware-on-top-websites/",
+      "source": "Krebs on Security",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Initial Access",
+        "Execution"
+      ],
+      "keywords": [
+        "exploit",
+        "vulnerability",
+        "malware",
+        "rce"
+      ]
+    },
+    {
+      "title": "Who Runs the Ransomware Group Qilin?",
+      "link": "https://krebsonsecurity.com/2026/11/who-runs-the-ransomware-group-qilin/",
+      "source": "Krebs on Security",
+      "severity": "critical",
+      "mitre_tactics": [
+        "Impact"
+      ],
+      "keywords": [
+        "ransomware"
+      ]
+    },
+    {
+      "title": "Microsoft Fixes Nearly 1,100 Security Vulnerabilities",
+      "link": "https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/",
+      "source": "Krebs on Security",
+      "severity": "critical",
+      "mitre_tactics": [],
+      "keywords": [
+        "zero-day"
+      ]
+    }
+  ]
+}
