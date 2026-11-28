@@ -1,4 +1,4 @@
-# 🛡️ Daily Threat Intel — November 27, 2026
+# 🛡️ Daily Threat Intel — November 28, 2026
 
 > **Automated daily briefing** covering the most critical cybersecurity 
 > threats from 9 leading security news sources.
@@ -8,8 +8,8 @@
 ## 📊 Analyst Briefing
 
 📊 15 threats detected today.
-🔴 CRITICAL (11): Hackers Trojanize Official Q-Dir and DesktopOK Downloads to Deliver Remote Access Malware | Switzerland Confirms AI-Assisted Cyberattacks Breached Critical Infrastructure Operators | Unpatched Cacti Zero-Day Enables RCE in Just Four HTTP Requests via Guest Access
-🟠 HIGH (3): North Korea-Linked PolinRider Poisons Over 7,600 GitHub Repositories to Spread Malware | Malwarebytes Antivirus: Get 50% off during Black Friday 2026 | Attackers Target .NET Developers With Poisoned Job Assessments
+🔴 CRITICAL (10): Hackers Trojanize Official Q-Dir and DesktopOK Downloads to Deliver Remote Access Malware | Switzerland Confirms AI-Assisted Cyberattacks Breached Critical Infrastructure Operators | Unpatched Cacti Zero-Day Enables RCE in Just Four HTTP Requests via Guest Access
+🟠 HIGH (4): Q-Dir and DesktopOK Windows utilities compromised to push Python RAT | New Boston Scientific data breach exposes personal, medical info | Malwarebytes Antivirus: Get 50% off during Black Friday 2026
 ⚠️ Review all articles below and patch accordingly.
 
 ---
@@ -96,18 +96,6 @@ Forgotten virtual machines, unpatched servers, and excessive access permissions 
 
 ---
 
-### 🔴 Drupal warns of new site takeover flaw exploited in attacks
-
-- **Source**: BleepingComputer
-- **Severity**: CRITICAL
-- **MITRE Tactics**: Initial Access
-- **Keywords**: breach, exploit, vulnerability
-- **Link**: [https://www.bleepingcomputer.com/news/security/drupal-warns-of-new-access-bypass-flaw-exploited-in-attacks/](https://www.bleepingcomputer.com/news/security/drupal-warns-of-new-access-bypass-flaw-exploited-in-attacks/)
-
-The Drupal security team says attackers are exploiting a second critical vulnerability that lets them breach and hijack unpatched websites. [...]
-
----
-
 ### 🔴 CTO of ‘RansomwareHelp’ Indicted for Wire Fraud
 
 - **Source**: Krebs on Security
@@ -141,5 +129,17 @@ At least 178 top web destinations unwittingly served a variety of malware exploi
 - **Link**: [https://krebsonsecurity.com/2026/11/who-runs-the-ransomware-group-qilin/](https://krebsonsecurity.com/2026/11/who-runs-the-ransomware-group-qilin/)
 
 The cybercrime group Qilin has emerged as the world's most active ransomware affiliate program, claiming at least 365 victim organizations in the past three months alone. But even top Russian hackers make operational security mistakes, and the administrator of Qilin has made a few key missteps over 
+
+---
+
+### 🔴 Microsoft Fixes Nearly 1,100 Security Vulnerabilities
+
+- **Source**: Krebs on Security
+- **Severity**: CRITICAL
+- **MITRE Tactics**: —
+- **Keywords**: zero-day
+- **Link**: [https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/](https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/)
+
+Microsoft did another four-digit patch drop today, releasing updates to fix almost 1,100 security vulnerabilities in its Windows operating systems and supported software. This month's Patch Tuesday addresses 63 critical flaws -- including a zero-day in Microsoft Outlook -- and comes amid important s
 
 ---
